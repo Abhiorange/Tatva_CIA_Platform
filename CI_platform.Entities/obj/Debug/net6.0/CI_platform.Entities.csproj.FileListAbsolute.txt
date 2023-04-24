@@ -1,0 +1,14 @@
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\bin\Debug\net6.0\CI_platform.Entities.deps.json
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\bin\Debug\net6.0\CI_platform.Entities.runtimeconfig.json
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\bin\Debug\net6.0\CI_platform.Entities.dll
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\bin\Debug\net6.0\CI_platform.Entities.pdb
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\obj\Debug\net6.0\CI_platform.Entities.csproj.AssemblyReference.cache
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\obj\Debug\net6.0\CI_platform.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\obj\Debug\net6.0\CI_platform.Entities.AssemblyInfoInputs.cache
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\obj\Debug\net6.0\CI_platform.Entities.AssemblyInfo.cs
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\obj\Debug\net6.0\CI_platform.Entities.csproj.CoreCompileInputs.cache
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\obj\Debug\net6.0\CI_platform.Entities.dll
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\obj\Debug\net6.0\refint\CI_platform.Entities.dll
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\obj\Debug\net6.0\CI_platform.Entities.pdb
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\obj\Debug\net6.0\CI_platform.Entities.genruntimeconfig.cache
+C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platform.Entities\obj\Debug\net6.0\ref\CI_platform.Entities.dll

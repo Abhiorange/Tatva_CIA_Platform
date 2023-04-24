@@ -1,0 +1,113 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+/* Override the background color for success alerts */
+.toast-success {
+    background-color: green !important;
+}
+
+.main
+{
+   display:flex;
+  
+}
+.imgcar
+{
+    width: 70%;
+}
+.form
+{
+   
+    width: 70%;
+    margin: auto;
+}
+.logo
+{
+    margin-bottom: 32%;
+}
+.info
+{display: flex;
+    flex-direction: column;
+    width:30%;
+}
+.btn
+{
+    width: 100%;
+    border-radius: 20px !important;
+    text-align: center;
+    background-color: white !important;
+    color:red !important;
+}
+
+#txt1
+{
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+#txt2
+{
+    text-align: center;
+    margin-top: 2%;
+}
+#text
+{
+    text-align: center;
+    margin-bottom: 5%;
+}
+.carousel-item img{
+    height:100vh;
+}
+#bl
+{
+    color: blue;
+}
+.txt2
+{
+    font-size: 11px;
+    text-align: center;
+}
+#fp
+{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+   
+}
+@media screen and (max-width:927px) {
+    .main{
+        flex-direction: column;
+    }
+    .imgcar
+    {
+        width: 100%;
+    }
+    .info{
+        width: 64%;
+        margin: 10px auto;
+        margin-top: 18px;
+    }
+    .carousel-item img{
+        height:unset;
+    }
+}
+@media screen and (max-width:600px)
+{
+    #text {
+        margin-top: 28px;
+    }
+    .form{
+        width:90%
+    }
+}
+@media screen and (max-width:372px)
+{
+    #text {
+        margin-top: 60px;
+    }
+    .form{
+        width:94%
+    }
+}

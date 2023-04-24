@@ -1,0 +1,9 @@
+﻿#smallpos {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.displayat {
+    display: none;
+}

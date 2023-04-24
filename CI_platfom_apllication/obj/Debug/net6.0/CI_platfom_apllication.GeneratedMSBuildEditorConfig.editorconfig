@@ -1,0 +1,136 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CI_platfom_apllication
+build_property.RootNamespace = CI_platfom_apllication
+build_property.ProjectDir = C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platfom_apllication\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ABHISHEK\Downloads\CI-Platform_MVC-main\CI-Platform_MVC-main\CI_platform\CI_platfom_apllication
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Admin/UserpageInAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnBhZ2VJbkFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Home/forgetpassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmb3JnZXRwYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Home/privacypolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxwcml2YWN5cG9saWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Home/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Home/reset.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZXNldC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Home/usereditdetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx1c2VyZWRpdGRldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Mission/platformlanding.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxwbGF0Zm9ybWxhbmRpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Mission/VolunteerMission.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lvblxWb2x1bnRlZXJNaXNzaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9mb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_missionapplicationpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9taXNzaW9uYXBwbGljYXRpb25wYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_missionedit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9taXNzaW9uZWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_missionpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9taXNzaW9ucGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_modalcontactus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9tb2RhbGNvbnRhY3R1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_skilladd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9za2lsbGFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_skillpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9za2lsbHBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_themeadd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF90aGVtZWFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_themepage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF90aGVtZXBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_userpage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF91c2VycGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/StoryListing/addstory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcnlMaXN0aW5nXGFkZHN0b3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/StoryListing/storydetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcnlMaXN0aW5nXHN0b3J5ZGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/StoryListing/storylisting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RvcnlMaXN0aW5nXHN0b3J5bGlzdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/TimeSheet/volunteersheet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZVNoZWV0XHZvbHVudGVlcnNoZWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ABHISHEK/Downloads/CI-Platform_MVC-main/CI-Platform_MVC-main/CI_platform/CI_platfom_apllication/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3a6bgzlkyt

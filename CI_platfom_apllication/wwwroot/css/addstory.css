@@ -1,0 +1,68 @@
+.volunteerlogo
+{
+    width: 80px;
+}
+.loaw {
+    position: relative;
+  }
+.apply{
+    border: 2px solid orange; 
+    border-radius: 20px;
+    color: orange;
+    background-color: white;
+}
+.main {
+    font-family:Arial;
+    width:100%;
+    display:block;
+    margin:0 auto;
+  }
+  
+  .action{
+    display:block;
+    margin:100px auto;
+    width:100%;
+    text-align:center;
+  }
+  .action a {
+    display:inline-block;
+    padding:5px 10px; 
+    background:#f30;
+    color:#fff;
+    text-decoration:none;
+  }
+  .action a:hover{
+    background:#000;
+  }
+  
+  .slick-dots{
+    display: none;
+  }
+  .pos_hr
+  {
+    position: absolute;
+    border: 2px solid black;
+    bottom: -18px;
+    width: 78px;
+  }
+  /* .slick-slide
+  {
+    height:480px;
+  } */
+  .imgheight
+  {
+    height:480px;
+  }
+.slick-dots {
+    display: none !important;
+}
+
+.slider button {
+    display: none !important;
+}
+  @media only screen and(max-width:768px)
+  {
+    .imgheight{
+    display: none;
+  }
+  }

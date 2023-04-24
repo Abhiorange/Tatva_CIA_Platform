@@ -1,0 +1,87 @@
+.filter-list {
+    /* / padding:6px 10px; / */
+    background-color: white;
+    border: 1px solid #808080;
+    border-radius: 20px;
+    color: #000;
+    cursor: pointer;
+}
+
+.filter-close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+    color: #888;
+}
+.filters-section{
+    margin-top:2%;
+}
+.dropdown a img
+{
+    height:50px;
+    width:50px;
+}
+
+.off
+{
+    padding-right:8% !important;
+}
+.name
+{
+    display: inline;
+}
+.smallpos
+{
+    position: absolute;
+    top:5px;
+    right:5px;
+}
+
+
+#navbarSupportedContent
+{width:220px;} 
+#navbarSupportedContentsecond
+    {
+        width:240px
+    }
+
+.app{
+    border: 2px solid orange !important; 
+    border-radius: 20px !important;
+    color: orange !important;
+  }
+  
+@media only screen and (max-width:992px){
+    .off{
+    padding-right:1% !important;
+}
+}
+
+@media only screen and (max-width:768px){
+    #navbarSupportedContentsecond
+    {
+        flex-direction: column !important;
+    }
+    .drop{
+        transform: unset !important;
+        position: static !important;
+    }
+}
+
+.displayat {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.dropdown-menu a.active,
+.dropdown-menu a:active {
+    background-color: #ffc107 !important;
+}
+#search-input {
+    border:none;
+}
+.searchicon
+{
+    top:80px;
+}

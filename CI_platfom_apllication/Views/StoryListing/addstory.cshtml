@@ -1,0 +1,129 @@
+﻿
+@model CI_platform.Entities.ViewModels.StoryDatabaseViewModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"/>
+    <title>Add Story</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="~/css/addStoryStyle.css">
+</head>
+
+<body>
+    <div>
+            @if (TempData["success"] != null)
+            {
+                <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+                <script src="~/lib/jquery/dist/jquery.min.js"></script>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+                <script type="text/javascript">
+                    toastr.success('@TempData["success"]');
+                </script>
+            }
+        </div>
+     <partial name="Header">
+    <div class="container" id="draftreload">
+        <h1>Share your story</h1>
+        <div class="d-flex justify-content-between">
+            <div class="d-flex flex-column" style="width:30%;">
+                <label for="mission">Select Mission</label>
+                <select id="mission" onchange="handleMissionChange()">
+                    
+                    @if(Model.Missiontitle!=null)
+                    {
+                        <option value="@Model.missionid" id="@Model.missionid" selected>@Model.Missiontitle</option>
+                    }
+                    else
+                    {
+                        <option value="Environment">Select your mission</option>   
+                    }
+                 
+                   @* @foreach(var m in Model.Missions)
+                    {
+                        <option value="@m.MissionId" id="@m.MissionId">@m.Title</option>
+                    }*@
+                </select>
+                <span id="missionValidate" class="text-danger d-none">Mission Title is Required</span>
+            </div>
+            <div class="d-flex flex-column" style="width:30%;">
+                <label for="title">My Story Title</label>
+                <input type="text" placeholder="Enter story title" id="title"  value="@Model.title">
+                 <span id="titleValidate" class="text-danger d-none">Mission Title is Required</span>
+            </div>
+            <div class="d-flex flex-column" style="width:30%;">
+                <label for="date">Date</label>
+                <input type="date" placeholder="Select date" id="date" value="@Model.PublishedAt?.ToString("yyyy-MM-dd")">
+                 <span id="dateValidate" class="text-danger d-none">Date is Required</span>
+            </div>
+        </div>
+
+        <div class="col-12 my-3">
+            <textarea id="storytext" placeholder="I loved this mission because...">@Model.description</textarea>
+             <span id="textValidate" class="text-danger d-none">Text is Required</span>
+        </div>
+        <div class="d-flex flex-column">
+            <label for="videoURL">Enter Video URL</label>
+            <input type="text" placeholder="Enter your url" id="videoURL" value="@Model.videourl">
+             <span id="videoValidate" class="text-danger d-none">VideoUrl is Required</span>
+        </div>
+            <div class="mt-4">
+            <label for="file-input">Upload your photos</label>
+            <div class="d-flex justify-content-center border pb-4">
+                <div id="drop-zone" class="d-flex flex-column">
+                    <i class="bi bi-plus-lg mx-auto" style="font-size: 50px;"></i>
+                    <span class="drop-text">Drag and drop images here or click to select</span>
+                    <input type="file" id="file-input" multiple accept="image/*,video/*" style="display: none;">
+                </div>
+            </div>
+            <div id="image-preview" class="d-flex mb-4">
+               
+            </div>
+             <span id="photoValidate" class="text-danger d-none">Photo Length increases is Required</span>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div>
+                <button class="btn border btn-secondary rounded-pill">Cancel</button>
+            </div>
+            <div>
+                @{
+                     if(Model.aboutstatus=="N")
+                {    
+                     <button class="apply btn" onclick="saveData()">Save</button>
+                     <button class="apply btn bg-secondary" id="submit" disabled>Submit</button>
+                }
+                else if(Model.aboutstatus=="P")  
+                {
+                    <button class="apply btn" id="submit" onclick="editData(@Model.storyid)">EDIT</button>
+                }
+                else if(Model.aboutstatus=="D")
+                {    
+                     <button class="apply btn" onclick="saveData()">Save</button>
+                    <button class="apply btn" id="submit" onclick="submitData(@Model.storyid)">Submit</button>
+                }
+                }
+            </div>
+        </div>
+    </div>
+      <partial name="_footer">
+    <script>
+           var listData = @Html.Raw(Json.Serialize(Model.images));
+</script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js"></script>
+
+
+
+  
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+ @*   <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>*@
+    <script src="~/js/addstory.js"></script>
+     
+</body>
+
+</html>

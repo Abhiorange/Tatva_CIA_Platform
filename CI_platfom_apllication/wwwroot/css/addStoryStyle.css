@@ -1,0 +1,35 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#image-preview img {
+    width: 130px;
+    height: 100px;
+}
+
+.image-container {
+    position: relative;
+    margin-right: 5px;
+}
+
+.remove-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: wheat;
+    cursor: pointer;
+}
+
+.apply {
+    border: 2px solid orange !important;
+    border-radius: 20px ;
+    color: orange !important;
+    background-color: white !important;
+}
+#smallpos {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}

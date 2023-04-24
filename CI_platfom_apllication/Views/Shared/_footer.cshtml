@@ -1,0 +1,41 @@
+﻿
+@inject IHttpContextAccessor Accessor
+@{
+    var firstname_session = Accessor.HttpContext.Session.GetString("firstname");
+    var userid_session = Accessor.HttpContext.Session.GetString("userid");
+}
+<div class="copyright mt-5 bg-dark footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="copyright-menu mt-3">
+                    <ul class="d-flex list-unstyled">
+                        <li class="mx-2">
+                             @if (@userid_session == null)
+                            {
+                              <a  class="text-dark text-decoration-none text-white mx-3" onclick="showModal()">Privacy Policy</a>
+                                <a class="text-dark text-decoration-none text-white mx-3" onclick="showModal()">contact us</a>
+                            }
+                            else
+                            {
+                                <a asp-action="privacypolicy" asp-controller="home" class="text-dark text-decoration-none text-white mx-3">Privacy Policy</a>
+                            <a class="text-dark text-decoration-none text-white mx-3" id="contact-link">contact us</a>  
+                            }
+
+                        </li>
+                  <input type="hidden" value="@userid_session" id="hiddeninput">
+                    </ul>
+                </div>
+            </div>
+              <div class="col-md-6">
+                <div class="copyright-menu text-end text-white mt-3">
+                   ©2019 optimy.com All rights preserved
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="modal-contact">
+
+</div>
