@@ -40,6 +40,7 @@ namespace CI_platform.Repositories.Repository
             var minute = model.minute;
             var ticks = (hour * TimeSpan.TicksPerHour) + (minute * TimeSpan.TicksPerMinute);
             var time = new TimeSpan(ticks);
+
             
            
             var entry = _ciplatformcontext.Timesheets.Add(

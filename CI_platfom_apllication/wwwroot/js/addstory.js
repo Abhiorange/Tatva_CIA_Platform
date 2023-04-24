@@ -114,7 +114,6 @@ function getmissions() {
                         if (missionid != data.missionId) {
                             $('#mission').append('<option value="' + data.missionId + '" id="' + data.missionId + '">' + data.title + '</option>');
                         }
-                       
                     })
                 }
             }

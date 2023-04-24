@@ -1,9 +1,9 @@
 ﻿@model CI_platform.Entities.ViewModels.MissionAddViewModel@{
-    Layout = "~/Views/Admin/UserpageInAdmin.cshtml";}<head>@*    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">*@    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"></head><body>     <div class="container mt-2">
+    Layout = "~/Views/Admin/UserpageInAdmin.cshtml";}<head>@*    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">*@    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">         <link rel="stylesheet" href="~/css/missionedit.css">
+</head><body>     <div class="container mt-2">
       
-            <div class="col-12 bg-light border p-2">
+        <div class="col-12 bg-light border p-2">
                 Add
-        
         </div>
         <form method="post" asp-action="AddMission" asp-controller="Admin" enctype="multipart/form-data">
         <div class="container mt-2">
@@ -112,8 +112,9 @@
             </div>
             <button type="button" class="btn my-3 border  rounded-pill ">Add skill</button>
             <div class="mb-3">
-                <label for="Images" class="form-label">Images</label>
-                <input type="file" asp-for="Images" class="form-control" multiple/>
+               <label for="Image" class="form-label">Images</label>
+              <input asp-for="Images" class="form-control" type="file" id="Images" multiple>
+                 <div class="mt-2 d-flex flex-wrap" id="showImage"></div>
             </div>
             
             <div class="mb-3">

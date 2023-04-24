@@ -39,13 +39,11 @@ namespace CI_platform.Repositories.Repository
         {  
             if(missionid==null)
             {
-
                 return new StoryDatabaseViewModel();
-               
             }
             else
             {
-                var story = _ciplatformcontext.Stories.FirstOrDefault(u => u.UserId == user_id && u.Status == "DRAFT" && u.MissionId == long.Parse(missionid));
+                var story = _ciplatformcontext.Stories.FirstOrDefault(u => u.UserId == user_id && u.MissionId == long.Parse(missionid));
                 if (story != null)
                 {
                     var storyMedia = _ciplatformcontext.StoryMedia.Where(u => u.StoryId == story.StoryId);
@@ -61,9 +59,24 @@ namespace CI_platform.Repositories.Repository
                         description = story.Description,
                         videourl = video.Path,
                         images = images,
-                        aboutstatus="D",
                         PublishedAt=story.PublishedAt
                     };
+                    if(story.Status=="DRAFT")
+                    {
+                        model.aboutstatus = "D";
+                    }
+                    else if(story.Status== "PUBLISHED")
+                    {
+                        model.aboutstatus = "P";
+                    }
+                    else if(story.Status=="DECLINED")
+                    {
+                        model.aboutstatus = "P";
+                    }
+                    else if (story.Status == "PENDING")
+                    {
+                        model.aboutstatus = "P";
+                    }
                     return model;
                 }
                 var missionTitle1 = _ciplatformcontext.Missions.SingleOrDefault(m => m.MissionId == long.Parse(missionid));
@@ -78,7 +91,7 @@ namespace CI_platform.Repositories.Repository
                     };
                     return model1;
                 }
-                else if(story1.Status=="PUBLISHED") {
+               /* else if(story1.Status=="PUBLISHED") {
                     var storyMedia = _ciplatformcontext.StoryMedia.Where(u => u.StoryId == story1.StoryId);
                     var images = storyMedia.Where(m => m.Type == "Image").Select(s => s.Path).ToList();
                     var video = storyMedia.SingleOrDefault(m => m.Type == "video");
@@ -96,12 +109,10 @@ namespace CI_platform.Repositories.Repository
                         PublishedAt = story1.PublishedAt
                     };
                     return model2;
-                }
+                }*/
                 
             }
             return new StoryDatabaseViewModel();
-
-
         }
         public void submit(long storyId)
         {
@@ -159,7 +170,7 @@ namespace CI_platform.Repositories.Repository
         }
         public string editstorydatabase(long missionid, string title, string description, string status,  long userid,DateTime date)
         {
-            var story = _ciplatformcontext.Stories.FirstOrDefault(u => u.UserId == userid && u.Status == "PUBLISHED" && u.MissionId == missionid);
+            var story = _ciplatformcontext.Stories.FirstOrDefault(u => u.UserId == userid  && u.MissionId == missionid);
             story.Title = title;
             story.Description = description;
             story.Status = status;

@@ -59,7 +59,7 @@
         </div>
 
         <div class="col-12 my-3">
-            <textarea id="storytext" placeholder="I loved this mission because...">@Model.description</textarea>
+            <textarea id="storytext" placeholder="I loved this mission because...">@Html.Raw(@Model.description)</textarea>
              <span id="textValidate" class="text-danger d-none">Text is Required</span>
         </div>
         <div class="d-flex flex-column">

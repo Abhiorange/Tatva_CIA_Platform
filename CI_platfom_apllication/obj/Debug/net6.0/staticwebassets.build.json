@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EzNEvj/nAlWmmPVqxw1hTSDJu1mB+6lxKxUQJgQvw0E=",
+  "Hash": "avywI5X7GHFeun7gAQIyHFv1P6lekHcKJUNgutgzBwY=",
   "Source": "CI_platfom_apllication",
   "BasePath": "_content/CI_platfom_apllication",
   "Mode": "Default",
@@ -2021,6 +2021,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\missionapplication.css"
+    },
+    {
+      "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\css\\missionedit.css",
+      "SourceId": "CI_platfom_apllication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\",
+      "BasePath": "_content/CI_platfom_apllication",
+      "RelativePath": "css/missionedit.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\missionedit.css"
     },
     {
       "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\css\\missionpartial.css",

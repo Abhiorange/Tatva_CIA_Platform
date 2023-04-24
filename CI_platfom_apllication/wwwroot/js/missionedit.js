@@ -83,3 +83,32 @@ function Mission() {
     }
    
 }
+$('#Images').change(function () {
+    const files = $('#Images').prop('files');
+    handleFiles(files);
+})
+const uploadedFiles = new Set();
+function handleFiles(files) {
+    $('#showImage').empty();
+    console.log(files);
+    for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        if (!file.type.startsWith("image/")) continue;
+        if (uploadedFiles.has(file.name)) {
+            alert(`File "${file.name}" has already been uploaded.`);
+            continue;
+        }
+        uploadedFiles.add(file.name);
+        const image = document.createElement("img");
+        image.classList.add("image-preview");
+        const imageContainer = document.createElement("div");
+        imageContainer.classList.add("image-container");
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => {
+            image.src = reader.result;
+            imageContainer.appendChild(image);
+            $('#showImage').append(imageContainer);
+        };
+    }
+}
