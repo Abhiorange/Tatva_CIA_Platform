@@ -15,5 +15,6 @@ namespace CI_platform.Entities.ViewModels
         public IPagedList<MissionTheme> MissionThemes { get; set; }
         public IPagedList<Skill> Skills { get; set; }
         public IPagedList<MissionApplication> MissionApplications { get; set; }
+        public IPagedList<Story> Stories { get; set; }
     }
 }

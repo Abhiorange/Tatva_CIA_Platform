@@ -25,6 +25,7 @@ namespace CI_platform.Repositories.Repository
             var missionIds = _ciplatformcontext.Missions.Where(m => m.Theme.Title.Contains(keyword)).Select(m => m.MissionId);
             var stories = _ciplatformcontext.Stories.Include(s => s.Mission).Include(s => s.User).Where(s=>s.Status=="PUBLISHED" && (keyword== null || missionIds.Contains(s.MissionId) || s.Title.Contains(keyword))).ToList();
             var Missionthemes = _ciplatformcontext.Missions.Include(m => m.Theme).ToList();
+
             var model = new StoryViewModel
             {
                // Stories = stories,
@@ -105,7 +106,7 @@ namespace CI_platform.Repositories.Repository
         public void submit(long storyId)
         {
             var story = _ciplatformcontext.Stories.SingleOrDefault(m => m.StoryId == storyId);
-            story.Status = "PUBLISHED";
+            story.Status = "PENDING";
             _ciplatformcontext.Update(story);
             _ciplatformcontext.SaveChanges();
         }

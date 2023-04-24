@@ -97,8 +97,6 @@ function DeleteTheme(themeId) {
         },
         success: function (result) {
             $('#loadPartialView').html($(result).find('#loadPartialView').html());
-
-
         }
     });
 }

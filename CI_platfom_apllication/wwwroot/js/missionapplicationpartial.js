@@ -75,9 +75,8 @@ function approveapplication(miappid) {
         },
         success: function (response) {
             alert('called');
-
-            $('.table').empty().html($(response).find('.table').html());
-            $('.page').empty().html($(response).find('.page').html());
+            $('#loadPartialView').html($(result).find('#loadPartialView').html());
+            toastr.success("Application is Approved");
         }
     })
 }
@@ -90,9 +89,8 @@ function declineapplication(miappid) {
         },
         success: function (response) {
             alert('called');
-
-            $('.table').empty().html($(response).find('.table').html());
-            $('.page').empty().html($(response).find('.page').html());
+            $('#loadPartialView').html($(result).find('#loadPartialView').html());
+            toastr.success("Application is Decline Succesfully");
         }
     })
 }

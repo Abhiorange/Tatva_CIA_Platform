@@ -194,7 +194,7 @@ namespace CI_platfom_apllication.Controllers
             }
             else
             {
-                TempData["error"] = "password is updated";
+                TempData["error"] = "old password is incorrect";
                 return RedirectToAction("usereditdetail", "home");
 
             }

@@ -25,7 +25,9 @@ namespace CI_platform.Repositories.Interface
         public UserAdminViewModel getmissionapplicationdata(int pageindex, int pageSize, string SearchInputdata);
         public void approveapplication(string applicationid);
         public void declineapplication(string applicationid);
-
+        public UserAdminViewModel getstorydata(int pageindex, int pageSize, string SearchInputdata);
+        public void approvestory(string storyid);
+        public void declinestory(string storyid);
 
 
 

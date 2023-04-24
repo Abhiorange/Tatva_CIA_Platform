@@ -281,9 +281,14 @@
                                     You have not login<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
                                 </button>
                             }
-
+                             if(@Model.Missions.EndDate <= DateTime.Now)
+                                {
+                                     <button class="py-2 px-3 mx-auto app">
+                                        Mission is closed you cannot apply
+                                    </button>
+                                }
                             else
-                            {
+                            {  
                                 if (apply == null)
                                 {
                                     <button class="py-2 px-3 mx-auto app" onclick="applyMission(@Model.missionid);">
@@ -308,11 +313,11 @@
                                     }
                                     else if(apply.ApprovalStatus=="DECLINE")
                                     {
-                                       <button class="py-2 px-3 mx-auto app" onclick="applyMission(@Model.missionid);" disabled>
-                                        Your Request is Declined<img src="~/Assets/right-arrow.png" alt=""
-                                               class="ms-2">
+                                       <button class="py-2 px-3 mx-auto app" disabled>
+                                        Your Request is Declined
                                         </button>  
                                     }
+                                  
 
                                 }
                             }

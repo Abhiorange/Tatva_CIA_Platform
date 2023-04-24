@@ -1,17 +1,4 @@
 ﻿
-   /* $(document).ready(function() {
-        $('#staticBackdrop').on('show.bs.modal', function (event) {
-            alert("modal called");
-            var button = $(event.relatedTarget); // Button that triggered the modal
-            var missionId = button.data('missionid'); // Extract missionid from data attribute
-            console.log("the mission id", missionId);
-            var modal = $(this);
-            modal.find('.modal-footer button.btn.apply').on('click', function () {
-                DeleteMission(missionId); // Call DeleteMission function with missionid parameter
-                //console.log("this is the id of mission", missionId);
-            });
-        });
-    });*/
 function showModal(id) {
     Swal.fire({
         title: 'Are you sure?',

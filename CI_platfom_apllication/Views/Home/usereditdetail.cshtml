@@ -20,7 +20,7 @@
    
      <partial name="Header">
            <div>
-        @if (TempData["save"] != null)
+        @if (TempData["success"] != null)
 {
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -29,7 +29,16 @@
         toastr.success('@TempData["success"]');
     </script>
 }
-    </div>
+            @if (TempData["error"] != null)
+            {
+              <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript">
+        toastr.error('@TempData["error"]');
+    </script>  
+            }
+        </div>
     <div class="container">
         <div class="row mt-4 gap-2">
             <div class="col-md-2 text-center">

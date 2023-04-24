@@ -41,6 +41,11 @@ namespace CI_platfom_apllication.Controllers
             var model = _adminRepository.getskilldata(pageindex, pageSize, SearchInputdata);
             return PartialView("_skillpage", model);
         }
+        public IActionResult Story(string SearchInputdata = "", int pageindex = 1, int pageSize = 1)
+        {
+            var model = _adminRepository.getstorydata(pageindex, pageSize, SearchInputdata);
+            return PartialView("_storypage",model);
+        }
         public IActionResult MissionApplication(string SearchInputdata = "", int pageindex = 1, int pageSize = 4)
         {
             var model = _adminRepository.getmissionapplicationdata(pageindex, pageSize, SearchInputdata);
@@ -50,6 +55,17 @@ namespace CI_platfom_apllication.Controllers
         {
             _adminRepository.approveapplication(Applicationid);
             return RedirectToAction("MissionApplication", new { SearchInputdata = "", pageindex = 1, pageSize = 4 });
+        }
+        public IActionResult ApproveStory(string storyid)
+        {
+            _adminRepository.approvestory(storyid);
+            return RedirectToAction("Story", new { SearchInputdata = "", pageindex = 1, pageSize = 1 });
+
+        }
+        public IActionResult DeclineStory(string storyid)
+        {
+            _adminRepository.declinestory(storyid);
+            return RedirectToAction("Story", new { SearchInputdata = "", pageindex = 1, pageSize = 1 });
 
         }
         public IActionResult DeclineApplication(string Applicationid)

@@ -82,7 +82,7 @@ function editData() {
                 missionid: missionid,
                 title: title,
                 description: description,
-                status: 'PUBLISHED',
+                status: 'PENDING',
                 images: imagePaths,
                 videos: video,
                 date: date

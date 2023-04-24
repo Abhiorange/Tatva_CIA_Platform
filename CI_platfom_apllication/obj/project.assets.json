@@ -10524,11 +10524,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ABHISHEK\\Downloads\\CI-Platform_MVC-main\\CI-Platform_MVC-main\\CI_platform\\CI_platfom_apllication\\CI_platfom_apllication.csproj",
+      "projectUniqueName": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\CI_platfom_apllication.csproj",
       "projectName": "CI_platfom_apllication",
-      "projectPath": "C:\\Users\\ABHISHEK\\Downloads\\CI-Platform_MVC-main\\CI-Platform_MVC-main\\CI_platform\\CI_platfom_apllication\\CI_platfom_apllication.csproj",
+      "projectPath": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\CI_platfom_apllication.csproj",
       "packagesPath": "C:\\Users\\ABHISHEK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ABHISHEK\\Downloads\\CI-Platform_MVC-main\\CI-Platform_MVC-main\\CI_platform\\CI_platfom_apllication\\obj\\",
+      "outputPath": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ABHISHEK\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10545,11 +10545,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ABHISHEK\\Downloads\\CI-Platform_MVC-main\\CI-Platform_MVC-main\\CI_platform\\CI_platform.Entities\\CI_platform.Entities.csproj": {
-              "projectPath": "C:\\Users\\ABHISHEK\\Downloads\\CI-Platform_MVC-main\\CI-Platform_MVC-main\\CI_platform\\CI_platform.Entities\\CI_platform.Entities.csproj"
+            "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platform.Entities\\CI_platform.Entities.csproj": {
+              "projectPath": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platform.Entities\\CI_platform.Entities.csproj"
             },
-            "C:\\Users\\ABHISHEK\\Downloads\\CI-Platform_MVC-main\\CI-Platform_MVC-main\\CI_platform\\CI_platform.Repositories\\CI_platform.Repositories.csproj": {
-              "projectPath": "C:\\Users\\ABHISHEK\\Downloads\\CI-Platform_MVC-main\\CI-Platform_MVC-main\\CI_platform\\CI_platform.Repositories\\CI_platform.Repositories.csproj"
+            "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platform.Repositories\\CI_platform.Repositories.csproj": {
+              "projectPath": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platform.Repositories\\CI_platform.Repositories.csproj"
             }
           }
         }

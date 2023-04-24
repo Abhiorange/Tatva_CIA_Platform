@@ -12,7 +12,7 @@ using X.PagedList;
 
 namespace CI_platform.Repositories.Repository
 {
-    public class AdminRepository: IAdminRepository
+    public class AdminRepository : IAdminRepository
     {
         private readonly CiPlatformContext _ciplatformcontext;
         private readonly IWebHostEnvironment _hostEnvironment;
@@ -24,9 +24,9 @@ namespace CI_platform.Repositories.Repository
         public UserAdminViewModel getuserdata(int pageindex, int pageSize, string SearchInputdata)
         {
 
-            var users = _ciplatformcontext.Users.Where(u => (SearchInputdata == null) || (u.FirstName.Contains(SearchInputdata)) || (u.LastName.Contains(SearchInputdata))).ToList(); 
+            var users = _ciplatformcontext.Users.Where(u => (SearchInputdata == null) || (u.FirstName.Contains(SearchInputdata)) || (u.LastName.Contains(SearchInputdata))).ToList();
             var model = new UserAdminViewModel();
-            
+
             model.users = users.ToPagedList(pageindex, 10);
             return model;
         }
@@ -36,13 +36,20 @@ namespace CI_platform.Repositories.Repository
             var model = new UserAdminViewModel();
             model.MissionThemes = themes.ToPagedList(pageindex, 2);
             return model;
-            
+
         }
         public UserAdminViewModel getskilldata(int pageindex, int pageSize, string SearchInputdata)
         {
             var skills = _ciplatformcontext.Skills.Where(s => (SearchInputdata == null) || (s.SkillName.Contains(SearchInputdata))).OrderByDescending(s => s.Status).ToList();
             var model = new UserAdminViewModel();
             model.Skills = skills.ToPagedList(pageindex, 2);
+            return model;
+        }
+        public UserAdminViewModel getstorydata(int pageindex, int pageSize, string SearchInputdata)
+        {
+        var stories =_ciplatformcontext.Stories.Include(s=>s.User).Include(s=>s.Mission).Where(s=>s.Status!="DRAFT" && ((SearchInputdata == null)|| (s.Mission.Title.Contains(SearchInputdata)) ||(s.User.FirstName.Contains(SearchInputdata)))).ToList();
+            var model = new UserAdminViewModel();
+            model.Stories = stories.ToPagedList(pageindex, 1);
             return model;
         }
         public UserAdminViewModel getmissiondata(int pageindex, int pageSize, string SearchInputdata)
@@ -68,11 +75,25 @@ namespace CI_platform.Repositories.Repository
             missionapplication.ApprovalStatus = "APPROVE";
             _ciplatformcontext.SaveChanges();
         }
+        public void approvestory(string storyid)
+        {
+            var story = _ciplatformcontext.Stories.FirstOrDefault(s => s.StoryId.ToString() == storyid);
+            story.Status = "PUBLISHED";
+            _ciplatformcontext.SaveChanges();
+        }
+        
         public void declineapplication(string applicationid)
         {
             var missionapplication = _ciplatformcontext.MissionApplications.FirstOrDefault(m => m.MissionApplicationId.ToString() == applicationid);
             missionapplication.ApprovalStatus = "DECLINE";
             _ciplatformcontext.SaveChanges();
+        }
+        public void declinestory(string storyid)
+        {
+            var story = _ciplatformcontext.Stories.FirstOrDefault(s => s.StoryId.ToString() == storyid);
+            story.Status = "DECLINED";
+            _ciplatformcontext.SaveChanges();
+
         }
         public List<Country> getcountries()
         {
