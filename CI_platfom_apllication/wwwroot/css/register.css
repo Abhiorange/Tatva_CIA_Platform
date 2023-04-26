@@ -10,8 +10,13 @@
    display:flex;
   
 }
-.imgcar
-{
+#op_button:hover {
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+    color: #fff !important;
+    transform: scale(1.05) !important;
+}
+.imgcar {
     width: 70%;
 }
 .form
@@ -62,7 +67,18 @@
     margin-bottom: 1%;
 }
 .carousel-item img{
-    height:100vh;
+    height:100%;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+.carousel-item {
+   
+    height: 100%;
+    
 }
 #bl
 {

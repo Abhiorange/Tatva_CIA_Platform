@@ -37,16 +37,17 @@ namespace CI_platform.Repositories.Repository
             var mission_rating = _ciplatformcontext.MissionRatings.Include(m => m.Mission).Include(m => m.User).ToList();
             var missionapplication = _ciplatformcontext.MissionApplications.ToList();
             var fav_mission = _ciplatformcontext.FavouriteMissions.Where(f=>f.UserId.ToString()==user_id).ToList();
-
+            var Timesheets = _ciplatformcontext.Timesheets.Where(t => t.UserId.ToString() == user_id).OrderByDescending(t=>t.CreatedAt).ToList();
             var model = new MisCouCity 
             {
-              //  Missions = missions.ToList(),
+             
                 MissionsSkill = mission_skill,
                 GoalMissions=goal,
                 totalrecord = missions1.Count(),
                 Missionrating=mission_rating,
                 favouriteMissions = fav_mission,
-                MissionApplications=missionapplication
+                MissionApplications=missionapplication,
+                timesheets=Timesheets,
             };
             
             var sortmission = missions1.ToList();
@@ -221,22 +222,18 @@ namespace CI_platform.Repositories.Repository
             var missiondocument=_ciplatformcontext.MissionDocuments.Where(d => d.MissionId == id).ToList();
             if (related_mission.Any(rm => rm.City.Name == missions.City.Name))
             {
-                // keep only records with the same city and remove all other records
                 related_mission = related_mission.Where(rm => rm.City.Name == missions.City.Name).ToList();
             }
             else if (related_mission.Any(rm => rm.Country.Name == missions.Country.Name))
             {
-                // keep only records with the same country and remove all other records
                 related_mission = related_mission.Where(rm => rm.Country.Name == missions.Country.Name).ToList();
             }
             else if (related_mission.Any(rm => rm.Theme.Title == missions.Theme.Title))
             {
-                // keep only records with the same theme and remove all other records
                 related_mission = related_mission.Where(rm => rm.Theme.Title == missions.Theme.Title).ToList();
             }
             else
             {
-                // no matching records found
                 related_mission = new List<Mission>();
             }
             var related_goal = _ciplatformcontext.GoalMissions.Include(g => g.Mission).ToList();

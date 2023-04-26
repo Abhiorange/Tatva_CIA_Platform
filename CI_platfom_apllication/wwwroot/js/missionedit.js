@@ -112,3 +112,53 @@ function handleFiles(files) {
         };
     }
 }
+
+
+   
+    // Get the input element
+        const input = document.querySelector('#document');
+
+    // Add event listener for when a file is selected
+    input.addEventListener('change', () => {
+            // Clear the contents of the showDocument div
+            document.querySelector('#showDocument').innerHTML = '';
+
+        // Loop through each selected file
+        for (let i = 0; i < input.files.length; i++) {
+            const file = input.files[i];
+
+        // Check if the file is an image
+        if (file.type.startsWith('image/')) {
+                // Create an image element for the file
+                const img = document.createElement('img');
+        img.src = URL.createObjectURL(file);
+
+        // Add some styles to the image
+        img.style.maxWidth = '100px';
+        img.style.maxHeight = '100px';
+        img.style.margin = '5px';
+
+        // Add the image element to the showDocument div
+        document.querySelector('#showDocument').appendChild(img);
+            } else {
+                // Create a div element for the file name
+                const div = document.createElement('div');
+        div.innerText = file.name;
+
+        // Add some styles to the div
+        div.style.width = '100px';
+        div.style.margin = '5px';
+
+        // Add the div element to the showDocument div
+            document.querySelector('#showDocument').appendChild(div);
+          
+            }
+        }
+    });
+tinymce.init({
+    selector: '#storytext',
+    plugins: 'link image code',
+    toolbar: 'undo redo | bold italic | fontsizeselect | alignleft aligncenter alignright alignjustify | superscript subscript ',
+    height: 300
+});
+    

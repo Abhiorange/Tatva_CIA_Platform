@@ -22,6 +22,7 @@ namespace CI_platfom_apllication.Controllers
 
         /*for login page functionality*/
         [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
+        [HttpGet]
         public IActionResult Index()
         {
             HttpContext.Session.Clear();
@@ -59,9 +60,9 @@ namespace CI_platfom_apllication.Controllers
             
         }
         /*for registration functionality*/
+        [HttpGet]
         public IActionResult register()
         {
-
             return View();
         }
         [HttpPost]
@@ -93,7 +94,8 @@ namespace CI_platfom_apllication.Controllers
         {
             if (ModelState.IsValid) {
                 string url = Url.Action("reset", "home", new { email = forget.Email, token = "{token}" }, Request.Scheme);
-                var user_token = _userRepository.forget(forget, url);
+/*                string url = Url.Action("reset", "home",null, Request.Scheme);
+*/                var user_token = _userRepository.forget(forget, url);
                 if (user_token == "user does not exist")
                 {
                     ModelState.AddModelError("Email", user_token);
@@ -106,13 +108,13 @@ namespace CI_platfom_apllication.Controllers
         }
 
         [HttpGet]   
-        public IActionResult reset(string email,string token )
-        {  
-          /*  if(HttpContext.Session.GetString("Token")==null)
+        public IActionResult reset(string email,string token)
+        {
+            if (HttpContext.Session.GetString("Token") == null)
             {
                 return NotFound("Link Expired");
-            }*/
-                  
+            }
+
             return View();
         }
         [HttpPost]

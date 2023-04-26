@@ -10,10 +10,8 @@ namespace CI_platform.Entities.ViewModels
 {
     public class MisCouCity
     {
-
-
-        public IPagedList<Mission> Missions { get; set; }
-
+       public IPagedList<Mission> Missions { get; set; }
+        public List<Timesheet> timesheets { get; set; }
         public List<MissionSkill> MissionsSkill { get; set; }
         public List<GoalMission> GoalMissions { get; set; }
         public List<MissionRating> Missionrating { get; set; }

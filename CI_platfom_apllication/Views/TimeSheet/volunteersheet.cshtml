@@ -103,7 +103,6 @@
                                     <button class="btn border-0" data-bs-toggle="modal" data-bs-target="#exampleModal3-@timesheet.timesheetid" data-timesheetid="@timesheet.timesheetid"><i class="bi bi-pencil-square icon"></i></button>
                                     <a onclick="showModal(@timesheet.timesheetid)" type="button"><i class="bi bi-trash3"></i></a>
                                 </td>
-
                             </tr>
 
                             <div class="modal fade" id="exampleModal3-@timesheet.timesheetid" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -159,7 +158,7 @@
                                             <option>Select Mission</option>
                                         </select>
                                     </div>
-
+                                      <input id="goalvalue" hidden/>
                                     <div class="d-flex flex-column mt-2">
                                         <label for="action">Actions</label>
                                         <input type="text" id="action" asp-for="@Model.Item1.Action" />
@@ -204,6 +203,7 @@
                                                 <input type="text" id="goalmission" asp-for="@Model.Item1.missiontitle" disabled />
                                             </div>
                                             <input id="timesheet" asp-for="@Model.Item1.timesheetid" hidden />
+                                          
                                             <div class="d-flex flex-column mt-2">
                                                 <label for="action">Actions</label>
                                                 <input type="text" id="action" asp-for="@Model.Item1.Action" />
@@ -224,12 +224,13 @@
 
                         @foreach (var goal in Model.Item3)
                         {
+                            var goalmission = Model.Item1.goalmission.FirstOrDefault(g => g.MissionId == goal.MissionId);
                             <tr>
                                 <td>@goal.missiontitle</td>
                                 <td>@(goal.DateVolunteered.HasValue ? goal.DateVolunteered.Value.ToString("dd-MM-yyyy") : "N/A")</td>
                                 <td>@goal.Action</td>
                                 <td>
-                                    <a class="nav-link text-black editgoalsheet" data-timesheetid="@goal.timesheetid" data-missiontitle="@goal.missiontitle" data-notes="@goal.Notes" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    <a class="nav-link text-black editgoalsheet"  data-timesheetid="@goal.timesheetid" data-missiontitle="@goal.missiontitle" data-notes="@goal.Notes" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                         <i class="bi bi-pencil-square icon"></i>
                                     </a>
 

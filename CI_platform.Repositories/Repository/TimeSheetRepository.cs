@@ -95,7 +95,7 @@ namespace CI_platform.Repositories.Repository
         public (List<SheetViewModel>, List<SheetViewModel>) getdatasheet()
         {
             var timesheets = _ciplatformcontext.Timesheets.ToList();
-
+            var goalmissions = _ciplatformcontext.GoalMissions.ToList();
             var missions = _ciplatformcontext.Missions.ToList();
             var viewModelListtime = new List<SheetViewModel>();
             var viewModelListgoal = new List<SheetViewModel>();
@@ -103,6 +103,7 @@ namespace CI_platform.Repositories.Repository
             {
                 // Find the corresponding mission for this timesheet
                 var mission = missions.FirstOrDefault(m => m.MissionId == timesheet.MissionId && m.MissionType=="time");
+               
                 if(mission!=null)
                 {
                     long hours = (long)timesheet.Time.Value.Hours;
@@ -114,7 +115,8 @@ namespace CI_platform.Repositories.Repository
                         hour = hours,
                         minute = minutes,
                         DateVolunteered = timesheet.DateVolunteered,
-                        Notes=timesheet.Notes
+                        Notes=timesheet.Notes,
+                        goalmission=goalmissions
                     };
 
                     // Add the view model to the list
@@ -135,8 +137,8 @@ namespace CI_platform.Repositories.Repository
                         timesheetid = timesheet.TimesheetId,
                         DateVolunteered = timesheet.DateVolunteered,
                         Action = (int)timesheet.Action,
-                        Notes=timesheet.Notes
-                     
+                        Notes = timesheet.Notes,
+                        goalmission = goalmissions
 
                     };
 

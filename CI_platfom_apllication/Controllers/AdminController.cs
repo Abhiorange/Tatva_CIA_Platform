@@ -90,20 +90,46 @@ namespace CI_platfom_apllication.Controllers
         }
         public IActionResult missionadd()
         {
-            return PartialView("_missionedit");
+            var model =_adminRepository.getmissionmodeldata();
+            return PartialView("_missionedit",model);
+        }
+        public IActionResult useradd()
+        {
+           
+            return PartialView("_useradd");
         }
         public IActionResult themeadd()
         {
             return PartialView("_themeadd");
         }
         public IActionResult skilladd()
-        {
+        {   
             return PartialView("_skilladd");
         }
-        public IActionResult AddMission(MissionAddViewModel model)
+        public IActionResult editskilldata(string skillid)
         {
-            _adminRepository.Addmission(model);
+            var model = _adminRepository.getskill(skillid);
+            return PartialView("_skilladd", model);
+        }
+        public IActionResult AddMission(MissionAddViewModel model,List<int> selectedSkills)
+        {
+            _adminRepository.Addmission(model,selectedSkills);
             return RedirectToAction("Mission", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
+        }
+        public IActionResult AddUser(UserAddViewModel model)
+        {   if(model.UserId==null)
+            {
+                _adminRepository.Adduser(model);
+                return RedirectToAction("User", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
+            }
+           /* else
+            {
+                _adminRepository.updateuser(model);
+                TempData["success"] = "User is updated succesfully";
+              return RedirectToAction("User", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
+
+            }*/
+
         }
         public IActionResult AddTheme(ThemeAddViewModel model)
         {
@@ -111,10 +137,24 @@ namespace CI_platfom_apllication.Controllers
             return RedirectToAction("Theme", new { SearchInputdata = "", pageindex = 1, pageSize = 2 });
         }
         public IActionResult AddSkill(SkillAddViewModel model)
-        {
-            _adminRepository.Addskill(model);
+        {   
+            if(model.SkillId==null)
+            {
+                _adminRepository.Addskill(model);
+                TempData["success"] = "skill is added";
+            }
+            else
+            {
+                _adminRepository.editskilldatabase(model);
+                TempData["success"] = "skill is added";
+            }
             return RedirectToAction("Skill", new { SearchInputdata = "", pageindex = 1, pageSize = 2 });
 
+        }
+        public IActionResult edituser(string id)
+        {
+            var usermodel = _adminRepository.edituserdata(id);
+            return PartialView("_useradd", usermodel);
         }
         public IActionResult DeleteMission(string missionid)
         {
@@ -126,6 +166,11 @@ namespace CI_platfom_apllication.Controllers
         {
             _adminRepository.deletetheme(themeid);
             return RedirectToAction("Theme", new { SearchInputdata = "", pageindex = 1, pageSize = 2 });
+        }
+        public bool DeleteSkill(string skillId)
+        {
+            var delete=_adminRepository.deleteskill(skillId);
+            return delete;
         }
     }
 }

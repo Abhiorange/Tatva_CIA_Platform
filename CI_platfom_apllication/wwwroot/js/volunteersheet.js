@@ -25,7 +25,6 @@ function getmissionsbygoal() {
     alert('success1');
 
       const missionid = document.getElementById("mission").value;
-    //  console.log("after mission id", missionid);
   
     $.ajax({
         url: '/TimeSheet/getmissionsbygoal',

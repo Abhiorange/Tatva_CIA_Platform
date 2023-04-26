@@ -137,6 +137,7 @@
                                     }
                                     else
                                     {
+                                     
 
                                         <img src="~/Assets/hours.png"
                                      style="    height: 25px;
@@ -273,55 +274,51 @@
                     </div>
                     <div class="text-center mt-3  applymission">
 
+                      
                         @{
-                            var apply = Model.MissionApplications.FirstOrDefault(m => m.UserId.ToString() == userid_session);
-                            @if (@userid_session == null)
-                            {
-                                <button class="py-2 px-3 mx-auto app" onclick="showModal()">
-                                    You have not login<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
-                                </button>
-                            }
-                             if(@Model.Missions.EndDate <= DateTime.Now)
+                           var apply = Model.MissionApplications.FirstOrDefault(m => m.UserId.ToString() == userid_session);
+
+                                  if (@userid_session == null)
                                 {
-                                     <button class="py-2 px-3 mx-auto app">
-                                        Mission is closed you cannot apply
+                                    <button class="py-2 px-3 mx-auto app" onclick="showModal()">
+                                        You have not logged in<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
                                     </button>
                                 }
-                            else
-                            {  
-                                if (apply == null)
+                                else if (Model.Missions.EndDate <= DateTime.Now)
+                                {
+                                    <button class="py-2 px-3 mx-auto app">
+                                        Mission is closed, you cannot apply<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
+                                    </button>
+                                }
+                                else if (apply == null)
                                 {
                                     <button class="py-2 px-3 mx-auto app" onclick="applyMission(@Model.missionid);">
-                                        Apply Now in this <img src="~/Assets/right-arrow.png" alt="" class="ms-2">
+                                        Apply Now <img src="~/Assets/right-arrow.png" alt="" class="ms-2">
                                     </button>
-
                                 }
                                 else
-                                {   if(apply.ApprovalStatus=="PENDING")
+                                {
+                                    if (apply.ApprovalStatus == "PENDING")
                                     {
                                         <button class="py-2 px-3 mx-auto app" disabled>
-                                        PENDING<img src="~/Assets/right-arrow.png" alt=""
-                                               class="ms-2">
+                                            Pending<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
                                         </button>
                                     }
-                                    else if(apply.ApprovalStatus=="APPROVE")
+                                    else if (apply.ApprovalStatus == "APPROVE")
                                     {
                                         <button class="py-2 px-3 mx-auto app" disabled>
-                                        Approved<img src="~/Assets/right-arrow.png" alt=""
-                                               class="ms-2">
+                                            Approved<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
                                         </button>
                                     }
-                                    else if(apply.ApprovalStatus=="DECLINE")
+                                    else if (apply.ApprovalStatus == "DECLINE")
                                     {
-                                       <button class="py-2 px-3 mx-auto app" disabled>
-                                        Your Request is Declined
-                                        </button>  
+                                        <button class="py-2 px-3 mx-auto app" disabled>
+                                            Your request has been declined<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
+                                        </button>
                                     }
-                                  
-
                                 }
                             }
-                        }
+
 
                     </div>
 

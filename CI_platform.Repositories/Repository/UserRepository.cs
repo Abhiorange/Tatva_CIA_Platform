@@ -44,16 +44,19 @@ namespace CI_platform.Repositories.Repository
           
             var password_user = _ciplatformcontext.Users.FirstOrDefault(c => c.Password.Equals(user.Password) &&
             c.Email.Equals(user.Email.ToLower()));
-            if(password_user.Avatar==null)
-            {
-                password_user.Avatar = @"\Images\f38f7d36-e789-477f-939b-2760507ce69d.png";
-            }
+            
             if (password_user!=null)
-            {  
+            {
+                
+
                 var passwordsMatch = string.Compare(user.Password, password_user.Password, StringComparison.Ordinal) == 0;
                 if(passwordsMatch == false)
                 {
                     return "password is not correct";
+                }
+                if (password_user.Avatar == null)
+                {
+                    password_user.Avatar = @"\Images\f38f7d36-e789-477f-939b-2760507ce69d.png";
                 }
             }   
             if (password_user==null)
@@ -108,7 +111,7 @@ namespace CI_platform.Repositories.Repository
 
                 var resetLink = url.Replace("{token}", token);
 
-                var from = new MailAddress("soniabhi0510@gmail.com", "abhishek");
+                var from = new MailAddress("dummyblack92@gmail.com", "abhishek");
 
                 var to = new MailAddress(forget.Email);
                 var subject = "Password reset request";
@@ -122,7 +125,7 @@ namespace CI_platform.Repositories.Repository
                 var smtpClient = new SmtpClient("smtp.gmail.com", 587)
                 {
                     UseDefaultCredentials = false,
-                    Credentials = new NetworkCredential("soniabhi0510@gmail.com", "gykrsgeknrwtcbam"),
+                    Credentials = new NetworkCredential("dummyblack92@gmail.com", "bhilykvfemjbcceg"),
                     EnableSsl = true
                 };
                 smtpClient.Send(message);

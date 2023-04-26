@@ -24,11 +24,7 @@
     <div class="main">
 
         <div id="carouselExampleCaptions" class="carousel slide  imgcar" data-bs-ride="carousel">
-                <!-- <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div> -->
+               
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="~/Assets/login.png" class="d-block w-100" alt="...">
@@ -52,21 +48,12 @@
                     </div>
                   </div>
                 </div>
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button> -->
+               
         </div>
        
 
       
-          <!-- <div class="logo">
-            <img src="Assets\logo.png" alt="">
-          </div> -->
+         
 
         <div class="info">
             <div class="form"> 
@@ -101,17 +88,14 @@
                     <input type="password" class="form-control" id="exampleInputPassword1" asp-for="ConfirmPassword">
                     <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                     </div>
-                    <!-- <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div> -->
-                    <button type="submit" class="btn btn-danger">Register</button>
+                  
+                    <button type="submit" class="btn btn-outline-warning text-warning" id="op_button">Register</button>
                     <div id="txt1">
-                         <a asp-area="" asp-controller="home" asp-action="forgetpassword" style="text-decoration: none;"> Lost your password?</a>
+                         <a asp-area="" asp-controller="home" asp-action="forgetpassword" class="text-decoration-none text-warning"> Lost your password?</a>
                       </div>
             
                       <div id="txt2">
-                         Already Registred? <a asp-area="" asp-controller="home" asp-action="index" id="bl">login</a>
+                         Already Registred? <a asp-area="" asp-controller="home" asp-action="index" id="bl" class="text-decoration-none text-warning">login</a>
                       </div>
               </form>
             </div>
