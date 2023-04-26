@@ -74,6 +74,7 @@ document.getElementById("file-input").onchange = function (event) {
 const uploadedFiles = new Set();
 function handleFiles(files) {
     $('#showImage').empty();
+    const file = files[0];
     console.log(files);
     for (let i = 0; i < files.length; i++) {
         const file = files[i];

@@ -156,18 +156,6 @@ function addtodatabase() {
 }
 function handleSelectedFile(file) {
   
-    /*console.log("file object",file)
-        $.ajax({    url: '/home/AddSkills',
-            type: 'POST',
-            url: '/home/AddImage',
-            data: {
-                Image: file,
-            },
-            traditional: true,
-            success: function (result) {
-                alert('sucess');
-            }
-        })*/
     var formData = new FormData();
     formData.append("Image", file);
     $.ajax({
@@ -182,7 +170,7 @@ function handleSelectedFile(file) {
 
         }
     });
-    // Read the file as a data URL
+    
 }
 var img1 = $('#model-img');
 

@@ -10,7 +10,7 @@
                 <input type="text" id="title" class="form-control" asp-for="SkillName">
                 <span class="text-danger" asp-validation-for="SkillName"></span>
             </div>
-            <input asp-for="SkillId" hidden/>
+            <input asp-for="SkillId" type="text" hidden/>
             <div class="col-4 d-flex flex-column my-2">
                  <label for="status">Status</label>
                          <select class="form-select dropdown-toggle" id="status" asp-for="Status">

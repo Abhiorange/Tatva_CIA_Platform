@@ -94,8 +94,7 @@ namespace CI_platfom_apllication.Controllers
             return PartialView("_missionedit",model);
         }
         public IActionResult useradd()
-        {
-           
+        {  
             return PartialView("_useradd");
         }
         public IActionResult themeadd()
@@ -117,18 +116,21 @@ namespace CI_platfom_apllication.Controllers
             return RedirectToAction("Mission", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
         }
         public IActionResult AddUser(UserAddViewModel model)
-        {   if(model.UserId==null)
+        {
+            if (model.UserId == 0)
             {
                 _adminRepository.Adduser(model);
+                TempData["success"] = "User is added succesfully";
+
                 return RedirectToAction("User", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
             }
-           /* else
+            else
             {
                 _adminRepository.updateuser(model);
                 TempData["success"] = "User is updated succesfully";
-              return RedirectToAction("User", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
+                return RedirectToAction("User", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
 
-            }*/
+            }
 
         }
         public IActionResult AddTheme(ThemeAddViewModel model)
@@ -138,7 +140,7 @@ namespace CI_platfom_apllication.Controllers
         }
         public IActionResult AddSkill(SkillAddViewModel model)
         {   
-            if(model.SkillId==null)
+            if(model.SkillId==0)
             {
                 _adminRepository.Addskill(model);
                 TempData["success"] = "skill is added";
@@ -146,7 +148,7 @@ namespace CI_platfom_apllication.Controllers
             else
             {
                 _adminRepository.editskilldatabase(model);
-                TempData["success"] = "skill is added";
+                TempData["success"] = "skill is updated";
             }
             return RedirectToAction("Skill", new { SearchInputdata = "", pageindex = 1, pageSize = 2 });
 

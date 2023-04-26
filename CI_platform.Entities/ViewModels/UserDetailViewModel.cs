@@ -48,5 +48,7 @@ namespace CI_platform.Entities.ViewModels
         public string confirmpass { get; set; }
         public List<UserSkill> userSkills { get; set; }
         public List<Skill> skills { get; set; }
+
+        public string? Title { get; set; }
     }
 }

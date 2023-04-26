@@ -121,7 +121,9 @@ namespace CI_platform.Repositories.Repository
                 countries = list,
                 Email=user.Email,
                 Status=user.Status,
-                avtar=user.Avatar
+                avtar=user.Avatar,
+                UserId=user.UserId
+                
             };
            /* string contentRootPath = _hostEnvironment.ContentRootPath;
             string imagesFolderPath = Path.Combine(contentRootPath, "wwwroot");
@@ -133,7 +135,46 @@ namespace CI_platform.Repositories.Repository
        public void  updateuser(UserAddViewModel model)
         {
             var user = _ciplatformcontext.Users.FirstOrDefault(u => u.UserId == model.UserId);
-
+            string wwwRootPath = _hostEnvironment.WebRootPath;
+            string imagesFolderPath = Path.Combine(wwwRootPath, "Images");
+            string MainfolderPath = Path.Combine(imagesFolderPath, "UserProfileImages");
+            
+            String[] files = Directory.GetFiles(MainfolderPath);
+            if (!Directory.Exists(MainfolderPath))
+            {
+                Directory.CreateDirectory(MainfolderPath);
+            }
+            string fileName_exist = model.Avatar.FileName;
+            string fullPath = Path.Combine(MainfolderPath,fileName_exist);
+            string uploads = Path.Combine(MainfolderPath, fileName_exist);
+            if (!File.Exists(fullPath))
+            {
+                // string fileName = Guid.NewGuid().ToString();
+                string fileName = fileName_exist;
+                string filePath = Path.Combine(MainfolderPath, fileName);
+                using (var inputStream = model.Avatar.OpenReadStream())
+                {
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        inputStream.CopyTo(fileStream);
+                    }
+                }
+             user.Avatar = @"\Images\UserProfileImages\" + fileName;
+             _ciplatformcontext.SaveChanges();
+            }
+            user.FirstName = model.FirstName;
+            user.LastName=model.LastName;
+            user.Password = model.Password;
+            user.LinkedInUrl = model.LinkedInUrl;
+            user.EmployeeId = model.EmployeeId;
+            user.Department = model.Department;
+            user.Email = model.Email;
+            user.CountryId = model.CountryId;
+            user.CityId = model.CityId;
+            user.ProfileText = model.ProfileText;
+            user.Status = model.Status;
+            user.Title = model.Title;
+            _ciplatformcontext.SaveChanges();
         }
         public void approveapplication(string applicationid)
         {

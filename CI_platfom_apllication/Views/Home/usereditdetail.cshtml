@@ -117,7 +117,7 @@
                                 <div class="col-sm-6 mt-2">
                                     <div class="d-flex flex-column">
                                         <span>Title</span>
-                                        <input type="text">
+                                        <input type="text" asp-for="Title">
                                     </div>
                                 </div>
                                 <div class="col-sm-6 mt-2">
@@ -131,7 +131,7 @@
                                 <div class="col-12">
                                     <div class="d-flex flex-column">
                                         <span>profile</span>
-                                        <textarea name="" id="" cols="30" rows="5"></textarea>
+                                        <textarea name="" id="" cols="30" rows="5" asp-for="ProfileText">@Model.ProfileText</textarea>
                                     </div>
                                 </div>
                                 <div class="col-12">

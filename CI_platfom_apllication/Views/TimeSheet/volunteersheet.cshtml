@@ -224,8 +224,7 @@
 
                         @foreach (var goal in Model.Item3)
                         {
-                            var goalmission = Model.Item1.goalmission.FirstOrDefault(g => g.MissionId == goal.MissionId);
-                            <tr>
+                           <tr>
                                 <td>@goal.missiontitle</td>
                                 <td>@(goal.DateVolunteered.HasValue ? goal.DateVolunteered.Value.ToString("dd-MM-yyyy") : "N/A")</td>
                                 <td>@goal.Action</td>

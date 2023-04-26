@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7ZpzhtW9TPsBeyvsa8X1exVc7qGm6uzZMsNxExLjFj8=",
+  "Hash": "ulwuPNOovWQpmESezmWa7aq/80O8RotJjFx/y9a0ONs=",
   "Source": "CI_platfom_apllication",
   "BasePath": "_content/CI_platfom_apllication",
   "Mode": "Default",
@@ -2888,6 +2888,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\UserProfileImages\\b70d2634-6fa5-4a04-abde-865febe8a123.png"
+    },
+    {
+      "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\Images\\UserProfileImages\\user-img.png",
+      "SourceId": "CI_platfom_apllication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\",
+      "BasePath": "_content/CI_platfom_apllication",
+      "RelativePath": "Images/UserProfileImages/user-img.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\UserProfileImages\\user-img.png"
+    },
+    {
+      "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\Images\\UserProfileImages\\volunteer7.png",
+      "SourceId": "CI_platfom_apllication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\",
+      "BasePath": "_content/CI_platfom_apllication",
+      "RelativePath": "Images/UserProfileImages/volunteer7.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\UserProfileImages\\volunteer7.png"
     },
     {
       "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\js\\_skillpartial.js",

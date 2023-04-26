@@ -32,8 +32,10 @@ namespace CI_platform.Repositories.Interface
         public void declinestory(string storyid);
         public MissionAddViewModel getmissionmodeldata();
         public void Adduser(UserAddViewModel model);
+        public void updateuser(UserAddViewModel model);
 
-    
+
+
         public UserAddViewModel edituserdata(string userid);
 
         public void editskilldatabase(SkillAddViewModel model);
