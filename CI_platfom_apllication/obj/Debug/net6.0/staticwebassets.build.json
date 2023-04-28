@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ulwuPNOovWQpmESezmWa7aq/80O8RotJjFx/y9a0ONs=",
+  "Hash": "Fv2Fonw2dODKj7gXsjWARV1X4JqHyPbfKh4jgoQDFlY=",
   "Source": "CI_platfom_apllication",
   "BasePath": "_content/CI_platfom_apllication",
   "Mode": "Default",
@@ -1955,6 +1955,23 @@
       "OriginalItemSpec": "wwwroot\\css\\addStoryStyle.css"
     },
     {
+      "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\css\\bannerpartial.css",
+      "SourceId": "CI_platfom_apllication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\",
+      "BasePath": "_content/CI_platfom_apllication",
+      "RelativePath": "css/bannerpartial.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bannerpartial.css"
+    },
+    {
       "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\css\\header.css",
       "SourceId": "CI_platfom_apllication",
       "SourceType": "Discovered",
@@ -2482,6 +2499,40 @@
       "OriginalItemSpec": "wwwroot\\Images\\b7ca4a14-a8d7-4a08-b654-b85180af67ac.png"
     },
     {
+      "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\Images\\Banner\\Animal-welfare-_-save-birds-campaign-1.png",
+      "SourceId": "CI_platfom_apllication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\",
+      "BasePath": "_content/CI_platfom_apllication",
+      "RelativePath": "Images/Banner/Animal-welfare-_-save-birds-campaign-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Banner\\Animal-welfare-_-save-birds-campaign-1.png"
+    },
+    {
+      "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\Images\\Banner\\Nourish-the-Children-in--African-country-1.png",
+      "SourceId": "CI_platfom_apllication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\",
+      "BasePath": "_content/CI_platfom_apllication",
+      "RelativePath": "Images/Banner/Nourish-the-Children-in--African-country-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Banner\\Nourish-the-Children-in--African-country-1.png"
+    },
+    {
       "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\Images\\c6319bf1-6c27-4174-9c3e-0db08222be77.png",
       "SourceId": "CI_platfom_apllication",
       "SourceType": "Discovered",
@@ -2924,6 +2975,23 @@
       "OriginalItemSpec": "wwwroot\\Images\\UserProfileImages\\volunteer7.png"
     },
     {
+      "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\js\\_banneraddpartial.js",
+      "SourceId": "CI_platfom_apllication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\",
+      "BasePath": "_content/CI_platfom_apllication",
+      "RelativePath": "js/_banneraddpartial.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\_banneraddpartial.js"
+    },
+    {
       "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\js\\_skillpartial.js",
       "SourceId": "CI_platfom_apllication",
       "SourceType": "Discovered",
@@ -2973,6 +3041,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Adminpage.js"
+    },
+    {
+      "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\js\\bannerpartial.js",
+      "SourceId": "CI_platfom_apllication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\",
+      "BasePath": "_content/CI_platfom_apllication",
+      "RelativePath": "js/bannerpartial.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bannerpartial.js"
     },
     {
       "Identity": "C:\\Users\\ABHISHEK\\Desktop\\Tatva_CIA_Platform\\CI_platfom_apllication\\wwwroot\\js\\header.js",

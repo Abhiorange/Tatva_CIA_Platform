@@ -51,6 +51,11 @@ namespace CI_platfom_apllication.Controllers
             var model = _adminRepository.getmissionapplicationdata(pageindex, pageSize, SearchInputdata);
             return PartialView("_missionapplicationpage", model);
         }
+        public IActionResult Banner(string SearchInputdata = "", int pageindex = 1)
+       {
+            var model = _adminRepository.getbannerdata(pageindex, SearchInputdata);
+            return PartialView("_bannerpage", model);
+        }
         public IActionResult ApproveApplication(string Applicationid)
         {
             _adminRepository.approveapplication(Applicationid);
@@ -110,10 +115,28 @@ namespace CI_platfom_apllication.Controllers
             var model = _adminRepository.getskill(skillid);
             return PartialView("_skilladd", model);
         }
+        public IActionResult banneradd()
+        {
+            return PartialView("_banneradd");
+        }
         public IActionResult AddMission(MissionAddViewModel model,List<int> selectedSkills)
         {
             _adminRepository.Addmission(model,selectedSkills);
             return RedirectToAction("Mission", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
+        }
+        public IActionResult AddBanner(BannerAddViewModel model)
+        {
+            if (model.BannerId == 0)
+            {
+                _adminRepository.addBanner(model);
+                TempData["success"] = "Banner added successfully";
+            }
+            else
+            {
+                _adminRepository.editBanner(model);
+                TempData["success"] = "Banner edited successfully";
+            }
+            return RedirectToAction("Banner");
         }
         public IActionResult AddUser(UserAddViewModel model)
         {
@@ -153,10 +176,21 @@ namespace CI_platfom_apllication.Controllers
             return RedirectToAction("Skill", new { SearchInputdata = "", pageindex = 1, pageSize = 2 });
 
         }
+        public IActionResult EditBanner(string id)
+        {
+            var model = _adminRepository.getBanner(id)
+;
+            return PartialView("_banneradd", model);
+        }
         public IActionResult edituser(string id)
         {
             var usermodel = _adminRepository.edituserdata(id);
             return PartialView("_useradd", usermodel);
+        }
+        public IActionResult editmission(string id)
+        {
+            var model = _adminRepository.editmissondata(id);
+            return PartialView("_missionedit", model);
         }
         public IActionResult DeleteMission(string missionid)
         {

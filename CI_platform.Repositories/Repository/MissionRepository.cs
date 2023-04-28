@@ -25,7 +25,6 @@ namespace CI_platform.Repositories.Repository
 
         public  MisCouCity getmiscoucity(int pageindex, int pageSize,int id, string keyword, List<long> countryids, List<long> cityids, List<long> themeids, List<long> skillids,string user_id)
         {
-        
             var missionQuery = _ciplatformcontext.Missions.Include(m => m.City).Include(m=>m.Country).Include(m => m.Theme).Where(m=>m.Status==1).AsQueryable();
             var skillfilter = _ciplatformcontext.MissionSkills.Where(s => skillids.Contains(s.SkillId)).Select(s => s.MissionId);
             var missions = string.IsNullOrEmpty(keyword)
@@ -37,10 +36,9 @@ namespace CI_platform.Repositories.Repository
             var mission_rating = _ciplatformcontext.MissionRatings.Include(m => m.Mission).Include(m => m.User).ToList();
             var missionapplication = _ciplatformcontext.MissionApplications.ToList();
             var fav_mission = _ciplatformcontext.FavouriteMissions.Where(f=>f.UserId.ToString()==user_id).ToList();
-            var Timesheets = _ciplatformcontext.Timesheets.Where(t => t.UserId.ToString() == user_id).OrderByDescending(t=>t.CreatedAt).ToList();
+            var Timesheets = _ciplatformcontext.Timesheets.ToList();
             var model = new MisCouCity 
             {
-             
                 MissionsSkill = mission_skill,
                 GoalMissions=goal,
                 totalrecord = missions1.Count(),

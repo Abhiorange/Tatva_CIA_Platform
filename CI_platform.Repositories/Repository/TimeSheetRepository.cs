@@ -101,14 +101,12 @@ namespace CI_platform.Repositories.Repository
             var viewModelListgoal = new List<SheetViewModel>();
             foreach (var timesheet in timesheets)
             {
-                // Find the corresponding mission for this timesheet
                 var mission = missions.FirstOrDefault(m => m.MissionId == timesheet.MissionId && m.MissionType=="time");
                
                 if(mission!=null)
                 {
                     long hours = (long)timesheet.Time.Value.Hours;
                     long minutes = (long)timesheet.Time.Value.Minutes;
-                    // Create a view model that contains the timesheet and its mission title
                     var viewModel = new SheetViewModel
                     {   timesheetid=timesheet.TimesheetId,
                         missiontitle = mission != null ? mission.Title : null,
@@ -142,7 +140,6 @@ namespace CI_platform.Repositories.Repository
 
                     };
 
-                    // Add the view model to the list
                     viewModelListgoal.Add(viewModel1);
 
                 }

@@ -19,10 +19,9 @@ namespace CI_platform.Entities.ViewModels
         [Required(ErrorMessage = "EmployeeId is required")]
         public string? EmployeeId { get; set; }
         [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "Please Provide Valid Email")]
-
         public string Email { get; set; } = null!;
-        [Required(ErrorMessage = "Subject is required")]
-        public string Subject { get; set; }
+        [Required(ErrorMessage = "Status is required")]
+        public int Status { get; set; }
         [Required(ErrorMessage = "Message is required")]
         public string Message { get; set; }
         [Required(ErrorMessage = "Text is required")]
@@ -32,8 +31,13 @@ namespace CI_platform.Entities.ViewModels
         public List<SelectListItem> cities { get; set; }
         [Required(ErrorMessage = "Department is required")]
         public string? Department { get; set; }
+        [Required(ErrorMessage = "City is required")]
+
         public long CityId { get; set; }
+        [Required(ErrorMessage = "Profile Text is required")]
         public string? ProfileText { get; set; }
+        [Required(ErrorMessage = "Country is required")]
+
         public long CountryId { get; set; }
 
         [Required(ErrorMessage = "Enter Old Password")]
@@ -48,7 +52,7 @@ namespace CI_platform.Entities.ViewModels
         public string confirmpass { get; set; }
         public List<UserSkill> userSkills { get; set; }
         public List<Skill> skills { get; set; }
-
+        [Required(ErrorMessage = "Title is required")]
         public string? Title { get; set; }
     }
 }

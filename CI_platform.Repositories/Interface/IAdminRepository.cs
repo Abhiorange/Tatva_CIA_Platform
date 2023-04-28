@@ -12,6 +12,12 @@ namespace CI_platform.Repositories.Interface
     {
         public UserAdminViewModel getuserdata(int pageindex, int pageSize, string SearchInputdata);
         public UserAdminViewModel getmissiondata(int pageindex, int pageSize, string SearchInputdata);
+        public UserAdminViewModel getbannerdata(int pageindex, string SearchInputdata);
+        public void addBanner(BannerAddViewModel model);
+        public void editBanner(BannerAddViewModel model);
+        public BannerAddViewModel getBanner(string bannerid);
+        public MissionAddViewModel editmissondata(string missonid);
+
         public List<Country> getcountries();
         public List<City> getcities(string countryid);
         public List<MissionTheme> getthemes();

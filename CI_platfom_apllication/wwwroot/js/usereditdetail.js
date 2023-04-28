@@ -82,18 +82,18 @@ $(document).ready(function () {
 */
 
 $('.available-skills div').click(function () {
-  
+
     $(this).hasClass("bg-secondary") ? $(this).removeClass("bg-secondary") : $(this).addClass("bg-secondary");
 })
 
 function selectSkill() {
     $('.selected-skills').empty();
     $('.available-skills div').each(function () {
-        
+
         if ($(this).hasClass("bg-secondary")) {
             //$(this).removeClass('bg-secondary');
             var div = $(this).clone();
-            div.removeClass('bg-secondary');       
+            div.removeClass('bg-secondary');
             $('.selected-skills').append(div);
         }
     })
@@ -124,38 +124,80 @@ function deselectSkill() {
 function addskill() {
     console.log("done")
     $('.skill-selected').empty();
-    
+
     $('.selected-skills div').each(function () {
         var id = $(this).attr('id');
         $('.skill-selected').append($(this).clone());
-       
+
     })
-   
+
 }
+/*function addtodatabase() {
+    alert("add skills");
+    var skillids = [];
+    $('.skill-selected div').each(function () {
+        skillids.push($(this).attr('id'));
+    });
+    $('#contactform').submit(function (event) {
+        event.preventDefault();
+        console.log($("#cityselected").val());
+        if ($("#cityselected").val() == "city") {
+            alert('city warning');
+            $("#cityspan").removeClass('d-none');
+
+        }
+        else if ($("#countryselected").val() == "country") {
+            alert('country warning');
+            $("#countryspan").removeClass('d-none');
+        }
+        else {
+            $("#cityspan").addClass('d-none');
+            $("#countryspan").addClass('d-none');
+            if ($('#contactform').valid()) {
+                $.ajax({
+                    url: '/home/AddSkills',
+                    type: "POST",
+                    data: {
+                        skillids: skillids,
+                    },
+                    success: function (result) {
+                        console.log("profile updated successfully");
+                        $('#contactform').unbind('submit').submit();
+                    }
+                });
+            }
+        }
+    });
+
+
+}*/
 
 function addtodatabase() {
    
-    console.log("add skills");
+    alert("add skills");
     var skillids = [];
     $('.skill-selected div').each(function () {
         skillids.push($(this).attr('id'));
     });
     console.log($('#contactform').html());
-    if ($('#contactform').valid()) {
-        $.ajax({
-            url: '/home/AddSkills',
-            type: "POST",
-            data: {
-                skillids: skillids,
-            },
-            success: function (result) {
-                console.log("profile updated successfully");
-            }
-        })
-    }    
+    
+  
+        if ($('#contactform').valid()) {
+            $.ajax({
+                url: '/home/AddSkills',
+                type: "POST",
+                data: {
+                    skillids: skillids,
+                },
+                success: function (result) {
+                    console.log("profile updated successfully");
+                }
+            })
+        }
+    
 }
 function handleSelectedFile(file) {
-  
+
     var formData = new FormData();
     formData.append("Image", file);
     $.ajax({
@@ -170,7 +212,7 @@ function handleSelectedFile(file) {
 
         }
     });
-    
+
 }
 var img1 = $('#model-img');
 

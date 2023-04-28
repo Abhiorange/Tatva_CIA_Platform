@@ -35,6 +35,7 @@ $(document).ready(function () {
 });
 function getcountry() {
     var countryid = $('#usercountryselect').val();
+    console.log("id", countryid);
     $.ajax({
         url: "/Admin/Country",
         type: "GET",
@@ -45,7 +46,7 @@ function getcountry() {
                 $('#usercountryselect').html('<option>No countries selected</option>');
             } else {
                 $.each(result, function (i, data) {
-                    if (countryid == null) {
+                    if (countryid == "defselect") {
                     $('#usercountryselect').append('<option value="' + data.countryId + '" id="' + data.countryId + '">' + data.name + '</option>');
                     }
 
@@ -55,17 +56,17 @@ function getcountry() {
     })
 }
 document.getElementById("profileimg").onclick = function () {
-    alert("sucess");
+  
     document.getElementById("file-input").click();
    
 }
 document.getElementById("boot-icon").onclick = function () {
-    alert("sucess");
+  
     document.getElementById("file-input").click();
    
 }
 document.getElementById("file-input").onchange = function (event) {
-    alert('onchange called');
+  
     const files = event.target.files;
     handleFiles(files);
 };

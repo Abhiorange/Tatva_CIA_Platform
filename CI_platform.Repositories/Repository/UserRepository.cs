@@ -239,7 +239,9 @@ namespace CI_platform.Repositories.Repository
                 userSkills=userskill,
                 skills=skills,
                 Email=user.Email,   
-                Avatar=user.Avatar
+                Avatar=user.Avatar,
+                Title=user.Title,
+                Status=user.Status
             };
             return model;
         }

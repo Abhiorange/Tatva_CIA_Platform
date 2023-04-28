@@ -42,18 +42,40 @@ function getmissionsbygoal() {
         }
     })
 }
+
 $(document).ready(function () {
     $('#staticBackdrop').on('show.bs.modal', function (event) {
-        alert("modal called");
-        var button = $(event.relatedTarget); // Button that triggered the modal
-        var timesheetId = button.data('timesheetid'); // Extract missionid from data attribute
-        var missionTitle = button.data('missiontitle');
-        var notes = button.data('notes');
-        var modal = $(this);
-        modal.find('#goalmission').val(missionTitle);
-        modal.find('#message').val(notes);
-        modal.find('#timesheet').val(timesheetId);
+            alert("modal called");
+            var button = $(event.relatedTarget); // Button that triggered the modal
+            var timesheetId = button.data('timesheetid'); // Extract missionid from data attribute
+            var missionTitle = button.data('missiontitle');
+            var notes = button.data('notes');
+            var action = button.data('action');
+            console.log(action);
+            var modal = $(this);
+            modal.find('#goalmission').val(missionTitle);
+            modal.find('#action').val(action);
+            modal.find('#message').val(notes);
+            modal.find('#timesheet').val(timesheetId);
     });
+});
+$('#goalform').submit(function (event) {
+        $('#messageval').addClass('d-none');
+    $('#actionval').addClass('d-none');
+    event.preventDefault();
+    if ($('#action1').val() == '') {
+        console.log("for action", $('#action1').val());
+        $('#actionval').removeClass('d-none');
+    }
+    else if ($('#message1').val() == '') {
+        console.log("for message", $('#message1').val());
+        $('#messageval').removeClass('d-none');
+    }
+    else {
+        $('#actionval').addClass('d-none');
+        $('#messageval').removeClass('d-none');
+        $('#goalform').submit();
+    }
 });
 function showModal(id) {
     Swal.fire({
@@ -126,4 +148,13 @@ function DeleteMission1(timesheetId) {
         }
     });
 }
+
+$('#exampleModal1').on('hidden.bs.modal', function (e) {
+    // reset input field values to their defaults
+    $('#mission').val('Select Mission');
+    $('#date').val('');
+    $('#hour').val(0);
+    $('#minute').val(0);
+    $('#message').val('');
+});
 

@@ -30,7 +30,7 @@ function filterthemes() {
 $(document).ready(function () {
 
     $('#themesearch').keyup(function () {
-        alert('hi');
+       
         $('.pagination .misactive').removeClass('misactive');
         filterSearch();
 

@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using X.PagedList;
@@ -84,11 +85,96 @@ namespace CI_platform.Repositories.Repository
             model.Missions = missions.ToPagedList(pageindex, 10);
             return model;
         }
+        public UserAdminViewModel getbannerdata(int pageindex, string SearchInputdata)
+        {
+            var banners=_ciplatformcontext.Banners.Where(b=> (SearchInputdata == null) || (b.Title.Contains(SearchInputdata)) || (b.Text.Contains(SearchInputdata))).OrderByDescending(m => m.Status).ToList();
+            var model = new UserAdminViewModel();
+            model.Banners = banners.ToPagedList(pageindex, 5);
+            return model;
+        }
+        public BannerAddViewModel getBanner(string bannerid)
+        {
+            Banner banner = _ciplatformcontext.Banners.SingleOrDefault(b=>b.BannerId.ToString() == bannerid);
+            string wwwRootPath = _hostEnvironment.WebRootPath;
+            
+            string fullPath = wwwRootPath + banner.Image;
+            using (var stream = new FileStream(fullPath, FileMode.Open))
+            {
+                IFormFile file = new FormFile(stream, 0, new FileInfo(fullPath).Length, null, Path.GetFileName(fullPath));
+
+                BannerAddViewModel model = new BannerAddViewModel()
+                {
+                    BannerId = banner.BannerId,
+                    Text = banner.Text,
+                    Title = banner.Title,
+                    Image = file,
+                    SortOrder = banner.SortOrder,
+                    Status = banner.Status
+                };
+                return model;
+            }
+        }
         public UserAdminViewModel getmissionapplicationdata(int pageindex, int pageSize, string SearchInputdata)
         {
             var missionapplication = _ciplatformcontext.MissionApplications.Include(m => m.Mission).Include(m=>m.User).Where(m => (SearchInputdata == null) || (m.Mission.Title.Contains(SearchInputdata)) || (m.User.FirstName.Contains(SearchInputdata))).ToList();
             var model = new UserAdminViewModel();
             model.MissionApplications = missionapplication.ToPagedList(pageindex, 4);
+            return model;
+        }
+        public MissionAddViewModel editmissondata(string missonid)
+        {
+            var mission = _ciplatformcontext.Missions.Include(m=>m.MissionMedia).Include(m=>m.MissionDocuments).FirstOrDefault(m => m.MissionId.ToString() == missonid);
+            var goalmission = _ciplatformcontext.GoalMissions.Include(g => g.Mission).FirstOrDefault(g=>g.MissionId.ToString()==missonid);
+            List<SelectListItem> list = new List<SelectListItem>();
+            var temp = _ciplatformcontext.Countries.ToList();
+            foreach (var item in temp)
+            {
+                list.Add(new SelectListItem() { Text = item.Name, Value = item.CountryId.ToString() });
+            }
+            List<SelectListItem> list1 = new List<SelectListItem>();
+            var temp1 = _ciplatformcontext.Cities.Where(c => c.CountryId == mission.CountryId).ToList();
+            foreach (var item in temp1)
+            {
+                list1.Add(new SelectListItem() { Text = item.Name, Value = item.CityId.ToString() });
+            }
+            List<SelectListItem> list2 = new List<SelectListItem>();
+            var temp2 = _ciplatformcontext.MissionThemes.ToList();
+            foreach (var item in temp2)
+            {
+                list2.Add(new SelectListItem() { Text = item.Title, Value = item.MissionThemeId.ToString() });
+            }
+            var skills = _ciplatformcontext.Skills.ToList();
+            var skillids_mission = _ciplatformcontext.MissionSkills.Include(m=>m.Skill).Where(m => m.MissionId == mission.MissionId).Select(m=>m.SkillId).ToList();
+          
+            var model = new MissionAddViewModel
+            {
+                countries = list,
+                cities = list1,
+                Themes = list2,
+                Title = mission.Title,
+                CountryId = mission.CountryId,
+                CityId = mission.CityId,
+                ThemeId = mission.ThemeId,
+                Description = mission.Description,
+                ShortDescription = mission.ShortDescription,
+                TotalSeats = mission.TotalSeats,
+                StartDate = mission.StartDate,
+                EndDate = mission.EndDate,
+                Status = mission.Status,
+                MissionType = mission.MissionType,
+                OrganizationDetail = mission.OrganizationDetail,
+                OrganizationName = mission.OrganizationName,
+                Availibility = mission.Availibility,
+                MissionId=mission.MissionId,
+                skillids=skillids_mission,
+                Skills=skills,
+            };
+           
+            if (model.MissionType == "goal")
+            {
+                model.GoalObjectiveText = goalmission.GoalObjectiveText;
+                model.GoalValue = goalmission.GoalValue;
+            };
             return model;
         }
         public UserAddViewModel edituserdata(string userid)
@@ -123,14 +209,40 @@ namespace CI_platform.Repositories.Repository
                 Status=user.Status,
                 avtar=user.Avatar,
                 UserId=user.UserId
-                
             };
-           /* string contentRootPath = _hostEnvironment.ContentRootPath;
-            string imagesFolderPath = Path.Combine(contentRootPath, "wwwroot");
-            string imagepath = Path.Combine(imagesFolderPath, user.Avatar);
-            model.Avatar = new FormFile(new FileStream(imagepath, FileMode.Open), 0, new FileInfo(imagepath).Length, null, Path.GetFileName(imagepath));*/
+           
             return model;
              
+        }
+        public void editBanner(BannerAddViewModel model)
+        {
+            Banner banner = _ciplatformcontext.Banners.SingleOrDefault(b => b.BannerId == model.BannerId);
+            if (model.Image != null)
+            {
+                string wwwRootPath = _hostEnvironment.WebRootPath;
+                string imageFolderPath = Path.Combine(wwwRootPath, "Images");
+                string mainFolderPath = Path.Combine(imageFolderPath, "Banner");
+                String[] files = Directory.GetFiles(mainFolderPath);
+                if (!Directory.Exists(mainFolderPath))
+                {
+                    Directory.CreateDirectory(mainFolderPath);
+                }
+                string fullPath = Path.Combine(mainFolderPath, model.Image.FileName);
+                if (!File.Exists(fullPath))
+                {
+                    using (var fileStreams = new FileStream(Path.Combine(mainFolderPath, model.Image.FileName), FileMode.Create))
+                    {
+                        model.Image.CopyTo(fileStreams);
+                    }
+                }
+                banner.Image = @"\Images\Banner\" + model.Image.FileName;
+            }
+            banner.SortOrder = model.SortOrder;
+            banner.Text = WebUtility.HtmlDecode(model.Text);
+            banner.Title = model.Title;
+            banner.Status = model.Status;
+            _ciplatformcontext.Update(banner);
+            _ciplatformcontext.SaveChanges();
         }
        public void  updateuser(UserAddViewModel model)
         {
@@ -149,7 +261,6 @@ namespace CI_platform.Repositories.Repository
             string uploads = Path.Combine(MainfolderPath, fileName_exist);
             if (!File.Exists(fullPath))
             {
-                // string fileName = Guid.NewGuid().ToString();
                 string fileName = fileName_exist;
                 string filePath = Path.Combine(MainfolderPath, fileName);
                 using (var inputStream = model.Avatar.OpenReadStream())
@@ -232,7 +343,7 @@ namespace CI_platform.Repositories.Repository
             var model1 = new Skill
             {
                 SkillName=model.SkillName,
-                Status=model.Status,
+                Status=0,
             };
             _ciplatformcontext.Add(model1);
             _ciplatformcontext.SaveChanges();
@@ -283,6 +394,35 @@ namespace CI_platform.Repositories.Repository
             user.Avatar = @"\Images\UserProfileImages\" + fileName + Path.GetExtension(model.Avatar.FileName);
             _ciplatformcontext.SaveChanges();
             
+        }
+        public void addBanner(BannerAddViewModel model)
+        {
+           
+                string wwwRootPath = _hostEnvironment.WebRootPath;
+                string imageFolderPath = Path.Combine(wwwRootPath, "Images");
+                string mainFolderPath = Path.Combine(imageFolderPath, "Banner");
+                if (!Directory.Exists(mainFolderPath))
+                {
+                    Directory.CreateDirectory(mainFolderPath);
+                }
+                string fullPath = Path.Combine(mainFolderPath, model.Image.FileName);
+                if (!File.Exists(fullPath))
+                {
+                    using (var fileStreams = new FileStream(Path.Combine(mainFolderPath, model.Image.FileName), FileMode.Create))
+                    {
+                        model.Image.CopyTo(fileStreams);
+                    }
+                }
+                Banner banner = new Banner
+                {
+                    Text = WebUtility.HtmlDecode(model.Text),
+                    Title = model.Title,
+                    Image = @"\Images\Banner\" + model.Image.FileName,
+                    SortOrder = model.SortOrder,
+                    Status = model.Status,
+                };
+                _ciplatformcontext.Add(banner);
+                _ciplatformcontext.SaveChanges();
         }
         public void Addmission(MissionAddViewModel model, List<int> selectedSkills)
         {

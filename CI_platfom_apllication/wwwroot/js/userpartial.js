@@ -32,7 +32,7 @@ function filteruser() {
 $(document).ready(function () {
    
     $('#search').keyup(function () {
-        alert('hi');
+      
         $('.pagination .active').removeClass('active');
         filterSearch();
        
@@ -49,7 +49,7 @@ function filterSearch() {
 
         },
         success: function (response) {
-            alert('called');
+          
             console.log(response);
             console.log("the id element", $(response).find("#nouser").html());
          /*   $('#nouser').html($(response).find('#nouser').html());*/

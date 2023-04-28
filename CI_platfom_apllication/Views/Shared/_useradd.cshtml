@@ -56,13 +56,13 @@
                             <div class="col-12 mt-2">
                                 <div class="d-flex flex-column">
                                     <span>Title</span>
-                                    <input type="text" class="form-control" asp-for="Title" value="@Model.Title">
+                                    <input type="text" class="form-control" asp-for="Title">
                                 </div>
                             </div>
                             <div class="col-sm-6 mt-2">
                                 <div class="d-flex flex-column">
                                     <span>Department</span>
-                                    <input type="text"  asp-for="@Model.Department" class="form-control">
+                                    <input type="text"  asp-for="Department" class="form-control">
                                       <span class="text-danger" asp-validation-for="Department"></span>
                                 </div>
                             </div>
@@ -96,7 +96,32 @@
                             <div class="col-12 border-bottom">
                                 Address Information
                             </div>
-                            <div class="row">
+                            @if(Model==null)
+                            {
+                              <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="d-flex flex-column">
+                                         <span>City</span>
+                                        <select id="usercityselect" asp-for="CityId" class="form-control">
+                                            <option > Select city</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex flex-column">
+                                         <span>Country</span>
+
+                                        <select id="usercountryselect" asp-for="CountryId" class="form-control">
+                                             <option value="defselect">Select country</option>
+                                               
+                                        </select>
+                                    </div>
+                                </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="row">
                                 <div class="col-sm-6">
                                     <div class="d-flex flex-column">
                                          <span>City</span>
@@ -115,7 +140,9 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
+                            </div>  
+                            }
+                          
                         </div>
 
                         <div class="row mt-3">
@@ -131,7 +158,7 @@
                                 <div class="col-sm-6">
                                     <div class="d-flex flex-column">
                                         <span>Linkdin</span>
-                                        <input type="text" value="@Model.LinkedInUrl" asp-for="@Model.LinkedInUrl" class="form-control">
+                                        <input type="text" asp-for="LinkedInUrl" class="form-control">
                                     </div>
                                 </div>
                             </div>

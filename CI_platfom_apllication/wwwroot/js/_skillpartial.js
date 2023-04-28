@@ -29,7 +29,7 @@ function filterskills() {
             pageindex: pageIndex
         },
         success: function (response) {
-            alert("hello");
+            
             $('.table').html($(response).find('.table').html());
             $('.pagination').html($(response).find('.pagination').html());
 
@@ -40,7 +40,7 @@ function filterskills() {
 $(document).ready(function () {
 
     $('#skillsearch').keyup(function () {
-        alert('hi');
+      
         $('.pagination .skiactive').removeClass('skiactive');
         filterSearch();
 

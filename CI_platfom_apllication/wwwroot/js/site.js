@@ -6,7 +6,7 @@ $('#contact-link').click(() => {
     let userid = $('#hiddeninput').val();
     $.ajax({
         url: '/home/Addcontact',
-        type: "POST",
+        type: "POST",                                                                               
         data: {
             Userid: userid,
         },
@@ -35,7 +35,13 @@ function contactsave() {
         success: function (result) {
             console.log(result);
             alert('issue saved corrcetly');
-            toastr.success('Problem is sent!');
+            /*toastr.success('Problem is sent!');*/
+            Swal.fire({
+               
+                title: 'Sucess',
+                text: 'Your Issue is sent successfully',
+               
+            })
         }
     })
 }
