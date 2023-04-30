@@ -53,7 +53,7 @@ namespace CI_platfom_apllication.Controllers
 
             var entity = _storyRepository.storydatabase(mission_id, title, description, status, images, user_id,date);
             var entity1 = _storyRepository.storymedia(mission_id, user_id, images, videos);
-
+            TempData["story"] = "Story is Successfully Drafted...";
             return Json(new { redirectUrl = Url.Action("addstory", "StoryListing", new { missionid = missionid })});
 
         }
@@ -64,7 +64,7 @@ namespace CI_platfom_apllication.Controllers
 
             var entity = _storyRepository.editstorydatabase(mission_id, title, description, status, user_id,date);
             var entity1 = _storyRepository.editstorymedia(mission_id, user_id, images, videos);
-            ViewData["Message"] = "Story is edited successfully";
+            TempData["story"] = "Story is Successfully Edited...";
 
             return Json(new { redirectUrl = Url.Action("storylisting", "StoryListing") });
 
@@ -72,6 +72,7 @@ namespace CI_platfom_apllication.Controllers
         public IActionResult submit(long storyId)
         {
             _storyRepository.submit(storyId);
+            TempData["story"] = "Story is Successfully Submited...";
             return Json(new { redirectUrl = Url.Action("storylisting", "StoryListing") });
         }
         /*  public IActionResult addstorydetail(int story_id)
@@ -93,6 +94,20 @@ namespace CI_platfom_apllication.Controllers
             var entity = _storyRepository.missions(user_id);
             return Json(entity);
 
+        }
+        public JsonResult getusers()
+        {
+            var users = _storyRepository.getusersdata();
+            return Json(users);
+        }
+        public string usersthrouid(int[] ids, int storyid, string from_user)
+        {
+            foreach (var id in ids)
+            {
+                string url = Url.Action("storydetail", "StoryListing", new { story_id = storyid }, Request.Scheme);
+                var users_ids = _storyRepository.GetUsers_id(url, id, storyid, from_user);
+            }
+            return "successfully send";
         }
     }
 }

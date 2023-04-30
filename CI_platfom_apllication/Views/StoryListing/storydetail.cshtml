@@ -1,7 +1,11 @@
 ﻿@model CI_platform.Entities.ViewModels.StoryDetailViewModel
+@inject IHttpContextAccessor Accessor
 <!DOCTYPE html>
 <html lang="en">
-    
+    @{
+    var firstname_session = Accessor.HttpContext.Session.GetString("firstname");
+    var userid_session = Accessor.HttpContext.Session.GetString("userid");
+}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,16 +72,36 @@
                 
 
                 <div class="d-flex justify-content-between mt-4">
-                    <button class="py-2 btn rounded-pill border-dark"><img src="~/Assets/add1.png" alt=""
+                   @* <button class="py-2 btn rounded-pill border-dark"><img src="~/Assets/add1.png" alt=""
                         class="ms-2"> Recommend to a
-                    Co-worker</button>
+                    Co-worker</button>*@
+                    <button class="py-2 px-2 mx-auto rounded-pill recomand border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="btnShowUsers(@Model.Stories.StoryId)">
+                        <img src="~/Assets/add1.png" alt="" class="ms-2">Recommend
+                        to a Co-Worker
+                    </button>
+
                     <div class="mt-2 d-flex">
                         <button class="py-2 px-3 mx-auto apply">
-                          <a class="text-decoration-none" asp-action="VolunteerMission" asp-controller="Mission" asp-route-id="@Model.Stories.MissionId">Apply Now</a>  <img src="~/Assets/right-arrow.png" alt="" class="ms-2"></button>
+                          <a class="text-decoration-none" asp-action="VolunteerMission" asp-controller="Mission" asp-route-id="@Model.Stories.MissionId">Open Mission</a>  <img src="~/Assets/right-arrow.png" alt="" class="ms-2"></button>
                     </div>
                    
                 </div>
-
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">User List</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" onclick="sendmail()">Send mail</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
             </div>
@@ -95,7 +119,8 @@
           </div>
           
         </div>
-        
+        <div id="model"
+         data-userid="@userid_session"></div>
     </div>
      <partial name="_footer">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>

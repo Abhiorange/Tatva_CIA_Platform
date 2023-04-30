@@ -18,6 +18,8 @@ namespace CI_platform.Repositories.Interface
         public void deletedatabase(long timesheetid);
         public void editgoaldatabase(SheetViewModel model);
         public void deletedatabasegoal(long timesheetid);
+        public int getgoalvalue(string missionid);
+
 
         /*public List<Timesheet> getdatasheet();*/
     }

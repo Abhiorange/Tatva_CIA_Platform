@@ -90,10 +90,23 @@ namespace CI_platform.Repositories.Repository
             _ciplatformcontext.SaveChanges();
 
         }
-
+        public int getgoalvalue(string missionid)
+        {
+            var goaltimesheets = _ciplatformcontext.Timesheets.Where(t => t.MissionId.ToString()==missionid).ToList();
+            int Totalgoalachieved = 0;
+            if (goaltimesheets.Count()!=0)
+            {
+                 Totalgoalachieved = (int)goaltimesheets.Select(t => t.Action).Sum(); 
+            }
+           
+            var goalvalue = _ciplatformcontext.GoalMissions.Where(g => g.MissionId.ToString() == missionid).Select(g => g.GoalValue).SingleOrDefault();
+            var valideaction = goalvalue - Totalgoalachieved;
+            return valideaction;
+        }
         public (List<SheetViewModel>, List<SheetViewModel>) getdatasheet()
         {
             var timesheets = _ciplatformcontext.Timesheets.ToList();
+            var goaltimesheets = _ciplatformcontext.Timesheets.Where(t => t.Action != 0).ToList();
             var goalmissions = _ciplatformcontext.GoalMissions.ToList();
             var missions = _ciplatformcontext.Missions.ToList();
             var viewModelListtime = new List<SheetViewModel>();
@@ -119,11 +132,12 @@ namespace CI_platform.Repositories.Repository
                 }
                 
             }
-            foreach (var timesheet in timesheets)
+            foreach (var timesheet in goaltimesheets)
             {
                
                 var mission = missions.FirstOrDefault(m => m.MissionId == timesheet.MissionId && m.MissionType == "goal");
-                var goalvalue = _ciplatformcontext.GoalMissions.Where(g => g.MissionId == mission.MissionId).Select(g => g.GoalValue).SingleOrDefault();
+                var goalvalue = _ciplatformcontext.GoalMissions.Where(g => g.MissionId == mission.MissionId).Select(g=>g.GoalValue).SingleOrDefault();
+                var total_goal_achieve = _ciplatformcontext.Timesheets.Where(t => t.MissionId == mission.MissionId).GroupBy(t => t.MissionId).Select(g => g.Sum(t => t.Action));
                 if (mission!=null)
                 {
                     var viewModel1 = new SheetViewModel
@@ -133,7 +147,8 @@ namespace CI_platform.Repositories.Repository
                         DateVolunteered = timesheet.DateVolunteered,
                         Action = (int)timesheet.Action,
                         Notes = timesheet.Notes,
-                        GoalValue = goalvalue
+                        GoalValue = goalvalue,
+                        Totalgoalachieved = total_goal_achieve.FirstOrDefault()
                     };
 
                     viewModelListgoal.Add(viewModel1);

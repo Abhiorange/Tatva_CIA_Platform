@@ -527,7 +527,7 @@ namespace CI_platform.Repositories.Repository
             }
             if(model.Images!=null)
             {
-                _ciplatformcontext.MissionMedia.RemoveRange(missionMedia);
+               /* _ciplatformcontext.MissionMedia.RemoveRange(missionMedia);*/
                 string imagesFolderPath = Path.Combine(wwwRootPath, "Images");
                 string MainfolderPath = Path.Combine(imagesFolderPath, "Mission");
                 if (!Directory.Exists(MainfolderPath))
@@ -560,7 +560,7 @@ namespace CI_platform.Repositories.Repository
             }
             if(model.Documents!=null)
             {
-                _ciplatformcontext.MissionDocuments.RemoveRange(missionDoc);
+               /* _ciplatformcontext.MissionDocuments.RemoveRange(missionDoc);*/
                 string docFolderPath = Path.Combine(wwwRootPath, "Documents");
                 string docMainfolderPath = Path.Combine(docFolderPath, "Mission");
                 if (!Directory.Exists(docMainfolderPath))

@@ -181,24 +181,14 @@
                         }
                         else
                         {
-                            if(Model.checkApply)
-                            { 
-                                 <a id="add-to-favourites" class="mx-auto" data-missionid="@Model.missionid" data-id="@userid_session" href="#">
+                          
+                                <a id="add-to-favourites" class="mx-auto" data-missionid="@Model.missionid" data-id="@userid_session" href="#">
                                 <button class="py-2 px-2 my-1 mx-auto apply btn rounded-pill border">
                                     <img src="~/Assets/@(user_check != null ? "fill-heart.png" : "heart1.png")" alt="" class="ms-2 favourite-image text-black" style="width:33px;height:30px;">Add to your 
                                     Favourites
                                 </button>
                             </a>   
                          
-
-                            }
-                            else
-                            {
-                               <button class="py-2 px-3 mx-auto apply btn rounded-pill border" onclick="applyModal()">
-                                <img src="~/Assets/heart1.png" alt="" class="ms-2 favourite-image" style="width:33px;height:30px;">
-                                <a href="#" class="text-decoration-none" disabled> Add to Favourite after login </a>
-                                </button>
-                            }
                            
                         }
                         @if (@userid_session == null)
@@ -239,11 +229,12 @@
                             }
                         }
                         else
-                        {
-
+                        {  
                             var user_rate = Model.Missionrating.FirstOrDefault(r => r.User.UserId.ToString() == @userid_session && r.Mission.MissionId == Model.missionid);
 
-                            if (user_rate != null)
+                            if(@Model.checkClosed)
+                            {
+                              if (user_rate != null)
                             {
                                 var rate_star = user_rate.Rating;
 
@@ -263,9 +254,39 @@
                             {
                                 for (int i = 1; i <= 5; i++)
                                 {
-                                    <img src="~/Assets/star-empty.png" class="size_star rate_star" id="star-@Model.missionid-@i" onclick="changeRating(@i, @Model.missionid)">
+                                        <img src="~/Assets/star-empty.png" class="size_star rate_star" id="star-@Model.missionid-@i" onclick="changeRating(@i, @Model.missionid)">
+                                    }
+                                }   
+                            }
+
+                            else
+                            {
+                               if (user_rate != null)
+                            {
+                                var rate_star = user_rate.Rating;
+
+                                for (int i = 1; i <= 5; i++)
+                                {
+                                    if (i <= rate_star)
+                                    {
+                                        <img src="~/Assets/selected-star.png" class="size_star rate_star" id="star-@Model.missionid-@i">
+                                    }
+                                    else
+                                    {
+                                        <img src="~/Assets/star-empty.png" class="size_star rate_star" id="star-@Model.missionid-@i" >
+                                    }
                                 }
                             }
+                            else
+                            {
+                                for (int i = 1; i <= 5; i++)
+                                {
+                                    <img src="~/Assets/star-empty.png" class="size_star rate_star" id="star-@Model.missionid-@i">
+                                }
+                            }  
+                            }
+
+                           
 
                         }
 
@@ -974,7 +995,8 @@
                 }
 
 
-
+                   <div id="model" data-missionid="@Model.missionid"
+             data-userid="@userid_session"></div>
             </div>
         </div>
 
@@ -1004,7 +1026,7 @@
             integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
             crossorigin="anonymous"></script>*@
 
-        <script>
+                         @*   <script>
                                       function changeRating(starNum, missionId) {
                                   var star = document.getElementById(`star-${missionId}-${starNum}`);
                                   console.log(star)
@@ -1199,7 +1221,7 @@
                 })
             }
 
-        </script>
+        </script>*@
 </body>
 
 </html>

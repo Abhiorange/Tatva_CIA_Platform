@@ -385,6 +385,7 @@ public partial class CiPlatformContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("organization_name");
+            entity.Property(e => e.RegistrationDeadline).HasColumnType("datetime");
             entity.Property(e => e.ShortDescription)
                 .HasMaxLength(128)
                 .IsUnicode(false)

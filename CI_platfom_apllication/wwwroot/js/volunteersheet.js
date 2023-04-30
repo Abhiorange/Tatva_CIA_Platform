@@ -24,8 +24,8 @@ function getmissionsbytime() {
 function getmissionsbygoal() {
     alert('success1');
 
-      const missionid = document.getElementById("mission").value;
-  
+    const missionid = document.getElementById("mission_id").value;
+    console.log("this mission id", missionid);
     $.ajax({
         url: '/TimeSheet/getmissionsbygoal',
         success: function (result) {
@@ -52,26 +52,41 @@ $(document).ready(function () {
             var notes = button.data('notes');
         var action = button.data('action');
         var goalvalue = button.data('goalvalue');
+        console.log("this is goal value", goalvalue);
+        var totalgoalachieve = button.data('totalachieved');
             console.log(action);
             var modal = $(this);
             modal.find('#goalmission').val(missionTitle);
         modal.find('#action1').val(action);
             modal.find('#message1').val(notes);
         modal.find('#timesheet').val(timesheetId);
-        modal.find('#goalvalue').val(goalvalue);
+        modal.find('#goalvalue1').val(goalvalue);
+        modal.find('#totalgoalachieve').val(totalgoalachieve);
     });
 });
 $('#goalform').submit(function (event) {
         $('#messageval').addClass('d-none');
     $('#actionval').addClass('d-none');
+    $('#validaction').addClass('d-none');
     event.preventDefault();
-    if ($('#action1').val() == '') {
+    var validgoalvalue = $('#goalvalue1').val() - $('#totalgoalachieve').val();
+    console.log("goal valuw", $('#goalvalue1').val());
+    console.log("goal achieve", $('#totalgoalachieve').val());
+    console.log("valid goal value", validgoalvalue);
+            if ($('#action1').val() == '') {
         console.log("for action", $('#action1').val());
         $('#actionval').removeClass('d-none');
     }
     else if ($('#message1').val() == '') {
         console.log("for message", $('#message1').val());
         $('#messageval').removeClass('d-none');
+            }
+            else if (validgoalvalue == 0)
+            {
+                $('#validaction').removeClass('d-none').text('Your Goal is achived you cant edit');
+            }
+    else if ($('#action1').val() >= validgoalvalue) { 
+                $('#validaction').removeClass('d-none').text('The value should be less than ' + validgoalvalue);
     }
     else {
         $('#actionval').addClass('d-none');
@@ -79,6 +94,35 @@ $('#goalform').submit(function (event) {
         $('#goalform')[0].submit();
     }
 });
+
+$('#addgoalform').submit(function (event) {
+    alert('addform called');
+    $('#addvalidspan').addClass('d-none');
+    event.preventDefault();
+    var goalvalue = $('#goalvalue2').val();
+    console.log("goal value", goalvalue);
+    if ($('#action').val() > goalvalue) {
+        $('#addvalidspan').removeClass('d-none').text('This value should be less than' + goalvalue);
+    }
+    else if ($('#addgoalform').valid()){
+        $('#addvalidspan').addClass('d-none');
+        $('#addgoalform')[0].submit();
+    }
+});
+function Takegoalvalue() {
+    const missionid = document.getElementById("mission_id").value;
+
+    $.ajax({
+        url: '/TimeSheet/Getgoalvalueformission',
+        data: {
+            missionid: missionid
+        },
+        success: function (result) {
+            console.log("goalvalue", result);
+            $('#goalvalue2').val(result);
+        }
+    })
+}
 function showModal(id) {
     Swal.fire({
         title: 'Are you sure?',

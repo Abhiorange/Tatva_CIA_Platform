@@ -13,15 +13,15 @@
 
 <body>
     <div>
-            @if (TempData["success"] != null)
-            {
-                <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
-                <script src="~/lib/jquery/dist/jquery.min.js"></script>
-                <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-                <script type="text/javascript">
-                    toastr.success('@TempData["success"]');
-                </script>
-            }
+             @if (TempData["story"] != null)
+        {
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+            <script src="~/lib/jquery/dist/jquery.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+            <script type="text/javascript">
+                toastr.success('@TempData["story"]');
+            </script>
+        }
         </div>
      <partial name="Header">
     <div class="container" id="draftreload">
@@ -82,14 +82,32 @@
                 <button class="btn border btn-secondary rounded-pill">Cancel</button>
             </div>
             <div>
-                @{
+                @if(Model.status=="PENDING")
+                    {
+                        <button class="apply btn" disabled>Your Story is Pending</button>
+                    }
+                    else if(Model.status=="DRAFT")
+                    {
+                        <button class="apply btn" disabled>your Story is Drafted</button>
+                    }
+                    else if(Model.status=="PUBLISHED")
+                    {
+                        <button class="apply btn" disabled>your Story is Published</button>
+
+                    }
+                    else if(Model.status=="DECLINE")
+                    {
+                     <button class="apply btn" disabled>your Story is Declined</button>
+                    }
+                    @{
                      if(Model.aboutstatus=="N")
                 {    
                      <button class="apply btn" onclick="saveData()">Save</button>
                      <button class="apply btn bg-secondary" id="submit" disabled>Submit</button>
                 }
                 else if(Model.aboutstatus=="P")  
-                {
+                {    
+                    
                     <button class="apply btn" id="submit" onclick="editData(@Model.storyid)">EDIT</button>
                 }
                 else if(Model.aboutstatus=="D")

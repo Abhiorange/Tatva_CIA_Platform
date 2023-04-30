@@ -219,7 +219,7 @@ namespace CI_platform.Repositories.Repository
             var recentvolunteer = _ciplatformcontext.MissionApplications.Include(m => m.User).Where(m => m.MissionId == id && m.ApprovalStatus== "APPROVE").Select(m => m.User).ToList();
             bool check_apply = _ciplatformcontext.MissionApplications.Any(m => m.MissionId == id && m.UserId.ToString() == userid && m.ApprovalStatus == "APPROVE");
             var missiondocument =_ciplatformcontext.MissionDocuments.Where(d => d.MissionId == id).ToList();
-            bool checkClosedMission = _ciplatformcontext.Missions.Any(m => m.MissionId == id && m.EndDate <= DateTime.Now);
+            bool checkClosedMission = _ciplatformcontext.Missions.Any(m => m.MissionId == id && m.RegistrationDeadline <= DateTime.Now);
             var timesheet_records = _ciplatformcontext.Timesheets.Where(t => t.MissionId == id).ToList();
             var goalvalue = _ciplatformcontext.GoalMissions.Where(g => g.MissionId == id).Select(g => g.GoalValue).SingleOrDefault(); 
             if (related_mission.Any(rm => rm.City.Name == missions.City.Name))

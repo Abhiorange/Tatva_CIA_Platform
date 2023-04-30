@@ -20,4 +20,50 @@
    var slideno = $(this).data('slide');
    $('.slider-nav').slick('slickGoTo', slideno - 1);
  });
-    
+
+var model = $('#model');
+
+function senduser(sid) {
+    var selecteduserid = [];
+    $('.modal-body input[type="checkbox"]:checked').each(function () {
+        selecteduserid.push($(this).attr("id"));
+    });
+
+    $.ajax({
+        type: "POST",
+        url: '/StoryListing/usersthrouid',
+        data: {
+            ids: selecteduserid,
+            storyid: sid,
+            from_user: model.attr('data-userid'),
+        },
+        traditional: true,
+        success: function (response) {
+            alert('sucess fully send mail...');
+        }
+    });
+}
+var storyId = 0;
+function btnShowUsers(sid) {
+    storyId = sid;
+
+
+    $('.modal-body').empty();
+    $.ajax({
+        url: '/StoryListing/getusers',
+        success: function (result) {
+            // iterate through the result and append each user to the list code=bhilykvfemjbcceg
+            $.each(result, function (i, data) {
+                $('.modal-body').append('<div class="form-check ms-3"><input class="form-check-input checkbox" type="checkbox" value="' + data.firstName + " " + data.lastName + '" id=' + data.userId + '><label class="form-check-label" for=' + data.userId + '>' + data.firstName + " " + data.lastName + '</label></div>')
+            });
+
+        }
+    });
+
+
+
+
+}
+function sendmail() {
+    senduser(storyId);
+}

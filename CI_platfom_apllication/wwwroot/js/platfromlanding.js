@@ -44,8 +44,8 @@ function gridList(e) {
     $gridCont.removeClass('list-view');
     $new_item.addClass('d-none');
     $apply.removeClass('d-none');
-    $resize_img.removeClass('.resize_img_list');
-    $resize_img.addClass('.resize_img_grid');
+    $resize_img.removeClass('resize_img_list');
+    $resize_img.addClass('resize_img_grid');
     // $badge.addClass('d-none');
     $only_grid.removeClass('d-none');
     $only_list.addClass('d-none');
@@ -315,39 +315,95 @@ function getSkills() {
 
 
 
-/*$(document).ready(function () {
-    
-    var searchQuery = localStorage.getItem('searchQuery') || '';
+var model = $('#model')
+var userid = null;
 
-   
-    $('#search-input').val(searchQuery);
+$(document).on('click', '.pagination li', function (e) {
+    e.preventDefault();
+    $('.pagination li').each(function () {
+        $(this).removeClass('active');
+    })
+    $(this).addClass('active');
+    console.log($(this).children().attr("id"))
+    filterMission();
+});
 
-  
-    filterCards(searchQuery);
+function senduser(mid) {
+    var selecteduserid = [];
+    $('.modal-body input[type="checkbox"]:checked').each(function () {
+        selecteduserid.push($(this).attr("id"));
+    });
+    console.log("userids", selecteduserid);
 
-    
-    $('#search-input').on('input', function () {
-        searchQuery = $(this).val().toLowerCase();
-
-      
-        localStorage.setItem('searchQuery', searchQuery);
-
-      
-        filterCards(searchQuery);
+    $.ajax({
+        type: "POST",
+        url: '/Mission/usersthrouid',
+        data: {
+            ids: selecteduserid,
+            missionid: userid,
+            from_id: model.attr("data-userid")
+        },
+        traditional: true,
+        success: function (response) {
+            alert('sucesscefully mail sent!!');
+            toastr.success('Mail is sent!');
+        }
     });
 
-    function filterCards(searchQuery) {
-        var displayedCardsCount = 0;
-        $('.remo').each(function () { 
-            var cardText = $(this).text().toLowerCase();
-            if (cardText.indexOf(searchQuery) !== -1 || searchQuery.length === 0) {
-                $(this).removeClass("d-none"); 
-                displayedCardsCount++;
-            } else {
-                $(this).addClass("d-none");
-            }
-        });
-        $('#explore-missions-count').text(displayedCardsCount);
-    }
-});*/
+    selecteduserid.length = 0;
+}
+$(document).on('click', '#sendmail', function () {
+    senduser(userid);
+});
+function btnshowUsers(mid) {
+    userid = mid;
+    $('.modal-body').empty();
+    $.ajax({
+        url: '/Mission/getusers',
+        success: function (result) {
+            $.each(result, function (i, data) {
+                $('.modal-body').append('<div class="form-check ms-3"><input class="form-check-input checkbox" type="checkbox" value="' + data.firstName + " " + data.lastName + '" id=' + data.userId + '><label class="form-check-label" for=' + data.userId + '>' + data.firstName + " " + data.lastName + '</label></div>')
+            });
+
+        }
+    });
+
+
+}
+
+function addtofavorite(mid) {
+
+    var favouriteImage = $('#' + mid).find('.favourite-image');
+    console.log("image", favouriteImage);
+    if (favouriteImage.attr('src') === '/Assets/heart1.png') {
+        favouriteImage.attr('src', '/Assets/fill-heart.png');
+    } else {
+        favouriteImage.attr('src', '/Assets/heart1.png');
+    } ``
+    // var name = $(this).data('name');
+    $.ajax({
+        type: 'POST',
+        url: '/Mission/favroite_mission',
+        data: {
+            missionid: mid,
+            userid: model.attr("data-userid"),
+            actionmethod: "platformlanding"
+        },
+        success: function (response) {
+            alert($(response).find('#favstar-' + mid).html());
+            console.log(mid);
+            $(`#favstar-${mid}`).html($(response).find(`#favstar-${mid}`).html());
+        }
+
+    });
+    filterMission();
+}
+function showModal() {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Please Login!',
+    })
+}
+
 

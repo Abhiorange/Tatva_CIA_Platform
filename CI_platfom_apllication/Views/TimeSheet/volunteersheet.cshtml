@@ -153,19 +153,20 @@
                                 <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <form method="post" asp-action="sheetdatabase" asp-controller="TimeSheet" >
+                            <form method="post" asp-action="sheetdatabase" asp-controller="TimeSheet" id="addgoalform">
                                 <div class="modal-body">
                                     <div class="d-flex flex-column">
                                         <label for="mission">Mission</label>
-                                        <select id="mission_id" asp-for="@Model.Item1.MissionId">
+                                        <select id="mission_id" asp-for="@Model.Item1.MissionId"  onchange="Takegoalvalue()">
                                             <option>Select Mission</option>
                                         </select>
                                     </div>
-                                      <input id="goalvalue" hidden/>
+                                     <input id="goalvalue2" hidden/>
                                     <div class="d-flex flex-column mt-2">
                                         <label for="action">Actions</label>
                                         <input type="text" id="action" asp-for="@Model.Item1.Action" required/>
                                         <span asp-validation-for="@Model.Item1.Action"></span>
+                                        <span class="text-danger d-none" id="addvalidspan"></span>
                                     </div>
                                     <div class="d-flex flex-column mt-2">
                                         <label for="date">Date Volunteered</label>
@@ -211,13 +212,13 @@
                                                 <span class="text-danger" asp-validation-for="@Model.Item1.missiontitle"></span>
                                             </div>
                                             <input id="timesheet" asp-for="@Model.Item1.timesheetid" hidden />
-                                            <input id="goalvalue" hidden/>
+                                            <input id="goalvalue1" hidden/>
                                             <input id="totalgoalachieve" hidden/>
                                             <div class="d-flex flex-column mt-2">
                                                 <label for="action">Actions</label>Enter valid action</span>
                                                 <input id="action1" type="text" asp-for="@Model.Item1.Action"/>
                                             <span class="text-danger d-none" asp-validation-for="@Model.Item1.Action" id="actionval">Enter valid action</span>
-                                            <span="text-danger d-none" id="validaction"></span>
+                                            <span  class="text-danger d-none" id="validaction"></span>
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <label for="message">Message</label>

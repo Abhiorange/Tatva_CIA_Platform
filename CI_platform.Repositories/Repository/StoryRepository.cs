@@ -5,6 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using X.PagedList;
@@ -59,23 +61,30 @@ namespace CI_platform.Repositories.Repository
                         description = story.Description,
                         videourl = video.Path,
                         images = images,
-                        PublishedAt=story.PublishedAt
+                        PublishedAt=story.PublishedAt,                    
                     };
                     if(story.Status=="DRAFT")
                     {
                         model.aboutstatus = "D";
+                        model.status = "DRAFT";
                     }
                     else if(story.Status== "PUBLISHED")
                     {
                         model.aboutstatus = "P";
+                        model.status = "PUBLISHED";
+
                     }
                     else if(story.Status=="DECLINED")
                     {
                         model.aboutstatus = "P";
+                        model.status = "DECLINED";
+
                     }
                     else if (story.Status == "PENDING")
                     {
                         model.aboutstatus = "P";
+                        model.status = "PENDING";
+
                     }
                     return model;
                 }
@@ -229,8 +238,45 @@ namespace CI_platform.Repositories.Repository
             var missionApplication =_ciplatformcontext.MissionApplications.Where(u => u.UserId == userid).Select(u => u.MissionId);
             return _ciplatformcontext.Missions.Where(u => missionApplication.Contains(u.MissionId)).OrderBy(m => m.Title).ToList();
         }
-        
+        public List<User> getusersdata()
+        {
+            var users = _ciplatformcontext.Users.ToList();
+            return users;
+        }
+        public string GetUsers_id(string url, int id, int storyid, string from_user)
+        {
+            var user = _ciplatformcontext.Users.SingleOrDefault(m => m.UserId == id);
+            var resetLink = url;
 
+            var from = new MailAddress("dummyblack92@gmail.com", "Abhishek");
 
+            var to = new MailAddress(user.Email);
+            var subject = "Volunteer mission recommend";
+            var body = $"Hi,<br /><br />Please click on the following to apply on mission:<br /><br /><a href='{resetLink}'>{resetLink}</a>";
+            var message = new MailMessage(from, to)
+            {
+                Subject = subject,
+                Body = body,
+                IsBodyHtml = true
+            };
+            var smtpClient = new SmtpClient("smtp.gmail.com", 587)
+            {
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential("dummyblack92@gmail.com", "bhilykvfemjbcceg"),
+                EnableSsl = true
+            };
+            smtpClient.Send(message);
+            var story_invite = new StoryInvite
+            {
+                FromUserId = long.Parse(from_user),
+                StoryId = storyid,
+                ToUserId = id,
+            };
+            _ciplatformcontext.Add(story_invite);
+            _ciplatformcontext.SaveChanges();
+            return "sucess";
+        }
     }
 }
+
+ 

@@ -28,8 +28,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+@*    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+*@    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.5/sweetalert2.min.css" />
     <link rel="stylesheet" href="~/css/platformlanding.css">
 </head>
@@ -88,7 +88,12 @@
                             <div class="card  h-100">
 
                                 <div style="position:relative">
-                                    @{
+                                    @{   if (@mission.RegistrationDeadline < @systemdate)
+                                            {
+                                                <div class="d-flex position-absolute pt-2 badgeclass">
+                                                    <span class="badge1 bg-warning text-dark ms-1 pt-2">Closed</span><div class="arrow-right-c"></div>
+                                                </div>
+                                            }
                                         if (@userid_session != null)
                                         {
                                             var applied = Model.MissionApplications.SingleOrDefault(m => m.MissionId == mission.MissionId && m.UserId.ToString() == @userid_session);
@@ -98,12 +103,7 @@
                                                     <span class="badge1 bg-success text-dark ms-1 pt-2">Applied</span><div class="arrow-right-a"></div>
                                                 </div>
                                             }
-                                            else if (@mission.EndDate < @systemdate)
-                                            {
-                                                <div class="d-flex position-absolute pt-2 badgeclass">
-                                                    <span class="badge1 bg-warning text-dark ms-1 pt-2">Closed</span><div class="arrow-right-c"></div>
-                                                </div>
-                                            }
+                                          
                                         }
                                         
                                     }
@@ -240,7 +240,24 @@
                                     <div class="text-start">
                                         <!-- Product name-->
                                 <h5 class="fw-bolder">@mission.Title</h5>
-                                        <span>@mission.ShortDescription</span>
+                                        <span>
+                                         @{
+                                            string TruncateText(string text, int maxLength, string ellipsis = "...")
+                                            {
+                                                if (string.IsNullOrEmpty(text) || text.Length <= maxLength)
+                                                {
+                                                    return text;
+                                                }
+                                                else
+                                                {
+                                                    return text.Substring(0, maxLength) + ellipsis;
+                                                }
+                                            }
+                                            var shortDescriptiontextOfMission = TruncateText(@mission.ShortDescription, 10);
+
+                                        }
+                                        @shortDescriptiontextOfMission
+                                        </span>
 
 
                                         <!-- Product reviews-->
@@ -540,13 +557,15 @@
 
             </div>
         </div>
+        <div id="model"
+         data-userid="@userid_session"></div>
         <partial name="_footer">
             <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.1.5/sweetalert2.min.js"></script>
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
                     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
                     crossorigin="anonymous"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-            <script src="~/js/platfromlanding.js"></script>
+@*            <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+*@            <script src="~/js/platfromlanding.js"></script>
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -560,7 +579,7 @@
                 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
                 crossorigin="anonymous"></script>*@
             <script src="~/js/site.js"></script>
-            <script>
+            @*<script>
                  var userid=null;
 
                   $(document).on('click','.pagination li',function (e){
@@ -652,7 +671,7 @@
                     })
                 }
 
-            </script>
+            </script>*@
 
 </body>
 

@@ -58,6 +58,11 @@ namespace CI_platfom_apllication.Controllers
             _timesheetRepository.editgoaldatabase(model);
             return RedirectToAction("volunteersheet", "TimeSheet");
         }
+        public int Getgoalvalueformission(string missionid)
+        {
+            var goalvalue = _timesheetRepository.getgoalvalue(missionid);
+            return goalvalue;
+        }
         public IActionResult deletedatabase(long timesheetid)
         {
             _timesheetRepository.deletedatabase(timesheetid);

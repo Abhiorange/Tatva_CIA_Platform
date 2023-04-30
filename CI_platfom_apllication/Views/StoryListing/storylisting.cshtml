@@ -17,15 +17,15 @@
 
 <body>
     <div>
-            @if (TempData["success"] != null|| ViewData["Message"] != null)
-            {
-                <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
-                <script src="~/lib/jquery/dist/jquery.min.js"></script>
-                <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-                <script type="text/javascript">
-                    toastr.success('@ViewData["Message"]');
-                </script>
-            }
+             @if (TempData["story"] != null)
+        {
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+            <script src="~/lib/jquery/dist/jquery.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+            <script type="text/javascript">
+                toastr.success('@TempData["story"]');
+            </script>
+        }
         </div>
     <partial name="Header">
         <div class="container-fluid p-0">

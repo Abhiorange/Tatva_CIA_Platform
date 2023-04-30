@@ -166,7 +166,7 @@
         flex-direction: column;
     }
     .resize_img_list {
-        width: 260px !important;
+        width: 100% !important;
     }
     .
     .fonttag {

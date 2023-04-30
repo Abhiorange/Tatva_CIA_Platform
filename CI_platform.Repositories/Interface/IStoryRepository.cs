@@ -19,6 +19,9 @@ namespace CI_platform.Repositories.Interface
         public string storymedia(long missionid, long user_id, string[] images, string video);
         public string editstorymedia(long missionid, long user_id, string[] images, string video);
         public void submit(long storyId);
+        public string GetUsers_id(string url, int id, int storyid, string from_user);
+
+        public List<User> getusersdata();
     }
 }
 
