@@ -25,6 +25,8 @@ namespace CI_platform.Entities.ViewModels
         public int Action { get; set; } = new int();
         [Required(ErrorMessage = "enter valid date")]
         public DateTime? DateVolunteered { get; set; }
-        public List<GoalMission> goalmission { get; set; }
+        public int GoalValue { get; set; }
+        public int? Totalgoalachieved { get; set; }
+
     }
 }

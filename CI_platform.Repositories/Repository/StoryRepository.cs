@@ -20,7 +20,7 @@ namespace CI_platform.Repositories.Repository
             _ciplatformcontext = ciplatformcontext;
         }
 
-        public StoryViewModel getstories(string keyword, int pageindex = 1, int pageSize = 1)
+        public StoryViewModel getstories(string keyword, int pageindex = 1, int pageSize = 3)
         {
             var missionIds = _ciplatformcontext.Missions.Where(m => m.Theme.Title.Contains(keyword)).Select(m => m.MissionId);
             var stories = _ciplatformcontext.Stories.Include(s => s.Mission).Include(s => s.User).Where(s=>s.Status=="PUBLISHED" && (keyword== null || missionIds.Contains(s.MissionId) || s.Title.Contains(keyword))).ToList();
@@ -31,7 +31,7 @@ namespace CI_platform.Repositories.Repository
                // Stories = stories,
                 Missions = Missionthemes
             };
-            model.Stories = stories.ToPagedList(pageindex, 1);
+            model.Stories = stories.ToPagedList(pageindex, 3);
             return model;
         }
 
@@ -91,25 +91,7 @@ namespace CI_platform.Repositories.Repository
                     };
                     return model1;
                 }
-               /* else if(story1.Status=="PUBLISHED") {
-                    var storyMedia = _ciplatformcontext.StoryMedia.Where(u => u.StoryId == story1.StoryId);
-                    var images = storyMedia.Where(m => m.Type == "Image").Select(s => s.Path).ToList();
-                    var video = storyMedia.SingleOrDefault(m => m.Type == "video");
-                    var missionTitle = _ciplatformcontext.Missions.SingleOrDefault(m => m.MissionId == story1.MissionId);
-                    StoryDatabaseViewModel model2 = new StoryDatabaseViewModel()
-                    {
-                        Missiontitle = missionTitle.Title,
-                        storyid = story1.StoryId,
-                        missionid = story1.MissionId,
-                        title = story1.Title,
-                        description = story1.Description,
-                        videourl = video.Path,
-                        images = images,
-                        aboutstatus="P",
-                        PublishedAt = story1.PublishedAt
-                    };
-                    return model2;
-                }*/
+               
                 
             }
             return new StoryDatabaseViewModel();

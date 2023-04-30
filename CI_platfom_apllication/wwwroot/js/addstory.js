@@ -6,23 +6,14 @@
     var description = textarea.substring(3, textarea.length - 4);
     const date = document.getElementById("date").value;
     const video = document.getElementById("videoURL").value;
-   
-    console.log("select:", missionid);
-    console.log("dsc:", description);
-
     const imagePaths = [];
     const images = document.getElementById('image-preview');
     const image_tag = images.getElementsByTagName("img");
-    console.log(image_tag);
-
-    var currentTime = new Date();
-    var currentTimeString = currentTime.toISOString();
 
     for (let i = 0; i < image_tag.length; i++) {
         const image = image_tag[i].getAttribute("src");
         imagePaths.push(image);
     }
-    console.log(imagePaths);
     if (isValidated()) {
         $.ajax({
             url: "/StoryListing/storydatabse",
@@ -58,8 +49,6 @@ function editData() {
     const date = document.getElementById("date").value;
     const video = document.getElementById("videoURL").value;
 
-    console.log("select:", missionid);
-    console.log("dsc:", description);
 
     const imagePaths = [];
     const images = document.getElementById('image-preview');
@@ -85,12 +74,13 @@ function editData() {
                 status: 'PENDING',
                 images: imagePaths,
                 videos: video,
-                date: date
+                date: date,
+             
             },
             success: function (response) {
 
                 window.location = response.redirectUrl;
-
+                toaster.success("Story is edited successfully");
             },
             Error: function () {
                 alert('error in skill');

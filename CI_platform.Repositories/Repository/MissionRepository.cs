@@ -25,7 +25,7 @@ namespace CI_platform.Repositories.Repository
 
         public  MisCouCity getmiscoucity(int pageindex, int pageSize,int id, string keyword, List<long> countryids, List<long> cityids, List<long> themeids, List<long> skillids,string user_id)
         {
-            var missionQuery = _ciplatformcontext.Missions.Include(m => m.City).Include(m=>m.Country).Include(m => m.Theme).Where(m=>m.Status==1).AsQueryable();
+            var missionQuery = _ciplatformcontext.Missions.Include(m => m.City).Include(m=>m.Country).Include(m=>m.MissionMedia).Include(m => m.Theme).Where(m=>m.Status==1).AsQueryable();
             var skillfilter = _ciplatformcontext.MissionSkills.Where(s => skillids.Contains(s.SkillId)).Select(s => s.MissionId);
             var missions = string.IsNullOrEmpty(keyword)
                 ? missionQuery.Where(m => (m.MissionType == "time" || m.MissionType == "goal") && (m.Status==1))
@@ -155,7 +155,7 @@ namespace CI_platform.Repositories.Repository
 
         public string GetUsers_id(int id, string url,int missionid,int from_id)
         {   
-            var user = _ciplatformcontext.Users.SingleOrDefault(m => m.UserId == id);
+            var user = _ciplatformcontext.Users.SingleOrDefault(m => m.UserId == id); //User who is recieving mail
             var resetLink = url;
 
             var from = new MailAddress("dummyblack92@gmail.com", "abhishek");
@@ -167,7 +167,7 @@ namespace CI_platform.Repositories.Repository
             {
                 Subject = subject,
                 Body = body,
-                IsBodyHtml = true
+                IsBodyHtml = true  
             };
             var smtpClient = new SmtpClient("smtp.gmail.com", 587)
             {
@@ -199,14 +199,14 @@ namespace CI_platform.Repositories.Repository
             return skills;
         }
 
-        public VolunteerViewModel getvolunteermission(int id,int pageindex,int pagesize)
+        public VolunteerViewModel getvolunteermission(int id,int pageindex,int pagesize,string userid)
         {
             var missions = _ciplatformcontext.Missions
                  .Include(m => m.City)
                  .Include(m=>m.Theme)
                  .Include(m=>m.Country)
                  .FirstOrDefault(c => c.MissionId == id);
-
+                                                       
             var goal = _ciplatformcontext.GoalMissions.FirstOrDefault(c => c.MissionId == id);
             var related_mission = _ciplatformcontext.Missions
                 .Include(m => m.City)
@@ -216,8 +216,12 @@ namespace CI_platform.Repositories.Repository
             var mission_rating = _ciplatformcontext.MissionRatings.Include(m => m.Mission).Include(m => m.User).ToList();
             var comments = _ciplatformcontext.Comments.Include(c => c.Mission).Where(c => c.MissionId == missions.MissionId).OrderByDescending(c => c.CreatedAt).ToList();
             var missionapplication = _ciplatformcontext.MissionApplications.Include(m=>m.User).Where(m => m.MissionId == id).ToList();
-            var recentvolunteer = _ciplatformcontext.MissionApplications.Include(m => m.User).Where(m => m.MissionId == id).Select(m => m.User).ToList();
-            var missiondocument=_ciplatformcontext.MissionDocuments.Where(d => d.MissionId == id).ToList();
+            var recentvolunteer = _ciplatformcontext.MissionApplications.Include(m => m.User).Where(m => m.MissionId == id && m.ApprovalStatus== "APPROVE").Select(m => m.User).ToList();
+            bool check_apply = _ciplatformcontext.MissionApplications.Any(m => m.MissionId == id && m.UserId.ToString() == userid && m.ApprovalStatus == "APPROVE");
+            var missiondocument =_ciplatformcontext.MissionDocuments.Where(d => d.MissionId == id).ToList();
+            bool checkClosedMission = _ciplatformcontext.Missions.Any(m => m.MissionId == id && m.EndDate <= DateTime.Now);
+            var timesheet_records = _ciplatformcontext.Timesheets.Where(t => t.MissionId == id).ToList();
+            var goalvalue = _ciplatformcontext.GoalMissions.Where(g => g.MissionId == id).Select(g => g.GoalValue).SingleOrDefault(); 
             if (related_mission.Any(rm => rm.City.Name == missions.City.Name))
             {
                 related_mission = related_mission.Where(rm => rm.City.Name == missions.City.Name).ToList();
@@ -236,7 +240,7 @@ namespace CI_platform.Repositories.Repository
             }
             var related_goal = _ciplatformcontext.GoalMissions.Include(g => g.Mission).ToList();
 
-            var mission_skill = _ciplatformcontext.MissionSkills.Include(m => m.Skill).FirstOrDefault(c => c.MissionId == id);
+            var mission_skill = _ciplatformcontext.MissionSkills.Include(m => m.Skill).Where(c => c.MissionId == id).ToList();
 
             var fav_mission = _ciplatformcontext.FavouriteMissions.Where(m => m.MissionId == id).ToList();
             
@@ -244,7 +248,8 @@ namespace CI_platform.Repositories.Repository
             {
                 Missions = missions,
                 GoalObjectiveText = null,
-                GoalValue=0,
+                GoalValue=goalvalue,
+                timesheets=timesheet_records,
                 MissionsSkill =mission_skill,
                 Related_Mission=related_mission,
                 Related_goal=related_goal,
@@ -254,6 +259,8 @@ namespace CI_platform.Repositories.Repository
                 comment=comments,
                MissionApplications=missionapplication,
                 MissionDocuments=missiondocument,
+                checkApply=check_apply,
+                checkClosed=checkClosedMission
                
             };
             model.recentvolunteers = recentvolunteer.ToPagedList(pageindex, 1);
@@ -264,8 +271,6 @@ namespace CI_platform.Repositories.Repository
             }
            
             return model;
-          
-
         }
         public MissionDocument GetByDocumentType(string documentType,int id)
         {

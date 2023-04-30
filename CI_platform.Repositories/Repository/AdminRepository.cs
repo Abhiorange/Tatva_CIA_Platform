@@ -123,9 +123,14 @@ namespace CI_platform.Repositories.Repository
         }
         public MissionAddViewModel editmissondata(string missonid)
         {
-            var mission = _ciplatformcontext.Missions.Include(m=>m.MissionMedia).Include(m=>m.MissionDocuments).FirstOrDefault(m => m.MissionId.ToString() == missonid);
+            var mission = _ciplatformcontext.Missions.FirstOrDefault(m => m.MissionId.ToString() == missonid);
             var goalmission = _ciplatformcontext.GoalMissions.Include(g => g.Mission).FirstOrDefault(g=>g.MissionId.ToString()==missonid);
+            List<MissionMedium> missionMedia = _ciplatformcontext.MissionMedia.Where(m => m.MissionId.ToString() == missonid).ToList();
+            List<MissionDocument> missionDoc = _ciplatformcontext.MissionDocuments.Where(m => m.MissionId.ToString() == missonid).ToList();
+            List<IFormFile> imageFiles = new List<IFormFile>();
+            List<IFormFile> docFiles = new List<IFormFile>();
             List<SelectListItem> list = new List<SelectListItem>();
+            string wwwRootPath = _hostEnvironment.WebRootPath;
             var temp = _ciplatformcontext.Countries.ToList();
             foreach (var item in temp)
             {
@@ -169,7 +174,26 @@ namespace CI_platform.Repositories.Repository
                 skillids=skillids_mission,
                 Skills=skills,
             };
-           
+            foreach (var m in missionMedia)
+            {
+                string fullPath = wwwRootPath + m.MediaPath;
+                using (var stream = new FileStream(fullPath, FileMode.Open))
+                {
+                    IFormFile file = new FormFile(stream, 0, new FileInfo(fullPath).Length, null, Path.GetFileName(fullPath));
+                    imageFiles.Add(file);
+                }
+            }
+            foreach (var m in missionDoc)
+            {
+                string fullPath = wwwRootPath + m.DocumentPath;
+                using (var stream = new FileStream(fullPath, FileMode.Open))
+                {
+                    IFormFile file = new FormFile(stream, 0, new FileInfo(fullPath).Length, null, Path.GetFileName(fullPath));
+                    docFiles.Add(file);
+                }
+            }
+            model.Images = imageFiles;
+            model.Documents = docFiles;
             if (model.MissionType == "goal")
             {
                 model.GoalObjectiveText = goalmission.GoalObjectiveText;
@@ -209,10 +233,8 @@ namespace CI_platform.Repositories.Repository
                 Status=user.Status,
                 avtar=user.Avatar,
                 UserId=user.UserId
-            };
-           
+            };     
             return model;
-             
         }
         public void editBanner(BannerAddViewModel model)
         {
@@ -256,23 +278,36 @@ namespace CI_platform.Repositories.Repository
             {
                 Directory.CreateDirectory(MainfolderPath);
             }
-            string fileName_exist = model.Avatar.FileName;
-            string fullPath = Path.Combine(MainfolderPath,fileName_exist);
-            string uploads = Path.Combine(MainfolderPath, fileName_exist);
-            if (!File.Exists(fullPath))
+            if(model.Avatar==null)
             {
-                string fileName = fileName_exist;
-                string filePath = Path.Combine(MainfolderPath, fileName);
-                using (var inputStream = model.Avatar.OpenReadStream())
-                {
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        inputStream.CopyTo(fileStream);
-                    }
-                }
-             user.Avatar = @"\Images\UserProfileImages\" + fileName;
-             _ciplatformcontext.SaveChanges();
+                var oldImagePath = user.Avatar;
+                user.Avatar = oldImagePath;
             }
+            else
+            {
+                string fileName_exist = model.Avatar.FileName;
+                string fullPath = Path.Combine(MainfolderPath, fileName_exist);
+                string uploads = Path.Combine(MainfolderPath, fileName_exist);
+                if (!File.Exists(fullPath))
+                {
+                    string fileName = fileName_exist;
+                    string filePath = Path.Combine(MainfolderPath, fileName);
+                    using (var inputStream = model.Avatar.OpenReadStream())
+                    {
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            inputStream.CopyTo(fileStream);
+                        }
+                    }
+                    user.Avatar = @"\Images\UserProfileImages\" + fileName;
+                }
+                else
+                {
+                    user.Avatar = @"\Images\UserProfileImages\" + fileName_exist;
+
+                }
+            }
+          
             user.FirstName = model.FirstName;
             user.LastName=model.LastName;
             user.Password = model.Password;
@@ -359,7 +394,7 @@ namespace CI_platform.Repositories.Repository
         }
        
         public void Adduser(UserAddViewModel model)
-        {
+        {  
             var model1 = new User
             {
                 FirstName = model.FirstName,
@@ -383,15 +418,15 @@ namespace CI_platform.Repositories.Repository
             {
                 Directory.CreateDirectory(MainfolderPath);
             }
-            string fileName = Guid.NewGuid().ToString();
+            string fileName = model.Avatar.FileName;
 
-            var uploads = Path.Combine(MainfolderPath, fileName + Path.GetExtension(model.Avatar.FileName));
+            var uploads = Path.Combine(MainfolderPath, fileName);
 
             using (var fileStreams = new FileStream(uploads, FileMode.Create))
             {
                 model.Avatar.CopyTo(fileStreams);
             }
-            user.Avatar = @"\Images\UserProfileImages\" + fileName + Path.GetExtension(model.Avatar.FileName);
+            user.Avatar = @"\Images\UserProfileImages\" + fileName;
             _ciplatformcontext.SaveChanges();
             
         }
@@ -423,6 +458,170 @@ namespace CI_platform.Repositories.Repository
                 };
                 _ciplatformcontext.Add(banner);
                 _ciplatformcontext.SaveChanges();
+        }
+        public void Editmission(MissionAddViewModel model, List<int> selectedSkills)
+        {
+            var mission = _ciplatformcontext.Missions.SingleOrDefault(m => m.MissionId == model.MissionId);
+            List<MissionMedium> missionMedia = _ciplatformcontext.MissionMedia.Where(m => m.MissionId == model.MissionId).ToList();
+            List<MissionDocument> missionDoc = _ciplatformcontext.MissionDocuments.Where(m => m.MissionId == model.MissionId).ToList();
+            var missionskills = _ciplatformcontext.MissionSkills.Where(m=>m.MissionId==model.MissionId);
+            _ciplatformcontext.MissionSkills.RemoveRange(missionskills);
+            var goals = _ciplatformcontext.GoalMissions.Where(g=>g.MissionId==model.MissionId).ToList();
+            if(model.MissionType=="goal")
+            {
+                _ciplatformcontext.GoalMissions.RemoveRange(goals);
+                var goalmodel = new GoalMission
+                {
+                    GoalObjectiveText=model.GoalObjectiveText,
+                    GoalValue=model.GoalValue
+                };
+                mission.GoalMissions.Add(goalmodel);
+            }
+            string wwwRootPath = _hostEnvironment.WebRootPath;
+
+            if (model.Title != mission.Title)
+            {
+               
+                string imagesFolderPath = Path.Combine(wwwRootPath, "Images");
+                string MainfolderPath = Path.Combine(imagesFolderPath, "Mission");
+                string oldfolderpath = Path.Combine(MainfolderPath, mission.Title);
+                string folderName = model.Title;
+                string newfolderPath = Path.Combine(MainfolderPath, folderName);
+                if (!Directory.Exists(newfolderPath))
+                {
+                    Directory.CreateDirectory(newfolderPath);
+                }
+                string[] imageFiles = Directory.GetFiles(oldfolderpath, "*.png|*.jpg");
+                foreach (string imageFile in imageFiles)
+                {
+                    string fileName = Path.GetFileName(imageFile);
+                    string destFile = Path.Combine(newfolderPath, fileName);
+                    File.Copy(imageFile, destFile, true);
+                }
+                string documentFolderPath = Path.Combine(wwwRootPath, "Documents");
+                string docmainfolderPath = Path.Combine(documentFolderPath, "Mission");
+                string docoldfolderpath = Path.Combine(docmainfolderPath, mission.Title);
+                string docnewfolderPath = Path.Combine(docmainfolderPath, folderName);
+                if (!Directory.Exists(docnewfolderPath))
+                {
+                    Directory.CreateDirectory(docnewfolderPath);
+                }
+                string[] docFiles = Directory.GetFiles(docoldfolderpath, "*.doc|*.pdf|*.xlsx|*xls");
+                foreach (string docFile in docFiles)
+                {
+                    string fileName = Path.GetFileName(docFile);
+                    string destFile = Path.Combine(docnewfolderPath, fileName);
+                    File.Copy(docFile, destFile, true);
+                }
+               
+
+
+            }
+            foreach (var skill in selectedSkills)
+            {
+                MissionSkill skillmodel = new MissionSkill
+                {    
+                    SkillId = skill,                
+                };
+                mission.MissionSkills.Add(skillmodel);
+            }
+            if(model.Images!=null)
+            {
+                _ciplatformcontext.MissionMedia.RemoveRange(missionMedia);
+                string imagesFolderPath = Path.Combine(wwwRootPath, "Images");
+                string MainfolderPath = Path.Combine(imagesFolderPath, "Mission");
+                if (!Directory.Exists(MainfolderPath))
+                {
+                    Directory.CreateDirectory(MainfolderPath);
+                }
+                string folderName = model.Title;
+                string folderPath = Path.Combine(MainfolderPath, folderName);
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+
+                foreach (var Image in model.Images)
+                {
+                    string fileName = Image.FileName;
+                    var uploads = Path.Combine(folderPath, fileName + Path.GetExtension(Image.FileName));
+                    using (var fileStreams = new FileStream(uploads, FileMode.Create))
+                    {
+                        Image.CopyTo(fileStreams);
+                    }
+                    var viewModel = new MissionMedium
+                    {
+                        MediaName = fileName,
+                        MediaType = "Imag",
+                        MediaPath = @"\Images\Mission\" + folderName + @"\" + fileName + Path.GetExtension(Image.FileName),
+                    };
+                    mission.MissionMedia.Add(viewModel);
+                }
+            }
+            if(model.Documents!=null)
+            {
+                _ciplatformcontext.MissionDocuments.RemoveRange(missionDoc);
+                string docFolderPath = Path.Combine(wwwRootPath, "Documents");
+                string docMainfolderPath = Path.Combine(docFolderPath, "Mission");
+                if (!Directory.Exists(docMainfolderPath))
+                {
+                    Directory.CreateDirectory(docMainfolderPath);
+                }
+                string folderName = model.Title;
+                string docfolderPath = Path.Combine(docMainfolderPath, folderName);
+                if (!Directory.Exists(docfolderPath))
+                {
+                    Directory.CreateDirectory(docfolderPath);
+                }
+                foreach (var doc in model.Documents)
+                {
+                    string fileName = doc.FileName;
+                    var uploads = Path.Combine(docfolderPath, fileName + Path.GetExtension(doc.FileName));
+                    using (var fileStreams = new FileStream(uploads, FileMode.Create))
+                    {
+                        doc.CopyTo(fileStreams);
+                    }
+                    MissionDocument docModel = new MissionDocument()
+                    {
+                        DocumentName = doc.FileName,
+                        DocumentPath = @"\Documents\Mission\" + folderName + @"\" + fileName + Path.GetExtension(doc.FileName),
+                    };
+
+                    switch (Path.GetExtension(doc.FileName))
+                    {
+                        case ".doc":
+                        case ".docx":
+                            docModel.DocumentType = "DOCX";
+                            break;
+                        case ".xls":
+                        case ".xlsx":
+                            docModel.DocumentType = "XLSX";
+                            break;
+                        case ".pdf":
+                            docModel.DocumentType = "PDF";
+                            break;
+                        default:
+                            // Handle other types of documents here
+                            break;
+                    }
+                    mission.MissionDocuments.Add(docModel);
+                }
+            }
+            mission.Title = model.Title;
+            mission.CityId = model.CityId;
+            mission.CountryId = mission.CountryId;
+            mission.OrganizationDetail = mission.OrganizationDetail;
+            mission.OrganizationName = mission.OrganizationName;
+            mission.ShortDescription = model.ShortDescription;
+            mission.Description = model.Description;
+            mission.StartDate = model.StartDate;
+            mission.EndDate = model.EndDate;
+            mission.TotalSeats = model.TotalSeats;
+            mission.Availibility = model.Availibility;
+            mission.ThemeId = model.ThemeId;
+            mission.MissionType = model.MissionType;
+            mission.Status = model.Status;
+            _ciplatformcontext.SaveChanges();
         }
         public void Addmission(MissionAddViewModel model, List<int> selectedSkills)
         {
@@ -480,8 +679,8 @@ namespace CI_platform.Repositories.Repository
            
             foreach (var Image in model.Images)
             {   
-                string fileName = Guid.NewGuid().ToString();
-                var uploads = Path.Combine(folderPath, fileName + Path.GetExtension(Image.FileName));
+                string fileName = Image.FileName;
+                var uploads = Path.Combine(folderPath, fileName);
                 using (var fileStreams = new FileStream(uploads, FileMode.Create))
                 {
                     Image.CopyTo(fileStreams);
@@ -491,7 +690,7 @@ namespace CI_platform.Repositories.Repository
                     MissionId = mission.MissionId,
                     MediaName=fileName,
                     MediaType="Imag",
-                    MediaPath= @"\Images\Mission\"+folderName+@"\" +fileName + Path.GetExtension(Image.FileName),
+                    MediaPath= @"\Images\Mission\"+folderName+@"\" +fileName,
                 };
                 _ciplatformcontext.Add(viewModel);
                 _ciplatformcontext.SaveChanges();
@@ -506,8 +705,8 @@ namespace CI_platform.Repositories.Repository
             }
             foreach (var doc in model.Documents)
             {
-                string fileName = Guid.NewGuid().ToString();
-                var uploads = Path.Combine(folderPath, fileName + Path.GetExtension(doc.FileName));
+                string fileName = doc.FileName;
+                var uploads = Path.Combine(missiondocfolderPath, fileName);
                 using (var fileStreams = new FileStream(uploads, FileMode.Create))
                 {
                     doc.CopyTo(fileStreams);
@@ -516,7 +715,7 @@ namespace CI_platform.Repositories.Repository
                 {
                     MissionId = mission.MissionId,
                     DocumentName = doc.FileName,
-                    DocumentPath = @"\Documents\Mission\" + folderName + @"\" + fileName + Path.GetExtension(doc.FileName),
+                    DocumentPath = @"\Documents\Mission\" + folderName + @"\",
                 };
               
                 switch (Path.GetExtension(doc.FileName))

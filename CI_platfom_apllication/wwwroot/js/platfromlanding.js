@@ -10,9 +10,12 @@ function showList(e) {
     var $time_pill = $('.timepill');
     var $star_text = $('.star_text');
     var $tree_star = $('.tree_star');
-
+    var $resize_img = $('.card-img-top');
     e.preventDefault();
     $gridCont.addClass('list-view');
+    $resize_img.removeClass('resize_img_grid');
+    $resize_img.addClass('resize_img_list');
+
 /*    $gridCont.hasClass('list-view') ? $gridCont.removeClass('list-view') : $gridCont.addClass('list-view');
 */    $gridCont.hasClass('list-view') ? $new_item.removeClass('d-none') : $new_item.addClass('d-block');
     $gridCont.hasClass('list-view') ? $apply.addClass('d-none') : $apply.removeClass('d-block');
@@ -30,6 +33,7 @@ function gridList(e) {
     var $gridCont = $('.grid-container');
     var $new_item = $('.new-items');
     var $apply = $('.apply_btn');
+    var $resize_img = $('.card-img-top');
     // var $badge=$('.extra_badge');
     var $only_list = $('.only_list');
     var $only_grid = $('.only_grid');
@@ -40,6 +44,8 @@ function gridList(e) {
     $gridCont.removeClass('list-view');
     $new_item.addClass('d-none');
     $apply.removeClass('d-none');
+    $resize_img.removeClass('.resize_img_list');
+    $resize_img.addClass('.resize_img_grid');
     // $badge.addClass('d-none');
     $only_grid.removeClass('d-none');
     $only_list.addClass('d-none');

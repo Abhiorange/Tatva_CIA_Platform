@@ -17,6 +17,7 @@ namespace CI_platform.Repositories.Interface
         public void editBanner(BannerAddViewModel model);
         public BannerAddViewModel getBanner(string bannerid);
         public MissionAddViewModel editmissondata(string missonid);
+        public void Editmission(MissionAddViewModel model, List<int> selectedSkills);
 
         public List<Country> getcountries();
         public List<City> getcities(string countryid);

@@ -50,13 +50,15 @@ $(document).ready(function () {
             var timesheetId = button.data('timesheetid'); // Extract missionid from data attribute
             var missionTitle = button.data('missiontitle');
             var notes = button.data('notes');
-            var action = button.data('action');
+        var action = button.data('action');
+        var goalvalue = button.data('goalvalue');
             console.log(action);
             var modal = $(this);
             modal.find('#goalmission').val(missionTitle);
-            modal.find('#action').val(action);
-            modal.find('#message').val(notes);
-            modal.find('#timesheet').val(timesheetId);
+        modal.find('#action1').val(action);
+            modal.find('#message1').val(notes);
+        modal.find('#timesheet').val(timesheetId);
+        modal.find('#goalvalue').val(goalvalue);
     });
 });
 $('#goalform').submit(function (event) {
@@ -73,8 +75,8 @@ $('#goalform').submit(function (event) {
     }
     else {
         $('#actionval').addClass('d-none');
-        $('#messageval').removeClass('d-none');
-        $('#goalform').submit();
+        $('#messageval').addClass('d-none');
+        $('#goalform')[0].submit();
     }
 });
 function showModal(id) {

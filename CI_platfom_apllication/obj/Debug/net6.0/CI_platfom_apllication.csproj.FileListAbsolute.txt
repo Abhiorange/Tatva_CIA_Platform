@@ -619,3 +619,4 @@ C:\Users\ABHISHEK\Desktop\Tatva_CIA_Platform\CI_platfom_apllication\obj\Debug\ne
 C:\Users\ABHISHEK\Desktop\Tatva_CIA_Platform\CI_platfom_apllication\obj\Debug\net6.0\CI_platfom_apllication.pdb
 C:\Users\ABHISHEK\Desktop\Tatva_CIA_Platform\CI_platfom_apllication\obj\Debug\net6.0\CI_platfom_apllication.genruntimeconfig.cache
 C:\Users\ABHISHEK\Desktop\Tatva_CIA_Platform\CI_platfom_apllication\obj\Debug\net6.0\ref\CI_platfom_apllication.dll
+C:\Users\ABHISHEK\Desktop\Tatva_CIA_Platform\CI_platfom_apllication\obj\Debug\net6.0\CI_platfom_apllication.MvcApplicationPartsAssemblyInfo.cs

@@ -107,11 +107,19 @@
     width: 240px;
 }
 
-.resize_img {
+/*.resize_img {
     width: 100%;
     height: 100%;
+}*/
+.resize_img_grid
+{
+    width:100% !important;
+    height:250px !important;
 }
-
+.resize_img_list{
+    height:100% !important;
+    width:260px !important;
+}
 .card_img_mis {
     height: fit-content;
 }
@@ -157,7 +165,10 @@
     .only_list {
         flex-direction: column;
     }
-
+    .resize_img_list {
+        width: 260px !important;
+    }
+    .
     .fonttag {
         font-size: 12px !important;
         /* margin-left:0 !important; */
@@ -182,7 +193,7 @@
     }
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:767.10px) {
     #navbarSupportedContentsecond {
         flex-direction: column !important;
     }

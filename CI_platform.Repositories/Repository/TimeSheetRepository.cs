@@ -53,7 +53,6 @@ namespace CI_platform.Repositories.Repository
                           DateVolunteered=(DateTime)model.DateVolunteered,
                           Notes=model.Notes,
                           Status="SUBMIT_FOR_APPROVAL"
-
                       }
                           );
             _ciplatformcontext.SaveChanges();
@@ -100,10 +99,9 @@ namespace CI_platform.Repositories.Repository
             var viewModelListtime = new List<SheetViewModel>();
             var viewModelListgoal = new List<SheetViewModel>();
             foreach (var timesheet in timesheets)
-            {
+            {   
                 var mission = missions.FirstOrDefault(m => m.MissionId == timesheet.MissionId && m.MissionType=="time");
-               
-                if(mission!=null)
+                if (mission!=null)
                 {
                     long hours = (long)timesheet.Time.Value.Hours;
                     long minutes = (long)timesheet.Time.Value.Minutes;
@@ -114,7 +112,6 @@ namespace CI_platform.Repositories.Repository
                         minute = minutes,
                         DateVolunteered = timesheet.DateVolunteered,
                         Notes=timesheet.Notes,
-                        goalmission=goalmissions
                     };
 
                     // Add the view model to the list
@@ -126,8 +123,8 @@ namespace CI_platform.Repositories.Repository
             {
                
                 var mission = missions.FirstOrDefault(m => m.MissionId == timesheet.MissionId && m.MissionType == "goal");
-               
-               if(mission!=null)
+                var goalvalue = _ciplatformcontext.GoalMissions.Where(g => g.MissionId == mission.MissionId).Select(g => g.GoalValue).SingleOrDefault();
+                if (mission!=null)
                 {
                     var viewModel1 = new SheetViewModel
                     {
@@ -136,8 +133,7 @@ namespace CI_platform.Repositories.Repository
                         DateVolunteered = timesheet.DateVolunteered,
                         Action = (int)timesheet.Action,
                         Notes = timesheet.Notes,
-                        goalmission = goalmissions
-
+                        GoalValue = goalvalue
                     };
 
                     viewModelListgoal.Add(viewModel1);

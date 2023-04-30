@@ -120,8 +120,18 @@ namespace CI_platfom_apllication.Controllers
             return PartialView("_banneradd");
         }
         public IActionResult AddMission(MissionAddViewModel model,List<int> selectedSkills)
-        {
-            _adminRepository.Addmission(model,selectedSkills);
+        {   
+            if(model.MissionId==0)
+            {
+                _adminRepository.Addmission(model, selectedSkills);
+                TempData["success"] = "Mission is added successfully";
+            }
+            else
+            {
+                _adminRepository.Editmission(model, selectedSkills);
+                TempData["success"] = "Mission is edited successfully";
+            }
+           
             return RedirectToAction("Mission", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
         }
         public IActionResult AddBanner(BannerAddViewModel model)
@@ -152,7 +162,6 @@ namespace CI_platfom_apllication.Controllers
                 _adminRepository.updateuser(model);
                 TempData["success"] = "User is updated succesfully";
                 return RedirectToAction("User", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
-
             }
 
         }

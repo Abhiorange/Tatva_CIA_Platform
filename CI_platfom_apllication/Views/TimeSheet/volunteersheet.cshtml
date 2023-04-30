@@ -211,16 +211,18 @@
                                                 <span class="text-danger" asp-validation-for="@Model.Item1.missiontitle"></span>
                                             </div>
                                             <input id="timesheet" asp-for="@Model.Item1.timesheetid" hidden />
-                                          
+                                            <input id="goalvalue" hidden/>
+                                            <input id="totalgoalachieve" hidden/>
                                             <div class="d-flex flex-column mt-2">
-                                                <label for="action">Actions</label>
-                                                <input type="text" id="action1" asp-for="@Model.Item1.Action"/>
-                                                <span class="text-danger d-none" asp-validation-for="@Model.Item1.Action" id="actionval">Action is required</span>
+                                                <label for="action">Actions</label>Enter valid action</span>
+                                                <input id="action1" type="text" asp-for="@Model.Item1.Action"/>
+                                            <span class="text-danger d-none" asp-validation-for="@Model.Item1.Action" id="actionval">Enter valid action</span>
+                                            <span="text-danger d-none" id="validaction"></span>
                                             </div>
                                             <div class="d-flex flex-column">
                                                 <label for="message">Message</label>
                                                 <textarea id="message1" placeholder="Enter your message" type="text" asp-for="@Model.Item1.Notes"></textarea>
-                                                <span class="text-danger d-none" asp-validation-for="@Model.Item1.Notes" id="messageval">Notes is required</span>
+                                                <span class="text-danger d-none" asp-validation-for="@Model.Item1.Notes" id="messageval">Enter valid</span>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -238,7 +240,7 @@
                                 <td>@(goal.DateVolunteered.HasValue ? goal.DateVolunteered.Value.ToString("dd-MM-yyyy") : "N/A")</td>
                                 <td>@goal.Action</td>
                                 <td class="d-flex">
-                             <a class="nav-link text-black editgoalsheet mx-2"  data-timesheetid="@goal.timesheetid" data-action="@goal.Action"  data-missiontitle="@goal.missiontitle" data-notes="@goal.Notes" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                             <a class="nav-link text-black editgoalsheet mx-2" data-totalachieved="@goal.Totalgoalachieved" data-goalvalue="@goal.GoalValue" data-timesheetid="@goal.timesheetid" data-action="@goal.Action"  data-missiontitle="@goal.missiontitle" data-notes="@goal.Notes" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                         <i class="bi bi-pencil-square icon"></i>
                                     </a>                                    
                                     <a onclick="showModal1(@goal.timesheetid)" type="button" class="mx-2"><i class="bi bi-trash3"></i></a>
@@ -326,10 +328,10 @@
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
     <script src="~/js/volunteersheet.js"></script>
+                <partial name="_ValidationScriptsPartial" />
 
 </body>
 </html>
- @section Scripts{
-            <partial name="_ValidationScriptsPartial" />
+@* @section Scripts{
 
-    }
+    }*@

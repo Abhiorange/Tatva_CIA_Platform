@@ -6,7 +6,7 @@
   }
 #smallpos {
     position: absolute;
-    top: 5px;
+    top: 5px;                                                                                                                 
     right: 5px;
 }
   .text {
@@ -62,4 +62,13 @@
 #navbarSupportedContentsecond
 {
     display:none !important;
+}
+.active .page-link {
+    background-color: orange !important;
+    color: white !important
+}
+
+.page-item .disabled {
+    background-color: lightgrey !important;
+    color: white !important;
 }

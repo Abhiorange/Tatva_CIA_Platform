@@ -75,7 +75,7 @@ function approveapplication(miappid) {
         },
         success: function (response) {
             alert('called');
-            $('#loadPartialView').html($(result).find('#loadPartialView').html());
+            $('#loadPartialView').html($(response).find('#loadPartialView').html());
             toastr.success("Application is Approved");
         }
     })
@@ -89,7 +89,7 @@ function declineapplication(miappid) {
         },
         success: function (response) {
             alert('called');
-            $('#loadPartialView').html($(result).find('#loadPartialView').html());
+            $('#loadPartialView').html($(response).find('#loadPartialView').html());
             toastr.success("Application is Decline Succesfully");
         }
     })

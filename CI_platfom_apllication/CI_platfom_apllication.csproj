@@ -29,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\Documents\Mission\" />
     <Folder Include="wwwroot\Images\Mission\" />
   </ItemGroup>
 

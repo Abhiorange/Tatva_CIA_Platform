@@ -14,7 +14,7 @@ namespace CI_platfom_apllication.Controllers
             _storyRepository = storyRepository;
 
         }
-        public IActionResult storylisting(string? SearchInputdata = "", int pageindex = 1, int pageSize = 9)
+        public IActionResult storylisting(string? SearchInputdata = "", int pageindex = 1, int pageSize = 3)
         {
             var entity = _storyRepository.getstories(SearchInputdata,pageindex,pageSize);
             if (entity == null)
@@ -54,7 +54,7 @@ namespace CI_platfom_apllication.Controllers
             var entity = _storyRepository.storydatabase(mission_id, title, description, status, images, user_id,date);
             var entity1 = _storyRepository.storymedia(mission_id, user_id, images, videos);
 
-            return Json(new { redirectUrl = Url.Action("addstory", "StoryListing", new { missionid = missionid }) });
+            return Json(new { redirectUrl = Url.Action("addstory", "StoryListing", new { missionid = missionid })});
 
         }
         public IActionResult editdatabase(string missionid, string title, string description, string status, string[] images, string videos, DateTime date)
@@ -64,6 +64,7 @@ namespace CI_platfom_apllication.Controllers
 
             var entity = _storyRepository.editstorydatabase(mission_id, title, description, status, user_id,date);
             var entity1 = _storyRepository.editstorymedia(mission_id, user_id, images, videos);
+            ViewData["Message"] = "Story is edited successfully";
 
             return Json(new { redirectUrl = Url.Action("storylisting", "StoryListing") });
 

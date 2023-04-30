@@ -24,7 +24,12 @@ $('#countryselect').on('change', function () {
             }
         })
     });
-
+$('.skillselect:checkbox:checked').each(function () {
+    alert('span called');
+    var skillname = $(this).next('label').text();
+    var id = $(this).val();
+    $('.skill-section').append('<span class="filter-list ps-3 pe-3 me-2">' + skillname + '<i class="bi bi-x filter-close-button"></i></span>')
+})
 
 
     function getThemes() {
@@ -78,7 +83,7 @@ if ($("#missionhide").val() != 0) {
     Mission();
 }
 function Mission() {
-    alert('change call');
+  
     var type = $('#avail12').val();
     console.log("type of mission", type);
     if (type == "time") {
@@ -155,8 +160,8 @@ function handleFiles(files) {
         div.innerText = file.name;
 
         // Add some styles to the div
-        div.style.width = '100px';
-        div.style.margin = '5px';
+       /* div.style.width = '100px';
+        div.style.margin = '5px';*/
 
         // Add the div element to the showDocument div
             document.querySelector('#showDocument').appendChild(div);

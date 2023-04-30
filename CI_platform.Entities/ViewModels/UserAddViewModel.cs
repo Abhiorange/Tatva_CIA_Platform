@@ -39,11 +39,14 @@ namespace CI_platform.Entities.ViewModels
         [Required(ErrorMessage = "Department is required")]
         public string? Department { get; set; }
         public long CityId { get; set; }
+        [Required(ErrorMessage = "Text is required")]
         public string? ProfileText { get; set; }
         public long CountryId { get; set; }
        
         [Required(ErrorMessage = "Title is required")]
         public string? Title { get; set; }
+        [Required(ErrorMessage = "Status is required")]
+
         public int Status { get; set; }
       
         

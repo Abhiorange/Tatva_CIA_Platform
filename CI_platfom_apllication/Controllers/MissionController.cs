@@ -36,7 +36,8 @@ namespace CI_platfom_apllication.Controllers
        
         public IActionResult VolunteerMission(int id,int pageindex=1,int pagesize=1)
         {
-            var entity = _missionRepository.getvolunteermission(id,pageindex,pagesize);
+            var user_id = HttpContext.Session.GetString("userid");
+            var entity = _missionRepository.getvolunteermission(id,pageindex,pagesize,user_id);
             return View(entity);
         }
         public JsonResult Country()
@@ -47,8 +48,8 @@ namespace CI_platfom_apllication.Controllers
 
         public JsonResult getusers()
         {
-            var country = _missionRepository.GetUsers();
-            return Json(country);
+            var users = _missionRepository.GetUsers();
+            return Json(users);
         }
 
         public JsonResult City(int[] ids)
@@ -65,14 +66,11 @@ namespace CI_platfom_apllication.Controllers
         }
 
         public IActionResult usersthrouid(int[] ids,int missionid,int from_id)
-        {
-         /*   var users = new List<User>();*/
-           
-
+        { 
             foreach (var id in ids)
             {
                 string url = Url.Action("VolunteerMission", "Mission", new { id =missionid}, Request.Scheme);
-                       var users_ids = _missionRepository.GetUsers_id(id,url,missionid,from_id);             
+                var users_ids = _missionRepository.GetUsers_id(id,url,missionid,from_id);             
             }
             
 
@@ -145,7 +143,7 @@ namespace CI_platfom_apllication.Controllers
         public IActionResult comment(int missionid, string userid, string commentsDiscription)
         {
             var comment = _missionRepository.AddComment(missionid, userid, commentsDiscription);
-            /*   return View(VolunteerMission);*/
+          
             return RedirectToAction("volunteermission", new { id = missionid });
         }
 
