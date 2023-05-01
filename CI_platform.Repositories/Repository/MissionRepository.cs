@@ -301,6 +301,7 @@ namespace CI_platform.Repositories.Repository
                 ApprovalStatus = "PENDING",
                 AppliedAt = DateTime.Now,
             };
+       
             _ciplatformcontext.Add(apply);
             _ciplatformcontext.SaveChanges();
             return "sucess";

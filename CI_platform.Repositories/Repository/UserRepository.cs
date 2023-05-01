@@ -66,7 +66,11 @@ namespace CI_platform.Repositories.Repository
             return password_user.FirstName + "," + password_user.UserId + "," + password_user.Avatar;
 
         }
-
+        public List<Banner> GetBanners()
+        {
+            List<Banner> banners = _ciplatformcontext.Banners.Where(b => b.Status == "Active").OrderBy(b => b.SortOrder).ToList();
+            return banners;
+        }
         public string register(RegisterViewModel user)
         {
             var email = _ciplatformcontext.Users.FirstOrDefault(c => c.Email.Equals(user.Email.ToLower()));

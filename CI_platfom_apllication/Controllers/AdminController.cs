@@ -46,6 +46,11 @@ namespace CI_platfom_apllication.Controllers
             var model = _adminRepository.getstorydata(pageindex, pageSize, SearchInputdata);
             return PartialView("_storypage",model);
         }
+        public IActionResult Cmspage(string SearchInputdata = "", int pageindex = 1, int pageSize = 4)
+        {
+            var model = _adminRepository.getcmspagedata(pageindex, pageSize, SearchInputdata);
+            return PartialView("_cmspage",model);
+        }
         public IActionResult MissionApplication(string SearchInputdata = "", int pageindex = 1, int pageSize = 4)
         {
             var model = _adminRepository.getmissionapplicationdata(pageindex, pageSize, SearchInputdata);
@@ -207,10 +212,10 @@ namespace CI_platfom_apllication.Controllers
             return RedirectToAction("Mission", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
             
         }
-        public IActionResult DeleteTheme(string themeid)
+        public bool DeleteTheme(string themeid)
         {
-            _adminRepository.deletetheme(themeid);
-            return RedirectToAction("Theme", new { SearchInputdata = "", pageindex = 1, pageSize = 2 });
+           var delete= _adminRepository.deletetheme(themeid);
+            return delete;
         }
         public bool DeleteSkill(string skillId)
         {

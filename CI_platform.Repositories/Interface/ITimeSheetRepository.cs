@@ -13,7 +13,7 @@ namespace CI_platform.Repositories.Interface
         public List<Mission> missionsbytime(long userid);
         public List<Mission> missionsbygoal(long userid);
         public void sheetdatabase(SheetViewModel model, long userid);
-        public (List<SheetViewModel>, List<SheetViewModel>) getdatasheet();
+        public (List<SheetViewModel>, List<SheetViewModel>) getdatasheet(long userid);
         public void editimedatabase(SheetViewModel model, long timesheetid);
         public void deletedatabase(long timesheetid);
         public void editgoaldatabase(SheetViewModel model);

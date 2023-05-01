@@ -329,7 +329,7 @@
                             else if (Model.checkClosed)
                             {
                                 <button class="py-2 px-3 mx-auto app">
-                                    Mission is closed, you cannot apply<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
+                                    Mission Deadline is gone, you cannot apply<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
                                 </button>
                             }
                             else if (apply == null)
@@ -438,13 +438,19 @@
                                 </div>
 
                             </div>
-                            <div class="container d-flex">
+                            <div class="container d-flex flex-wrap">
 
 
 
                                 @foreach (var data in Model.MissionDocuments)
                                 {
-                                    if (data.DocumentType == "doc")
+                                    if(Model.MissionDocuments.Count()==0)
+                                    {
+                                        <h4>No Documenst Uploaded</h4>
+                                    }
+                                    else
+                                    {
+                                       if (data.DocumentType == "doc" || data.DocumentType == "DOCX" )
                                     {
                                         <a class="text-decoration-none rounded-pill border px-1 mx-1 py-1" asp-controller="Mission" asp-action="DownloadDocument" asp-route-fileType="@data.DocumentType" asp-route-id="@Model.missionid"><img src="~/Assets/doc.png">@data.DocumentName</a>
 
@@ -454,12 +460,13 @@
                                         <a class="text-decoration-none rounded-pill border px-1 mx-1 py-1" asp-controller="Mission" asp-action="DownloadDocument" asp-route-fileType="@data.DocumentType" asp-route-id="@Model.missionid"><img src="~/Assets/xlsx.png">@data.DocumentName</a>
 
                                     }
-                                    else if (data.DocumentType == "pdf")
+                                    else if (data.DocumentType == "pdf" || data.DocumentType == "PDF")
                                     {
                                         <a class="text-decoration-none rounded-pill border px-1 mx-1 py-1" asp-controller="Mission" asp-action="DownloadDocument" asp-route-fileType="@data.DocumentType" asp-route-id="@Model.missionid"><img src="~/Assets/pdf.png">@data.DocumentName</a>
 
                                     }
-
+  
+                                    }  
 
                                 }
 
@@ -531,31 +538,13 @@
 
                             </div>
                         </div>
-
                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 </div>
                 <!-- left side of middle component -->
                 <!-- right side of middle component  -->
                 <div class="col-md-4">
 
-                    <div class="list-group list-group-item pt-0">
+                    <div class="list-group my-2 list-group-item pt-0">
                         <div class="border-bottom fw-bolder pt-3 pb-2">
                             <h5>Information</h5>
                         </div>

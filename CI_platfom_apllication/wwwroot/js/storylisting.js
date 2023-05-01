@@ -36,4 +36,7 @@ function filterSearch() {
 
         }
     })
-    }
+}
+var img = $('.search-icon');
+img.removeClass('pt-md-3');
+img.addClass('pt-md-2');

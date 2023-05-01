@@ -25,8 +25,9 @@ namespace CI_platform.Entities.ViewModels
         [Required(ErrorMessage = "Enter Total Seats")]
         public int? TotalSeats { get; set; }
         [Required(ErrorMessage = "Enter Short Description")]
-
         public string? ShortDescription { get; set; }
+        [Required(ErrorMessage = "Enter Registration Date")]
+        public DateTime? RegistrationDeadline { get; set; }
         public List<SelectListItem> countries { get; set; }
         public List<SelectListItem> cities { get; set; }
         public List<SelectListItem> Themes { get; set; }

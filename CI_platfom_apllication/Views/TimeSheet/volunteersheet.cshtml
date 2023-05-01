@@ -42,12 +42,13 @@
                                     <div class="d-flex flex-column">
                                         <label for="mission">Mission</label>
                                         <select id="mission" asp-for="@Model.Item1.MissionId">
-                                            <option>Select Mission</option>
+                                        
                                         </select>
+                                        <span class="text-danger" asp-validation-for="@Model.Item1.MissionId"></span>
                                     </div>
                                     <div class="d-flex flex-column mt-2">
                                         <label for="date">Date Volunteered</label>
-                                        <input type="date" placeholder="select date" id="date" asp-for="@Model.Item1.DateVolunteered" />
+                                        <input type="date" max="@DateTime.Now.ToString("yyyy-MM-dd")" placeholder="select date" id="date" asp-for="@Model.Item1.DateVolunteered" />
                                         <span class="text-danger" asp-validation-for="@Model.Item1.DateVolunteered"></span>
                                     </div>
                                     <div class="d-flex mt-2 justify-content-between">
@@ -158,19 +159,19 @@
                                     <div class="d-flex flex-column">
                                         <label for="mission">Mission</label>
                                         <select id="mission_id" asp-for="@Model.Item1.MissionId"  onchange="Takegoalvalue()">
-                                            <option>Select Mission</option>
                                         </select>
+                                     <span class="text-danger" asp-validation-for="@Model.Item1.MissionId"></span>
                                     </div>
                                      <input id="goalvalue2" hidden/>
                                     <div class="d-flex flex-column mt-2">
                                         <label for="action">Actions</label>
-                                        <input type="text" id="action" asp-for="@Model.Item1.Action" required/>
+                                        <input type="text" id="addaction" asp-for="@Model.Item1.Action"  class="form-control" required/>
                                         <span asp-validation-for="@Model.Item1.Action"></span>
                                         <span class="text-danger d-none" id="addvalidspan"></span>
                                     </div>
                                     <div class="d-flex flex-column mt-2">
                                         <label for="date">Date Volunteered</label>
-                                        <input type="date" placeholder="select date" id="date" asp-for="@Model.Item1.DateVolunteered" />
+                                        <input type="date" max="@DateTime.Now.ToString("yyyy-MM-dd")" placeholder="select date" id="date" asp-for="@Model.Item1.DateVolunteered" />
                                         <span class="text-danger" asp-validation-for="@Model.Item1.DateVolunteered"></span>
                                     </div>
                                     <div class="d-flex flex-column">
@@ -216,7 +217,7 @@
                                             <input id="totalgoalachieve" hidden/>
                                             <div class="d-flex flex-column mt-2">
                                                 <label for="action">Actions</label>Enter valid action</span>
-                                                <input id="action1" type="text" asp-for="@Model.Item1.Action"/>
+                                                <input id="action1" type="text" asp-for="@Model.Item1.Action"  class="form-control"/>
                                             <span class="text-danger d-none" asp-validation-for="@Model.Item1.Action" id="actionval">Enter valid action</span>
                                             <span  class="text-danger d-none" id="validaction"></span>
                                             </div>

@@ -69,11 +69,6 @@ function showModal(id) {
     }).then((result) => {
         if (result.isConfirmed) {
             DeleteTheme(id);
-            Swal.fire(
-                'Deleted!',
-                'Your file has been deleted.',
-                'success'
-            )
         }
     })
 }
@@ -86,9 +81,31 @@ function DeleteTheme(themeId) {
             themeid: themeId
         },
         success: function (result) {
-            $('#loadPartialView').html($(result).find('#loadPartialView').html());
+            alert('result called');
+            console.log(result);
+            if (result == true) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Deleted',
+                    text: 'Your theme is been deleted',
+                    footer: '<a href="">You cannot de-activate it</a>'
+                }).then(() => {
+                    window.location = "/Admin/Theme/"
+                })
+
+            }
+            else if (result == false) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'This theme is already used by Mission or User',
+                    footer: '<a href="">You cannot de-activate it</a>'
+                })
+            }
            
 
         }
     });
 }
+
+

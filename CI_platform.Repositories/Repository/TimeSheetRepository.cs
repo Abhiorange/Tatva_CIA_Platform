@@ -22,14 +22,14 @@ namespace CI_platform.Repositories.Repository
         public List<Mission> missionsbytime(long userid)
         {
             var timesheet = _ciplatformcontext.Timesheets.Select(t => t.MissionId).ToList();
-            var missions = _ciplatformcontext.MissionApplications.Include(m => m.Mission).Include(m => m.User).Where(m => m.User.UserId == userid && m.Mission.MissionType == "time").Select(u => u.MissionId);
+            var missions = _ciplatformcontext.MissionApplications.Include(m => m.Mission).Include(m => m.User).Where(m => m.User.UserId == userid && m.Mission.MissionType == "time" && m.ApprovalStatus=="APPROVE").Select(u => u.MissionId);
                 return _ciplatformcontext.Missions.Where(u => missions.Contains(u.MissionId)).ToList();
         }
 
         public List<Mission> missionsbygoal(long userid)
         {
             var timesheet = _ciplatformcontext.Timesheets.Select(t => t.MissionId).ToList();
-            var missions = _ciplatformcontext.MissionApplications.Include(m => m.Mission).Include(m => m.User).Where(m => m.User.UserId == userid && m.Mission.MissionType == "goal").Select(u => u.MissionId);
+            var missions = _ciplatformcontext.MissionApplications.Include(m => m.Mission).Include(m => m.User).Where(m => m.User.UserId == userid && m.Mission.MissionType == "goal"&&  m.ApprovalStatus == "APPROVE").Select(u => u.MissionId);
             return _ciplatformcontext.Missions.Where(u => missions.Contains(u.MissionId)).ToList();
         }
 
@@ -103,10 +103,10 @@ namespace CI_platform.Repositories.Repository
             var valideaction = goalvalue - Totalgoalachieved;
             return valideaction;
         }
-        public (List<SheetViewModel>, List<SheetViewModel>) getdatasheet()
+        public (List<SheetViewModel>, List<SheetViewModel>) getdatasheet(long userid)
         {
-            var timesheets = _ciplatformcontext.Timesheets.ToList();
-            var goaltimesheets = _ciplatformcontext.Timesheets.Where(t => t.Action != 0).ToList();
+            var timesheets = _ciplatformcontext.Timesheets.Where(t=>t.UserId==userid).ToList();
+            var goaltimesheets = _ciplatformcontext.Timesheets.Where(t => t.Action != 0 && t.UserId == userid).ToList();
             var goalmissions = _ciplatformcontext.GoalMissions.ToList();
             var missions = _ciplatformcontext.Missions.ToList();
             var viewModelListtime = new List<SheetViewModel>();

@@ -50,6 +50,13 @@ namespace CI_platform.Repositories.Repository
             model.Skills = skills.ToPagedList(pageindex, 2);
             return model;
         }
+        public UserAdminViewModel getcmspagedata(int pageindex, int pageSize, string SearchInputdata)
+        {
+            var pages = _ciplatformcontext.CmsPages.Where(c => (SearchInputdata == null) || (c.Title.Contains(SearchInputdata))).OrderByDescending(c => c.Status).ToList();
+            var model = new UserAdminViewModel();
+            model.Cmspages = pages.ToPagedList(pageindex, 4);
+            return model;
+        }
         public SkillAddViewModel getskill(string skillid)
         {
             var skill = _ciplatformcontext.Skills.FirstOrDefault(s => s.SkillId.ToString() == skillid);
@@ -173,6 +180,7 @@ namespace CI_platform.Repositories.Repository
                 MissionId=mission.MissionId,
                 skillids=skillids_mission,
                 Skills=skills,
+                RegistrationDeadline=mission.RegistrationDeadline
             };
             foreach (var m in missionMedia)
             {
@@ -326,6 +334,8 @@ namespace CI_platform.Repositories.Repository
         {
             var missionapplication = _ciplatformcontext.MissionApplications.FirstOrDefault(m => m.MissionApplicationId.ToString() == applicationid);
             missionapplication.ApprovalStatus = "APPROVE";
+            var mission = _ciplatformcontext.Missions.SingleOrDefault(m => m.MissionId == missionapplication.MissionId);
+            mission.TotalSeats = mission.TotalSeats - 1;
             _ciplatformcontext.SaveChanges();
         }
         public void approvestory(string storyid)
@@ -338,7 +348,12 @@ namespace CI_platform.Repositories.Repository
         public void declineapplication(string applicationid)
         {
             var missionapplication = _ciplatformcontext.MissionApplications.FirstOrDefault(m => m.MissionApplicationId.ToString() == applicationid);
-            missionapplication.ApprovalStatus = "DECLINE";
+            if (missionapplication.ApprovalStatus == "APPROVE")
+            {
+                var mission = _ciplatformcontext.Missions.SingleOrDefault(m => m.MissionId == missionapplication.MissionId);
+                mission.TotalSeats = mission.TotalSeats + 1;
+            }
+            missionapplication.ApprovalStatus = "DECLINE";        
             _ciplatformcontext.SaveChanges();
         }
         public void declinestory(string storyid)
@@ -450,7 +465,7 @@ namespace CI_platform.Repositories.Repository
                 }
                 Banner banner = new Banner
                 {
-                    Text = WebUtility.HtmlDecode(model.Text),
+                    Text = model.Text,
                     Title = model.Title,
                     Image = @"\Images\Banner\" + model.Image.FileName,
                     SortOrder = model.SortOrder,
@@ -526,8 +541,12 @@ namespace CI_platform.Repositories.Repository
                 mission.MissionSkills.Add(skillmodel);
             }
             if(model.Images!=null)
-            {
-               /* _ciplatformcontext.MissionMedia.RemoveRange(missionMedia);*/
+            {  
+                if(missionMedia.Count()!=0)
+                {
+                    _ciplatformcontext.MissionMedia.RemoveRange(missionMedia);
+                }
+
                 string imagesFolderPath = Path.Combine(wwwRootPath, "Images");
                 string MainfolderPath = Path.Combine(imagesFolderPath, "Mission");
                 if (!Directory.Exists(MainfolderPath))
@@ -544,7 +563,7 @@ namespace CI_platform.Repositories.Repository
                 foreach (var Image in model.Images)
                 {
                     string fileName = Image.FileName;
-                    var uploads = Path.Combine(folderPath, fileName + Path.GetExtension(Image.FileName));
+                    var uploads = Path.Combine(folderPath, fileName);
                     using (var fileStreams = new FileStream(uploads, FileMode.Create))
                     {
                         Image.CopyTo(fileStreams);
@@ -553,14 +572,18 @@ namespace CI_platform.Repositories.Repository
                     {
                         MediaName = fileName,
                         MediaType = "Imag",
-                        MediaPath = @"\Images\Mission\" + folderName + @"\" + fileName + Path.GetExtension(Image.FileName),
+                        MediaPath = @"\Images\Mission\" + folderName + @"\" + fileName,
                     };
                     mission.MissionMedia.Add(viewModel);
                 }
             }
             if(model.Documents!=null)
-            {
-               /* _ciplatformcontext.MissionDocuments.RemoveRange(missionDoc);*/
+            {  
+                if (missionDoc.Count() != 0)
+                {
+                    _ciplatformcontext.MissionDocuments.RemoveRange(missionDoc);
+                }
+
                 string docFolderPath = Path.Combine(wwwRootPath, "Documents");
                 string docMainfolderPath = Path.Combine(docFolderPath, "Mission");
                 if (!Directory.Exists(docMainfolderPath))
@@ -715,7 +738,7 @@ namespace CI_platform.Repositories.Repository
                 {
                     MissionId = mission.MissionId,
                     DocumentName = doc.FileName,
-                    DocumentPath = @"\Documents\Mission\" + folderName + @"\",
+                    DocumentPath = @"\Documents\Mission\" + folderName + @"\"+fileName,
                 };
               
                 switch (Path.GetExtension(doc.FileName))
@@ -746,18 +769,28 @@ namespace CI_platform.Repositories.Repository
             mission.Status = 0;
             _ciplatformcontext.SaveChanges();
         }
-        public void deletetheme(string themeid)
+        public bool deletetheme(string themeid)
         {
             var theme = _ciplatformcontext.MissionThemes.FirstOrDefault(t => t.MissionThemeId.ToString() == themeid);
-            theme.Status = 0;
-            _ciplatformcontext.SaveChanges();
+            var MissionTheme = _ciplatformcontext.Missions.Select(m => m.ThemeId).ToList();
+            if(MissionTheme.Contains(int.Parse(themeid)))
+             {
+                return false;
+            }
+            else
+            {
+                theme.Status = 0;
+                _ciplatformcontext.SaveChanges();
+                return true;
+            }
+           
         }
         public bool deleteskill(string skillid)
         {
             var skill = _ciplatformcontext.Skills.FirstOrDefault(s => s.SkillId.ToString() == skillid);
             var MissionSkill = _ciplatformcontext.MissionSkills.Select(mp => mp.SkillId).ToList();
             var UserSkill = _ciplatformcontext.UserSkills.Select(us => us.SkillId).ToList();
-            if(MissionSkill.Contains(int.Parse(skillid)) && UserSkill.Contains(int.Parse(skillid)))
+            if(MissionSkill.Contains(int.Parse(skillid)) || UserSkill.Contains(int.Parse(skillid)))
             {
                 return false;
             }

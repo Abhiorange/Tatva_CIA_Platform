@@ -15,6 +15,7 @@ namespace CI_platform.Repositories.Interface
         public string register(RegisterViewModel user);
         public string forget(ForgetViewModel model,string url);
         public ContactUsViewModel addcontact(string userid);
+        public List<Banner> GetBanners();
 
         public string reset(ResetViewModel model, string token);
         public List<Country> GetCountries();

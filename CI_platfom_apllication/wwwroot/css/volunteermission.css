@@ -208,6 +208,10 @@ img {
 #toast-container > .toast-info {
     background-color: #54B4D3;
 }
+.displayat
+{
+    display:none;
+}
 
 
 
@@ -220,10 +224,10 @@ img {
 
 
 
-.pill{
-  width: fit-content;
-  z-index: 11;
-  background-color: white;
+.pill {
+    width: fit-content;
+    z-index: 11;
+    background-color: white;
 }
 
 #progress{

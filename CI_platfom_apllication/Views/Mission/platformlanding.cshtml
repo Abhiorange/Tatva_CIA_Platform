@@ -88,19 +88,39 @@
                             <div class="card  h-100">
 
                                 <div style="position:relative">
-                                    @{   if (@mission.RegistrationDeadline < @systemdate)
+
+                                    @{
+                                        if(@mission.MissionType=="time")
+                                        {
+                                          if (@mission.RegistrationDeadline < @systemdate)
                                             {
                                                 <div class="d-flex position-absolute pt-2 badgeclass">
-                                                    <span class="badge1 bg-warning text-dark ms-1 pt-2">Closed</span><div class="arrow-right-c"></div>
+                                                    <span class="badge1 bg-warning text-white ms-1 pt-2">Closed</span><div class="arrow-right-c"></div>
                                                 </div>
-                                            }
+                                            }   
+                                        }
+                                        else
+                                        {
+                                             var actionvalue = Model.timesheets.Where(t => t.MissionId == mission.MissionId).ToList();
+                                           var goalvalue = Model.GoalMissions.Where(g => g.MissionId == mission.MissionId).Select(g => g.GoalValue);
+                                             @if (actionvalue.Any())
+                                                {
+                                                    var totalgoalachieved = actionvalue.GroupBy(t => t.MissionId).Select(g => g.Sum(t => t.Action));
+                                                    if(totalgoalachieved.FirstOrDefault()==goalvalue.FirstOrDefault())
+                                                {
+                                                  <div class="d-flex position-absolute pt-2 badgeclass">
+                                                       <span class="badge1 bg-warning text-white ms-1 pt-2">Closed</span><div class="arrow-right-c"></div>
+                                                     </div>  
+                                                }
+                                                }  
+                                        }   
                                         if (@userid_session != null)
                                         {
                                             var applied = Model.MissionApplications.SingleOrDefault(m => m.MissionId == mission.MissionId && m.UserId.ToString() == @userid_session);
                                             if (applied != null && applied.ApprovalStatus == "APPROVE")
                                             {
                                                 <div class="d-flex position-absolute pt-2 badgeclass">
-                                                    <span class="badge1 bg-success text-dark ms-1 pt-2">Applied</span><div class="arrow-right-a"></div>
+                                                    <span class="badge1 bg-success text-white ms-1 pt-2">Applied</span><div class="arrow-right-a"></div>
                                                 </div>
                                             }
                                           
@@ -110,7 +130,6 @@
                                     @if(mission.MissionMedia.FirstOrDefault(m=>m.MissionId==mission.MissionId)!=null)
                                     {
                                         <img class="card-img-top resize_img_grid" src="@mission.MissionMedia.FirstOrDefault(m=>m.MissionId==mission.MissionId).MediaPath" alt="..." />
-
                                     }
                                     else
                                     {
@@ -180,7 +199,7 @@
                                 <!-- <div class="rounded-pill tag mx-auto px-3">Enviornment</div> -->
                                 <!-- Product details-->
                         <div class="card-body  py-3 px-3 pb-0 card_img_mis">
-                                    <div class="d-flex justify-content-between star_text d-none">
+                                    <div class="d-flex flex-wrap justify-content-between star_text d-none">
                                         <div class="d-flex flex-wrap">
                                             <div class="d-flex">
                                                 <img src="Assets\loc.png" alt="" class="logo_size mt-1">
@@ -345,13 +364,28 @@
 
                                         <div class="d-flex border-bottom  justify-content-between py-3 pt-0 only_grid">
 
-                                            <div class="d-flex align-items-center">
-                                                <img src="~/Assets/Seats-left.png">
-                                                <div class="ms-3">
-                                                    <h5 class="mb-0" style="font-size: 15px;">@mission.TotalSeats</h5>
-                                                    <p class="fs--1 mb-0 mt-0">seats left</p>
+                                         @if(@mission.MissionType=="time")
+                                            {
+                                                 <div class="d-flex align-items-center">
+                                                    <img src="~/Assets/Seats-left.png">
+                                                    <div class="ms-3">
+                                                        <h5 class="mb-0" style="font-size: 15px;">@mission.TotalSeats</h5>
+                                                        <p class="fs--1 mb-0 mt-0">seats left</p>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            }
+                                            else
+                                            {
+                                                var user_enrolled = Model.MissionApplications.Where(m => m.MissionId == @mission.MissionId).Count();
+                                                <div class="d-flex align-items-center">
+                                                    <img src="~/Assets/Seats-left.png">
+                                                    <div class="ms-3">
+                                                        <h5 class="mb-0" style="font-size: 15px;">@user_enrolled</h5>
+                                                        <p class="fs--1 mb-0 mt-0">seats Enrolled</p>
+                                                    </div>
+                                                </div>  
+                                            }
+
                                             @{
                                                 if (@mission.MissionType == "time")
                                                 {
@@ -380,19 +414,19 @@
                                                             {
                                                                 var totalgoalachieved = actionvalue.GroupBy(t => t.MissionId).Select(g => g.Sum(t => t.Action));
                                                                 <p class="m-0">@($"{totalgoalachieved.FirstOrDefault()} achieved")</p>
-                                                                <progress id="file" value="@totalgoalachieved.FirstOrDefault()" max="@goalvalue.FirstOrDefault()"> </progress>
+                                                                <progress id="file" class="size_progress" value="@totalgoalachieved.FirstOrDefault()" max="@goalvalue.FirstOrDefault()"> </progress>
                                                             }
                                                             else
                                                             {
                                                                 <p class="m-0">0 achieved</p>
-                                                                <progress id="file" value="0" max="@goalvalue.FirstOrDefault()"> </progress>
+                                                                <progress id="file" value="0" class="size_progress" max="@goalvalue.FirstOrDefault()"> </progress>
                                                             }
 
 
                                                         </div>
                                                     </div>
 
-                                                }
+                                                } 
                                             }
                                         </div>
 
@@ -400,9 +434,9 @@
 
                                         <div class="d-flex flex-wrap justify-content-between py-3 mt-5 d-none only_list">
                                             <div class="d-flex main1_flex">
-                                                <div class="d-flex flex-wrap main_flex">
+                                                <div class="d-flex main_flex">
 
-                                                    <div class="d-flex main_flex1 mx-2">
+                                                    <div class="d-flex flex-wrap main_flex1 mx-2">
                                                         <div class="d-flex align-items-center mx-2">
                                                             <img src="~/Assets/Seats-left.png">
                                                             <div class=" fonttag">
@@ -437,7 +471,7 @@
                                                                             {
                                                                                 var totalgoalachieved = actionvalue.GroupBy(t => t.MissionId).Select(g => g.Sum(t => t.Action));
                                                                                 <p class="m-0">@($"{totalgoalachieved.FirstOrDefault()} achieved")</p>
-                                                                                <progress id="file" value="@totalgoalachieved.FirstOrDefault()" max="@goalvalue.FirstOrDefault()"> </progress>
+                                                                                <progress id="file" value="@totalgoalachieved.FirstOrDefault()" class="size_progress" max="@goalvalue.FirstOrDefault()"> </progress>
                                                                             }
                                                                             else
                                                                             {
@@ -454,7 +488,7 @@
                                                     </div>
 
 
-                                                    <div class="d-flex main_flex2 mx-2">
+                                                    <div class="d-flex flex-wrap main_flex2 mx-2">
                                                         <div class="d-flex align-items-center mx-2">
                                                             <img src="Assets\calender.png" style="    height: 25px;
                                       width: 25px;">

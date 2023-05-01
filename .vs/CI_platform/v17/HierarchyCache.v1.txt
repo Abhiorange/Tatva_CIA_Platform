@@ -1,0 +1,1837 @@
+﻿++Solution 'CI_platform' ‎(3 of 3 projects)
+i:{00000000-0000-0000-0000-000000000000}:CI_platform.sln
+++CI_platform.Repositories
+i:{00000000-0000-0000-0000-000000000000}:CI_platform.Repositories
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\bin\debug\net6.0\ci_platform.repositories.dll
+++Dependencies
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>1197
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>1198
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>1972
+++Interface
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\interface\
+++IAdminRepository.cs
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\interface\iadminrepository.cs
+++IMissionRepository.cs
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\interface\imissionrepository.cs
+++IStoryRepository.cs
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\interface\istoryrepository.cs
+++ITimeSheetRepository.cs
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\interface\itimesheetrepository.cs
+++IUserRepository.cs
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\interface\iuserrepository.cs
+++NewFolder
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\newfolder\
+++Repository
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\repository\
+++AdminRepository.cs
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\repository\adminrepository.cs
+++MissionRepository.cs
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\repository\missionrepository.cs
+++StoryRepository.cs
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\repository\storyrepository.cs
+++TimeSheetRepository.cs
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\repository\timesheetrepository.cs
+++UserRepository.cs
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\repository\userrepository.cs
+++Class1.cs
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\class1.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\class1.cs
+++Analyzers
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:analyzers
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:analyzers
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:analyzers
+++Frameworks
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:frameworks
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:frameworks
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:frameworks
+++Packages
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:packages
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:packages
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:packages
+++Projects
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:projects
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:projects
+++Microsoft.AspNetCore.App.Analyzers
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\.nuget\packages\system.text.json\7.0.0\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\.nuget\packages\system.text.json\7.0.0\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\system.text.json\7.0.0\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\microsoft.netcore.app
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\microsoft.netcore.app
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\microsoft.netcore.app
+++cloudscribe.Web.Pagination (6.0.0)
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2037
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2006
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2017
+++Microsoft.EntityFrameworkCore (7.0.3)
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2034
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2003
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2013
+++Microsoft.EntityFrameworkCore.Design (7.0.3)
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2036
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2005
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2015
+++Microsoft.EntityFrameworkCore.SqlServer (7.0.3)
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2035
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2004
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2014
+++Microsoft.EntityFrameworkCore.Tools (7.0.3)
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2038
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2007
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2018
+++X.PagedList.Mvc.Core (8.4.7)
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2039
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2008
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2020
+++CI_platform.Entities
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\bin\debug\net6.0\ci_platform.entities.dll
+i:{00000000-0000-0000-0000-000000000000}:CI_platform.Entities
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\bin\debug\net6.0\ci_platform.entities.dll
+++DataModels
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\
+++ViewModels
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\
+++BannerAddViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\banneraddviewmodel.cs
+++ContactUsViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\contactusviewmodel.cs
+++ForgetViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\forgetviewmodel.cs
+++LoginViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\loginviewmodel.cs
+++MisCouCity.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\miscoucity.cs
+++MissionAddViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\missionaddviewmodel.cs
+++RegisterViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\registerviewmodel.cs
+++ResetViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\resetviewmodel.cs
+++SheetViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\sheetviewmodel.cs
+++SkillAddViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\skilladdviewmodel.cs
+++star_rating.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\star_rating.cs
+++StoryAddViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\storyaddviewmodel.cs
+++StoryDatabaseViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\storydatabaseviewmodel.cs
+++StoryDetailViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\storydetailviewmodel.cs
+++StoryViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\storyviewmodel.cs
+++ThemeAddViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\themeaddviewmodel.cs
+++UserAddViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\useraddviewmodel.cs
+++UserAdminViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\useradminviewmodel.cs
+++UserDetailViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\userdetailviewmodel.cs
+++VolunteerViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\volunteerviewmodel.cs
+++Admin.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\admin.cs
+++Banner.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\banner.cs
+++CiPlatformContext.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\ciplatformcontext.cs
+++City.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\city.cs
+++CmsPage.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\cmspage.cs
+++Comment.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\comment.cs
+++Contactu.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\contactu.cs
+++Country.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\country.cs
+++FavouriteMission.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\favouritemission.cs
+++GoalMission.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\goalmission.cs
+++Mission.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\mission.cs
+++MissionApplication.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionapplication.cs
+++MissionDocument.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missiondocument.cs
+++MissionInvite.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missioninvite.cs
+++MissionMedium.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionmedium.cs
+++MissionRating.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionrating.cs
+++MissionSkill.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionskill.cs
+++MissionTheme.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missiontheme.cs
+++PasswordReset.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\passwordreset.cs
+++Skill.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\skill.cs
+++Story.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\story.cs
+++StoryInvite.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\storyinvite.cs
+++StoryMedium.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\storymedium.cs
+++Timesheet.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\timesheet.cs
+++User.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\user.cs
+++UserSkill.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\userskill.cs
+++CI_platfom_apllication
+i:{00000000-0000-0000-0000-000000000000}:CI_platfom_apllication
+++Connected Services 
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>1973
+++Imports
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>915
+++Properties
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\properties\
+++wwwroot
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\
+++Assets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\
+++css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\
+++Documents
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\
+++Images
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\
+++js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\
+++_banneraddpartial.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\_banneraddpartial.js
+++_skillpartial.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\_skillpartial.js
+++addstory.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\addstory.js
+++Adminpage.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\adminpage.js
+++bannerpartial.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\bannerpartial.js
+++cmspartial.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\cmspartial.js
+++header.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\header.js
+++login.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\login.js
+++missionapplicationpartial.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\missionapplicationpartial.js
+++missionedit.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\missionedit.js
+++missionpartial.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\missionpartial.js
+++platformoldjs.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\platformoldjs.js
+++platfromlanding.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\platfromlanding.js
+++site.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\site.js
+++storydetail.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\storydetail.js
+++storylisting.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\storylisting.js
+++storypartial.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\storypartial.js
+++themepartial.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\themepartial.js
+++useraddpartial.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\useraddpartial.js
+++usereditdetail.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\usereditdetail.js
+++userpartial.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\userpartial.js
+++volunteer.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\volunteer.js
+++volunteersheet.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\js\volunteersheet.js
+++lib
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\browser\lib\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\unix\lib\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\lib\
+++favicon.ico
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\favicon.ico
+++bin
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\
+++Controllers
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\controllers\
+++AdminController.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\controllers\admincontroller.cs
+++HomeController.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\controllers\homecontroller.cs
+++MissionController.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\controllers\missioncontroller.cs
+++StoryListingController.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\controllers\storylistingcontroller.cs
+++TimeSheetController.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\controllers\timesheetcontroller.cs
+++Models
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\models\
+++obj
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\
+++Views
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\scopedcss\views\
+++Admin
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\admin\
+++UserpageInAdmin.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\admin\userpageinadmin.cshtml
+++Home
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\home\
+++forgetpassword.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\home\forgetpassword.cshtml
+++Index.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\home\index.cshtml
+++Privacy.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\home\privacy.cshtml
+++privacypolicy.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\home\privacypolicy.cshtml
+++register.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\home\register.cshtml
+++reset.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\home\reset.cshtml
+++usereditdetail.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\home\usereditdetail.cshtml
+++Mission
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\mission\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\
+++platformlanding.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\mission\platformlanding.cshtml
+++VolunteerMission.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\mission\volunteermission.cshtml
+++Shared
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\scopedcss\views\shared\
+++_banneradd.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_banneradd.cshtml
+++_bannerpage.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_bannerpage.cshtml
+++_cmspage.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_cmspage.cshtml
+++_footer.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_footer.cshtml
+++_Layout.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_layout.cshtml
+++_missionapplicationpage.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_missionapplicationpage.cshtml
+++_missionedit.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_missionedit.cshtml
+++_missionpage.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_missionpage.cshtml
+++_modalcontactus.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_modalcontactus.cshtml
+++_skilladd.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_skilladd.cshtml
+++_skillpage.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_skillpage.cshtml
+++_storypage.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_storypage.cshtml
+++_themeadd.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_themeadd.cshtml
+++_themepage.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_themepage.cshtml
+++_useradd.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_useradd.cshtml
+++_userpage.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_userpage.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\error.cshtml
+++Header.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\header.cshtml
+++StoryListing
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\storylisting\
+++addstory.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\storylisting\addstory.cshtml
+++storydetail.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\storylisting\storydetail.cshtml
+++storylisting.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\storylisting\storylisting.cshtml
+++TimeSheet
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\timesheet\
+++volunteersheet.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\timesheet\volunteersheet.cshtml
+++_ViewImports.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\_viewstart.cshtml
+++appsettings.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\appsettings.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\appsettings.json
+++Program.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\program.cs
+++No service dependencies discovered
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>1974
+++Sdk.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\sdk\sdk.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.illink.tasks\sdk\sdk.props
+++Sdk.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\sdk\sdk.targets
+++launchSettings.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\properties\launchsettings.json
+++404-Page-image.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\404-page-image.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\banner\404-page-image.png
+++achieved.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\achieved.png
+++add.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\add.png
+++add1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\add1.png
+++Already-volunteered.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\already-volunteered.png
+++Animal-welfare-_-save-birds-campaign.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\animal-welfare-_-save-birds-campaign.png
+++Animal-welfare-_-save-birds-campaign-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\animal-welfare-_-save-birds-campaign-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\banner\animal-welfare-_-save-birds-campaign-1.png
+++arrow.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\arrow.png
+++Assets.zip
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\assets.zip
+++bell.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\bell.png
+++bell-big.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\bell-big.png
+++bin.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\bin.png
+++calender.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\calender.png
+++cancel.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\cancel.png
+++cancel1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\cancel1.png
+++checked.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\checked.png
+++cross.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\cross.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\csr-initiative-stands-for-coffee--and-farmer-equity.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\hgboryhybgc\csr-initiative-stands-for-coffee--and-farmer-equity.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\csr-initiative-stands-for-coffee--and-farmer-equity-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\hgboryhybgc\csr-initiative-stands-for-coffee--and-farmer-equity-1.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\csr-initiative-stands-for-coffee--and-farmer-equity-2.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\csr-initiative-stands-for-coffee--and-farmer-equity-3.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\csr-initiative-stands-for-coffee--and-farmer-equity-4.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\csr-initiative-stands-for-coffee--and-farmer-equity-6.png
+++deadline.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\deadline.png
+++doc.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\doc.png
+++down.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\down.png
+++drag-and-drop.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\drag-and-drop.png
+++drop-down.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\drop-down.png
+++Education-Supplies-for-Every--Pair-of-Shoes-Sold.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\education-supplies-for-every--pair-of-shoes-sold.png
+++Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\education-supplies-for-every--pair-of-shoes-sold-1.png
+++Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\education-supplies-for-every--pair-of-shoes-sold-2.png
+++eye.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\eye.png
+++facebook.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\facebook.png
+++fill-heart.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\fill-heart.png
+++filter.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\filter.png
+++gift.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\gift.png
+++graph.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\graph.png
+++grid.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\grid.png
+++grid_img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\grid_img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is very important\grid_img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\nutrient\grid_img1.png
+++Grow-Trees-On-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\grow-trees-on-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\banner\grow-trees-on-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is very important\grow-trees-on-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\nutrient\grow-trees-on-the-path-to-environment-sustainability-2.png
+++Grow-Trees-On-the-path-to-environment-sustainability-3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\grow-trees-on-the-path-to-environment-sustainability-3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\banner\grow-trees-on-the-path-to-environment-sustainability-3.png
+++Grow-Trees-On-the-path-to-environment-sustainability-5.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\grow-trees-on-the-path-to-environment-sustainability-5.png
+++heart.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\heart.png
+++heart1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\heart1.png
+++hours.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\hours.png
+++image.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\image.png
+++image1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\image1.png
+++image2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\image2.png
+++img.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\img.png
+++img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\img1.png
+++img11.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\img11.png
+++img3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\img3.png
+++img33.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\img33.png
+++info.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\info.png
+++left.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\left.png
+++left1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\left1.png
+++linkedin.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\linkedin.png
+++list.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\list.png
+++listview.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\listview.png
+++loc.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\loc.png
+++login.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\login.png
+++logo.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\logo.png
+++mission.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\mission.png
+++my-story.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\my-story.png
+++new-message.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\new-message.png
+++next.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\next.png
+++Nourish-the-Children-in--African-country.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\nourish-the-children-in--african-country.png
+++Nourish-the-Children-in--African-country-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\nourish-the-children-in--african-country-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\banner\nourish-the-children-in--african-country-1.png
+++Open-Volunteering-Requests.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\open-volunteering-requests.png
+++organization.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\organization.png
+++pdf.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\pdf.png
+++pin.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\pin.png
+++Plantation-and-Afforestation-programme.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\plantation-and-afforestation-programme.png
+++Plantation-and-Afforestation-programme-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\plantation-and-afforestation-programme-1.png
+++previous.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\previous.png
+++right.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\right.png
+++right-arrow.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\right-arrow.png
+++right-arrow1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\right-arrow1.png
+++right-arrow2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\right-arrow2.png
+++right-white.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\right-white.png
+++search.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\search.png
+++Seats-left.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\seats-left.png
+++selected-star.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\selected-star.png
+++settings.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\settings.png
+++slide-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\slide-1.png
+++slide-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\slide-2.png
+++slide-3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\slide-3.png
+++slide-4.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\slide-4.png
+++star.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\star.png
+++star-empty.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\star-empty.png
+++Thumbs.db
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\thumbs.db
+++twitter.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\twitter.png
+++up.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\up.png
+++user.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\user.png
+++user1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\user1.png
+++user-img.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\user-img.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\user-img.png
+++user-img-large.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\user-img-large.png
+++volunteer1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer1.png
+++volunteer2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer2.png
+++volunteer3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer3.png
+++volunteer4.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer4.png
+++volunteer5.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer5.png
+++volunteer6.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer6.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\volunteer6.png
+++volunteer7.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer7.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\volunteer7.png
+++volunteer8.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer8.png
+++volunteer9.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer9.png
+++Volunteering-Rank.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteering-rank.png
+++Voted-Missions.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\voted-missions.png
+++web.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\web.png
+++xlsx.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\xlsx.png
+++addstory.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\addstory.css
+++addStoryStyle.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\addstorystyle.css
+++bannerpartial.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\bannerpartial.css
+++cmspartial.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\cmspartial.css
+++header.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\header.css
+++login.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\login.css
+++lost.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\lost.css
+++missionapplication.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\missionapplication.css
+++missionedit.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\missionedit.css
+++missionpartial.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\missionpartial.css
+++platformlanding.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\platformlanding.css
+++privacypolicy.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\privacypolicy.css
+++register.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\register.css
+++reset.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\reset.css
+++site.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\site.css
+++skillpartial.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\skillpartial.css
+++storylisting.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\storylisting.css
+++storypartial.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\storypartial.css
+++themepartial.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\themepartial.css
+++useraddpartial.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\useraddpartial.css
+++userdetail.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\userdetail.css
+++UserpageInAdmin.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\userpageinadmin.css
+++userpartial.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\userpartial.css
+++volunteermission.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\volunteermission.css
+++volunteersheet.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\css\volunteersheet.css
+++Banner
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\banner\
+++UserProfileImages
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\
+++145f847f-c98f-4ac6-9df9-4419beb63ff4.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\145f847f-c98f-4ac6-9df9-4419beb63ff4.png
+++355b1c93-fce1-4983-9ae8-f1cafc2ba67e.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\355b1c93-fce1-4983-9ae8-f1cafc2ba67e.png
+++36343a73-171b-4277-a8c1-6c1912ef7363.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\36343a73-171b-4277-a8c1-6c1912ef7363.png
+++37db07a2-0df1-46f8-8b23-6be8ede9bdb4.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\37db07a2-0df1-46f8-8b23-6be8ede9bdb4.png
+++5b5b6fc7-0e4b-40a5-8e01-dcc47a16c92e.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\5b5b6fc7-0e4b-40a5-8e01-dcc47a16c92e.png
+++5dd5fbd9-5976-4a14-8d2c-b05018f7e929.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\5dd5fbd9-5976-4a14-8d2c-b05018f7e929.png
+++6eecc8bc-81a4-4cda-b10d-8b6ce80a14a3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\6eecc8bc-81a4-4cda-b10d-8b6ce80a14a3.png
+++88cd6547-eb32-490d-a329-de985ae0f461.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\88cd6547-eb32-490d-a329-de985ae0f461.png
+++b7ca4a14-a8d7-4a08-b654-b85180af67ac.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\b7ca4a14-a8d7-4a08-b654-b85180af67ac.png
+++c6319bf1-6c27-4174-9c3e-0db08222be77.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\c6319bf1-6c27-4174-9c3e-0db08222be77.png
+++ce61a61c-cd29-43bc-a837-3b35b131a7cd.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\ce61a61c-cd29-43bc-a837-3b35b131a7cd.png
+++dd890bf0-e76b-4367-aebe-18fbd4921c66.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\dd890bf0-e76b-4367-aebe-18fbd4921c66.png
+++e9650d59-a415-4f03-b4fa-6a8674aa0f95.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\e9650d59-a415-4f03-b4fa-6a8674aa0f95.png
+++f38f7d36-e789-477f-939b-2760507ce69d.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\f38f7d36-e789-477f-939b-2760507ce69d.png
+++fa715ab8-dedd-4106-8132-abe133fcb68f.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\fa715ab8-dedd-4106-8132-abe133fcb68f.png
+++bootstrap
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\
+++jquery
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery\
+++jquery-validation
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery-validation-unobtrusive\
+++Debug
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\
+++ErrorViewModel.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\models\errorviewmodel.cs
+++CI_platfom_apllication.csproj.nuget.dgspec.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\ci_platfom_apllication.csproj.nuget.dgspec.json
+++CI_platfom_apllication.csproj.nuget.g.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\ci_platfom_apllication.csproj.nuget.g.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\ci_platfom_apllication.csproj.nuget.g.props
+++CI_platfom_apllication.csproj.nuget.g.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\ci_platfom_apllication.csproj.nuget.g.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\ci_platfom_apllication.csproj.nuget.g.targets
+++project.assets.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\project.assets.json
+++project.nuget.cache
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\project.nuget.cache
+++staticwebassets.pack.sentinel
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\staticwebassets.pack.sentinel
+++_Layout.cshtml.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_layout.cshtml.css
+++appsettings.Development.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\appsettings.development.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\appsettings.development.json
+++MessagePackAnalyzer
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\microsoft.aspnetcore.app
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.12)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2019
+++Swashbuckle.AspNetCore (6.3.0)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2016
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\Sdk)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web.projectsystem\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\sdk\sdk.props
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\Sdk)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web.projectsystem\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\sdk\sdk.targets
+++Ahmedabad Health
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\ahmedabad health\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\ahmedabad health\
+++Green Banglore
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\green banglore\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green banglore\
+++health is alaways be in good condition
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is alaways be in good condition\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be in good condition\
+++health is for all people in world
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is for all people in world\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is for all people in world\
+++health is for primary concern
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is for primary concern\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is for primary concern\
+++health is good for survival
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is good for survival\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is good for survival\
+++health is very important
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is very important\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is very important\
+++health should be in good forever
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health should be in good forever\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health should be in good forever\
+++Healthy India
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\healthy india\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\healthy india\
+++hgboryhybgc
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\hgboryhybgc\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\hgboryhybgc\
+++nutrient
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\nutrient\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\nutrient\
+++Green Kolkata
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green kolkata\
+++Green Vadodara
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green vadodara\
+++Swach Bharat
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\swach bharat\
+++50ed642b-307f-41aa-9cb9-70765d8440b5.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\50ed642b-307f-41aa-9cb9-70765d8440b5.png
+++661a571c-b4ad-4e4b-a3b5-97b3ebd96438.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\661a571c-b4ad-4e4b-a3b5-97b3ebd96438.png
+++701d441d-dcbd-4160-b6e4-b0ccfe619faf.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\701d441d-dcbd-4160-b6e4-b0ccfe619faf.png
+++707c620c-8666-4a30-8dcd-bf41611de4a1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\707c620c-8666-4a30-8dcd-bf41611de4a1.png
+++ae826410-7b4d-49bf-b48e-f96b2337da4f.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\ae826410-7b4d-49bf-b48e-f96b2337da4f.png
+++b70d2634-6fa5-4a04-abde-865febe8a123.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\b70d2634-6fa5-4a04-abde-865febe8a123.png
+++volunteer5.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\volunteer5.png.png
+++dist
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery\dist\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery\license.txt
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++net6.0
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\browser\lib\net6.0\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\unix\lib\net6.0\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\lib\net6.0\
+++Microsoft.Common.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.props
+++Microsoft.NET.Sdk.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.props
+++Sdk.Razor.CurrentVersion.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\targets\sdk.razor.currentversion.props
+++Microsoft.NET.Sdk.Web.ProjectSystem.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.projectsystem.props
+++Microsoft.NET.Sdk.Publish.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\targets\microsoft.net.sdk.publish.props
+++Microsoft.NET.Sdk.BeforeCommon.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.beforecommon.targets
+++Microsoft.CSharp.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.targets
+++Microsoft.NET.Sdk.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.targets
+++Microsoft.NET.Compatibility.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\nuget.build.tasks.pack\build\nuget.build.tasks.pack.targets
+++Sdk.Razor.CurrentVersion.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\targets\sdk.razor.currentversion.targets
+++Microsoft.NET.Sdk.Web.ProjectSystem.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.projectsystem.targets
+++Microsoft.NET.Sdk.Publish.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\targets\microsoft.net.sdk.publish.targets
+++Front Pages.pdf.pdf
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\ahmedabad health\front pages.pdf.pdf
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is alaways be in good condition\front pages.pdf.pdf
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is for all people in world\front pages.pdf.pdf
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health should be in good forever\front pages.pdf.pdf
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\healthy india\front pages.pdf.pdf
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green vadodara\front pages.pdf.pdf
+++Assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\green banglore\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is for primary concern\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is good for survival\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is very important\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health should be in good forever\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\healthy india\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\hgboryhybgc\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\nutrient\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green vadodara\assignment 3.docx.docx
+++20efe5a7-1309-4dcb-a9af-025b080cdd28.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\ahmedabad health\20efe5a7-1309-4dcb-a9af-025b080cdd28.png
+++23e74783-a1de-4adf-b559-273b95b8fb66.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\ahmedabad health\23e74783-a1de-4adf-b559-273b95b8fb66.png
+++d04ea816-c28d-4790-856d-5911030b8962.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\ahmedabad health\d04ea816-c28d-4790-856d-5911030b8962.png
+++image2.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green banglore\image2.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\healthy india\image2.png.png
+++img.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green banglore\img.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be in good condition\img.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is for primary concern\img.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\healthy india\img.png.png
+++img1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green banglore\img1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is for primary concern\img1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\healthy india\img1.png.png
+++img3.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green banglore\img3.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\healthy india\img3.png.png
+++2baf6dd2-f0d8-4c02-8d7d-dad701b89a82.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green kolkata\2baf6dd2-f0d8-4c02-8d7d-dad701b89a82.png
+++4ee7cb04-ae3f-49c4-8e2b-66a5c54193ad.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green kolkata\4ee7cb04-ae3f-49c4-8e2b-66a5c54193ad.png
+++6cbc69e7-7846-4503-8b0b-a8c7968f57ae.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green kolkata\6cbc69e7-7846-4503-8b0b-a8c7968f57ae.png
+++daa1434c-16c4-4601-8782-6597593ef046.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green kolkata\daa1434c-16c4-4601-8782-6597593ef046.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green vadodara\csr-initiative-stands-for-coffee--and-farmer-equity.png.png
+++Education-Supplies-for-Every--Pair-of-Shoes-Sold.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be in good condition\education-supplies-for-every--pair-of-shoes-sold.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health should be in good forever\education-supplies-for-every--pair-of-shoes-sold.png.png
+++grid_img1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is for all people in world\grid_img1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is good for survival\grid_img1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\healthy india\grid_img1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is very important\grid_img1.png.png
+++Grow-Trees-On-the-path-to-environment-sustainability-2.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is for all people in world\grow-trees-on-the-path-to-environment-sustainability-2.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\healthy india\grow-trees-on-the-path-to-environment-sustainability-2.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is very important\grow-trees-on-the-path-to-environment-sustainability-2.png.png
+++Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is good for survival\education-supplies-for-every--pair-of-shoes-sold-1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health should be in good forever\education-supplies-for-every--pair-of-shoes-sold-1.png.png
+++Animal-welfare-_-save-birds-campaign-1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health should be in good forever\animal-welfare-_-save-birds-campaign-1.png.png
+++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health should be in good forever\csr-initiative-stands-for-coffee--and-farmer-equity-1.png.png
+++Grow-Trees-On-the-path-to-environment-sustainability-3.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\healthy india\grow-trees-on-the-path-to-environment-sustainability-3.png.png
+++Grow-Trees-On-the-path-to-environment-sustainability-5.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\healthy india\grow-trees-on-the-path-to-environment-sustainability-5.png.png
+++0cee0a37-e94f-4374-ac54-88fdd96c4b25.pdf
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\swach bharat\0cee0a37-e94f-4374-ac54-88fdd96c4b25.pdf
+++17e1775d-f7a8-4e3b-b3f6-c3e7d4ad3ff5.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\swach bharat\17e1775d-f7a8-4e3b-b3f6-c3e7d4ad3ff5.png
+++2a053fa0-12df-4fe6-a0b7-8a9dffeda955.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\swach bharat\2a053fa0-12df-4fe6-a0b7-8a9dffeda955.png
+++3070463b-081f-4052-ac6e-d29a55ceeb3b.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\swach bharat\3070463b-081f-4052-ac6e-d29a55ceeb3b.png
+++b29ae64a-40f6-455a-8158-0308400d5857.pdf
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\swach bharat\b29ae64a-40f6-455a-8158-0308400d5857.pdf
+++jquery.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\
+++de
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\
+++es
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\
+++fr
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\
+++it
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\
+++ja
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\
+++ko
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\
+++pl
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\
+++pt-BR
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\
+++ref
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ref\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ref\
+++ru
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\
+++runtimes
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\
+++tr
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\
+++zh-Hans
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\
+++zh-Hant
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\
+++Azure.Core.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\azure.core.dll
+++Azure.Identity.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\azure.identity.dll
+++CI_platfom_apllication.deps.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ci_platfom_apllication.deps.json
+++CI_platfom_apllication.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ci_platfom_apllication.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ref\ci_platfom_apllication.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ref\ci_platfom_apllication.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\refint\ci_platfom_apllication.dll
+++CI_platfom_apllication.exe
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ci_platfom_apllication.exe
+++CI_platfom_apllication.pdb
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ci_platfom_apllication.pdb
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.pdb
+++CI_platfom_apllication.runtimeconfig.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ci_platfom_apllication.runtimeconfig.json
+++CI_platfom_apllication.staticwebassets.runtime.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ci_platfom_apllication.staticwebassets.runtime.json
+++CI_platform.Entities.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ci_platform.entities.dll
+++CI_platform.Entities.pdb
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ci_platform.entities.pdb
+++CI_platform.Repositories.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ci_platform.repositories.dll
+++CI_platform.Repositories.pdb
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ci_platform.repositories.pdb
+++cloudscribe.Pagination.Models.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cloudscribe.pagination.models.dll
+++cloudscribe.Web.Pagination.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cloudscribe.web.pagination.dll
+++dotnet-aspnet-codegenerator-design.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\dotnet-aspnet-codegenerator-design.dll
+++Humanizer.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\humanizer.dll
+++JetBrains.Annotations.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\jetbrains.annotations.dll
+++MessagePack.Annotations.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\messagepack.annotations.dll
+++MessagePack.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\messagepack.dll
+++Microsoft.AspNetCore.Razor.Language.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.aspnetcore.razor.language.dll
+++Microsoft.Bcl.AsyncInterfaces.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.bcl.asyncinterfaces.dll
+++Microsoft.Build.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.build.dll
+++Microsoft.Build.Framework.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.build.framework.dll
+++Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.analyzerutilities.dll
+++Microsoft.CodeAnalysis.CSharp.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.csharp.dll
+++Microsoft.CodeAnalysis.CSharp.Features.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.csharp.features.dll
+++Microsoft.CodeAnalysis.CSharp.Scripting.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.csharp.scripting.dll
+++Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.csharp.workspaces.dll
+++Microsoft.CodeAnalysis.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.dll
+++Microsoft.CodeAnalysis.Features.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.features.dll
+++Microsoft.CodeAnalysis.Razor.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.razor.dll
+++Microsoft.CodeAnalysis.Scripting.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.scripting.dll
+++Microsoft.CodeAnalysis.VisualBasic.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.visualbasic.dll
+++Microsoft.CodeAnalysis.VisualBasic.Features.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.visualbasic.features.dll
+++Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.visualbasic.workspaces.dll
+++Microsoft.CodeAnalysis.Workspaces.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.workspaces.dll
+++Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.codeanalysis.workspaces.msbuild.dll
+++Microsoft.Data.SqlClient.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.data.sqlclient.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\unix\lib\netcoreapp3.1\microsoft.data.sqlclient.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\lib\netcoreapp3.1\microsoft.data.sqlclient.dll
+++Microsoft.DiaSymReader.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.diasymreader.dll
+++Microsoft.DotNet.Scaffolding.Shared.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.dotnet.scaffolding.shared.dll
+++Microsoft.EntityFrameworkCore.Abstractions.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.entityframeworkcore.abstractions.dll
+++Microsoft.EntityFrameworkCore.Design.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.entityframeworkcore.design.dll
+++Microsoft.EntityFrameworkCore.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.entityframeworkcore.dll
+++Microsoft.EntityFrameworkCore.Relational.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.entityframeworkcore.relational.dll
+++Microsoft.EntityFrameworkCore.SqlServer.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.entityframeworkcore.sqlserver.dll
+++Microsoft.Extensions.Caching.Abstractions.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.extensions.caching.abstractions.dll
+++Microsoft.Extensions.Caching.Memory.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.extensions.caching.memory.dll
+++Microsoft.Extensions.Configuration.Abstractions.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.extensions.configuration.abstractions.dll
+++Microsoft.Extensions.DependencyInjection.Abstractions.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.extensions.dependencyinjection.abstractions.dll
+++Microsoft.Extensions.DependencyInjection.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.extensions.dependencyinjection.dll
+++Microsoft.Extensions.DependencyModel.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.extensions.dependencymodel.dll
+++Microsoft.Extensions.Logging.Abstractions.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.extensions.logging.abstractions.dll
+++Microsoft.Extensions.Logging.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.extensions.logging.dll
+++Microsoft.Extensions.Options.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.extensions.options.dll
+++Microsoft.Extensions.Primitives.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.extensions.primitives.dll
+++Microsoft.Identity.Client.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.identity.client.dll
+++Microsoft.Identity.Client.Extensions.Msal.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.identity.client.extensions.msal.dll
+++Microsoft.IdentityModel.Abstractions.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.identitymodel.abstractions.dll
+++Microsoft.IdentityModel.JsonWebTokens.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.identitymodel.jsonwebtokens.dll
+++Microsoft.IdentityModel.Logging.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.identitymodel.logging.dll
+++Microsoft.IdentityModel.Protocols.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.identitymodel.protocols.dll
+++Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.identitymodel.protocols.openidconnect.dll
+++Microsoft.IdentityModel.Tokens.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.identitymodel.tokens.dll
+++Microsoft.NET.StringTools.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.net.stringtools.dll
+++Microsoft.OpenApi.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.openapi.dll
+++Microsoft.SqlServer.Server.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.sqlserver.server.dll
+++Microsoft.VisualStudio.Debugger.Contracts.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.visualstudio.debugger.contracts.dll
+++Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.visualstudio.web.codegeneration.core.dll
+++Microsoft.VisualStudio.Web.CodeGeneration.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.visualstudio.web.codegeneration.dll
+++Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.visualstudio.web.codegeneration.entityframeworkcore.dll
+++Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.visualstudio.web.codegeneration.templating.dll
+++Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.visualstudio.web.codegeneration.utils.dll
+++Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.visualstudio.web.codegenerators.mvc.dll
+++Microsoft.Win32.SystemEvents.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\microsoft.win32.systemevents.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\lib\net6.0\microsoft.win32.systemevents.dll
+++Mono.TextTemplating.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\mono.texttemplating.dll
+++Newtonsoft.Json.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\newtonsoft.json.dll
+++NuGet.Common.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\nuget.common.dll
+++NuGet.Configuration.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\nuget.configuration.dll
+++NuGet.DependencyResolver.Core.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\nuget.dependencyresolver.core.dll
+++NuGet.Frameworks.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\nuget.frameworks.dll
+++NuGet.LibraryModel.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\nuget.librarymodel.dll
+++NuGet.Packaging.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\nuget.packaging.dll
+++NuGet.ProjectModel.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\nuget.projectmodel.dll
+++NuGet.Protocol.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\nuget.protocol.dll
+++NuGet.Versioning.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\nuget.versioning.dll
+++Swashbuckle.AspNetCore.Swagger.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\swashbuckle.aspnetcore.swagger.dll
+++Swashbuckle.AspNetCore.SwaggerGen.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\swashbuckle.aspnetcore.swaggergen.dll
+++Swashbuckle.AspNetCore.SwaggerUI.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\swashbuckle.aspnetcore.swaggerui.dll
+++System.CodeDom.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.codedom.dll
+++System.Composition.AttributedModel.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.composition.attributedmodel.dll
+++System.Composition.Convention.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.composition.convention.dll
+++System.Composition.Hosting.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.composition.hosting.dll
+++System.Composition.Runtime.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.composition.runtime.dll
+++System.Composition.TypedParts.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.composition.typedparts.dll
+++System.Configuration.ConfigurationManager.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.configuration.configurationmanager.dll
+++System.Drawing.Common.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.drawing.common.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\unix\lib\net6.0\system.drawing.common.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\lib\net6.0\system.drawing.common.dll
+++System.IdentityModel.Tokens.Jwt.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.identitymodel.tokens.jwt.dll
+++System.Memory.Data.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.memory.data.dll
+++System.Reflection.MetadataLoadContext.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.reflection.metadataloadcontext.dll
+++System.Runtime.Caching.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.runtime.caching.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\lib\netstandard2.0\system.runtime.caching.dll
+++System.Security.Cryptography.ProtectedData.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.security.cryptography.protecteddata.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\lib\net6.0\system.security.cryptography.protecteddata.dll
+++System.Security.Permissions.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.security.permissions.dll
+++System.Text.Encodings.Web.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.text.encodings.web.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\browser\lib\net6.0\system.text.encodings.web.dll
+++System.Text.Json.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.text.json.dll
+++System.Windows.Extensions.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\system.windows.extensions.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\lib\net6.0\system.windows.extensions.dll
+++X.PagedList.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\x.pagedlist.dll
+++X.PagedList.Mvc.Core.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\x.pagedlist.mvc.core.dll
+++refint
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\refint\
+++scopedcss
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\scopedcss\
+++staticwebassets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\staticwebassets\
+++.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\.netcoreapp,version=v6.0.assemblyattributes.cs
+++apphost.exe
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\apphost.exe
+++CI_platfom_apllication.AssemblyInfo.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.assemblyinfo.cs
+++CI_platfom_apllication.AssemblyInfoInputs.cache
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.assemblyinfoinputs.cache
+++CI_platfom_apllication.assets.cache
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.assets.cache
+++CI_platfom_apllication.csproj.AssemblyReference.cache
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.csproj.assemblyreference.cache
+++CI_platfom_apllication.csproj.BuildWithSkipAnalyzers
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.csproj.buildwithskipanalyzers
+++CI_platfom_apllication.csproj.CopyComplete
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.csproj.copycomplete
+++CI_platfom_apllication.csproj.CoreCompileInputs.cache
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.csproj.corecompileinputs.cache
+++CI_platfom_apllication.csproj.FileListAbsolute.txt
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.csproj.filelistabsolute.txt
+++CI_platfom_apllication.GeneratedMSBuildEditorConfig.editorconfig
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.generatedmsbuildeditorconfig.editorconfig
+++CI_platfom_apllication.genruntimeconfig.cache
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.genruntimeconfig.cache
+++CI_platfom_apllication.GlobalUsings.g.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.globalusings.g.cs
+++CI_platfom_apllication.MvcApplicationPartsAssemblyInfo.cache
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.mvcapplicationpartsassemblyinfo.cache
+++CI_platfom_apllication.MvcApplicationPartsAssemblyInfo.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.mvcapplicationpartsassemblyinfo.cs
+++CI_platfom_apllication.RazorAssemblyInfo.cache
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.razorassemblyinfo.cache
+++CI_platfom_apllication.RazorAssemblyInfo.cs
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\ci_platfom_apllication.razorassemblyinfo.cs
+++project.razor.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\project.razor.json
+++staticwebassets.build.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\staticwebassets.build.json
+++staticwebassets.development.json
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\staticwebassets.development.json
+++Microsoft.NuGet.ImportBefore.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\imports\microsoft.common.props\importbefore\microsoft.nuget.importbefore.props
+++NuGet.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.props
+++Microsoft.NET.Sdk.DefaultItems.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.supportedtargetframeworks.props
+++Microsoft.NET.SupportedPlatforms.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.supportedplatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.windowssdksupportedtargetplatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.props
+++Microsoft.NET.ILLink.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.illink.props
+++Microsoft.NET.Compatibility.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.props
+++Microsoft.NET.PackTool.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.props
+++Microsoft.NET.PackProjectTool.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.props
+++Microsoft.NET.Windows.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.windows.props
+++Sdk.Razor.StaticAssets.ProjectSystem.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\sdk\sdk.razor.staticassets.projectsystem.props
+++Microsoft.TypeScript.Default.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.default.props
+++Microsoft.NET.Sdk.Web.DefaultItems.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.defaultitems.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.defaultassemblyinfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.defaultoutputpaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importpublishprofile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.targetframeworkinference.targets
+++Microsoft.NET.Sdk.Razor.BeforeCommon.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.beforecommon.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.runtimeidentifierinference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.eoltargetframeworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.nugetofflinecache.targets
+++Microsoft.Managed.Before.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.currentversion.targets
+++Microsoft.Managed.After.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.after.targets
+++Microsoft.NET.Sdk.Common.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.common.targets
+++Microsoft.PackageDependencyResolution.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.packagedependencyresolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.frameworkreferenceresolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.disablestandardframeworkresolution.targets
+++Microsoft.NET.DesignerSupport.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.designersupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.generateassemblyinfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.generateglobalusings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.generatesupportedruntime.targets
+++Microsoft.NET.ComposeStore.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.composestore.targets
+++Microsoft.NET.CrossGen.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.crossgen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.obsoletereferences.targets
+++Microsoft.NET.Publish.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.publish.targets
+++Microsoft.NET.PackTool.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.targets
+++Microsoft.NET.PackProjectTool.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.preservecompilationcontext.targets
+++Microsoft.NET.ConflictResolution.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.conflictresolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.targets
+++Microsoft.NET.ILLink.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.illink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.analyzers.targets
+++Microsoft.NET.Compatibility.Common.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.common.targets
+++Microsoft.NET.Sdk.Razor.Configuration.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.configuration.targets
+++Microsoft.NET.Sdk.Razor.CodeGeneration.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.codegeneration.targets
+++Microsoft.NET.Sdk.Razor.SourceGenerators.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.sourcegenerators.targets
+++Microsoft.NET.Sdk.Razor.StaticWebAssets.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.staticwebassets.targets
+++Microsoft.NET.Sdk.Razor.ScopedCss.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.scopedcss.targets
+++Microsoft.NET.Sdk.Razor.JSModules.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.jsmodules.targets
+++Microsoft.NET.Sdk.Razor.GenerateAssemblyInfo.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.generateassemblyinfo.targets
+++Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.mvcapplicationpartsdiscovery.targets
+++Microsoft.NET.Sdk.Razor.DesignTime.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\razor\microsoft.net.sdk.razor.designtime.targets
+++Microsoft.TypeScript.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.targets
+++Microsoft.TypeScript.DotNetCore.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.dotnetcore.targets
+++Microsoft.Web.Designtime.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed.web\microsoft.web.designtime.targets
+++Default.pubxml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\targets\publishprofiles\default.pubxml
+++Microsoft.NET.Sdk.Publish.ComputeFiles.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\targets\computetargets\microsoft.net.sdk.publish.computefiles.targets
+++Microsoft.NET.Sdk.Publish.FilterFiles.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\targets\copytargets\microsoft.net.sdk.publish.filterfiles.targets
+++Microsoft.NET.Sdk.Publish.CopyFiles.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\targets\copytargets\microsoft.net.sdk.publish.copyfiles.targets
+++Microsoft.NET.Sdk.Publish.TransformFiles.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\targets\transformtargets\microsoft.net.sdk.publish.transformfiles.targets
+++Microsoft.NET.Sdk.Publish.FileSystem.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\targets\publishtargets\microsoft.net.sdk.publish.filesystem.targets
+++Microsoft.NET.Sdk.DotNetCLITool.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\targets\dotnetclitooltargets\microsoft.net.sdk.dotnetclitool.targets
+++bootstrap.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.csharp.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.csharp.features.resources.dll
+++Microsoft.CodeAnalysis.CSharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.csharp.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.csharp.resources.dll
+++Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.csharp.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.csharp.scripting.resources.dll
+++Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.csharp.workspaces.resources.dll
+++Microsoft.CodeAnalysis.Features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.features.resources.dll
+++Microsoft.CodeAnalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.resources.dll
+++Microsoft.CodeAnalysis.Scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.scripting.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.scripting.resources.dll
+++Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.visualbasic.features.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.visualbasic.features.resources.dll
+++Microsoft.CodeAnalysis.VisualBasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.visualbasic.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.visualbasic.resources.dll
+++Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.visualbasic.workspaces.resources.dll
+++Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.workspaces.msbuild.resources.dll
+++Microsoft.CodeAnalysis.Workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\cs\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\de\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\es\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\fr\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\it\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ja\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ko\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pl\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\pt-br\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\ru\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\tr\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hans\microsoft.codeanalysis.workspaces.resources.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\zh-hant\microsoft.codeanalysis.workspaces.resources.dll
+++browser
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\browser\
+++unix
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\unix\
+++win
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\
+++win-arm
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-arm\
+++win-arm64
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-arm64\
+++win-x64
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-x64\
+++win-x86
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-x86\
+++bundle
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\scopedcss\bundle\
+++projectbundle
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\scopedcss\projectbundle\
+++Microsoft.Extensions.ApiDescription.Server.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0\build\microsoft.extensions.apidescription.server.props
+++Swashbuckle.AspNetCore.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\swashbuckle.aspnetcore\6.3.0\build\swashbuckle.aspnetcore.props
+++Microsoft.EntityFrameworkCore.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\microsoft.entityframeworkcore\7.0.3\buildtransitive\net6.0\microsoft.entityframeworkcore.props
+++Microsoft.EntityFrameworkCore.Design.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\microsoft.entityframeworkcore.design\7.0.3\build\net6.0\microsoft.entityframeworkcore.design.props
+++Microsoft.NuGet.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\nuget\17.0\microsoft.nuget.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\microsoft.netcoresdk.bundledversions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.windowsforms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.wpf.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.android)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.android\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.ios)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.ios\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maccatalyst)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maccatalyst\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.macos)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.macos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maui)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maui\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.tvos)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.tvos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.emscripten)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.emscripten\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.mono.toolchain)
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.mono.toolchain\workloadmanifest.targets
+++Microsoft.CSharp.Core.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.csharp.core.targets
+++Microsoft.CSharp.DesignTime.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.csharp.designtime.targets
+++Microsoft.Common.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.targets
+++Microsoft.ServiceModel.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.servicemodel.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.servicemodel.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\microsoft.netcoresdk.bundledclitools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\targets\microsoft.net.defaultpackageconflictoverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.props
+++Microsoft.CodeAnalysis.NetAnalyzers.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.targets
+++bootstrap.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery\dist\jquery.min.map
+++native
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-arm\native\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-arm64\native\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-x64\native\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-x86\native\
+++CI_platfom_apllication.styles.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\scopedcss\bundle\ci_platfom_apllication.styles.css
+++CI_platfom_apllication.bundle.scp.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\scopedcss\projectbundle\ci_platfom_apllication.bundle.scp.css
+++Microsoft.NET.ILLink.Tasks.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.illink.tasks\build\microsoft.net.illink.tasks.props
+++System.Windows.Forms.Analyzers.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.windowsdesktop\targets\system.windows.forms.analyzers.props
+++Microsoft.Managed.Core.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.targets
+++Microsoft.Managed.DesignTime.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.managed.designtime.targets
+++Microsoft.Common.CurrentVersion.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.currentversion.targets
+++bootstrap.min.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++netcoreapp3.0
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\unix\lib\netcoreapp3.0\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\lib\netcoreapp3.0\
+++netcoreapp3.1
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\unix\lib\netcoreapp3.1\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\lib\netcoreapp3.1\
+++netstandard2.0
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win\lib\netstandard2.0\
+++Microsoft.Data.SqlClient.SNI.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-arm\native\microsoft.data.sqlclient.sni.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-arm64\native\microsoft.data.sqlclient.sni.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-x64\native\microsoft.data.sqlclient.sni.dll
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\bin\debug\net6.0\runtimes\win-x86\native\microsoft.data.sqlclient.sni.dll
+++_Layout.cshtml.rz.scp.css
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\obj\debug\net6.0\scopedcss\views\shared\_layout.cshtml.rz.scp.css
+++Microsoft.Managed.Core.CurrentVersions.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.currentversions.targets
+++CI_platfom_apllication.csproj.user
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\ci_platfom_apllication.csproj.user
+++Microsoft.NET.props
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.net.props
+++Microsoft.CodeAnalysis.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\codeanalysis\microsoft.codeanalysis.targets
+++Microsoft.Xaml.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.xaml.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.workflowbuildextensions.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.workflowbuildextensions.targets
+++Microsoft.TeamTest.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\teamtest\microsoft.teamtest.targets
+++NuGet.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.targets
+++Microsoft.Docker.ImportAfter.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.docker.importafter.targets
+++Microsoft.NET.Build.Extensions.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.net.build.extensions.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\microsoft.net.build.extensions\microsoft.net.build.extensions.targets
+++Microsoft.NuGet.ImportAfter.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.nuget.importafter.targets
+++Microsoft.Web.ImportAfter.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.web.importafter.targets
+++System.Text.Json.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\system.text.json\7.0.0\buildtransitive\net6.0\system.text.json.targets
+++Microsoft.Extensions.ApiDescription.Server.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\microsoft.extensions.apidescription.server\3.0.0\build\microsoft.extensions.apidescription.server.targets
+++Microsoft.Extensions.Logging.Abstractions.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\buildtransitive\net6.0\microsoft.extensions.logging.abstractions.targets
+++bootstrap.rtl.min.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++Microsoft.Docker.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\sdks\microsoft.docker.sdk\build\microsoft.docker.targets
+++Microsoft.Web.IISSupport.targets
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed.web\microsoft.web.iissupport.targets
+++Script Documents
+++VM5
+++jquery-3.6.0.min.js
+++localhost:7292
+++aspnetcore-browser-refresh.js
+++browserLink
+++sweetalert2.min.js
+++jquery-3.2.1.slim.min.js
+++popper.min.js

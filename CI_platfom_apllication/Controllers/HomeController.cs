@@ -26,9 +26,14 @@ namespace CI_platfom_apllication.Controllers
         public IActionResult Index()
         {
             HttpContext.Session.Clear();
-            return View();
+            LoginViewModel loginViewModel = new LoginViewModel()
+            {
+                Banners = _userRepository.GetBanners(),
+            };
+            return View(loginViewModel);
         }
-        
+      
+
         [HttpPost]
           public IActionResult Login(LoginViewModel user)
         {

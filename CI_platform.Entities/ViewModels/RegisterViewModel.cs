@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CI_platform.Entities.DataModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -27,6 +28,7 @@ namespace CI_platform.Entities.ViewModels
         public long CityId = 1;
 
         public long CountryId = 1;
+       public  List<Banner>? Banners { get; set; }
 
 
     }

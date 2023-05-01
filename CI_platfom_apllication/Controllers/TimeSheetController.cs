@@ -19,8 +19,8 @@ namespace CI_platfom_apllication.Controllers
         }
         public IActionResult volunteersheet()
         {
-            
-            var (entity1,entity2) = _timesheetRepository.getdatasheet();
+            var user_id = long.Parse(HttpContext.Session.GetString("userid"));
+            var (entity1,entity2) = _timesheetRepository.getdatasheet(user_id);
             var model1 = new SheetViewModel();
             var tuple = new Tuple<SheetViewModel, List<SheetViewModel>, List<SheetViewModel>>(model1, entity1, entity2);
             return View(tuple);

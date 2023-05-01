@@ -33,7 +33,9 @@ namespace CI_platform.Entities.ViewModels
         public string Message { get; set; }
         [Required(ErrorMessage = "Text is required")]
         public string? WhyIVolunteer { get; set; }
-        public string? LinkedInUrl { get; set; }
+        [Required(ErrorMessage = "Linkedin url  is required")]
+/*        [RegularExpression("^https:\\/\\/[a-z]{2,3}\\.linkedin\\.com\\/.*$", ErrorMessage = "Please Enter valid URL")]
+*/        public string? LinkedInUrl { get; set; }
         public List<SelectListItem> countries { get; set; }
         public List<SelectListItem> cities { get; set; }
         [Required(ErrorMessage = "Department is required")]

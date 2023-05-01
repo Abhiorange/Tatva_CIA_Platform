@@ -7,8 +7,9 @@ function getmissionsbytime() {
     $.ajax({
         url: '/TimeSheet/getmissionsbytime',
         success: function (result) {
+            $('#mission').html('<option value="">Select Misson</option>');
             if (result.length === 0) {
-                $('#mission').html('<option>No countries selected</option>');
+                $('#mission').html('<option>No MISSION is found</option>');
             } else {
                 $.each(result, function (i, data) {
                     if (missionid != data.missionId) {
@@ -29,8 +30,9 @@ function getmissionsbygoal() {
     $.ajax({
         url: '/TimeSheet/getmissionsbygoal',
         success: function (result) {
+            $('#mission_id').html('<option value="">Select Misson</option>');
             if (result.length === 0) {
-                $('#mission_id').html('<option>No mission is selected</option>');
+                $('#mission_id').html('<option>No mission is found</option>');
             } else {
                 $.each(result, function (i, data) {
                      if (missionid != data.missionId) {
@@ -73,24 +75,27 @@ $('#goalform').submit(function (event) {
     console.log("goal valuw", $('#goalvalue1').val());
     console.log("goal achieve", $('#totalgoalachieve').val());
     console.log("valid goal value", validgoalvalue);
+
             if ($('#action1').val() == '') {
         console.log("for action", $('#action1').val());
         $('#actionval').removeClass('d-none');
     }
-    else if ($('#message1').val() == '') {
+   else if ($('#message1').val() == '') {
         console.log("for message", $('#message1').val());
         $('#messageval').removeClass('d-none');
             }
-            else if (validgoalvalue == 0)
+           else if (validgoalvalue == 0)
             {
                 $('#validaction').removeClass('d-none').text('Your Goal is achived you cant edit');
             }
-    else if ($('#action1').val() >= validgoalvalue) { 
+   else if ($('#action1').val() >= validgoalvalue) { 
                 $('#validaction').removeClass('d-none').text('The value should be less than ' + validgoalvalue);
     }
-    else {
+   else{
         $('#actionval').addClass('d-none');
-        $('#messageval').addClass('d-none');
+                $('#messageval').addClass('d-none');
+                $('#validaction').addClass('d-none');
+
         $('#goalform')[0].submit();
     }
 });
@@ -100,9 +105,11 @@ $('#addgoalform').submit(function (event) {
     $('#addvalidspan').addClass('d-none');
     event.preventDefault();
     var goalvalue = $('#goalvalue2').val();
-    console.log("goal value", goalvalue);
-    if ($('#action').val() > goalvalue) {
-        $('#addvalidspan').removeClass('d-none').text('This value should be less than' + goalvalue);
+    console.log("goal for this mission value", goalvalue);
+    console.log("written action", $('#addaction').val());
+
+    if (parseInt($('#addaction').val()) > parseInt(goalvalue)) {
+        $('#addvalidspan').removeClass('d-none').text('This value should be less than ' + goalvalue);
     }
     else if ($('#addgoalform').valid()){
         $('#addvalidspan').addClass('d-none');
