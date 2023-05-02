@@ -26,9 +26,13 @@
 
 .icon {
     position: absolute;
-    top: 13%;
-    left: 36%;
+    top: 30%;
+    left: 48%;
 }
 .btn-hover-warning:hover {
     transform: scale(1.05) !important;
+}
+.profileimgadmin {
+    width: 90px;
+    height: 90px;
 }

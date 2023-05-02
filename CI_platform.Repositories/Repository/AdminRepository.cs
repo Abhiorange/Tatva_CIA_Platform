@@ -68,6 +68,18 @@ namespace CI_platform.Repositories.Repository
             };
             return model;
         }
+        public CmsAddViewModel getcmsdata(string cmspageid)
+        {
+            var cmspage = _ciplatformcontext.CmsPages.FirstOrDefault(c => c.CmsPageId.ToString() == cmspageid);
+            var model = new CmsAddViewModel
+            {
+                CmsPageId=cmspage.CmsPageId,
+                Description=cmspage.Description,
+                Slug=cmspage.Slug,
+                Status=cmspage.Status,
+            };
+            return model;
+        }
         public void editskilldatabase(SkillAddViewModel model)
         {
             var skill = _ciplatformcontext.Skills.FirstOrDefault(s => s.SkillId == model.SkillId);
@@ -398,6 +410,18 @@ namespace CI_platform.Repositories.Repository
             _ciplatformcontext.Add(model1);
             _ciplatformcontext.SaveChanges();
         }
+        public void Addcms(CmsAddViewModel model)
+        {
+            var model1 = new CmsPage
+            {
+                Title = model.Title,
+                Description=model.Description,
+                Slug=model.Slug,
+                Status=model.Status
+            };
+            _ciplatformcontext.Add(model1);
+            _ciplatformcontext.SaveChanges();
+        }
         public MissionAddViewModel getmissionmodeldata()
         {
             var skills = _ciplatformcontext.Skills.ToList();
@@ -421,27 +445,35 @@ namespace CI_platform.Repositories.Repository
                 CityId=model.CityId,
                 CountryId=model.CountryId,
                 ProfileText=model.ProfileText,
-                Status=model.Status
+                Status=model.Status,
+                LinkedInUrl=model.LinkedInUrl
             };
             _ciplatformcontext.Add(model1);
-            _ciplatformcontext.SaveChanges();
-            var user = _ciplatformcontext.Users.FirstOrDefault(u => u.UserId == model1.UserId);
-            string wwwRootPath = _hostEnvironment.WebRootPath;
-            string imagesFolderPath = Path.Combine(wwwRootPath, "Images");
-            string MainfolderPath = Path.Combine(imagesFolderPath, "UserProfileImages");
-            if (!Directory.Exists(MainfolderPath))
+          if(model.Avatar!=null)
             {
-                Directory.CreateDirectory(MainfolderPath);
+                var user = _ciplatformcontext.Users.FirstOrDefault(u => u.UserId == model1.UserId);
+                string wwwRootPath = _hostEnvironment.WebRootPath;
+                string imagesFolderPath = Path.Combine(wwwRootPath, "Images");
+                string MainfolderPath = Path.Combine(imagesFolderPath, "UserProfileImages");
+                if (!Directory.Exists(MainfolderPath))
+                {
+                    Directory.CreateDirectory(MainfolderPath);
+                }
+                string fileName = model.Avatar.FileName;
+
+                var uploads = Path.Combine(MainfolderPath, fileName);
+
+                using (var fileStreams = new FileStream(uploads, FileMode.Create))
+                {
+                    model.Avatar.CopyTo(fileStreams);
+                }
+                user.Avatar = @"\Images\UserProfileImages\" + fileName;
             }
-            string fileName = model.Avatar.FileName;
-
-            var uploads = Path.Combine(MainfolderPath, fileName);
-
-            using (var fileStreams = new FileStream(uploads, FileMode.Create))
+            else
             {
-                model.Avatar.CopyTo(fileStreams);
+                model1.Avatar = @"\Images\f38f7d36-e789-477f-939b-2760507ce69d.png";
             }
-            user.Avatar = @"\Images\UserProfileImages\" + fileName;
+           
             _ciplatformcontext.SaveChanges();
             
         }
@@ -663,7 +695,8 @@ namespace CI_platform.Repositories.Repository
                 Availibility=model.Availibility,
                 ThemeId=model.ThemeId,
                 Status=model.Status,
-                MissionType=model.MissionType
+                MissionType=model.MissionType,
+                RegistrationDeadline=model.RegistrationDeadline
             };
             _ciplatformcontext.Add(model1);
             foreach (var skill in selectedSkills)
@@ -767,6 +800,12 @@ namespace CI_platform.Repositories.Repository
         {
             var mission = _ciplatformcontext.Missions.FirstOrDefault(m => m.MissionId.ToString() == missionid);
             mission.Status = 0;
+            _ciplatformcontext.SaveChanges();
+        }
+        public void deleteuser(string userid)
+        {
+            User user = _ciplatformcontext.Users.SingleOrDefault(u => u.UserId.ToString() == userid);
+            user.Status = 0;
             _ciplatformcontext.SaveChanges();
         }
         public bool deletetheme(string themeid)

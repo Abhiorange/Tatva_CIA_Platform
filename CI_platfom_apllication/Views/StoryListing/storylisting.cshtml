@@ -54,7 +54,7 @@
                         <div class="card h-100">
                             <div class="container-fluid p-0">
                                 <div class="position-relative">
-                                    <img src="~/Assets/grid_img1.png" alt="Avatar" class="image story_img">
+                                    <img src="@Model.StoryMedia.FirstOrDefault(s => s.StoryId == data.StoryId && s.Type=="image").Path" alt="Avatar" class="image story_img">
                                     @{
                                         var story_missionid = @data.MissionId;
                                         var theme = @Model.Missions.SingleOrDefault(m => m.MissionId == story_missionid);

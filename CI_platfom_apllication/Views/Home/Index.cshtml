@@ -95,7 +95,9 @@
                     <input type="password" class="form-control" id="password" asp-for="Password" class="form-control">
                     <span onclick="password();" class="position-absolute bottom-0 end-0 mb-1 me-1 "><i class="bi bi-eye"></i></span>
                     </div>
-                      <span asp-validation-for="Password" class="text-danger"></span>
+                    <div class="mb-5">                      
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
 
                     <button type="submit" class="btn bg-warning btn-hover-warning text-white">login</button>
                     <div id="txt1">

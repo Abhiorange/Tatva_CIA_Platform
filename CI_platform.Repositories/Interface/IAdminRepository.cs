@@ -25,6 +25,8 @@ namespace CI_platform.Repositories.Interface
         public void deletemission(string missionid);
         public void Addmission(MissionAddViewModel model, List<int> selectedSkills);
         public SkillAddViewModel getskill(string skillid);
+        public CmsAddViewModel getcmsdata(string cmspageid);
+        public void Addcms(CmsAddViewModel model);
 
         public void Addskill(SkillAddViewModel model);
         public UserAdminViewModel getthemedata(int pageindex, int pageSize, string SearchInputdata);
@@ -40,6 +42,7 @@ namespace CI_platform.Repositories.Interface
         public MissionAddViewModel getmissionmodeldata();
         public void Adduser(UserAddViewModel model);
         public void updateuser(UserAddViewModel model);
+        public void deleteuser(string userid);
 
 
 

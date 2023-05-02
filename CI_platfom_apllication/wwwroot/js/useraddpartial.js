@@ -5,6 +5,14 @@ $('.img-wrapper').mouseout(function () {
     $('#boot-icon').addClass("d-none");
 })
 
+$('.nav-link').each(function () {
+    $(this).parent().removeClass('bg-light');
+    $(this).css('color', 'white');
+});
+$('.nav-link.user').parent().addClass('bg-light');
+$('.nav-link.user ').css('color', 'orange');
+
+
 getcountry();
 $(document).ready(function () {
     $('#usercountryselect').on('change', function () {
@@ -34,6 +42,7 @@ $(document).ready(function () {
     });
 });
 function getcountry() {
+    alert('country called');
     var countryid = $('#usercountryselect').val();
     console.log("id", countryid);
     $.ajax({
@@ -46,9 +55,9 @@ function getcountry() {
                 $('#usercountryselect').html('<option>No countries selected</option>');
             } else {
                 $.each(result, function (i, data) {
-                    if (countryid == "defselect") {
-                    $('#usercountryselect').append('<option value="' + data.countryId + '" id="' + data.countryId + '">' + data.name + '</option>');
-                    }
+                    
+                        $('#usercountryselect').append('<option value="' + data.countryId + '" id="' + data.countryId + '">' + data.name + '</option>');
+                    
 
                 })
             }
@@ -74,7 +83,6 @@ document.getElementById("file-input").onchange = function (event) {
 
 const uploadedFiles = new Set();
 function handleFiles(files) {
-    $('#showImage').empty();
     const file = files[0];
     console.log(files);
     for (let i = 0; i < files.length; i++) {

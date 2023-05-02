@@ -44,13 +44,17 @@ namespace CI_platfom_apllication.Controllers
                 if (userlogin_detail == "user does not exist")
                 {
                     ModelState.AddModelError("Email", userlogin_detail);
-                    return View("Index");
+                    var model = new LoginViewModel();
+                    model.Banners = _userRepository.GetBanners();
+                    return View("Index",model);
 
                 }
                 if (userlogin_detail == "password is not correct")
                 {
                     ModelState.AddModelError("Password", userlogin_detail);
-                    return View("Index");
+                    var model =new LoginViewModel();
+                    model.Banners = _userRepository.GetBanners();
+                    return View("Index",model);
 
                 }
                 var user_detail = userlogin_detail.Split(',');
@@ -68,7 +72,11 @@ namespace CI_platfom_apllication.Controllers
         [HttpGet]
         public IActionResult register()
         {
-            return View();
+            RegisterViewModel registerViewModel = new RegisterViewModel()
+            {
+                Banners = _userRepository.GetBanners(),
+            };
+            return View(registerViewModel);
         }
         [HttpPost]
         public IActionResult registration(RegisterViewModel register)
@@ -79,7 +87,9 @@ namespace CI_platfom_apllication.Controllers
                 if (entity == "user already exist")
                 {
                     ModelState.AddModelError("Email", entity);
-                    return View("register");
+                    var model = new RegisterViewModel();
+                    model.Banners = _userRepository.GetBanners();
+                    return View("register",model);
                 }
                 TempData["register"] = "registartion is done succesfully";
                 return RedirectToAction("Index");
@@ -91,7 +101,11 @@ namespace CI_platfom_apllication.Controllers
         [HttpGet]
         public IActionResult forgetpassword()
         {
-            return View();
+            ForgetViewModel forgetViewModel = new ForgetViewModel()
+            {
+                Banners = _userRepository.GetBanners(),
+            };
+            return View(forgetViewModel);
         }
         [HttpPost]
         public IActionResult forgetpassword(ForgetViewModel forget)
@@ -104,7 +118,9 @@ namespace CI_platfom_apllication.Controllers
                 if (user_token == "user does not exist")
                 {
                     ModelState.AddModelError("Email", user_token);
-                    return View("forgetpassword");
+                    var model = new ForgetViewModel();
+                    model.Banners = _userRepository.GetBanners();
+                    return View("forgetpassword",model);
                 }
                 HttpContext.Session.SetString("Token", user_token);
             }
@@ -119,24 +135,23 @@ namespace CI_platfom_apllication.Controllers
             {
                 return NotFound("Link Expired");
             }
-
-            return View();
+            LoginViewModel loginViewModel = new LoginViewModel()
+            {
+                Banners = _userRepository.GetBanners(),
+            };
+            return View(loginViewModel);
         }
         [HttpPost]
         public IActionResult reset(ResetViewModel reset)
         {
             if (ModelState.IsValid)
             {
-               /* if (reset.ConfirmPassword == null || reset.Password == null)
-                {
-                    ModelState.AddModelError("ConfirmPassword", "enter password");
-                    return RedirectToAction("reset", "home");
-                }*/
                 var token = HttpContext.Session.GetString("Token");
                 var user = _userRepository.reset(reset, token);
                 if (user == null)
                 {
                     ModelState.AddModelError("ConfirmPassword", "Password does not match");
+
                     return RedirectToAction("reset", "home");
                 }
                 HttpContext.Session.Remove(token);

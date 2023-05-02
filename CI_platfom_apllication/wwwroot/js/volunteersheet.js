@@ -66,6 +66,20 @@ $(document).ready(function () {
         modal.find('#totalgoalachieve').val(totalgoalachieve);
     });
 });
+$('#edittimeform').submit(function (event) {
+    alert('edit form called');
+    console.log("hour value", $('#edithour').val());
+    event.preventDefault();
+    if ($('#edithour').val() > 24) {
+        $('#edithourspan').text("Hour value should be less than 24");
+    }
+    if ($('#editminute').val() > 60) {
+        $('#editminutespan').text("minute value should be less than 60");
+    }
+    else if ($('#edittimeform').valid()) {
+        $('#edittimeform')[0].submit();
+    }
+})
 $('#goalform').submit(function (event) {
         $('#messageval').addClass('d-none');
     $('#actionval').addClass('d-none');

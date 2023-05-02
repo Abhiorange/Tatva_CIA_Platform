@@ -92,9 +92,7 @@
                         @{
                             if (@Model.Missions.MissionType == "goal")
                             {
-
                                 <span>@Model.GoalObjectiveText</span>
-
                             }
 
                             else if (DateTime.Now >= @Model.Missions.StartDate && @Model.Missions.EndDate >= DateTime.Now)
@@ -145,16 +143,11 @@
                                     }
                                     else
                                     {
-
-
-                                        <img src="~/Assets/hours.png"
-                                     style="    height: 25px;
-                                                                  width: 25px;">
+                                        <img src="~/Assets/hours.png" style="height: 25px;width:25px;">
                                         <div class="ms-3">
                                             <h5 class="mb-0 mt-0" style="font-size: 15px;">@Model.Missions.EndDate?.ToString("d")</h5>
                                             <p class="fs--1 mb-0 mt-0">Deadline</p>
                                         </div>
-
                                     }
 
 
@@ -326,10 +319,10 @@
                                     You have not logged in<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
                                 </button>
                             }
-                            else if (Model.checkClosed)
+                            else if (Model.checkClosed || Model.Missions.TotalSeats==0)
                             {
                                 <button class="py-2 px-3 mx-auto app">
-                                    Mission Deadline is gone, you cannot apply<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
+                                    Registration Closed<img src="~/Assets/right-arrow.png" alt="" class="ms-2">
                                 </button>
                             }
                             else if (apply == null)
@@ -439,9 +432,6 @@
 
                             </div>
                             <div class="container d-flex flex-wrap">
-
-
-
                                 @foreach (var data in Model.MissionDocuments)
                                 {
                                     if(Model.MissionDocuments.Count()==0)
@@ -452,18 +442,18 @@
                                     {
                                        if (data.DocumentType == "doc" || data.DocumentType == "DOCX" )
                                     {
-                                        <a class="text-decoration-none rounded-pill border px-1 mx-1 py-1" asp-controller="Mission" asp-action="DownloadDocument" asp-route-fileType="@data.DocumentType" asp-route-id="@Model.missionid"><img src="~/Assets/doc.png">@data.DocumentName</a>
+                                        <a class="text-decoration-none rounded-pill border px-1 mx-1 py-1"href="@data.DocumentPath" download><img src="~/Assets/doc.png">@data.DocumentName</a>
 
                                     }
                                     else if (data.DocumentType == "xlsx")
                                     {
-                                        <a class="text-decoration-none rounded-pill border px-1 mx-1 py-1" asp-controller="Mission" asp-action="DownloadDocument" asp-route-fileType="@data.DocumentType" asp-route-id="@Model.missionid"><img src="~/Assets/xlsx.png">@data.DocumentName</a>
+                                        <a class="text-decoration-none rounded-pill border px-1 mx-1 py-1"href="@data.DocumentPath" download><img src="~/Assets/xlsx.png">@data.DocumentName</a>
 
                                     }
                                     else if (data.DocumentType == "pdf" || data.DocumentType == "PDF")
-                                    {
-                                        <a class="text-decoration-none rounded-pill border px-1 mx-1 py-1" asp-controller="Mission" asp-action="DownloadDocument" asp-route-fileType="@data.DocumentType" asp-route-id="@Model.missionid"><img src="~/Assets/pdf.png">@data.DocumentName</a>
-
+                                    {<a class="rounded-pill border nav-link py-1 px-2 me-2"  href="@data.DocumentPath" download>
+                                            <img src="~/Assets/pdf.png" alt=""> @data.DocumentName
+                                        </a>
                                     }
   
                                     }  
@@ -552,7 +542,7 @@
                             <div>
                                 <h6 class="mb-0">Availability</h6>
                             </div>
-                            <small class="opacity-50 mar_left">cool,easy going,math computer</small>
+                            <small class="opacity-50 mar_left">@Model.Missions.Availibility</small>
                         </div>
                         <div class="d-flex border-bottom py-3" aria-current="true">
                             <div>

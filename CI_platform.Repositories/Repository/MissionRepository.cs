@@ -272,10 +272,7 @@ namespace CI_platform.Repositories.Repository
            
             return model;
         }
-        public MissionDocument GetByDocumentType(string documentType,int id)
-        {
-            return _ciplatformcontext.MissionDocuments.FirstOrDefault(d => d.DocumentType == documentType && d.MissionId==id);
-        }
+        
 
         public string AddComment(int missionid, string userid, string commentsDiscription)
         {

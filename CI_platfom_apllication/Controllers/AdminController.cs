@@ -115,10 +115,19 @@ namespace CI_platfom_apllication.Controllers
         {   
             return PartialView("_skilladd");
         }
+        public IActionResult cmsadd()
+        {
+            return PartialView("_cmsadd");
+        }
         public IActionResult editskilldata(string skillid)
         {
             var model = _adminRepository.getskill(skillid);
             return PartialView("_skilladd", model);
+        }
+        public IActionResult editcmsdata(string cmsid)
+        {
+            var model = _adminRepository.getcmsdata(cmsid);
+            return PartialView("_cmspage", model);
         }
         public IActionResult banneradd()
         {
@@ -190,6 +199,22 @@ namespace CI_platfom_apllication.Controllers
             return RedirectToAction("Skill", new { SearchInputdata = "", pageindex = 1, pageSize = 2 });
 
         }
+        public IActionResult AddCms(CmsAddViewModel model)
+        {
+            if(model.CmsPageId==0)
+            {
+                _adminRepository.Addcms(model);
+                TempData["success"] = "CMS page is added";
+
+            }
+           /* else
+            {
+                _adminRepository.editcmspage(model);
+                TempData["success"] = "CMS page is edited";
+
+            }*/
+            return RedirectToAction("Cmspage", new { SearchInputdata = "", pageindex = 1});
+        }
         public IActionResult EditBanner(string id)
         {
             var model = _adminRepository.getBanner(id)
@@ -211,6 +236,11 @@ namespace CI_platfom_apllication.Controllers
             _adminRepository.deletemission(missionid);
             return RedirectToAction("Mission", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
             
+        }
+        public IActionResult DeleteUser(string userid)
+        {
+            _adminRepository.deleteuser(userid);
+            return RedirectToAction("User", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
         }
         public bool DeleteTheme(string themeid)
         {

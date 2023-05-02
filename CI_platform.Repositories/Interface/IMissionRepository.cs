@@ -20,7 +20,6 @@ namespace CI_platform.Repositories.Interface
         public string updateandaddrate(int missionid, int rating, int userid);
         public VolunteerViewModel getvolunteermission(int id, int pageindex, int pagesize, string userid);
         public string fav_mission(int missionid, int userid);
-        public MissionDocument GetByDocumentType(string documentType, int id);
         public string AddComment(int missionid, string userid, string commentsDiscription);
         public string apply_mission(int missionid, string userid);
     }

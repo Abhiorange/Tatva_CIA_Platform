@@ -19,7 +19,6 @@ namespace CI_platform.Entities.ViewModels
         public DateTime? StartDate { get; set; }
         public string? Description { get; set; }
         [Required(ErrorMessage = "Enter End Date")]
-
         public DateTime? EndDate { get; set; }
         public long ThemeId { get; set; }
         [Required(ErrorMessage = "Enter Total Seats")]

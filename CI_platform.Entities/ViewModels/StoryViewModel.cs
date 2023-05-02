@@ -12,7 +12,7 @@ namespace CI_platform.Entities.ViewModels
     {
        public IPagedList<Story> Stories { get; set; }
         public List<Mission> Missions { get; set; }
-
+        public List<StoryMedium> StoryMedia { get; set; }
         
     }
 }

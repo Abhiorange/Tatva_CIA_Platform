@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="~/css/skillpartial.css">
 </head>
 <body>
-    <h4 class="mt-2 ms-3 border-bottom">Skills</h4>
-    <div class=" ms-2 d-flex justify-content-between">
-        <div class="col-6" role="search">
-            <img src="~/Assets/search.png" alt="search-icon" class="position-absolute pt-3 ps-1">
-            <input class="form-control me-2 ps-5 pt-3 pb-3" id="skillsearch" type="text" placeholder="Search" aria-label="Search">
+    <h4 class="mt-2 ms-3 border-bottom"> <span class="borderbottom">SKILLS</span> </h4>
+    <div class=" ms-2 d-flex justify-content-between mt-4 position-sticky">
+        <div class="col-6 position-relative" role="search">
+            <img src="~/Assets/search.png" alt="search-icon" class="position-absolute pt-2 ps-1">
+            <input class="form-control me-2 ps-5" id="skillsearch" type="text" placeholder="Search" aria-label="Search">
         </div>
         <div class="col-4  d-flex justify-content-end">
-            <button class=" px-3 apply"> <a asp-action="skilladd" asp-controller="Admin">+ Apply</a></button>
+            <button class="px-3 btn btn-warning rounded-pill"> <a asp-action="skilladd" asp-controller="Admin">+ Add</a></button>
         </div>
     </div>
 
@@ -58,11 +58,11 @@
                                 @{
                                     if (@skill.Status == 0)
                                     {
-                                        <td id="inactive" class="text-danger">In-active</td>
+                                        <td id="inactive" class="text-danger fw-bold">In-active</td>
                                     }
                                     else
                                     {
-                                        <td id="active">Active</td>
+                                        <td id="active" class="text-success fw-bold">Active</td>
                                     }
                                 }
                                 <td class="d-flex">

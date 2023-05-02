@@ -2,16 +2,15 @@
 $(document).on('click', '.use li', function (e) {
     e.preventDefault();
     $('.use li').each(function () {
-        $(this).removeClass('active');
+        $(this).removeClass('usactive');
     })
-    $(this).addClass('active');
+    $(this).addClass('usactive');
     console.log($(this).children().attr("id"))
     filteruser();
 });
 function filteruser() {
     alert('pagination called');
-    alert('filteruser called');
-    var pageIndex = $('.use .active a').attr('id');
+    var pageIndex = $('.use .usactive a').attr('id');
     var keyword = $('#search').val();
     $.ajax({
         url: "/Admin/User",
@@ -21,11 +20,8 @@ function filteruser() {
             pageindex: pageIndex
         },
         success: function (response) {
-            //console.log($(response).find('.pagination').html());
-          //  $('#nouser').html($(response).find('#nouser').html());
             $('.table').html($(response).find('.table').html());
             $('.page').html($(response).find('.page').html());
-
         }
     })
 }
@@ -33,7 +29,7 @@ $(document).ready(function () {
    
     $('#search').keyup(function () {
       
-        $('.pagination .active').removeClass('active');
+        $('.pagination .usactive').removeClass('usactive');
         filterSearch();
        
     });
@@ -52,7 +48,6 @@ function filterSearch() {
           
             console.log(response);
             console.log("the id element", $(response).find("#nouser").html());
-         /*   $('#nouser').html($(response).find('#nouser').html());*/
             $('.table').empty().html($(response).find('.table').html());
             $('.page').empty().html($(response).find('.page').html());
            
@@ -60,3 +55,38 @@ function filterSearch() {
     })
 }
 
+function showModal(id) {
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "This User will be de-activated",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            deleteUser(id);
+            Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+            )
+        }
+    })
+}
+function deleteUser(userId) {
+    alert("delete user called");
+    $.ajax({
+        url: '/admin/DeleteUser',
+        type: 'GET',
+        data: {
+            userid: userId
+        },
+        success: function (result) {
+            $('#loadPartialView').html($(result).find('#loadPartialView').html());
+            toastr.success("User is deleted ");
+
+        }
+    });
+}

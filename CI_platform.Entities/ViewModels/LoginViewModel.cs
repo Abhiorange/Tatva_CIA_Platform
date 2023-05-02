@@ -14,6 +14,7 @@ namespace CI_platform.Entities.ViewModels
 
         [Required(ErrorMessage = "password is required")]
         public string Password { get; set; }
+
        public List<Banner>? Banners { get; set; }
     }
 }

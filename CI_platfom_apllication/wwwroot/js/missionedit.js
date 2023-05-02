@@ -148,13 +148,12 @@ $('#missionForm').submit(function (event) {
     event.preventDefault();
     if ($('#showImage').children().length == 0) {
         $('#imgValidate').text("Select Images")
-    } else if (textarea == "") {
+    } if (textarea == "") {
         $('#textValidate').text("Text is Required");
     }
-    else if ($('#showDocument').children().length == 0) {
+    if ($('#showDocument').children().length == 0) {
         $('#docValidate').text("Select Images")
     }
-    if
     else if ($('#missionForm').valid()) {
         $('#missionForm')[0].submit();
     }

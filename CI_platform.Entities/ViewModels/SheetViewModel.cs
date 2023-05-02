@@ -21,8 +21,8 @@ namespace CI_platform.Entities.ViewModels
         public TimeSpan Time { get; set; }
         [Required(ErrorMessage = "enter notes")]
         public string? Notes { get; set; }
-        [Required(ErrorMessage = "enter valid number")]
-        public int Action { get; set; } = new int();
+        [Required(ErrorMessage = "enter valid Action")]
+        public int? Action { get; set; }
         [Required(ErrorMessage = "enter valid date")]
         public DateTime? DateVolunteered { get; set; }
         public int GoalValue { get; set; }

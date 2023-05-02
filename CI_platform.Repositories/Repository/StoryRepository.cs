@@ -27,10 +27,10 @@ namespace CI_platform.Repositories.Repository
             var missionIds = _ciplatformcontext.Missions.Where(m => m.Theme.Title.Contains(keyword)).Select(m => m.MissionId);
             var stories = _ciplatformcontext.Stories.Include(s => s.Mission).Include(s => s.User).Where(s=>s.Status=="PUBLISHED" && (keyword== null || missionIds.Contains(s.MissionId) || s.Title.Contains(keyword))).ToList();
             var Missionthemes = _ciplatformcontext.Missions.Include(m => m.Theme).ToList();
-
+            var storymedia = _ciplatformcontext.StoryMedia.ToList();
             var model = new StoryViewModel
             {
-               // Stories = stories,
+               StoryMedia=storymedia,
                 Missions = Missionthemes
             };
             model.Stories = stories.ToPagedList(pageindex, 3);

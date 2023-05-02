@@ -36,13 +36,11 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form method="post" asp-action="sheetdatabase" asp-controller="TimeSheet" id="hoursheetform">
-
                                 <div class="modal-body">
 
                                     <div class="d-flex flex-column">
                                         <label for="mission">Mission</label>
                                         <select id="mission" asp-for="@Model.Item1.MissionId">
-                                        
                                         </select>
                                         <span class="text-danger" asp-validation-for="@Model.Item1.MissionId"></span>
                                     </div>
@@ -114,18 +112,18 @@
                                             <h5 class="modal-title" id="exampleModalLabel">you are editing for @timesheet.missiontitle</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
-                                        <form method="post" asp-action="edittime" asp-controller="TimeSheet" asp-route-timesheetid="@timesheet.timesheetid">
+                                        <form method="post" asp-action="edittime" asp-controller="TimeSheet" asp-route-timesheetid="@timesheet.timesheetid" id="edittimeform">
                                             <div class="modal-body">
                                                 <div class="d-flex mt-2 justify-content-between">
-                                                    <div class="d-flex flex-column">
+                                                    <div class="d-flex flex-column mt-2">
                                                         <label for="hour">Hours</label>
-                                                        <input type="number" id="hour" asp-for="@Model.Item1.hour" />
-                                                        <span class="text-danger" asp-validation-for="@Model.Item1.hour"></span>
+                                                        <input type="number" id="edithour" asp-for="@Model.Item1.hour" />
+                                                        <span class="text-danger" id="edithourspan" asp-validation-for="@Model.Item1.hour"></span>
                                                     </div>
                                                     <div class="d-flex flex-column mt-2">
                                                         <label for="minute">Minutes</label>
-                                                        <input type="number" id="minute" asp-for="@Model.Item1.minute" />
-                                                        <span class="text-danger" asp-validation-for="@Model.Item1.minute"></span>
+                                                        <input type="number" id="editminute" asp-for="@Model.Item1.minute" />
+                                                        <span class="text-danger" id="editminutespan" asp-validation-for="@Model.Item1.minute"></span>
                                                     </div>
                                                 </div>
                                             </div>

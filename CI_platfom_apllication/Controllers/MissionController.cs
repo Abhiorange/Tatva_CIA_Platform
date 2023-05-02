@@ -112,33 +112,7 @@ namespace CI_platfom_apllication.Controllers
         }
            
         
-        public IActionResult DownloadDocument(string fileType,int id)
-        {
-            var document = _missionRepository.GetByDocumentType(fileType,id);
-            if (document == null)
-            {
-                return NotFound();
-            }
-
-            var contentType = "";
-            switch (fileType)
-            {
-                case "doc":
-                    contentType = "application/msword";
-                    break;
-                case "xlsx":
-                    contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
-                    break;
-                case "pdf":
-                    contentType = "application/pdf";
-                    break;
-                default:
-                    return NotFound();
-            }
-
-            var stream = new FileStream(document.DocumentPath, FileMode.Open);
-            return new FileStreamResult(stream, contentType);
-        }
+       
 
         public IActionResult comment(int missionid, string userid, string commentsDiscription)
         {
