@@ -36,7 +36,6 @@ if ($('.skill-section .filter-list').length > 0) {
 function Addskill() {
     $('.skill-section').empty();
     $('.skillselect:checkbox:checked').each(function () {
-        alert('span called');
         var skillname = $(this).next('label').text();
         var id = $(this).val();
         $('.skill-section').append('<span class="filter-list ps-3 pe-3 me-2 rounded-pill border btn btn-warning text-white">' + skillname + '</span>')
@@ -45,8 +44,6 @@ function Addskill() {
         $('.skill-section').prepend('<span class="filter-list ps-3 pe-3 me-2 p-2 text-dark fw-bold">Selected Skills</span>');
     }
 }
-
-
 
     function getThemes() {
       

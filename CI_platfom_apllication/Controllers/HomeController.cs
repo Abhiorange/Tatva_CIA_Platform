@@ -5,6 +5,9 @@ using CI_platform.Repositories.Interface;
 using CI_platform.Repositories.Repository;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication;
 
 namespace CI_platfom_apllication.Controllers
 {
@@ -25,6 +28,7 @@ namespace CI_platfom_apllication.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             HttpContext.Session.Clear();
             LoginViewModel loginViewModel = new LoginViewModel()
             {
@@ -61,6 +65,13 @@ namespace CI_platfom_apllication.Controllers
                 HttpContext.Session.SetString("firstname", user_detail[0]);
                 HttpContext.Session.SetString("userid", user_detail[1]);
                 HttpContext.Session.SetString("avtar", user_detail[2]);
+                HttpContext.Session.SetString("role", user_detail[3]);
+                TempData["login"] = "successfully logged in";
+                var identity = new ClaimsIdentity(new[] { new Claim(ClaimTypes.Role, user_detail[3]) },
+                            CookieAuthenticationDefaults.AuthenticationScheme);
+
+                var principal = new ClaimsPrincipal(identity);
+                HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
                 TempData["success"] = "login is succesful.";
                 return RedirectToAction("platformlanding","Mission");
             }

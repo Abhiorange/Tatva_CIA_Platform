@@ -63,8 +63,7 @@ namespace CI_platform.Repositories.Repository
             {
                 return "password is not correct";
             }
-            return password_user.FirstName + "," + password_user.UserId + "," + password_user.Avatar;
-
+            return password_user.FirstName + "," + password_user.UserId + "," + password_user.Avatar+","+password_user.Role;
         }
         public List<Banner> GetBanners()
         {

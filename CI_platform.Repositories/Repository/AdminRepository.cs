@@ -74,6 +74,7 @@ namespace CI_platform.Repositories.Repository
             var model = new CmsAddViewModel
             {
                 CmsPageId=cmspage.CmsPageId,
+                Title=cmspage.Title,
                 Description=cmspage.Description,
                 Slug=cmspage.Slug,
                 Status=cmspage.Status,
@@ -85,6 +86,15 @@ namespace CI_platform.Repositories.Repository
             var skill = _ciplatformcontext.Skills.FirstOrDefault(s => s.SkillId == model.SkillId);
             skill.SkillName = model.SkillName;
             skill.Status = model.Status;
+            _ciplatformcontext.SaveChanges();
+        }
+        public void editcmspage(CmsAddViewModel model)
+        {
+            var cmspage = _ciplatformcontext.CmsPages.SingleOrDefault(c => c.CmsPageId == model.CmsPageId);
+            cmspage.Title = model.Title;
+            cmspage.Slug = model.Slug;
+            cmspage.Description = model.Description;
+            cmspage.Status = model.Status;
             _ciplatformcontext.SaveChanges();
         }
         public UserAdminViewModel getstorydata(int pageindex, int pageSize, string SearchInputdata)
@@ -400,15 +410,25 @@ namespace CI_platform.Repositories.Repository
             _ciplatformcontext.Add(model1);
             _ciplatformcontext.SaveChanges();
         }
-        public void Addskill(SkillAddViewModel model)
+        public bool Addskill(SkillAddViewModel model)
         {
-            var model1 = new Skill
+            List<string> Skillnames = _ciplatformcontext.Skills.Select(s => s.SkillName).ToList();
+            if(Skillnames.Contains(model.SkillName))
             {
-                SkillName=model.SkillName,
-                Status=0,
-            };
-            _ciplatformcontext.Add(model1);
-            _ciplatformcontext.SaveChanges();
+                return false;
+            }
+            else
+            {
+                var model1 = new Skill
+                {
+                    SkillName = model.SkillName,
+                    Status = 0,
+                };
+                _ciplatformcontext.Add(model1);
+                _ciplatformcontext.SaveChanges();
+                return true;
+            }
+          
         }
         public void Addcms(CmsAddViewModel model)
         {
@@ -511,8 +531,11 @@ namespace CI_platform.Repositories.Repository
             var mission = _ciplatformcontext.Missions.SingleOrDefault(m => m.MissionId == model.MissionId);
             List<MissionMedium> missionMedia = _ciplatformcontext.MissionMedia.Where(m => m.MissionId == model.MissionId).ToList();
             List<MissionDocument> missionDoc = _ciplatformcontext.MissionDocuments.Where(m => m.MissionId == model.MissionId).ToList();
-            var missionskills = _ciplatformcontext.MissionSkills.Where(m=>m.MissionId==model.MissionId);
-            _ciplatformcontext.MissionSkills.RemoveRange(missionskills);
+            var missionskills = _ciplatformcontext.MissionSkills.Where(m=>m.MissionId==model.MissionId).ToList();
+            if(missionskills.Count()>0)
+            {
+                _ciplatformcontext.MissionSkills.RemoveRange(missionskills);
+            }
             var goals = _ciplatformcontext.GoalMissions.Where(g=>g.MissionId==model.MissionId).ToList();
             if(model.MissionType=="goal")
             {
@@ -526,43 +549,44 @@ namespace CI_platform.Repositories.Repository
             }
             string wwwRootPath = _hostEnvironment.WebRootPath;
 
-            if (model.Title != mission.Title)
+            if (model.Title != mission.Title && model.Images == null)
             {
-               
                 string imagesFolderPath = Path.Combine(wwwRootPath, "Images");
                 string MainfolderPath = Path.Combine(imagesFolderPath, "Mission");
-                string oldfolderpath = Path.Combine(MainfolderPath, mission.Title);
-                string folderName = model.Title;
-                string newfolderPath = Path.Combine(MainfolderPath, folderName);
-                if (!Directory.Exists(newfolderPath))
+                string sourceDir = Path.Combine(MainfolderPath, mission.Title);
+                string destDir = Path.Combine(MainfolderPath, model.Title);
+                if (!Directory.Exists(destDir))
                 {
-                    Directory.CreateDirectory(newfolderPath);
+                    Directory.CreateDirectory(destDir);
                 }
-                string[] imageFiles = Directory.GetFiles(oldfolderpath, "*.png|*.jpg");
+                string[] imageFiles = Directory.GetFiles(sourceDir);
+
                 foreach (string imageFile in imageFiles)
                 {
                     string fileName = Path.GetFileName(imageFile);
-                    string destFile = Path.Combine(newfolderPath, fileName);
+                    string destFile = Path.Combine(destDir, fileName);
                     File.Copy(imageFile, destFile, true);
                 }
-                string documentFolderPath = Path.Combine(wwwRootPath, "Documents");
-                string docmainfolderPath = Path.Combine(documentFolderPath, "Mission");
-                string docoldfolderpath = Path.Combine(docmainfolderPath, mission.Title);
-                string docnewfolderPath = Path.Combine(docmainfolderPath, folderName);
-                if (!Directory.Exists(docnewfolderPath))
-                {
-                    Directory.CreateDirectory(docnewfolderPath);
-                }
-                string[] docFiles = Directory.GetFiles(docoldfolderpath, "*.doc|*.pdf|*.xlsx|*xls");
-                foreach (string docFile in docFiles)
-                {
-                    string fileName = Path.GetFileName(docFile);
-                    string destFile = Path.Combine(docnewfolderPath, fileName);
-                    File.Copy(docFile, destFile, true);
-                }
-               
 
 
+            }
+            if (model.Title != mission.Title && model.Documents == null)
+            {
+                string docFolderPath = Path.Combine(wwwRootPath, "Documents");
+                string missionDocPath = Path.Combine(docFolderPath, "Mission");
+                string sourceDocDir = Path.Combine(missionDocPath, mission.Title);
+                string destDocDir = Path.Combine(missionDocPath, model.Title);
+                if (!Directory.Exists(destDocDir))
+                {
+                    Directory.CreateDirectory(destDocDir);
+                }
+                string[] files = Directory.GetFiles(sourceDocDir);
+                foreach (string file in files)
+                {
+                    string fileName = Path.GetFileName(file);
+                    string destFile = Path.Combine(destDocDir, fileName);
+                    File.Copy(file, destFile, true);
+                }
             }
             foreach (var skill in selectedSkills)
             {
@@ -800,12 +824,28 @@ namespace CI_platform.Repositories.Repository
         {
             var mission = _ciplatformcontext.Missions.FirstOrDefault(m => m.MissionId.ToString() == missionid);
             mission.Status = 0;
+            mission.DeletedAt = DateTime.Now;
+            _ciplatformcontext.SaveChanges();
+        }
+        public void deletecmspage(string cmspageid)
+        {
+            var cmspage = _ciplatformcontext.CmsPages.FirstOrDefault(c => c.CmsPageId.ToString() == cmspageid);
+            cmspage.Status = 0;
+            cmspage.DeletedAt = DateTime.Now;
             _ciplatformcontext.SaveChanges();
         }
         public void deleteuser(string userid)
         {
             User user = _ciplatformcontext.Users.SingleOrDefault(u => u.UserId.ToString() == userid);
             user.Status = 0;
+            user.DeletedAt = DateTime.Now;
+            _ciplatformcontext.SaveChanges();
+        }
+        public void deletestory(string storyid)
+        {
+            Story story = _ciplatformcontext.Stories.SingleOrDefault(s => s.StoryId.ToString() == storyid);
+            story.Status = "PENDING";
+            story.DeletedAt = DateTime.Now;
             _ciplatformcontext.SaveChanges();
         }
         public bool deletetheme(string themeid)
@@ -813,12 +853,13 @@ namespace CI_platform.Repositories.Repository
             var theme = _ciplatformcontext.MissionThemes.FirstOrDefault(t => t.MissionThemeId.ToString() == themeid);
             var MissionTheme = _ciplatformcontext.Missions.Select(m => m.ThemeId).ToList();
             if(MissionTheme.Contains(int.Parse(themeid)))
-             {
+            {
                 return false;
             }
             else
             {
                 theme.Status = 0;
+                theme.DeletedAt = DateTime.Now;
                 _ciplatformcontext.SaveChanges();
                 return true;
             }
@@ -836,6 +877,7 @@ namespace CI_platform.Repositories.Repository
             else
             {
                 skill.Status = 0;
+                skill.DeletedAt = DateTime.Now;
                 _ciplatformcontext.SaveChanges();
                 return true;
             }

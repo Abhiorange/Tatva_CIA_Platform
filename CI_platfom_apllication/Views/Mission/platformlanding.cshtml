@@ -102,16 +102,16 @@
                                         else
                                         {
                                              var actionvalue = Model.timesheets.Where(t => t.MissionId == mission.MissionId).ToList();
-                                           var goalvalue = Model.GoalMissions.Where(g => g.MissionId == mission.MissionId).Select(g => g.GoalValue);
+                                             var goalvalue = Model.GoalMissions.Where(g => g.MissionId == mission.MissionId).Select(g => g.GoalValue);
                                              @if (actionvalue.Any())
                                                 {
                                                     var totalgoalachieved = actionvalue.GroupBy(t => t.MissionId).Select(g => g.Sum(t => t.Action));
                                                     if(totalgoalachieved.FirstOrDefault()==goalvalue.FirstOrDefault())
-                                                {
-                                                  <div class="d-flex position-absolute pt-2 badgeclass">
-                                                       <span class="badge1 bg-warning text-white ms-1 pt-2">Closed</span><div class="arrow-right-c"></div>
-                                                     </div>  
-                                                }
+                                                        {
+                                                          <div class="d-flex position-absolute pt-2 badgeclass">
+                                                               <span class="badge1 bg-warning text-white ms-1 pt-2">Closed</span><div class="arrow-right-c"></div>
+                                                          </div>  
+                                                        }
                                                 }  
                                         }   
                                         if (@userid_session != null)

@@ -1,10 +1,12 @@
 ﻿using CI_platform.Entities.DataModels;
 using CI_platform.Entities.ViewModels;
 using CI_platform.Repositories.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CI_platfom_apllication.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         private readonly ILogger<AdminController> _logger;
@@ -127,7 +129,7 @@ namespace CI_platfom_apllication.Controllers
         public IActionResult editcmsdata(string cmsid)
         {
             var model = _adminRepository.getcmsdata(cmsid);
-            return PartialView("_cmspage", model);
+            return PartialView("_cmsadd", model);
         }
         public IActionResult banneradd()
         {
@@ -188,8 +190,16 @@ namespace CI_platfom_apllication.Controllers
         {   
             if(model.SkillId==0)
             {
-                _adminRepository.Addskill(model);
-                TempData["success"] = "skill is added";
+              var check= _adminRepository.Addskill(model);
+                if(check)
+                {
+                    TempData["success"] = "skill is added";
+                }
+                else
+                {
+                    ModelState.AddModelError("SkillName", "Skillname already exist");
+                    return PartialView("_skilladd");
+                }
             }
             else
             {
@@ -207,12 +217,12 @@ namespace CI_platfom_apllication.Controllers
                 TempData["success"] = "CMS page is added";
 
             }
-           /* else
+            else
             {
                 _adminRepository.editcmspage(model);
                 TempData["success"] = "CMS page is edited";
 
-            }*/
+            }
             return RedirectToAction("Cmspage", new { SearchInputdata = "", pageindex = 1});
         }
         public IActionResult EditBanner(string id)
@@ -237,6 +247,11 @@ namespace CI_platfom_apllication.Controllers
             return RedirectToAction("Mission", new { SearchInputdata = "", pageindex = 1, pageSize = 10 });
             
         }
+        public IActionResult DeleteCMSPage(string cmspageId)
+        {
+            _adminRepository.deletecmspage(cmspageId);
+            return RedirectToAction("Cmspage", new { SearchInputdata = "", pageindex = 1});
+        }
         public IActionResult DeleteUser(string userid)
         {
             _adminRepository.deleteuser(userid);
@@ -251,6 +266,12 @@ namespace CI_platfom_apllication.Controllers
         {
             var delete=_adminRepository.deleteskill(skillId);
             return delete;
+        }
+        public IActionResult DeleteStory(string storyid)
+        {
+           _adminRepository.deletestory(storyid);
+            return RedirectToAction("Story", new { SearchInputdata = "", pageindex = 1, pageSize = 1 });
+
         }
     }
 }

@@ -206,11 +206,11 @@ namespace CI_platform.Repositories.Repository
                  .Include(m=>m.Theme)
                  .Include(m=>m.Country)
                  .FirstOrDefault(c => c.MissionId == id);
-                                                       
+            var missons_media = _ciplatformcontext.MissionMedia.Where(m => m.MissionId == id).ToList();
             var goal = _ciplatformcontext.GoalMissions.FirstOrDefault(c => c.MissionId == id);
             var related_mission = _ciplatformcontext.Missions
                 .Include(m => m.City)
-                .Include(m => m.Theme)
+                .Include(m => m.Theme).Include(m=>m.MissionMedia)
                 .Include(m=>m.Country).Where(rm => rm.MissionId != missions.MissionId && (rm.City.Name == missions.City.Name || rm.Theme.Title == missions.Theme.Title || rm.Country.Name == missions.Country.Name)).ToList();
 
             var mission_rating = _ciplatformcontext.MissionRatings.Include(m => m.Mission).Include(m => m.User).ToList();
@@ -260,8 +260,8 @@ namespace CI_platform.Repositories.Repository
                MissionApplications=missionapplication,
                 MissionDocuments=missiondocument,
                 checkApply=check_apply,
-                checkClosed=checkClosedMission
-               
+                checkClosed=checkClosedMission,
+                MissionMedia=missons_media
             };
             model.recentvolunteers = recentvolunteer.ToPagedList(pageindex, 1);
             if (missions.MissionType == "goal")

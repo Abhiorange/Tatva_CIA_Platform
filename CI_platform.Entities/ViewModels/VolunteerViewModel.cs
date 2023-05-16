@@ -21,6 +21,7 @@ namespace CI_platform.Entities.ViewModels
         public bool checkClosed { get; set; }
         public int GoalValue { get; set; }
         public int missionid { get; set; }
+        public List<MissionMedium> MissionMedia { get; set; }
         public List<MissionSkill> MissionsSkill { get; set; }
         public List<FavouriteMission> favouriteMissions { get; set; }
         public List<Comment> comment { get; set; }

@@ -27,8 +27,10 @@ namespace CI_platform.Repositories.Interface
         public SkillAddViewModel getskill(string skillid);
         public CmsAddViewModel getcmsdata(string cmspageid);
         public void Addcms(CmsAddViewModel model);
+        public void deletestory(string storyid);
+        public void editcmspage(CmsAddViewModel model);
 
-        public void Addskill(SkillAddViewModel model);
+        public bool Addskill(SkillAddViewModel model);
         public UserAdminViewModel getthemedata(int pageindex, int pageSize, string SearchInputdata);
         public void Addtheme(ThemeAddViewModel model);
         public bool deletetheme(string themeid);
@@ -43,15 +45,9 @@ namespace CI_platform.Repositories.Interface
         public void Adduser(UserAddViewModel model);
         public void updateuser(UserAddViewModel model);
         public void deleteuser(string userid);
-
-
-
+        public void deletecmspage(string cmspageid);
         public UserAddViewModel edituserdata(string userid);
-
         public void editskilldatabase(SkillAddViewModel model);
         public bool deleteskill(string skillid);
-
-
-
     }
 }
