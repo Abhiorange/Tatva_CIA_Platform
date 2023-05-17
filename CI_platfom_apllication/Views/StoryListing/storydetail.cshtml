@@ -47,7 +47,7 @@
                     <div class="slider slider-nav w-100">
                          @foreach(var data in Model.images)
                         {   
-                              <div><img src="@data" class="w-100" alt="" srcset=""></div>
+                              <div><img src="@data" class="w-100 " alt="" srcset=""></div>
                         }
                      
                    
@@ -72,10 +72,8 @@
                 
 
                 <div class="d-flex justify-content-between mt-4">
-                   @* <button class="py-2 btn rounded-pill border-dark"><img src="~/Assets/add1.png" alt=""
-                        class="ms-2"> Recommend to a
-                    Co-worker</button>*@
-                    <button class="py-2 px-2 mx-auto rounded-pill recomand border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="btnShowUsers(@Model.Stories.StoryId)">
+                  
+                    <button class="py-2 px-2 mx-auto rounded-pill btn btn-outline-warning text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="btnShowUsers(@Model.Stories.StoryId)">
                         <img src="~/Assets/add1.png" alt="" class="ms-2">Recommend
                         to a Co-Worker
                     </button>
@@ -88,18 +86,21 @@
                 </div>
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">User List</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary" onclick="sendmail()">Send mail</button>
-                                </div>
+                           
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">User List</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body size_modal">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" onclick="sendmail()">Send mail</button>
+                                    </div>
+                               
                             </div>
+                          
                         </div>
                     </div>
 

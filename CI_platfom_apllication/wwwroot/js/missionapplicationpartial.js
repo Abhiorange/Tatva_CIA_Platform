@@ -4,8 +4,8 @@ $('.nav-link').each(function () {
     $(this).parent().removeClass('bg-light');
     $(this).css('color', 'white');
 });
-$('.nav-link.missionapplication').parent().addClass('bg-light');
-$('.nav-link.missionapplication ').css('color', 'orange');
+$('.nav-link.missionapplication1').parent().addClass('bg-light');
+$('.nav-link.missionapplication1 ').css('color', 'orange');
 
 
 
@@ -29,7 +29,7 @@ function filterskills() {
             pageindex: pageIndex
         },
         success: function (response) {
-            alert("hello");
+          
             $('.table').html($(response).find('.table').html());
             $('.pagination').html($(response).find('.pagination').html());
 
@@ -40,7 +40,7 @@ function filterskills() {
 $(document).ready(function () {
 
     $('#applicationsearch').keyup(function () {
-        alert('hi');
+      
         $('.pagination .mipactive').removeClass('mipactive');
         filterSearch();
 
@@ -58,7 +58,7 @@ function filterSearch() {
 
         },
         success: function (response) {
-            alert('called');
+          
 
             $('.table').empty().html($(response).find('.table').html());
             $('.page').empty().html($(response).find('.page').html());
@@ -74,7 +74,7 @@ function approveapplication(miappid) {
             Applicationid: miappid,
         },
         success: function (response) {
-            alert('called');
+           
             $('#loadPartialView').html($(response).find('#loadPartialView').html());
             toastr.success("Application is Approved");
         }
@@ -88,7 +88,7 @@ function declineapplication(miappid) {
             Applicationid: miappid,
         },
         success: function (response) {
-            alert('called');
+         
             $('#loadPartialView').html($(response).find('#loadPartialView').html());
             toastr.success("Application is Decline Succesfully");
         }

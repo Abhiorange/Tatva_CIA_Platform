@@ -29,9 +29,13 @@ public partial class CiPlatformContext : DbContext
 
     public virtual DbSet<Country> Countries { get; set; }
 
+    public virtual DbSet<EnableUserStatus> EnableUserStatuses { get; set; }
+
     public virtual DbSet<FavouriteMission> FavouriteMissions { get; set; }
 
     public virtual DbSet<GoalMission> GoalMissions { get; set; }
+
+    public virtual DbSet<MessageTable> MessageTables { get; set; }
 
     public virtual DbSet<Mission> Missions { get; set; }
 
@@ -49,6 +53,8 @@ public partial class CiPlatformContext : DbContext
 
     public virtual DbSet<MissionTheme> MissionThemes { get; set; }
 
+    public virtual DbSet<NotificationTitle> NotificationTitles { get; set; }
+
     public virtual DbSet<PasswordReset> PasswordResets { get; set; }
 
     public virtual DbSet<Skill> Skills { get; set; }
@@ -64,6 +70,8 @@ public partial class CiPlatformContext : DbContext
     public virtual DbSet<User> Users { get; set; }
 
     public virtual DbSet<UserSkill> UserSkills { get; set; }
+
+    public virtual DbSet<Userpermission> Userpermissions { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         => optionsBuilder.UseSqlServer("Name=ConnectionStrings:DefaultConnection");
@@ -288,6 +296,32 @@ public partial class CiPlatformContext : DbContext
                 .HasColumnName("updated_at");
         });
 
+        modelBuilder.Entity<EnableUserStatus>(entity =>
+        {
+            entity.HasKey(e => e.EnableuserId).HasName("PK__enable_u__378EB02C1C067CB7");
+
+            entity.ToTable("enable_user_status");
+
+            entity.Property(e => e.EnableuserId).HasColumnName("enableuser_id");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("created_at");
+            entity.Property(e => e.NotificationId).HasColumnName("notification_id");
+            entity.Property(e => e.Status)
+                .HasDefaultValueSql("((0))")
+                .HasColumnName("status");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+
+            entity.HasOne(d => d.Notification).WithMany(p => p.EnableUserStatuses)
+                .HasForeignKey(d => d.NotificationId)
+                .HasConstraintName("FK__enable_us__notif__467D75B8");
+
+            entity.HasOne(d => d.User).WithMany(p => p.EnableUserStatuses)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__enable_us__user___477199F1");
+        });
+
         modelBuilder.Entity<FavouriteMission>(entity =>
         {
             entity.HasKey(e => e.FavouriteMissionId).HasName("PK__favourit__94E4D8CA87CEAABF");
@@ -347,6 +381,30 @@ public partial class CiPlatformContext : DbContext
                 .HasForeignKey(d => d.MissionId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__goal_miss__missi__797309D9");
+        });
+
+        modelBuilder.Entity<MessageTable>(entity =>
+        {
+            entity.HasKey(e => e.MessageId).HasName("PK__message___0BBF6EE6055ADB3F");
+
+            entity.ToTable("message_table");
+
+            entity.Property(e => e.MessageId).HasColumnName("message_id");
+            entity.Property(e => e.AvatarUser).HasColumnName("avatar_user");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Message).HasColumnName("message");
+            entity.Property(e => e.NotificationId).HasColumnName("notification_id");
+            entity.Property(e => e.Seen)
+                .HasDefaultValueSql("((1))")
+                .HasColumnName("seen");
+            entity.Property(e => e.Url).HasColumnName("url");
+
+            entity.HasOne(d => d.Notification).WithMany(p => p.MessageTables)
+                .HasForeignKey(d => d.NotificationId)
+                .HasConstraintName("FK__message_t__notif__43A1090D");
         });
 
         modelBuilder.Entity<Mission>(entity =>
@@ -661,6 +719,18 @@ public partial class CiPlatformContext : DbContext
                 .HasColumnName("updated_at");
         });
 
+        modelBuilder.Entity<NotificationTitle>(entity =>
+        {
+            entity.HasKey(e => e.NotificationId).HasName("PK__notifica__E059842F7AD04D07");
+
+            entity.ToTable("notification_title");
+
+            entity.Property(e => e.NotificationId).HasColumnName("notification_id");
+            entity.Property(e => e.Title)
+                .HasMaxLength(50)
+                .HasColumnName("title");
+        });
+
         modelBuilder.Entity<PasswordReset>(entity =>
         {
             entity.HasKey(e => e.Token).HasName("PK__password__CA90DA7B1C7511A9");
@@ -958,6 +1028,31 @@ public partial class CiPlatformContext : DbContext
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__user_skil__user___55009F39");
+        });
+
+        modelBuilder.Entity<Userpermission>(entity =>
+        {
+            entity.HasKey(e => e.UserpermissionId).HasName("PK__userperm__4AD7F7C4737BBCDA");
+
+            entity.ToTable("userpermission");
+
+            entity.Property(e => e.UserpermissionId).HasColumnName("userpermission_id");
+            entity.Property(e => e.MessageId).HasColumnName("message_id");
+            entity.Property(e => e.Seen)
+                .HasDefaultValueSql("((1))")
+                .HasColumnName("seen");
+            entity.Property(e => e.Status)
+                .HasDefaultValueSql("((1))")
+                .HasColumnName("status");
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+
+            entity.HasOne(d => d.Message).WithMany(p => p.Userpermissions)
+                .HasForeignKey(d => d.MessageId)
+                .HasConstraintName("FK__userpermi__messa__50FB042B");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Userpermissions)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK__userpermi__user___4E1E9780");
         });
 
         OnModelCreatingPartial(modelBuilder);

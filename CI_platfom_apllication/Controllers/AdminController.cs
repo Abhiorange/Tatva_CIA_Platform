@@ -65,24 +65,28 @@ namespace CI_platfom_apllication.Controllers
         }
         public IActionResult ApproveApplication(string Applicationid)
         {
-            _adminRepository.approveapplication(Applicationid);
+            var userid = HttpContext.Session.GetString("userid");
+            _adminRepository.approveapplication(Applicationid,userid);
             return RedirectToAction("MissionApplication", new { SearchInputdata = "", pageindex = 1, pageSize = 4 });
         }
         public IActionResult ApproveStory(string storyid)
         {
-            _adminRepository.approvestory(storyid);
+            var userid = HttpContext.Session.GetString("userid");
+            _adminRepository.approvestory(storyid,userid);
             return RedirectToAction("Story", new { SearchInputdata = "", pageindex = 1, pageSize = 1 });
 
         }
         public IActionResult DeclineStory(string storyid)
         {
-            _adminRepository.declinestory(storyid);
+            var userid = HttpContext.Session.GetString("userid");
+            _adminRepository.declinestory(storyid,userid);
             return RedirectToAction("Story", new { SearchInputdata = "", pageindex = 1, pageSize = 1 });
 
         }
         public IActionResult DeclineApplication(string Applicationid)
         {
-            _adminRepository.declineapplication(Applicationid);
+            var userid = HttpContext.Session.GetString("userid");
+            _adminRepository.declineapplication(Applicationid,userid);
             return RedirectToAction("MissionApplication", new { SearchInputdata = "", pageindex = 1, pageSize = 4 });
         }
         public JsonResult Country()
@@ -126,6 +130,11 @@ namespace CI_platfom_apllication.Controllers
             var model = _adminRepository.getskill(skillid);
             return PartialView("_skilladd", model);
         }
+        public IActionResult editthemedata(string themeid)
+        {
+            var model = _adminRepository.gettheme(themeid);
+            return PartialView("_themeadd", model);
+        }
         public IActionResult editcmsdata(string cmsid)
         {
             var model = _adminRepository.getcmsdata(cmsid);
@@ -139,7 +148,8 @@ namespace CI_platfom_apllication.Controllers
         {   
             if(model.MissionId==0)
             {
-                _adminRepository.Addmission(model, selectedSkills);
+                var userid = HttpContext.Session.GetString("userid");
+                _adminRepository.Addmission(model, selectedSkills,userid);
                 TempData["success"] = "Mission is added successfully";
             }
             else
@@ -183,8 +193,28 @@ namespace CI_platfom_apllication.Controllers
         }
         public IActionResult AddTheme(ThemeAddViewModel model)
         {
-            _adminRepository.Addtheme(model);
+            if (model.MissionThemeId == 0)
+            {
+                var check = _adminRepository.Addtheme(model);
+                if (check)
+                {
+                    TempData["success"] = "Theme is added";
+                }
+                else
+                {
+                    ModelState.AddModelError("Title", "ThemeTitle already exist");
+                    return PartialView("_themeadd");
+                }
+            }
+            
+            else
+            {
+                _adminRepository.editthemedatabase(model);
+                TempData["success"] = "Theme is updated";
+
+            }
             return RedirectToAction("Theme", new { SearchInputdata = "", pageindex = 1, pageSize = 2 });
+
         }
         public IActionResult AddSkill(SkillAddViewModel model)
         {   
@@ -203,8 +233,17 @@ namespace CI_platfom_apllication.Controllers
             }
             else
             {
-                _adminRepository.editskilldatabase(model);
-                TempData["success"] = "skill is updated";
+                var check=_adminRepository.editskilldatabase(model);
+                if(check)
+                {
+                    TempData["success"] = "skill is edited";
+
+                }
+                else
+                {
+                        ModelState.AddModelError("SkillName", "Skillname already exist");
+                    return PartialView("_skilladd");
+                }
             }
             return RedirectToAction("Skill", new { SearchInputdata = "", pageindex = 1, pageSize = 2 });
 

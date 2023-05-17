@@ -27,7 +27,7 @@ namespace CI_platform.Repositories.Repository
         public UserAdminViewModel getuserdata(int pageindex, int pageSize, string SearchInputdata)
         {
 
-            var users = _ciplatformcontext.Users.Where(u => (SearchInputdata == null) || (u.FirstName.Contains(SearchInputdata)) || (u.LastName.Contains(SearchInputdata))).ToList();
+            var users = _ciplatformcontext.Users.Where(u => ((SearchInputdata == null) || (u.FirstName.Contains(SearchInputdata)) || (u.LastName.Contains(SearchInputdata))) && u.DeletedAt==null ).ToList();
             var model = new UserAdminViewModel();
 
             model.users = users.ToPagedList(pageindex, 10);
@@ -35,7 +35,7 @@ namespace CI_platform.Repositories.Repository
         }
         public UserAdminViewModel getthemedata(int pageindex, int pageSize, string SearchInputdata)
         {
-            var themes = _ciplatformcontext.MissionThemes.Where(t => (SearchInputdata == null) || (t.Title.Contains(SearchInputdata))).OrderByDescending(m => m.Status).ToList();
+            var themes = _ciplatformcontext.MissionThemes.Where(t => ((SearchInputdata == null) || (t.Title.Contains(SearchInputdata))) && t.DeletedAt==null ).OrderByDescending(m => m.Status).ToList();
             var model = new UserAdminViewModel();
             model.MissionThemes = themes.ToPagedList(pageindex, 2);
             return model;
@@ -43,7 +43,7 @@ namespace CI_platform.Repositories.Repository
         }
         public UserAdminViewModel getskilldata(int pageindex, int pageSize, string SearchInputdata)
         {
-            var skills = _ciplatformcontext.Skills.Where(s => (SearchInputdata == null) || (s.SkillName.Contains(SearchInputdata))).OrderByDescending(s => s.Status).ToList();
+            var skills = _ciplatformcontext.Skills.Where(s => ((SearchInputdata == null) || (s.SkillName.Contains(SearchInputdata))) && s.DeletedAt==null).OrderByDescending(s => s.Status).ToList();
             var missionskill = _ciplatformcontext.MissionSkills.ToList();
             var model = new UserAdminViewModel();
             model.MissionSkills = missionskill;
@@ -52,7 +52,7 @@ namespace CI_platform.Repositories.Repository
         }
         public UserAdminViewModel getcmspagedata(int pageindex, int pageSize, string SearchInputdata)
         {
-            var pages = _ciplatformcontext.CmsPages.Where(c => (SearchInputdata == null) || (c.Title.Contains(SearchInputdata))).OrderByDescending(c => c.Status).ToList();
+            var pages = _ciplatformcontext.CmsPages.Where(c => ((SearchInputdata == null) || (c.Title.Contains(SearchInputdata))) && c.DeletedAt == null).OrderByDescending(c => c.Status).ToList();
             var model = new UserAdminViewModel();
             model.Cmspages = pages.ToPagedList(pageindex, 4);
             return model;
@@ -65,6 +65,17 @@ namespace CI_platform.Repositories.Repository
                SkillId=skill.SkillId,
                SkillName=skill.SkillName,
                Status=skill.Status
+            };
+            return model;
+        }
+        public ThemeAddViewModel gettheme(string themeid)
+        {
+            var themes = _ciplatformcontext.MissionThemes.FirstOrDefault(mt => mt.MissionThemeId.ToString() == themeid);
+            var model = new ThemeAddViewModel
+            {
+               MissionThemeId=themes.MissionThemeId,
+               Title=themes.Title,
+               Status=themes.Status
             };
             return model;
         }
@@ -81,11 +92,28 @@ namespace CI_platform.Repositories.Repository
             };
             return model;
         }
-        public void editskilldatabase(SkillAddViewModel model)
+        public bool editskilldatabase(SkillAddViewModel model)
         {
-            var skill = _ciplatformcontext.Skills.FirstOrDefault(s => s.SkillId == model.SkillId);
-            skill.SkillName = model.SkillName;
-            skill.Status = model.Status;
+            List<string> skillnames = _ciplatformcontext.Skills.Select(s => s.SkillName).ToList();
+            if(skillnames.Contains(model.SkillName))
+            {
+                return false;
+            }
+            else
+            {
+                var skill = _ciplatformcontext.Skills.FirstOrDefault(s => s.SkillId == model.SkillId);
+                skill.SkillName = model.SkillName;
+                skill.Status = model.Status;
+                _ciplatformcontext.SaveChanges();
+                return true;
+            }
+           
+        }
+        public void editthemedatabase(ThemeAddViewModel model)
+        {
+            var theme = _ciplatformcontext.MissionThemes.FirstOrDefault(s => s.MissionThemeId == model.MissionThemeId);
+            theme.Title = model.Title;
+            theme.Status = model.Status;
             _ciplatformcontext.SaveChanges();
         }
         public void editcmspage(CmsAddViewModel model)
@@ -99,7 +127,7 @@ namespace CI_platform.Repositories.Repository
         }
         public UserAdminViewModel getstorydata(int pageindex, int pageSize, string SearchInputdata)
         {
-        var stories =_ciplatformcontext.Stories.Include(s=>s.User).Include(s=>s.Mission).Where(s=>s.Status!="DRAFT" && ((SearchInputdata == null)|| (s.Mission.Title.Contains(SearchInputdata)) ||(s.User.FirstName.Contains(SearchInputdata)))).ToList();
+        var stories =_ciplatformcontext.Stories.Include(s=>s.User).Include(s=>s.Mission).Where(s=>s.Status!="DRAFT" && s.DeletedAt==null && ((SearchInputdata == null)|| (s.Mission.Title.Contains(SearchInputdata)) ||(s.User.FirstName.Contains(SearchInputdata)))).ToList();
             var model = new UserAdminViewModel();
             model.Stories = stories.ToPagedList(pageindex, 1);
             return model;
@@ -107,7 +135,7 @@ namespace CI_platform.Repositories.Repository
         public UserAdminViewModel getmissiondata(int pageindex, int pageSize, string SearchInputdata)
         {
            
-            var missions = _ciplatformcontext.Missions.Where(m => (SearchInputdata == null) || (m.Title.Contains(SearchInputdata)) || (m.MissionType.Contains(SearchInputdata))).OrderByDescending(m => m.Status).ToList();
+            var missions = _ciplatformcontext.Missions.Where(m => ((SearchInputdata == null) || (m.Title.Contains(SearchInputdata)) || (m.MissionType.Contains(SearchInputdata))) && m.DeletedAt==null).OrderByDescending(m => m.Status).ToList();
 
             var model = new UserAdminViewModel();
             
@@ -116,7 +144,7 @@ namespace CI_platform.Repositories.Repository
         }
         public UserAdminViewModel getbannerdata(int pageindex, string SearchInputdata)
         {
-            var banners=_ciplatformcontext.Banners.Where(b=> (SearchInputdata == null) || (b.Title.Contains(SearchInputdata)) || (b.Text.Contains(SearchInputdata))).OrderByDescending(m => m.Status).ToList();
+            var banners=_ciplatformcontext.Banners.Where(b=> ((SearchInputdata == null) || (b.Title.Contains(SearchInputdata)) || (b.Text.Contains(SearchInputdata))) && b.DeletedAt==null).OrderByDescending(m => m.Status).ToList();
             var model = new UserAdminViewModel();
             model.Banners = banners.ToPagedList(pageindex, 5);
             return model;
@@ -145,7 +173,7 @@ namespace CI_platform.Repositories.Repository
         }
         public UserAdminViewModel getmissionapplicationdata(int pageindex, int pageSize, string SearchInputdata)
         {
-            var missionapplication = _ciplatformcontext.MissionApplications.Include(m => m.Mission).Include(m=>m.User).Where(m => (SearchInputdata == null) || (m.Mission.Title.Contains(SearchInputdata)) || (m.User.FirstName.Contains(SearchInputdata))).ToList();
+            var missionapplication = _ciplatformcontext.MissionApplications.Include(m => m.Mission).Include(m=>m.User).Where(m => ((SearchInputdata == null) || (m.Mission.Title.Contains(SearchInputdata)) || (m.User.FirstName.Contains(SearchInputdata))) && m.DeletedAt==null).ToList();
             var model = new UserAdminViewModel();
             model.MissionApplications = missionapplication.ToPagedList(pageindex, 4);
             return model;
@@ -352,39 +380,115 @@ namespace CI_platform.Repositories.Repository
             user.Title = model.Title;
             _ciplatformcontext.SaveChanges();
         }
-        public void approveapplication(string applicationid)
+        public void approveapplication(string applicationid,string userid)
         {
             var missionapplication = _ciplatformcontext.MissionApplications.FirstOrDefault(m => m.MissionApplicationId.ToString() == applicationid);
             missionapplication.ApprovalStatus = "APPROVE";
             var mission = _ciplatformcontext.Missions.SingleOrDefault(m => m.MissionId == missionapplication.MissionId);
             mission.TotalSeats = mission.TotalSeats - 1;
+          
+            var enable_check = _ciplatformcontext.EnableUserStatuses.SingleOrDefault(e => e.NotificationId == 8 && e.UserId.ToString() == userid)?.Status;
+            if(enable_check==1)
+            {
+                var message = new MessageTable
+                {
+                    NotificationId = 8,
+                    Message = $"Volunterring Request has been approved for Mission-{mission.Title}"
+                };
+                _ciplatformcontext.Add(message);
+                var userpermission = new Userpermission
+                {
+                    UserId = long.Parse(userid)
+                };
+                message.Userpermissions.Add(userpermission);
+            }
+           
             _ciplatformcontext.SaveChanges();
         }
-        public void approvestory(string storyid)
+        public void approvestory(string storyid,string userid)
         {
             var story = _ciplatformcontext.Stories.FirstOrDefault(s => s.StoryId.ToString() == storyid);
             story.Status = "PUBLISHED";
+          
+            var enable_check = _ciplatformcontext.EnableUserStatuses.SingleOrDefault(e => e.NotificationId == 4 && e.UserId.ToString() == userid)?.Status;
+            if (enable_check == 1)
+            {
+                var message = new MessageTable
+                {
+                    NotificationId = 4,
+                    Message = $"Volunterring Request has been approved for Story-{story.Title}"
+                };
+                _ciplatformcontext.Add(message);
+                var userpermission = new Userpermission
+                {
+                    UserId = long.Parse(userid)
+                };
+                message.Userpermissions.Add(userpermission);
+            }
             _ciplatformcontext.SaveChanges();
         }
         
-        public void declineapplication(string applicationid)
+        public void declineapplication(string applicationid,string userid)
         {
             var missionapplication = _ciplatformcontext.MissionApplications.FirstOrDefault(m => m.MissionApplicationId.ToString() == applicationid);
+            var mission = _ciplatformcontext.Missions.SingleOrDefault(m => m.MissionId == missionapplication.MissionId);
             if (missionapplication.ApprovalStatus == "APPROVE")
             {
-                var mission = _ciplatformcontext.Missions.SingleOrDefault(m => m.MissionId == missionapplication.MissionId);
                 mission.TotalSeats = mission.TotalSeats + 1;
             }
-            missionapplication.ApprovalStatus = "DECLINE";        
+            missionapplication.ApprovalStatus = "DECLINE";
+           
+           
+            var enable_check = _ciplatformcontext.EnableUserStatuses.SingleOrDefault(e => e.NotificationId == 8 && e.UserId.ToString() == userid)?.Status;
+            if (enable_check == 1)
+            {
+                var message = new MessageTable
+                {
+                    NotificationId = 8,
+                    Message = $"Volunterring Request has been declined for Mission-{mission.Title}"
+                };
+                _ciplatformcontext.Add(message);
+                var userpermission = new Userpermission
+                {
+                    UserId = long.Parse(userid)
+                };
+                message.Userpermissions.Add(userpermission);
+            }
             _ciplatformcontext.SaveChanges();
         }
-        public void declinestory(string storyid)
+        public void declinestory(string storyid,string userid)
         {
             var story = _ciplatformcontext.Stories.FirstOrDefault(s => s.StoryId.ToString() == storyid);
             story.Status = "DECLINED";
+           
+            var enable_check = _ciplatformcontext.EnableUserStatuses.SingleOrDefault(e => e.NotificationId == 4 && e.UserId.ToString() == userid)?.Status;
+            if (enable_check == 1)
+            { var url = "";
+                if (story.Status == "DECLINED")
+                {
+                     url = $"https://localhost:7292/StoryListing/addstory?missionid={story.MissionId}";
+                }
+                else
+                {
+                    url = $"https://localhost:7292/StoryListing/storydetail?story_id={story.StoryId}";
+                }
+                var message = new MessageTable
+                {
+                    NotificationId = 4,
+                    Url=url,
+                    Message = $"Volunterring Request has been declined for Story-{story.Title}"
+                };
+                _ciplatformcontext.Add(message);
+                var userpermission = new Userpermission
+                {
+                    UserId = long.Parse(userid)
+                };
+                message.Userpermissions.Add(userpermission);
+            }
             _ciplatformcontext.SaveChanges();
 
         }
+        
         public List<Country> getcountries()
         {
             var countries = _ciplatformcontext.Countries.ToList();
@@ -400,15 +504,25 @@ namespace CI_platform.Repositories.Repository
             var themes = _ciplatformcontext.MissionThemes.ToList();
             return themes;
         }
-        public void Addtheme(ThemeAddViewModel model)
+        public bool Addtheme(ThemeAddViewModel model)
         {
-            var model1 = new MissionTheme
+            List<string> Themetitle = _ciplatformcontext.MissionThemes.Select(s => s.Title).ToList();
+            if(Themetitle.Contains(model.Title))
             {
-                Title = model.Title,
-                Status = model.Status,
-            };
-            _ciplatformcontext.Add(model1);
-            _ciplatformcontext.SaveChanges();
+                return false;
+            }
+            else
+            {
+                var model1 = new MissionTheme
+                {
+                    Title = model.Title,
+                    Status = model.Status,
+                };
+                _ciplatformcontext.Add(model1);
+                _ciplatformcontext.SaveChanges();
+                return true;
+            }
+           
         }
         public bool Addskill(SkillAddViewModel model)
         {
@@ -487,7 +601,7 @@ namespace CI_platform.Repositories.Repository
                 {
                     model.Avatar.CopyTo(fileStreams);
                 }
-                user.Avatar = @"\Images\UserProfileImages\" + fileName;
+               model1.Avatar = @"\Images\UserProfileImages\" + fileName;
             }
             else
             {
@@ -700,9 +814,10 @@ namespace CI_platform.Repositories.Repository
             mission.ThemeId = model.ThemeId;
             mission.MissionType = model.MissionType;
             mission.Status = model.Status;
+            mission.RegistrationDeadline = model.RegistrationDeadline;
             _ciplatformcontext.SaveChanges();
         }
-        public void Addmission(MissionAddViewModel model, List<int> selectedSkills)
+        public void Addmission(MissionAddViewModel model, List<int> selectedSkills,string userid)
         {
             var model1 = new Mission
             {
@@ -812,11 +927,27 @@ namespace CI_platform.Repositories.Repository
                         docModel.DocumentType = "PDF";
                         break;
                     default:
-                        // Handle other types of documents here
                         break;
                 }
                 _ciplatformcontext.MissionDocuments.Add(docModel);
             }
+            var message = new MessageTable
+            {
+                NotificationId=5,
+                Message = $"New Mission-{model.Title} is added",
+                Url= $"https://localhost:7292/Mission/volunteermission/{model1.MissionId}"
+            };
+            _ciplatformcontext.Add(message);
+            var users = _ciplatformcontext.EnableUserStatuses.Where(e => e.NotificationId == 5).Select(e => e.UserId).ToList();
+            foreach (var userId in users)
+            {
+                var userpermission = new Userpermission
+                {
+                    UserId = userId,
+
+                };
+                message.Userpermissions.Add(userpermission);
+            }     
             _ciplatformcontext.SaveChanges();
 
         }

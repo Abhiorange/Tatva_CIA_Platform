@@ -8,18 +8,17 @@
     <link rel="stylesheet" href="~/css/missionapplication.css">
 </head>
 <body>
-    <h4 class="mt-2 ms-3 border-bottom">MissionApplication</h4>
-    <div class=" ms-2 d-flex justify-content-between">
-        <div class="col-6" role="search">
-            <img src="~/Assets/search.png" alt="search-icon" class="position-absolute pt-3 ps-1">
-            <input class="form-control me-2 ps-5 pt-3 pb-3" id="applicationsearch" type="text" placeholder="Search" aria-label="Search">
+    <h4 class="mt-2 ms-3 border-bottom pb-3">
+       <span class="borderbottom">MissionApplication</span> </h4>
+    <div class="  ms-2 d-flex justify-content-between mt-4 position-sticky">
+        <div class="col-6 position-relative" role="search">
+            <img src="~/Assets/search.png" alt="search-icon" class="position-absolute pt-2 ps-1">
+            <input class="form-control me-2 ps-5" id="applicationsearch" type="text" placeholder="Search" aria-label="Search">
         </div>
-        <div class="col-4  d-flex justify-content-end">
-            <button class=" px-3 apply"> <a asp-action="skilladd" asp-controller="Admin">+ Apply</a></button>
-        </div>
+      
     </div>
 
-    <div class="table-responsive">
+    <div class="table-responsive my-2">
 
         @if (Model.MissionApplications.Count() == 0)
         {
@@ -27,15 +26,13 @@
             <div class="d-flex mt-5 flex-column my-3 table">
                 <div class="mx-auto mt-3 d-flex" id="nouserbgcolor"><h3 class="text-center mx-auto text-color">No skill found</h3></div>
             </div>
-
         }
-
         else
         {
             <div class="table">
-                <table class="table">
+                <table class="table table-bordered">
 
-                    <thead>
+                    <thead class="table-dark">
                         <tr>
                             <th scope="col">MissionTitle</th>
                             <th scope="col">missionid</th>
@@ -73,9 +70,16 @@
                                     }
                                 }
 
-                                <td class="d-flex">
-                                    <a class="nav-link text-success mx-2" onclick="approveapplication(@map.MissionApplicationId)"><i class="bi bi-check-circle"></i></a>
-                                    <a class="nav-link text-danger mx-2"onclick="declineapplication(@map.MissionApplicationId)"><i class="bi bi-x-circle"></i></a>
+                                <td class="d-flex border-0">
+                                    @if(@map.ApprovalStatus=="PENDING" || @map.ApprovalStatus=="DECLINE")
+                                    {
+                                      <a class="nav-link text-success mx-2" onclick="approveapplication(@map.MissionApplicationId)"><i class="bi bi-check-circle"></i></a>
+  
+                                    }
+                                    @if(@map.ApprovalStatus=="PENDING" || @map.ApprovalStatus=="APPROVE")
+                                    {
+                                      <a class="nav-link text-danger mx-2"onclick="declineapplication(@map.MissionApplicationId)"><i class="bi bi-x-circle"></i></a>  
+                                    }
                                 </td>
                             </tr>
 

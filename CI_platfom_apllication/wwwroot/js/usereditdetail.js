@@ -1,36 +1,7 @@
-﻿/*$(document).ready(function () {
-   
-    getCountry();
-    
-    $('#country').on('change', function () {
-        var countryid = $('#country').val();
-        $('#city').empty();
-        console.log("countryid", countryid);
-        $.ajax({
-            url: '/home/City',
-            data: {
-                id: countryid,
-            },
-            traditional: true,
-            success: function (result) {
-                console.log('1')
-                if (result.length === 0) {
-                    $('#country').html('<option>No countries selected</option>');
-                }
-                else {
-                    $('#city').prepend('<option value="" selected>Select City</option>');
-                    $.each(result, function (i, data) {             
-                        $('#city').append('<option value="' + data.cityId + '" id="' + data.cityId + '">' + data.name + '</option>');
-                    })
-                }
-            }
-        })
-
-    });
-});*/
+﻿
 $(document).ready(function () {
     $('#countryselected').on('change', function () {
-        alert('inside');
+       
         ddlCity = $('#cityselected');
         $.ajax({
             url: '/home/City',
@@ -38,10 +9,7 @@ $(document).ready(function () {
             dataType: 'json',
             data: { id: $(this).val() },
             success: function (d) {
-                console.log(d);
                 ddlCity.empty();
-                $('#cityselected').prepend('<option value="" selected>Select City</option>');
-
                 $.each(d, function (i, data) {
                     ddlCity.append('<option value="' + data.cityId + '" id="' + data.cityId + '">' + data.name + '</option>');
                 });
@@ -53,33 +21,6 @@ $(document).ready(function () {
     });
 });
 
-/*function getCountry()   
-{
-    var id = $('#country option:selected').val();
-    console.log(id);
-    alert('success');
-    $.ajax({
-        url: '/home/Country',
-        type:'POST',
-        success: function(result) {
-            console.log(result);
-            if (result.length === 0)
-            {
-                $('#country').html('<option>No countries selected</option>');
-            }
-            else
-            {
-                $.each(result, function (i, data) {
-                    if (data.countryId != id) {
-                        $('#country').append('<option value="' + data.countryId + '" id="' + data.countryId + '">' + data.name + '</option>');
-                    }
-                   
-                })
-            }
-        }
-    })
-}
-*/
 
 $('.available-skills div').click(function () {
 
@@ -91,7 +32,6 @@ function selectSkill() {
     $('.available-skills div').each(function () {
 
         if ($(this).hasClass("bg-secondary")) {
-            //$(this).removeClass('bg-secondary');
             var div = $(this).clone();
             div.removeClass('bg-secondary');
             $('.selected-skills').append(div);
@@ -103,10 +43,6 @@ $(document).on('click', '.selected-skills div', function () {
 });
 
 
-/*$('.selected-skills div').click(function () {
-;
-   $(this).hasClass("bg-secondary") ? $(this).removeClass("bg-secondary") : $(this).addClass("bg-secondary");
-})*/
 
 function deselectSkill() {
     $('.selected-skills div').each(function () {
@@ -132,49 +68,9 @@ function addskill() {
     })
 
 }
-/*function addtodatabase() {
-    alert("add skills");
-    var skillids = [];
-    $('.skill-selected div').each(function () {
-        skillids.push($(this).attr('id'));
-    });
-    $('#contactform').submit(function (event) {
-        event.preventDefault();
-        console.log($("#cityselected").val());
-        if ($("#cityselected").val() == "city") {
-            alert('city warning');
-            $("#cityspan").removeClass('d-none');
-
-        }
-        else if ($("#countryselected").val() == "country") {
-            alert('country warning');
-            $("#countryspan").removeClass('d-none');
-        }
-        else {
-            $("#cityspan").addClass('d-none');
-            $("#countryspan").addClass('d-none');
-            if ($('#contactform').valid()) {
-                $.ajax({
-                    url: '/home/AddSkills',
-                    type: "POST",
-                    data: {
-                        skillids: skillids,
-                    },
-                    success: function (result) {
-                        console.log("profile updated successfully");
-                        $('#contactform').unbind('submit').submit();
-                    }
-                });
-            }
-        }
-    });
-
-
-}*/
 
 function addtodatabase() {
-   
-    alert("add skills");
+  
     var skillids = [];
     $('.skill-selected div').each(function () {
         skillids.push($(this).attr('id'));
@@ -207,7 +103,7 @@ function handleSelectedFile(file) {
         processData: false,
         contentType: false,
         success: function (result) {
-            alert('success');
+         
             window.location = result.redirectUrl;
 
         }
@@ -229,14 +125,23 @@ $('.img-wrapper').mouseout(function () {
 
 
 document.getElementById("profileimg").onclick = function () {
-    alert("sucess");
+    
     document.getElementById("file-input").click();
 }
 document.getElementById("boot-icon").onclick = function () {
-    alert("sucess");
+ 
     document.getElementById("file-input").click();
 }
 document.getElementById("file-input").onchange = function () {
-    alert('inside file');
+  
     handleSelectedFile(this.files[0]);
 }
+
+$('#staticBackdrop1').on('hidden.bs.modal', function (e) {
+    $('#oldpass').val('');
+    $('#newpass').val('');
+    $('#confirm').val('');
+    $('#oldpassspan').text('');
+    $('#newspassspan').text('');
+    $('#confirmpassspan').text('');
+});

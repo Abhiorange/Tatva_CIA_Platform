@@ -8,17 +8,22 @@
             <div class="col-12 d-flex flex-column my-2">
                 <label for="title">Mission Title</label>
                 <input type="text" id="title" class="form-control" asp-for="Title">
+                <span class="text-danger" asp-validation-for="Title"></span>
             </div>
-          
+                      <input asp-for="MissionThemeId" type="text" hidden/>
+
             <div class="col-12 d-flex flex-column my-2">
                  <label for="status">Status</label>
                          <select class="form-select dropdown-toggle" id="status" asp-for="Status">
                     <option value="1" selected>Active</option>
                     <option value="0">In-Active</option>
                 </select>
+              <span class="text-danger" asp-validation-for="Status"></span>
+
             </div>
               <div class="d-flex justify-content-end">     
-                    <button type="button" class="btn apply rounded-pill">Cancel</button>
+                    <button type="button" class="btn apply rounded-pill">
+                       <a asp-action="Theme" asp-controller="Admin" class="text-decoration-none text-warning">Cancel</a></button>
                     <button type="submit" class="btn apply  rounded-pill">Submit</button>
             </div>
            </form>

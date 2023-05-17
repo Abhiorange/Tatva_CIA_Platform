@@ -6,7 +6,10 @@
     color: #000;
     cursor: pointer;
 }
-
+#notification-div {
+    left: -200px !important;
+    min-width: 417px;
+}
 .filter-close-button {
     background-color: transparent;
     border: none;
@@ -18,15 +21,22 @@
 .filters-section{
     margin-top:2%;
 }
-.dropdown a img
-{
-    height:50px;
-    width:50px;
+.countcircle {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
 }
-
-.off
+.dropdown a img {
+    height: 50px;
+    width: 50px;
+}
+.imgsize
 {
-    padding-right:8% !important;
+    width:24px;
+    height:20px;
+}
+.off {
+    padding-right: 8% !important;
 }
 .name
 {

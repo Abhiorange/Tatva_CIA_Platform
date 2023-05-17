@@ -56,7 +56,7 @@ function filterSearch() {
 
         },
         success: function (response) {
-            alert('called');
+           
 
             $('.table').empty().html($(response).find('.table').html());
             $('.page').empty().html($(response).find('.page').html());
@@ -72,13 +72,13 @@ function Approvestory(storyid) {
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
+        confirmButtonText: 'Yes, Approve it!'
     }).then((result) => {
         if (result.isConfirmed) {
             approvestory(storyid);
             Swal.fire(
-                'Deleted!',
-                'Your file has been deleted.',
+                'Approved!',
+                'The Story has been approved.',
                 'success'
             )
         }

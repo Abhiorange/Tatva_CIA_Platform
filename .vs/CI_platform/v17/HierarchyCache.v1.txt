@@ -4,9 +4,9 @@ i:{00000000-0000-0000-0000-000000000000}:CI_platform.sln
 i:{00000000-0000-0000-0000-000000000000}:CI_platform.Repositories
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\bin\debug\net6.0\ci_platform.repositories.dll
 ++Dependencies
-i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>1197
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>1198
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>1972
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>1298
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>1299
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2164
 ++Interface
 i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.repositories\interface\
 ++IAdminRepository.cs
@@ -84,39 +84,101 @@ i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\microsoft.netcore.app
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\microsoft.netcore.app
 ++cloudscribe.Web.Pagination (6.0.0)
-i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2037
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2006
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2017
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2219
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2181
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2225
 ++Microsoft.EntityFrameworkCore (7.0.3)
-i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2034
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2003
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2013
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2213
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2178
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2218
 ++Microsoft.EntityFrameworkCore.Design (7.0.3)
-i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2036
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2005
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2015
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2217
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2180
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2222
 ++Microsoft.EntityFrameworkCore.SqlServer (7.0.3)
-i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2035
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2004
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2014
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2215
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2179
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2220
 ++Microsoft.EntityFrameworkCore.Tools (7.0.3)
-i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2038
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2007
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2018
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2221
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2182
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2226
 ++X.PagedList.Mvc.Core (8.4.7)
-i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2039
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2008
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2020
+i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:>2223
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:>2183
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2228
 ++CI_platform.Entities
 i:{bfa6f268-58db-4f1c-9931-e735b7aeb700}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\bin\debug\net6.0\ci_platform.entities.dll
 i:{00000000-0000-0000-0000-000000000000}:CI_platform.Entities
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\bin\debug\net6.0\ci_platform.entities.dll
 ++DataModels
 i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\
+++Admin.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\admin.cs
+++Banner.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\banner.cs
+++CiPlatformContext.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\ciplatformcontext.cs
+++City.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\city.cs
+++CmsPage.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\cmspage.cs
+++Comment.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\comment.cs
+++Contactu.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\contactu.cs
+++Country.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\country.cs
+++EnableUserStatus.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\enableuserstatus.cs
+++FavouriteMission.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\favouritemission.cs
+++GoalMission.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\goalmission.cs
+++MessageTable.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\messagetable.cs
+++Mission.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\mission.cs
+++MissionApplication.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionapplication.cs
+++MissionDocument.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missiondocument.cs
+++MissionInvite.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missioninvite.cs
+++MissionMedium.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionmedium.cs
+++MissionRating.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionrating.cs
+++MissionSkill.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionskill.cs
+++MissionTheme.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missiontheme.cs
+++NotificationTitle.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\notificationtitle.cs
+++PasswordReset.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\passwordreset.cs
+++Skill.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\skill.cs
+++Story.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\story.cs
+++StoryInvite.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\storyinvite.cs
+++StoryMedium.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\storymedium.cs
+++Timesheet.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\timesheet.cs
+++User.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\user.cs
+++Userpermission.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\userpermission.cs
+++UserSkill.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\userskill.cs
 ++ViewModels
 i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\
 ++BannerAddViewModel.cs
 i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\banneraddviewmodel.cs
+++CmsAddViewModel.cs
+i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\cmsaddviewmodel.cs
 ++ContactUsViewModel.cs
 i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\contactusviewmodel.cs
 ++ForgetViewModel.cs
@@ -155,64 +217,12 @@ i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\userdetailviewmodel.cs
 ++VolunteerViewModel.cs
 i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\viewmodels\volunteerviewmodel.cs
-++Admin.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\admin.cs
-++Banner.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\banner.cs
-++CiPlatformContext.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\ciplatformcontext.cs
-++City.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\city.cs
-++CmsPage.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\cmspage.cs
-++Comment.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\comment.cs
-++Contactu.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\contactu.cs
-++Country.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\country.cs
-++FavouriteMission.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\favouritemission.cs
-++GoalMission.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\goalmission.cs
-++Mission.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\mission.cs
-++MissionApplication.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionapplication.cs
-++MissionDocument.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missiondocument.cs
-++MissionInvite.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missioninvite.cs
-++MissionMedium.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionmedium.cs
-++MissionRating.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionrating.cs
-++MissionSkill.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missionskill.cs
-++MissionTheme.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\missiontheme.cs
-++PasswordReset.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\passwordreset.cs
-++Skill.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\skill.cs
-++Story.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\story.cs
-++StoryInvite.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\storyinvite.cs
-++StoryMedium.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\storymedium.cs
-++Timesheet.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\timesheet.cs
-++User.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\user.cs
-++UserSkill.cs
-i:{8f8cc194-d6f7-4f9d-b019-d4e0f66ca92e}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platform.entities\datamodels\userskill.cs
 ++CI_platfom_apllication
 i:{00000000-0000-0000-0000-000000000000}:CI_platfom_apllication
 ++Connected Services 
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>1973
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2165
 ++Imports
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>915
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>1011
 ++Properties
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\properties\
 ++wwwroot
@@ -338,6 +348,8 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_banneradd.cshtml
 ++_bannerpage.cshtml
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_bannerpage.cshtml
+++_cmsadd.cshtml
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_cmsadd.cshtml
 ++_cmspage.cshtml
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\views\shared\_cmspage.cshtml
 ++_footer.cshtml
@@ -394,7 +406,7 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 ++Program.cs
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\program.cs
 ++No service dependencies discovered
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>1974
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2166
 ++Sdk.props
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\sdk\sdk.props
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.illink.tasks\sdk\sdk.props
@@ -441,13 +453,17 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 ++CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\csr-initiative-stands-for-coffee--and-farmer-equity.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\hgboryhybgc\csr-initiative-stands-for-coffee--and-farmer-equity.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\nutrient\csr-initiative-stands-for-coffee--and-farmer-equity.png
 ++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-1.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\csr-initiative-stands-for-coffee--and-farmer-equity-1.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\hgboryhybgc\csr-initiative-stands-for-coffee--and-farmer-equity-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\nutrient\csr-initiative-stands-for-coffee--and-farmer-equity-1.png
 ++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-2.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\csr-initiative-stands-for-coffee--and-farmer-equity-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\nutrient\csr-initiative-stands-for-coffee--and-farmer-equity-2.png
 ++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-3.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\csr-initiative-stands-for-coffee--and-farmer-equity-3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\nutrient\csr-initiative-stands-for-coffee--and-farmer-equity-3.png
 ++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\csr-initiative-stands-for-coffee--and-farmer-equity-4.png
 ++CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png
@@ -464,10 +480,16 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\drop-down.png
 ++Education-Supplies-for-Every--Pair-of-Shoes-Sold.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\education-supplies-for-every--pair-of-shoes-sold.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\plantation\education-supplies-for-every--pair-of-shoes-sold.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\student education\education-supplies-for-every--pair-of-shoes-sold.png
 ++Education-Supplies-for-Every--Pair-of-Shoes-Sold-1.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\education-supplies-for-every--pair-of-shoes-sold-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\plantation\education-supplies-for-every--pair-of-shoes-sold-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\student education\education-supplies-for-every--pair-of-shoes-sold-1.png
 ++Education-Supplies-for-Every--Pair-of-Shoes-Sold-2.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\education-supplies-for-every--pair-of-shoes-sold-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\plantation\education-supplies-for-every--pair-of-shoes-sold-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\student education\education-supplies-for-every--pair-of-shoes-sold-2.png
 ++eye.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\eye.png
 ++facebook.png
@@ -484,18 +506,42 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\grid.png
 ++grid_img1.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\grid_img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\banner\grid_img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\animals for friends\grid_img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees  - on the path to environment sustainability\grid_img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees ... lorem jhuhtikjbihb ibpibiu ibuiunp ineiv iueuvpiutpb\grid_img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is beneficial for all human beings in palnet\grid_img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is good for survival\grid_img1.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is very important\grid_img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\hgboryhybgc\grid_img1.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\nutrient\grid_img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\plantation\grid_img1.png
 ++Grow-Trees-On-the-path-to-environment-sustainability-2.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\grow-trees-on-the-path-to-environment-sustainability-2.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\banner\grow-trees-on-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\animals for friends\grow-trees-on-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees  - on the path to environment sustainability\grow-trees-on-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees ... lorem jhuhtikjbihb ibpibiu ibuiunp ineiv iueuvpiutpb\grow-trees-on-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is beneficial for all human beings in palnet\grow-trees-on-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is good for survival\grow-trees-on-the-path-to-environment-sustainability-2.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is very important\grow-trees-on-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\hgboryhybgc\grow-trees-on-the-path-to-environment-sustainability-2.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\nutrient\grow-trees-on-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\plantation\grow-trees-on-the-path-to-environment-sustainability-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\whdc\grow-trees-on-the-path-to-environment-sustainability-2.png
 ++Grow-Trees-On-the-path-to-environment-sustainability-3.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\grow-trees-on-the-path-to-environment-sustainability-3.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\banner\grow-trees-on-the-path-to-environment-sustainability-3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\animals for friends\grow-trees-on-the-path-to-environment-sustainability-3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees  - on the path to environment sustainability\grow-trees-on-the-path-to-environment-sustainability-3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is good for survival\grow-trees-on-the-path-to-environment-sustainability-3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\hgboryhybgc\grow-trees-on-the-path-to-environment-sustainability-3.png
 ++Grow-Trees-On-the-path-to-environment-sustainability-5.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\grow-trees-on-the-path-to-environment-sustainability-5.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\animals for friends\grow-trees-on-the-path-to-environment-sustainability-5.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees  - on the path to environment sustainability\grow-trees-on-the-path-to-environment-sustainability-5.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is good for survival\grow-trees-on-the-path-to-environment-sustainability-5.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\hgboryhybgc\grow-trees-on-the-path-to-environment-sustainability-5.png
 ++heart.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\heart.png
 ++heart1.png
@@ -504,20 +550,33 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\hours.png
 ++image.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\image.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\banner\image.png
 ++image1.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\image1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees ... lorem jhuhtikjbihb ibpibiu ibuiunp ineiv iueuvpiutpb\image1.png
 ++image2.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\image2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees ... lorem jhuhtikjbihb ibpibiu ibuiunp ineiv iueuvpiutpb\image2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be good\image2.png
 ++img.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\img.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees ... lorem jhuhtikjbihb ibpibiu ibuiunp ineiv iueuvpiutpb\img.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be good\img.png
 ++img1.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\education importance\img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees ... lorem jhuhtikjbihb ibpibiu ibuiunp ineiv iueuvpiutpb\img1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be good\img1.png
 ++img11.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\img11.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\education importance\img11.png
 ++img3.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\img3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\education importance\img3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be good\img3.png
 ++img33.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\img33.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\education importance\img33.png
 ++info.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\info.png
 ++left.png
@@ -583,12 +642,16 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\settings.png
 ++slide-1.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\slide-1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is beneficial for all human beings in palnet\slide-1.png
 ++slide-2.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\slide-2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is beneficial for all human beings in palnet\slide-2.png
 ++slide-3.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\slide-3.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is beneficial for all human beings in palnet\slide-3.png
 ++slide-4.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\slide-4.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is beneficial for all human beings in palnet\slide-4.png
 ++star.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\star.png
 ++star-empty.png
@@ -610,14 +673,17 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\user-img-large.png
 ++volunteer1.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer1.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\volunteer1.png
 ++volunteer2.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer2.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\volunteer2.png
 ++volunteer3.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer3.png
 ++volunteer4.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer4.png
 ++volunteer5.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer5.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\volunteer5.png
 ++volunteer6.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\assets\volunteer6.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\volunteer6.png
@@ -720,6 +786,8 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\f38f7d36-e789-477f-939b-2760507ce69d.png
 ++fa715ab8-dedd-4106-8132-abe133fcb68f.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\fa715ab8-dedd-4106-8132-abe133fcb68f.png
+++loader.gif
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\loader.gif
 ++bootstrap
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\
 ++jquery
@@ -771,9 +839,9 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdk
 ++Microsoft.AspNetCore.App
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\microsoft.aspnetcore.app
 ++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.12)
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2019
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2227
 ++Swashbuckle.AspNetCore (6.3.0)
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2016
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:>2224
 ++Sdk.props (C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk\Sdk)
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\sdk\sdk.props
 ++Sdk.props (C:\Program Files\dotnet\sdk\6.0.200\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
@@ -793,12 +861,30 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdk
 ++Ahmedabad Health
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\ahmedabad health\
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\ahmedabad health\
+++Animals for friends
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\animals for friends\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\animals for friends\
+++Education Importance
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\education importance\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\education importance\
 ++Green Banglore
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\green banglore\
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green banglore\
+++Grow Trees  - On the path to environment sustainability
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\grow trees  - on the path to environment sustainability\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees  - on the path to environment sustainability\
+++Grow trees ... lorem jhuhtikjbihb ibpibiu ibuiunp ineiv iueuvpiutpb
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\grow trees ... lorem jhuhtikjbihb ibpibiu ibuiunp ineiv iueuvpiutpb\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\grow trees ... lorem jhuhtikjbihb ibpibiu ibuiunp ineiv iueuvpiutpb\
+++health is alaways be good
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is alaways be good\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be good\
 ++health is alaways be in good condition
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is alaways be in good condition\
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be in good condition\
+++health is beneficial for all human beings in palnet
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is beneficial for all human beings in palnet\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is beneficial for all human beings in palnet\
 ++health is for all people in world
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is for all people in world\
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is for all people in world\
@@ -823,16 +909,31 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 ++nutrient
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\nutrient\
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\nutrient\
+++Plantation
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\plantation\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\plantation\
+++Student Education
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\student education\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\student education\
+++whdc
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\whdc\
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\whdc\
 ++Green Kolkata
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green kolkata\
 ++Green Vadodara
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green vadodara\
 ++Swach Bharat
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\swach bharat\
+++34db2f23-36fd-4092-8671-b0ad7f6623b7.pptx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\34db2f23-36fd-4092-8671-b0ad7f6623b7.pptx
+++367146cb-0dd7-44fe-b4f2-28d59d35d0fb.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\367146cb-0dd7-44fe-b4f2-28d59d35d0fb.png
 ++50ed642b-307f-41aa-9cb9-70765d8440b5.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\50ed642b-307f-41aa-9cb9-70765d8440b5.png
 ++661a571c-b4ad-4e4b-a3b5-97b3ebd96438.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\661a571c-b4ad-4e4b-a3b5-97b3ebd96438.png
+++6ef7f18a-eb2a-4b60-ac17-7303f96f0176.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\6ef7f18a-eb2a-4b60-ac17-7303f96f0176.png
 ++701d441d-dcbd-4160-b6e4-b0ccfe619faf.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\701d441d-dcbd-4160-b6e4-b0ccfe619faf.png
 ++707c620c-8666-4a30-8dcd-bf41611de4a1.png
@@ -841,8 +942,8 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\ae826410-7b4d-49bf-b48e-f96b2337da4f.png
 ++b70d2634-6fa5-4a04-abde-865febe8a123.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\b70d2634-6fa5-4a04-abde-865febe8a123.png
-++volunteer5.png.png
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\volunteer5.png.png
+++be5dee13-8d74-434b-a6b1-1b3445483175.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\be5dee13-8d74-434b-a6b1-1b3445483175.png
 ++dist
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\bootstrap\dist\
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery\dist\
@@ -890,13 +991,24 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdk
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.publish\targets\microsoft.net.sdk.publish.targets
 ++Front Pages.pdf.pdf
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\ahmedabad health\front pages.pdf.pdf
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is alaways be good\front pages.pdf.pdf
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is alaways be in good condition\front pages.pdf.pdf
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is for all people in world\front pages.pdf.pdf
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health should be in good forever\front pages.pdf.pdf
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\healthy india\front pages.pdf.pdf
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\plantation\front pages.pdf.pdf
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green vadodara\front pages.pdf.pdf
+++Assignment 3.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\animals for friends\assignment 3.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\education importance\assignment 3.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\plantation\assignment 3.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\student education\assignment 3.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\whdc\assignment 3.docx
 ++Assignment 3.docx.docx
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\green banglore\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\grow trees  - on the path to environment sustainability\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\grow trees ... lorem jhuhtikjbihb ibpibiu ibuiunp ineiv iueuvpiutpb\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is beneficial for all human beings in palnet\assignment 3.docx.docx
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is for primary concern\assignment 3.docx.docx
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is good for survival\assignment 3.docx.docx
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\health is very important\assignment 3.docx.docx
@@ -905,6 +1017,7 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\hgboryhybgc\assignment 3.docx.docx
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\nutrient\assignment 3.docx.docx
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green vadodara\assignment 3.docx.docx
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\documents\mission\plantation\assignment 3.docx.docx
 ++20efe5a7-1309-4dcb-a9af-025b080cdd28.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\ahmedabad health\20efe5a7-1309-4dcb-a9af-025b080cdd28.png
 ++23e74783-a1de-4adf-b559-273b95b8fb66.png
@@ -919,6 +1032,7 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be in good condition\img.png.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is for primary concern\img.png.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\healthy india\img.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be good\img.png.png
 ++img1.png.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green banglore\img1.png.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is for primary concern\img1.png.png
@@ -937,12 +1051,13 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 ++CSR-initiative-stands-for-Coffee--and-Farmer-Equity.png.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\green vadodara\csr-initiative-stands-for-coffee--and-farmer-equity.png.png
 ++Education-Supplies-for-Every--Pair-of-Shoes-Sold.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be good\education-supplies-for-every--pair-of-shoes-sold.png.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is alaways be in good condition\education-supplies-for-every--pair-of-shoes-sold.png.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health should be in good forever\education-supplies-for-every--pair-of-shoes-sold.png.png
 ++grid_img1.png.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is for all people in world\grid_img1.png.png
-i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is good for survival\grid_img1.png.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\healthy india\grid_img1.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is good for survival\grid_img1.png.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is very important\grid_img1.png.png
 ++Grow-Trees-On-the-path-to-environment-sustainability-2.png.png
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\health is for all people in world\grow-trees-on-the-path-to-environment-sustainability-2.png.png
@@ -969,6 +1084,8 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\swach bharat\3070463b-081f-4052-ac6e-d29a55ceeb3b.png
 ++b29ae64a-40f6-455a-8158-0308400d5857.pdf
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\mission\swach bharat\b29ae64a-40f6-455a-8158-0308400d5857.pdf
+++volunteer5.png.png
+i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\images\userprofileimages\volunteer5.png.png
 ++jquery.js
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_platform\ci_platfom_apllication\wwwroot\lib\jquery\dist\jquery.js
 ++additional-methods.js
@@ -1826,12 +1943,3 @@ i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\users\abhishek\desktop\tatva_cia_pla
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\sdks\microsoft.docker.sdk\build\microsoft.docker.targets
 ++Microsoft.Web.IISSupport.targets
 i:{23b6ae9d-8334-4b8e-9767-e2fadd4a7336}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed.web\microsoft.web.iissupport.targets
-++Script Documents
-++VM5
-++jquery-3.6.0.min.js
-++localhost:7292
-++aspnetcore-browser-refresh.js
-++browserLink
-++sweetalert2.min.js
-++jquery-3.2.1.slim.min.js
-++popper.min.js

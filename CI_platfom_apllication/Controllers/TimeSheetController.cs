@@ -45,17 +45,19 @@ namespace CI_platfom_apllication.Controllers
         {     
             var user_id = long.Parse(HttpContext.Session.GetString("userid"));
             _timesheetRepository.sheetdatabase(model, user_id);
-
+            TempData["success"] = "Record is Added successfully";
             return RedirectToAction("volunteersheet","TimeSheet");
         }
         public IActionResult edittime(long timesheetid,[Bind(Prefix = "Item1")] SheetViewModel model)
         {
             _timesheetRepository.editimedatabase(model,timesheetid);
+            TempData["success"] = "TimeTimesheet is edited successfully";
             return RedirectToAction("volunteersheet", "TimeSheet");
         }
         public IActionResult editgoal([Bind(Prefix = "Item1")] SheetViewModel model)
         {
             _timesheetRepository.editgoaldatabase(model);
+            TempData["success"] = "GoalTimesheet is edited successfully";
             return RedirectToAction("volunteersheet", "TimeSheet");
         }
         public int Getgoalvalueformission(string missionid)
@@ -66,11 +68,14 @@ namespace CI_platfom_apllication.Controllers
         public IActionResult deletedatabase(long timesheetid)
         {
             _timesheetRepository.deletedatabase(timesheetid);
+           
+
             return RedirectToAction("volunteersheet", "TimeSheet");
         }
         public IActionResult deletedatabasegoal(long timesheetid)
         {
             _timesheetRepository.deletedatabasegoal(timesheetid);
+            
             return RedirectToAction("volunteersheet", "TimeSheet");
         }
     }

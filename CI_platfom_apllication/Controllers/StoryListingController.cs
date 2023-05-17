@@ -75,10 +75,7 @@ namespace CI_platfom_apllication.Controllers
             TempData["story"] = "Story is Successfully Submited...";
             return Json(new { redirectUrl = Url.Action("storylisting", "StoryListing") });
         }
-        /*  public IActionResult addstorydetail(int story_id)
-          {
-              return View();
-          }*/
+      
 
         public IActionResult storydetail(int story_id)
         {

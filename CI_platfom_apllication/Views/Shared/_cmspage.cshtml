@@ -31,10 +31,10 @@
         }
         else
         {
-            <div class="table">
-                <table class="table">
+            <div class="table table-responsive">
+                <table class=" table my-2 table-bordered">
                   
-                    <thead>
+                    <thead class="table-dark">
                         <tr>
                             <th scope="col">Title</th>
                             <th scope="col">Status</th>
@@ -61,10 +61,12 @@
                                 }
                                 <td class="d-flex">
                                     <button class="btn border-0">
-                                       <a asp-action="editcmsdata" asp-controller="Admin" asp-route-cmsid="@cms.CmsPageId">
+                                       <a asp-action="editcmsdata" asp-controller="Admin" type="button" class="text-warning" asp-route-cmsid="@cms.CmsPageId">
                                         <i class="bi bi-pencil-square icon"></i>
                                         </a> </button>
-                                      <a class="nav-link text-black deleteMission p-2" onclick="showModal(@cms.CmsPageId)" type="button"><i class="bi bi-trash3"></i></a>
+                                        <button class="btn border-0">
+                                     <a class="nav-link text-black deleteMission p-2" onclick="showModal(@cms.CmsPageId)" type="button"><i class="bi bi-trash3"></i></a>
+                                        </button>
 
                                   
                                 </td>

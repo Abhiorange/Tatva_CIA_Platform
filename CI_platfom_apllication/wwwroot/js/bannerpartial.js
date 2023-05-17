@@ -49,3 +49,10 @@ function filterSearch() {
         }
     })
 }
+
+$('.nav-link').each(function () {
+    $(this).parent().removeClass('bg-light');
+    $(this).css('color', 'white');
+});
+$('.nav-link.banner').parent().addClass('bg-light');
+$('.nav-link.banner ').css('color', 'orange');

@@ -2,7 +2,7 @@
 getmissionsbytime();
 getmissionsbygoal();
 function getmissionsbytime() {
-    alert('success');
+ 
     const missionid = document.getElementById("mission").value;
     $.ajax({
         url: '/TimeSheet/getmissionsbytime',
@@ -23,7 +23,7 @@ function getmissionsbytime() {
 }
 
 function getmissionsbygoal() {
-    alert('success1');
+    
 
     const missionid = document.getElementById("mission_id").value;
     console.log("this mission id", missionid);
@@ -47,7 +47,7 @@ function getmissionsbygoal() {
 
 $(document).ready(function () {
     $('#staticBackdrop').on('show.bs.modal', function (event) {
-            alert("modal called");
+            
             var button = $(event.relatedTarget); // Button that triggered the modal
             var timesheetId = button.data('timesheetid'); // Extract missionid from data attribute
             var missionTitle = button.data('missiontitle');
@@ -67,7 +67,7 @@ $(document).ready(function () {
     });
 });
 $('#edittimeform').submit(function (event) {
-    alert('edit form called');
+    
     console.log("hour value", $('#edithour').val());
     event.preventDefault();
     if ($('#edithour').val() > 24) {
@@ -115,7 +115,7 @@ $('#goalform').submit(function (event) {
 });
 
 $('#addgoalform').submit(function (event) {
-    alert('addform called');
+  
     $('#addvalidspan').addClass('d-none');
     event.preventDefault();
     var goalvalue = $('#goalvalue2').val();
@@ -165,7 +165,7 @@ function showModal(id) {
     })
 }
 function DeleteMission(timesheetId) {
-    alert("delete misson called");
+    
     $.ajax({
         url: '/TimeSheet/deletedatabase',
         type: 'GET',
@@ -201,7 +201,7 @@ function showModal1(id) {
     })
 }
 function DeleteMission1(timesheetId) {
-    alert("delete misson called");
+   
     $.ajax({
         url: '/TimeSheet/deletedatabasegoal',
         type: 'GET',
@@ -216,12 +216,29 @@ function DeleteMission1(timesheetId) {
     });
 }
 
+//AddTime modal
 $('#exampleModal1').on('hidden.bs.modal', function (e) {
-    // reset input field values to their defaults
-    $('#mission').val('Select Mission');
+    $('#mission').val('');
     $('#date').val('');
     $('#hour').val(0);
     $('#minute').val(0);
     $('#message').val('');
+    $('#addmissiontime').text('');
+    $('#adddatetime').text('');
+    $('#addhourtime').text('');
+    $('#addminutetime').text('');
+    $('#addnotetime').text('');
+});
+//AddGoal modal
+$('#exampleModal2').on('hidden.bs.modal', function (e) {
+    $('#mission_id').val('');
+    $('#addaction').val('');
+    $('#date').val(0);
+    $('#minute').val(0);
+    $('#message').val('');
+    $('#addmissiongoal').text('');
+    $('#addvalidspan').text('');
+    $('#adddategoal').text('');
+    $('#addmissionnote').text('');
 });
 

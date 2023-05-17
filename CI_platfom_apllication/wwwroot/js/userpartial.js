@@ -1,4 +1,10 @@
-﻿
+﻿$('.nav-link').each(function () {
+    $(this).parent().removeClass('bg-light');
+    $(this).css('color', 'white');
+});
+$('.nav-link.user1').parent().addClass('bg-light');
+$('.nav-link.user1 ').css('color', 'orange');
+
 $(document).on('click', '.use li', function (e) {
     e.preventDefault();
     $('.use li').each(function () {
@@ -9,7 +15,7 @@ $(document).on('click', '.use li', function (e) {
     filteruser();
 });
 function filteruser() {
-    alert('pagination called');
+   
     var pageIndex = $('.use .usactive a').attr('id');
     var keyword = $('#search').val();
     $.ajax({
@@ -76,7 +82,7 @@ function showModal(id) {
     })
 }
 function deleteUser(userId) {
-    alert("delete user called");
+  
     $.ajax({
         url: '/admin/DeleteUser',
         type: 'GET',

@@ -1,4 +1,9 @@
-﻿
+﻿$('.nav-link').each(function () {
+    $(this).parent().removeClass('bg-light');
+    $(this).css('color', 'white');
+});
+$('.nav-link.mission').parent().addClass('bg-light');
+$('.nav-link.mission ').css('color', 'orange');
 function showModal(id) {
     Swal.fire({
         title: 'Are you sure?',
@@ -20,7 +25,7 @@ function showModal(id) {
     })
 }
 function DeleteMission(missionId) {
-    alert("delete misson called");
+    
     $.ajax({
         url: '/admin/DeleteMission',
         type: 'GET',
@@ -58,7 +63,7 @@ function filtermissions() {
             pageindex: pageIndex
         },
         success: function (response) {
-            alert("hello");
+           
             $('.table').html($(response).find('.table').html());
             $('.pagination').html($(response).find('.pagination').html());
         }
@@ -67,7 +72,7 @@ function filtermissions() {
 $(document).ready(function () {
 
     $('#searchmission').keyup(function () {
-        alert('hi');
+       
         $('.pagination .misactive').removeClass('misactive');
         filterSearch();
 
@@ -85,7 +90,7 @@ function filterSearch() {
 
         },
         success: function (response) {
-            alert('called');
+        
            
             $('.table').empty().html($(response).find('.table').html());
             $('.page').empty().html($(response).find('.page').html());
@@ -94,16 +99,4 @@ function filterSearch() {
     })
 }
 
-   /* $(function () {
-        $('#missionpage').on('click', function () {
-
-            alert('success');
-            $.ajax({
-                url: '/admin/missionadd',
-                type: 'GET',
-                success: function (result) {
-                    $('#loadPartialView').html(result);
-                }
-            });
-        });
-    });*/
+  

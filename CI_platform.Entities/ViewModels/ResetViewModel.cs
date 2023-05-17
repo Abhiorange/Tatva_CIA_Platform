@@ -15,6 +15,6 @@ namespace CI_platform.Entities.ViewModels
         [Required]
         [Compare("Password", ErrorMessage = "Confirm Password is not match with Password")]
         public string ConfirmPassword { get; set; } = null!;
-        List<Banner>? Banners { get; set; }
+       public  List<Banner>? Banners { get; set; }
     }
 }

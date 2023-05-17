@@ -9,7 +9,6 @@ using System.Linq;
 using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
-
 using Azure.Core;
 using System.Security.Policy;
 using Microsoft.EntityFrameworkCore;
@@ -34,12 +33,16 @@ namespace CI_platform.Repositories.Repository
         }
         public string login(LoginViewModel user)
         {
-            var email = _ciplatformcontext.Users.FirstOrDefault(c => c.Email.Equals(user.Email.ToLower()));
+            var user_authorize = _ciplatformcontext.Users.FirstOrDefault(c => c.Email.Equals(user.Email.ToLower()));
             
           
-            if (email==null)
+            if (user_authorize == null)
             {
                 return "user does not exist";
+            }
+            if(user_authorize.Status==0)
+            {
+                return "user is not authorize to login";
             }
           
             var password_user = _ciplatformcontext.Users.FirstOrDefault(c => c.Password.Equals(user.Password) &&
@@ -47,8 +50,7 @@ namespace CI_platform.Repositories.Repository
             
             if (password_user!=null)
             {
-                
-
+          
                 var passwordsMatch = string.Compare(user.Password, password_user.Password, StringComparison.Ordinal) == 0;
                 if(passwordsMatch == false)
                 {
@@ -106,15 +108,13 @@ namespace CI_platform.Repositories.Repository
                     Email = forget.Email,
                     Token = token,
                 };
-                
-
                 _ciplatformcontext.Add(passwordReset);
                 _ciplatformcontext.SaveChanges();
 
 
                 var resetLink = url.Replace("{token}", token);
 
-                var from = new MailAddress("dummyblack92@gmail.com", "abhishek");
+                var from = new MailAddress("orangetreeplant123@gmail.com", "abhishek");
 
                 var to = new MailAddress(forget.Email);
                 var subject = "Password reset request";
@@ -128,7 +128,7 @@ namespace CI_platform.Repositories.Repository
                 var smtpClient = new SmtpClient("smtp.gmail.com", 587)
                 {
                     UseDefaultCredentials = false,
-                    Credentials = new NetworkCredential("dummyblack92@gmail.com", "bhilykvfemjbcceg"),
+                    Credentials = new NetworkCredential("orangetreeplant123@gmail.com", "jbadfitwuhphgwbw"),
                     EnableSsl = true
                 };
                 smtpClient.Send(message);
@@ -328,7 +328,89 @@ namespace CI_platform.Repositories.Repository
             };
             return model;
         }
-        
+        public Tuple<List<NotificationTitle>, List<long>> gettitles(string userId)
+        {
+            var notificationTitle = _ciplatformcontext.NotificationTitles.ToList();
+            List<long> idsselected = _ciplatformcontext.EnableUserStatuses.Where(up => up.UserId.ToString() == userId && up.Status == 1).Select(up => up.NotificationId).ToList().ConvertAll(id => (long?)id).Select(id => id.Value).ToList();
+            return new Tuple<List<NotificationTitle>, List<long>>(notificationTitle, idsselected);
+        }
 
+        public void setstatus(string userid, List<string> titles)
+        {
+            var enables = _ciplatformcontext.EnableUserStatuses.Where(e => e.UserId.ToString() == userid).ToList();
+            _ciplatformcontext.EnableUserStatuses.RemoveRange(enables);
+            foreach (var id in titles)
+            {
+                var model = new EnableUserStatus
+                {
+                    UserId = long.Parse(userid),
+                    Status = 1,
+                    NotificationId = long.Parse(id),
+                };
+                _ciplatformcontext.Add(model);
+            }
+           _ciplatformcontext.SaveChanges();
+        }
+        public void changestatus(int messageid,string userid)
+        {
+            var userrecord = _ciplatformcontext.Userpermissions.SingleOrDefault(up=>up.MessageId==messageid && up.UserId.ToString()==userid);
+            userrecord.Seen = 0;
+            _ciplatformcontext.SaveChanges();
+        }
+        public void clearall(string userid)
+        {
+            var userpermiids = _ciplatformcontext.Userpermissions.Where(u => u.UserId.ToString() == userid).ToList();
+            foreach(var record in userpermiids)
+            {
+                record.Status = 0;
+                _ciplatformcontext.SaveChanges();
+            }
+
+        }
+        public List<Tuple<string, long, string,string,int,int,string>> getnotification(string userId)
+        {
+            var notifications = new List<Tuple<string, long, string,string,int,int,string>>();
+            var takeids = _ciplatformcontext.EnableUserStatuses.Where(e => e.UserId.ToString() == userId).Select(e => e.NotificationId).ToList();
+            var email = _ciplatformcontext.Users.SingleOrDefault(u => u.UserId.ToString() == userId).Email;
+            foreach (var id in takeids)
+            {
+                var message = _ciplatformcontext.MessageTables.Where(m => m.NotificationId == id).AsQueryable();
+                var messageid = message.Select(m => m.MessageId).ToList();
+                foreach (var id1 in messageid)
+                {
+                    var check_status = _ciplatformcontext.Userpermissions.SingleOrDefault(u => u.UserId.ToString() == userId && u.MessageId == id1);
+                    
+                    if (check_status != null && check_status.Status == 1)
+                    {  
+                        var messages = message.FirstOrDefault(m => m.MessageId == id1);
+                        if(takeids.Contains(10))
+                        {
+                            var from = new MailAddress("orangetreeplant123@gmail.com", "abhishek");
+
+                            var to = new MailAddress(email);
+                            var subject = "Password reset request";
+                            var body = $"Hi,<br /><br />{messages.Message}:<br /><br /><a href='{messages.Url}'>{messages.Url}</a>";
+                            var message1 = new MailMessage(from, to)
+                            {
+                                Subject = subject,
+                                Body = body,
+                                IsBodyHtml = true
+                            };
+                            var smtpClient = new SmtpClient("smtp.gmail.com", 587)
+                            {
+                                UseDefaultCredentials = false,
+                                Credentials = new NetworkCredential("orangetreeplant123@gmail.com", "jbadfitwuhphgwbw"),
+                                EnableSsl = true
+                            };
+                            smtpClient.Send(message1);
+                        }
+                        DateTime createdAt = (DateTime)messages.CreatedAt;
+                        notifications.Add(Tuple.Create(messages.Message, (long)messages.NotificationId, createdAt.ToString("d MMM, H:mm"),messages.Url,messages.MessageId,check_status.Seen,messages.AvatarUser));
+                    }
+                }    
+            }
+            return notifications;
+        }
     }
 }
+

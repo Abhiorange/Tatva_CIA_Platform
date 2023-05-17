@@ -28,7 +28,7 @@ function senduser(sid) {
     $('.modal-body input[type="checkbox"]:checked').each(function () {
         selecteduserid.push($(this).attr("id"));
     });
-
+   
     $.ajax({
         type: "POST",
         url: '/StoryListing/usersthrouid',
@@ -37,8 +37,22 @@ function senduser(sid) {
             storyid: sid,
             from_user: model.attr('data-userid'),
         },
+        beforeSend: function () {
+            swal.fire({
+                html: '<h5>Loading...</h5><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>',
+                showConfirmButton: false,
+                onRender: function () {
+                    $('.swal2-content').prepend(sweet_loader);
+                }
+            });
+        },
         traditional: true,
         success: function (response) {
+            Swal.fire({
+                icon: 'success',
+                title: 'success',
+                text: 'Invite link sent',
+            })
             alert('sucess fully send mail...');
         }
     });
@@ -59,11 +73,8 @@ function btnShowUsers(sid) {
 
         }
     });
-
-
-
-
 }
+
 function sendmail() {
     senduser(storyId);
 }

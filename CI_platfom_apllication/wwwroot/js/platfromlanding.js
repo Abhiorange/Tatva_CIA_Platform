@@ -1,10 +1,10 @@
 
 function showList(e) {
-    
+
     var $gridCont = $('.grid-container');
     var $new_item = $('.new-items');
     var $apply = $('.apply_btn');
-   
+
     var $only_list = $('.only_list');
     var $only_grid = $('.only_grid');
     var $time_pill = $('.timepill');
@@ -29,7 +29,7 @@ function showList(e) {
     // $only_grid.addClass('d-none');
 }
 function gridList(e) {
-    
+
     var $gridCont = $('.grid-container');
     var $new_item = $('.new-items');
     var $apply = $('.apply_btn');
@@ -60,10 +60,9 @@ $(document).on('click', '.btn-grid', gridList);
 $(document).on('click', '.btn-list', showList);
 
 
-   
-$(document).ready(function () { 
-    console.log('start')
+$(document).ready(function () {
     var selectedCountryIds = [];
+
     getCountry();
     getThemes();
     getSkills();
@@ -71,20 +70,19 @@ $(document).ready(function () {
 
 
     $('#country').on('change', 'input[type="checkbox"]', function () {
-        /*console.log(selectedCountryIds)*/
         var id = $(this).val();
-        console.log('abhi')
+        var selectedCityIds = [];
         var countryName = $(this).next('label').text();
-        $('#city').empty();
+
         if ($(this).prop('checked') && !selectedCountryIds.includes(id)) {
             selectedCountryIds.push(id);
-/*            $('#selectedCountries').append('<span id="' + id + '" class="selectedCountry rounded-pill border px-2 m-1">' + countryName + '</span>');
-*/        } else if (!$(this).prop('checked') && selectedCountryIds.includes(id)) {
+        } else if (!$(this).prop('checked') && selectedCountryIds.includes(id)) {
             selectedCountryIds = selectedCountryIds.filter(function (value) {
                 return value !== id;
             });
-           /* $('#' + id).prop('checked', false);*/
         }
+
+        $('#city').empty();
         $.ajax({
             type: "GET",
             url: '/Mission/City',
@@ -93,45 +91,43 @@ $(document).ready(function () {
             },
             traditional: true,
             success: function (result) {
-             
-                /*console.log(result);*/
-              
+
+
                 if (result.length === 0) {
                     $('#city').html('<option>No cities found</option>');
                 } else {
-                    $('#city').html('');
                     $.each(result, function (i, data) {
+
                         $('#city').append('<div class="form-check ms-3"><input class="form-check-input checkbox city" type="checkbox" value="' + data.cityId + '" id="' + data.cityId + '"><label class="form-check-label" for="' + data.cityId + '">' + data.name + '</label></div>');
-                    })
+
+                    });
                 }
             }
         })
         $('.pagination .active').removeClass('active');
-     
+
         filterMission()
     })
+
+
     $('#city').change(function () {
         $('.pagination .active').removeClass('active');
-     //   $('.pagination .active').find('#1').parent().addClass('active');
         filterMission()
     });
     $('#theme').change(function () {
         $('.pagination .active').removeClass('active');
-     //   $('.pagination .active').find('#1').parent().addClass('active');
         filterMission()
     });
     $('#skill').change(function () {
         $('.pagination .active').removeClass('active');
-     //   $('.pagination .active').find('#1').parent().addClass('active');
         filterMission()
     });
     $('#sort').change(function () {
-     
+
         filterMission()
     });
     $('#search-input').keyup(function () {
         $('.pagination .active').removeClass('active');
-     //   $('.pagination .active').find('#1').parent().addClass('active');
         filterMission()
     });
     totalmissions();
@@ -142,23 +138,18 @@ function filterMission() {
     var country = [];
     $('.filters-section').empty()
     $('.country:checkbox:checked').each(function () {
-       
+
         var countryName = $(this).next('label').text();
         var id = $(this).val();
-        console.log("this country id", id);
         country.push($(this).attr("id"));
         $('.filters-section').append('<span class="filter-list ps-3 pe-3 me-2">' + countryName + '<i class="bi bi-x filter-close-button" onclick="cross_country(' + id + ')"></i></span>')
     })
 
     var city = [];
     $('.city:checkbox:checked').each(function () {
-       
         var cityname = $(this).next('label').text();
         var id = $(this).val();
-        console.log("this city id", id);
         city.push($(this).attr("id"));
-      
-
         $('.filters-section').append('<span class="filter-list ps-3 pe-3 me-2">' + cityname + '<i class="bi bi-x filter-close-button" onclick="cross_city(' + id + ')"></i></span>')
     })
 
@@ -177,7 +168,7 @@ function filterMission() {
     })
 
     if ($('.filters-section .filter-list').length > 0) {
-      
+
         $('.filters-section').append('<span class="filter-list ps-3 pe-3 me-2 p-2 clear-all" onclick="clearall()">Clear All</span>');
     }
     var sortId = $('#sort').val();
@@ -196,7 +187,7 @@ function filterMission() {
             skillids: skill,
             id: sortId,
             SearchInputdata: keyword,
-            pageindex:pageIndex
+            pageindex: pageIndex
         },
         success: function (response) {
 
@@ -222,9 +213,10 @@ function cross_country(id) {
         }
     });
     filterMission();
+
 }
 function cross_city(id) {
-   
+
     $('.city:checkbox:checked').each(function () {
         if ($(this).val() == id) {
             $(this).prop('checked', false);
@@ -249,17 +241,17 @@ function cross_skill(id) {
     filterMission();
 }
 function clearall() {
-    $('.country:checkbox:checked').each(function () {    
-            $(this).prop('checked', false);
+    $('.country:checkbox:checked').each(function () {
+        $(this).prop('checked', false);
     });
-    $('.skill:checkbox:checked').each(function () {  
-            $(this).prop('checked', false);
+    $('.skill:checkbox:checked').each(function () {
+        $(this).prop('checked', false);
     });
     $('.theme:checkbox:checked').each(function () {
-            $(this).prop('checked', false);      
+        $(this).prop('checked', false);
     });
     $('.city:checkbox:checked').each(function () {
-            $(this).prop('checked', false);
+        $(this).prop('checked', false);
     });
     $('.filters-section').empty();
     filterMission();
@@ -268,22 +260,17 @@ function clearall() {
 
 function totalmissions() {
     var totalmission = $('#totalmission').val();
-    console.log("total value", totalmission);
-    // var explore=$("#explore-missions-count").val();
     $('#explore-missions-count').text(totalmission);
 }
-
-
 function getCountry() {
     $.ajax({
         url: '/Mission/Country',
         success: function (result) {
-            console.log('1')
             if (result.length === 0) {
                 $('#country').html('<option>No countries selected</option>');
             } else {
                 $.each(result, function (i, data) {
-                    $('#country').append('<div class="form-check ms-3"><input class="form-check-input checkbox country" type="checkbox" value="' + data.countryId + '" id="' + data.countryId + '"><label class="form-check-label" for="' + data.countryId  + '">' + data.name + '</label></div>');
+                    $('#country').append('<div class="form-check ms-3"><input class="form-check-input checkbox country" type="checkbox" value="' + data.countryId + '" id="' + data.countryId + '"><label class="form-check-label" for="' + data.countryId + '">' + data.name + '</label></div>');
                 })
             }
         }
@@ -293,7 +280,6 @@ function getThemes() {
     $.ajax({
         url: '/Mission/Theme',
         success: function (result) {
-            console.log('t1')
             $.each(result, function (i, data) {
                 $('#theme').append('<div class="form-check ms-3"><input class="form-check-input checkbox theme" type="checkbox" value="' + data.title + '" id="' + data.missionThemeId + '"><label class="form-check-label" for="' + data.missionThemeId + '">' + data.title + '</label></div>');
             })
@@ -305,7 +291,6 @@ function getSkills() {
     $.ajax({
         url: '/Mission/Skill',
         success: function (result) {
-            console.log('s1')
             $.each(result, function (i, data) {
                 $('#skill').append('<div class="form-check ms-3"><input class="form-check-input checkbox skill" type="checkbox" value="' + data.skillName + '" id=' + data.skillId + '><label class="form-check-label" for=' + data.skillId + '>' + data.skillName + '</label></div>')
             })
@@ -324,7 +309,6 @@ $(document).on('click', '.pagination li', function (e) {
         $(this).removeClass('active');
     })
     $(this).addClass('active');
-    console.log($(this).children().attr("id"))
     filterMission();
 });
 
@@ -333,24 +317,49 @@ function senduser(mid) {
     $('.modal-body input[type="checkbox"]:checked').each(function () {
         selecteduserid.push($(this).attr("id"));
     });
-    console.log("userids", selecteduserid);
+    if (selecteduserid.length === 0) {
 
-    $.ajax({
-        type: "POST",
-        url: '/Mission/usersthrouid',
-        data: {
-            ids: selecteduserid,
-            missionid: userid,
-            from_id: model.attr("data-userid")
-        },
-        traditional: true,
-        success: function (response) {
-            alert('sucesscefully mail sent!!');
-            toastr.success('Mail is sent!');
-        }
-    });
+        Swal.fire({
+            icon: 'info',
+            title: 'Oops...',
+            text: 'First select user',
 
-    selecteduserid.length = 0;
+        })
+    }
+    else {
+      
+        $.ajax({
+            type: "POST",
+            url: '/Mission/usersthrouid',
+            data: {
+                ids: selecteduserid,
+                missionid: userid,
+                from_id: model.attr("data-userid")
+            },
+            beforeSend: function () {
+                swal.fire({
+                    html: '<h5>Loading...</h5><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div>',
+                    showConfirmButton: false,
+                    onRender: function () {
+                        $('.swal2-content').prepend(sweet_loader);
+                    }
+                });
+            },
+            traditional: true,
+            success: function (response) {
+            
+                Swal.fire({
+                    icon: 'success',
+                    title: 'success',
+                    text: 'Invite link sent',
+                })
+                toastr.success('Mail is sent!');
+            }
+        });
+
+        selecteduserid.length = 0;
+    }
+
 }
 $(document).on('click', '#sendmail', function () {
     senduser(userid);
@@ -374,13 +383,11 @@ function btnshowUsers(mid) {
 function addtofavorite(mid) {
 
     var favouriteImage = $('#' + mid).find('.favourite-image');
-    console.log("image", favouriteImage);
     if (favouriteImage.attr('src') === '/Assets/heart1.png') {
         favouriteImage.attr('src', '/Assets/fill-heart.png');
     } else {
         favouriteImage.attr('src', '/Assets/heart1.png');
     } ``
-    // var name = $(this).data('name');
     $.ajax({
         type: 'POST',
         url: '/Mission/favroite_mission',
@@ -390,8 +397,7 @@ function addtofavorite(mid) {
             actionmethod: "platformlanding"
         },
         success: function (response) {
-            alert($(response).find('#favstar-' + mid).html());
-            console.log(mid);
+         
             $(`#favstar-${mid}`).html($(response).find(`#favstar-${mid}`).html());
         }
 
@@ -405,5 +411,3 @@ function showModal() {
         text: 'Please Login!',
     })
 }
-
-

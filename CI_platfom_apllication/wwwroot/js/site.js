@@ -34,8 +34,7 @@ function contactsave() {
         },
         success: function (result) {
             console.log(result);
-            alert('issue saved corrcetly');
-            /*toastr.success('Problem is sent!');*/
+         
             Swal.fire({
                
                 title: 'Sucess',

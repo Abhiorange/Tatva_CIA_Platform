@@ -1,4 +1,5 @@
-﻿using CI_platform.Entities.DataModels;
+﻿
+using CI_platform.Entities.DataModels;
 using CI_platform.Entities.ViewModels;
 using CI_platform.Repositories.Interface;
 using Microsoft.EntityFrameworkCore;
@@ -25,12 +26,25 @@ namespace CI_platform.Repositories.Repository
 
         public  MisCouCity getmiscoucity(int pageindex, int pageSize,int id, string keyword, List<long> countryids, List<long> cityids, List<long> themeids, List<long> skillids,string user_id)
         {
+            List<long> additionalCityIds = new List<long>();
+            var countryids1 = _ciplatformcontext.Cities.Where(c => cityids.Contains(c.CityId)).Select(c => c.CountryId).Distinct().ToList();
+
+            foreach (var id1 in countryids)
+            {
+
+                if (!countryids1.Contains(id1))
+                {
+                    additionalCityIds.AddRange(_ciplatformcontext.Cities.Where(c => c.CountryId == id1).Select(c => c.CityId));
+                }
+            }
+            cityids.AddRange(additionalCityIds);
+
             var missionQuery = _ciplatformcontext.Missions.Include(m => m.City).Include(m=>m.Country).Include(m=>m.MissionMedia).Include(m => m.Theme).Where(m=>m.Status==1).AsQueryable();
             var skillfilter = _ciplatformcontext.MissionSkills.Where(s => skillids.Contains(s.SkillId)).Select(s => s.MissionId);
             var missions = string.IsNullOrEmpty(keyword)
                 ? missionQuery.Where(m => (m.MissionType == "time" || m.MissionType == "goal") && (m.Status==1))
                 : missionQuery.Where(model => (model.Title.Contains(keyword) || model.Theme.Title.Contains(keyword) || model.City.Name.Contains(keyword)) && (model.Status==1)).AsQueryable();
-            var missions1 = missions.Where(model => ((countryids.Contains(model.CountryId)) || countryids.Count() == 0) && ((cityids.Contains(model.CityId)) || cityids.Count() == 0) && ((skillfilter.Contains(model.MissionId)) || skillfilter.Count() == 0) && ((themeids.Contains(model.ThemeId)) || themeids.Count() == 0));
+            var missions1 = missions.Where(model => ((countryids.Contains(model.CountryId)) || countryids.Count() == 0) && ((cityids.Contains(model.CityId)) || cityids.Count() == 0) && ((skillfilter.Contains(model.MissionId)) || skillids.Count() == 0) && ((themeids.Contains(model.ThemeId)) || themeids.Count() == 0));
             var mission_skill = _ciplatformcontext.MissionSkills.Include(m => m.Mission).Include(m => m.Skill).ToList();
             var goal = _ciplatformcontext.GoalMissions.Include(g => g.Mission).ToList();
             var mission_rating = _ciplatformcontext.MissionRatings.Include(m => m.Mission).Include(m => m.User).ToList();
@@ -81,13 +95,7 @@ namespace CI_platform.Repositories.Repository
             
             if (rate_update != null)
             {
-                var missionrating = new MissionRating
-                {
-                    MissionId = missionid,
-                    UserId = rate_update.UserId,
-                    Rating = rating,
-                    MissionRatingId = rate_update.MissionRatingId
-                };
+                
                 rate_update.Rating = rating;
                 _ciplatformcontext.Update(rate_update);
           
@@ -155,14 +163,16 @@ namespace CI_platform.Repositories.Repository
 
         public string GetUsers_id(int id, string url,int missionid,int from_id)
         {   
-            var user = _ciplatformcontext.Users.SingleOrDefault(m => m.UserId == id); //User who is recieving mail
+            var user = _ciplatformcontext.Users.SingleOrDefault(m => m.UserId == id); 
+            var from_user = _ciplatformcontext.Users.SingleOrDefault(u => u.UserId == from_id);
+            var missiontitle = _ciplatformcontext.Missions.SingleOrDefault(m => m.MissionId == missionid).Title;
             var resetLink = url;
 
-            var from = new MailAddress("dummyblack92@gmail.com", "abhishek");
+            var from = new MailAddress("orangetreeplant123@gmail.com", "abhishek");
 
             var to = new MailAddress(user.Email);
             var subject = "Volunteer mission recommend";
-            var body = $"Hi,<br /><br />Please click on the following to apply on mission:<br /><br /><a href='{resetLink}'>{resetLink}</a>";
+            var body = $"Hi,<br /><br />Please click on the following to apply on mission:<br/><br/><a href='{resetLink}'>{resetLink}</a>";
             var message = new MailMessage(from, to)
             {
                 Subject = subject,
@@ -172,7 +182,7 @@ namespace CI_platform.Repositories.Repository
             var smtpClient = new SmtpClient("smtp.gmail.com", 587)
             {
                 UseDefaultCredentials = false,
-                Credentials = new NetworkCredential("dummyblack92@gmail.com", "bhilykvfemjbcceg"),
+                Credentials = new NetworkCredential("orangetreeplant123@gmail.com", "jbadfitwuhphgwbw"),
                 EnableSsl = true
             };
             smtpClient.Send(message);
@@ -184,7 +194,27 @@ namespace CI_platform.Repositories.Repository
             };
             _ciplatformcontext.Add(missioninvite);
             _ciplatformcontext.SaveChanges();
+           
+            var enable_check = _ciplatformcontext.EnableUserStatuses.SingleOrDefault(e => e.UserId == id && e.NotificationId == 1).Status;
+            if(enable_check==1)
+            {
+                var messagemodel = new MessageTable
+                {
+                    NotificationId = 1,
+                    Message = $"{from_user.FirstName}-Recommended Mission-{missiontitle}",
+                    Url = $"https://localhost:7292/Mission/volunteermission/{missionid}",
+                    AvatarUser = from_user.Avatar
+                };
+                _ciplatformcontext.Add(messagemodel);
+                var userpermission = new Userpermission
+                {
+                    UserId = id
+                };
+                messagemodel.Userpermissions.Add(userpermission);
+            }     
+            _ciplatformcontext.SaveChanges();
             return "email is send succesfully";
+
         }
 
         public List<MissionTheme> GetThemes()
@@ -195,7 +225,7 @@ namespace CI_platform.Repositories.Repository
 
         public List<Skill> GetSkills()
         {
-            var skills = _ciplatformcontext.Skills.ToList();
+            var skills = _ciplatformcontext.Skills.Where(s=>s.Status==1).ToList();
             return skills;
         }
 

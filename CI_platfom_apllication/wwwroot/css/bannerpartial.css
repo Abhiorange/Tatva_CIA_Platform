@@ -7,3 +7,8 @@
     background-color: lightgrey !important;
     color: white !important;
 }
+
+.borderbottom {
+    border-bottom: solid 3.5px #333333;
+    padding-bottom: 13.5px;
+}

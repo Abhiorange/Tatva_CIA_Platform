@@ -23,11 +23,7 @@ namespace CI_platfom_apllication.Controllers
         [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult platformlanding(List<long> skillids, List<long> themeids, List<long> cityids, List<long> countryids, int id=0,int pageindex=1,int pageSize=9,string? SearchInputdata = "") 
        {
-            /* var firstname_session = HttpContext.Session.GetString("firstname");
-             if(firstname_session == null)
-             {
-                 return RedirectToAction("Index", "home");
-             }*/
+            
             var user_id = HttpContext.Session.GetString("userid");
             var entity = _missionRepository.getmiscoucity(pageindex,pageSize,id,SearchInputdata,countryids,cityids,themeids,skillids,user_id);
             entity.currentPage = pageindex;
@@ -72,8 +68,6 @@ namespace CI_platfom_apllication.Controllers
                 string url = Url.Action("VolunteerMission", "Mission", new { id =missionid}, Request.Scheme);
                 var users_ids = _missionRepository.GetUsers_id(id,url,missionid,from_id);             
             }
-            
-
             return RedirectToAction("volunteermission", new { id = missionid });
         }
         public IActionResult logout()

@@ -134,7 +134,7 @@ function submitData(storyid) {
         },
         success: function (result) {
             window.location = result.redirectUrl;
-            alert("submit is succesfull");
+          
         }
     })
 }

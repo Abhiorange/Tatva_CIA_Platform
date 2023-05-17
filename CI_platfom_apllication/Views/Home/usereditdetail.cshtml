@@ -1,5 +1,4 @@
-﻿@*@model Tuple<CI_platform.Entities.ViewModels.UserDetailViewModel,CI_platform.Entities.ViewModels.UserDetailViewModel>
-*@
+﻿
 @model CI_platform.Entities.ViewModels.UserDetailViewModel
 <!DOCTYPE html>
 <html lang="en">
@@ -61,15 +60,15 @@
                                 <div class="modal-body d-flex flex-column">
                                     <div class="my-2">
                                         <input type="text" id="oldpass" class="form-control"  placeholder="enter the old password" class="w-100" asp-for="oldpass" />
-                                        <span class="text-danger" asp-validation-for="oldpass"></span>
+                                        <span class="text-danger" asp-validation-for="oldpass" id="oldpassspan"></span>
                                     </div>
                                     <div class="my-2">
                                         <input type="text" id="newpass" class="form-control"  placeholder="enter the new password" class="w-100" asp-for="newpass" />
-                                        <span class="text-danger" asp-validation-for="newpass"></span>
+                                        <span class="text-danger" asp-validation-for="newpass" id="newspassspan"></span>
                                     </div>
                                     <div class="my-2">
                                         <input type="text" id="confirm" class="form-control"  placeholder="confirm  password" class="w-100" asp-for="confirmpass" />
-                                        <span class="text-danger" asp-validation-for="confirmpass"></span>
+                                        <span class="text-danger" asp-validation-for="confirmpass" id="confirmpassspan"></span>
                                     </div>
 
                                 </div>
@@ -112,14 +111,14 @@
                                 <div class="col-sm-6 mt-2">
                                     <div class="d-flex flex-column">
                                         <span>Email</span>
-                                        <input type="text"class="form-control"  asp-for="Email">
+                                        <input type="text"class="form-control" value="@Model.Email"  asp-for="Email">
                                         <span class="text-danger" asp-validation-for="Email"></span>
                                     </div>
                                 </div>
                                 <div class="col-sm-6 mt-2">
                                     <div class="d-flex flex-column">
                                         <span>Title</span>
-                                        <input type="text"class="form-control"  asp-for="Title">
+                                        <input type="text"class="form-control" value="@Model.Title"  asp-for="Title">
                                        <span class="text-danger" asp-validation-for="Title"></span>
 
                                     </div>
@@ -134,8 +133,8 @@
 
                                 <div class="col-12">
                                     <div class="d-flex flex-column">
-                                        <span>profileText</span>
-                                        <textarea id="" cols="30"class="form-control"  rows="5" asp-for="ProfileText"></textarea>
+                                        <span>ProfileText</span>
+                                        <textarea id="" cols="30"class="form-control" value="@Model.ProfileText"  rows="5" asp-for="ProfileText"></textarea>
                                         <span class="text-danger" asp-validation-for="ProfileText"></span>
                                     </div>
                                 </div>
@@ -176,7 +175,7 @@
                                         </div>
 
                                     </div>
-                                             <span class="text-danger d-none" asp-validation-for="CountryId" id="countryspan">Select valid country</span>
+                                   <span class="text-danger d-none" asp-validation-for="CountryId" id="countryspan">Select valid country</span>
 
                                 </div>
                             </div>

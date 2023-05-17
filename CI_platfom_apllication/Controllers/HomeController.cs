@@ -44,7 +44,13 @@ namespace CI_platfom_apllication.Controllers
             if(ModelState.IsValid)
             {
                 var userlogin_detail = _userRepository.login(user);
-
+                if(userlogin_detail== "user is not authorize to login")
+                {
+                    ModelState.AddModelError("Email", userlogin_detail);
+                    var model = new LoginViewModel();
+                    model.Banners = _userRepository.GetBanners();
+                    return View("Index", model);
+                }
                 if (userlogin_detail == "user does not exist")
                 {
                     ModelState.AddModelError("Email", userlogin_detail);
@@ -124,8 +130,7 @@ namespace CI_platfom_apllication.Controllers
         {
             if (ModelState.IsValid) {
                 string url = Url.Action("reset", "home", new { email = forget.Email, token = "{token}" }, Request.Scheme);
-/*                string url = Url.Action("reset", "home",null, Request.Scheme);
-*/                var user_token = _userRepository.forget(forget, url);
+               var user_token = _userRepository.forget(forget, url);
                 if (user_token == "user does not exist")
                 {
                     ModelState.AddModelError("Email", user_token);
@@ -146,11 +151,11 @@ namespace CI_platfom_apllication.Controllers
             {
                 return NotFound("Link Expired");
             }
-            LoginViewModel loginViewModel = new LoginViewModel()
+            ResetViewModel resetviewmodel = new ResetViewModel()
             {
                 Banners = _userRepository.GetBanners(),
             };
-            return View(loginViewModel);
+            return View(resetviewmodel);
         }
         [HttpPost]
         public IActionResult reset(ResetViewModel reset)
@@ -162,12 +167,13 @@ namespace CI_platfom_apllication.Controllers
                 if (user == null)
                 {
                     ModelState.AddModelError("ConfirmPassword", "Password does not match");
-
+                    var model = new ForgetViewModel();
+                    model.Banners = _userRepository.GetBanners();
                     return RedirectToAction("reset", "home");
                 }
                 HttpContext.Session.Remove(token);
             }
-            TempData["register"] = "assword is reset succesfully";
+            TempData["register"] = "Password is reset succesfully";
             return RedirectToAction("Index", "home");
            
         }
@@ -248,21 +254,44 @@ namespace CI_platfom_apllication.Controllers
         }
 
         public IActionResult AddImage(IFormFile Image)
-        {
-            
+        {   
             var user_id = long.Parse(HttpContext.Session.GetString("userid"));
             var image=_userRepository.editimage(Image, user_id);
             HttpContext.Session.SetString("avtar", image);
-
             return Json(new { redirectUrl = Url.Action("usereditdetail", "Home") });
-
         }
         public IActionResult Addcontact(string Userid)
         {
            var contact= _userRepository.addcontact(Userid);
             return PartialView("_modalcontactus",contact);
         }
+        public JsonResult GetTitles()
+        {
+            var userid = HttpContext.Session.GetString("userid");
+            var titles = _userRepository.gettitles(userid);
+            return Json(new { titles = titles.Item1, ids = titles.Item2 });
+        }
+        public void SetStatus(List<string> titles)
+        {
+            var userid = HttpContext.Session.GetString("userid");
+            _userRepository.setstatus(userid, titles);
 
-
+        }
+        public void ChangeStatus(int messageid)
+        {
+            var userid = HttpContext.Session.GetString("userid");
+            _userRepository.changestatus(messageid,userid);
+        }
+        public JsonResult GetNotification()
+        {
+            var userid = HttpContext.Session.GetString("userid");
+            var notifications = _userRepository.getnotification(userid);
+            return Json(notifications);
+        }
+        public void ClearAll()
+        {
+            var userid = HttpContext.Session.GetString("userid");
+            _userRepository.clearall(userid);
+        }
     }
 }

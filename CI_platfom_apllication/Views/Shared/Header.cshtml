@@ -4,6 +4,7 @@
 @{
     var firstname_session = Accessor.HttpContext.Session.GetString("firstname");
     var avtar =Accessor.HttpContext.Session.GetString("avtar");
+     var role=Accessor.HttpContext.Session.GetString("role");
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -34,32 +35,29 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="StoryListing" asp-action="storylisting">Stories</a>
                     </li>
-
+                      <li class="nav-item">
+                        <a class="nav-link" asp-controller="Mission" asp-action="platformlanding">Home</a>
+                    </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Policy
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Insuarance</a></li>
-                            <li><a class="dropdown-item" href="#">Driving</a></li>
-                            <li><a class="dropdown-item" href="#">data</a></li>
-                            <li><a class="dropdown-item" href="#">Portfolio</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li onclick="filterMission(1)"><a class="dropdown-item" >Top Themes</a></li>
+                            <li onclick="filterMission(2)"><a class="dropdown-item" >Most Ranked</a></li>
+                            <li onclick="filterMission(3)"><a class="dropdown-item">Top favroite</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Explore
+                    @if(@role=="Admin")
+                    { 
+                <li class="nav-item dropdown">
+                        <a class="nav-link"  asp-controller="Admin" asp-action="User">                          
+                            Admin
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Insuarance</a></li>
-                            <li><a class="dropdown-item" href="#">Driving</a></li>
-                            <li><a class="dropdown-item" href="#">data</a></li>
-                            <li><a class="dropdown-item" href="#">Portfolio</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                     </li>
+                    }
+                   
 
 
                 </ul>
@@ -88,8 +86,33 @@
     }
     @{
         if (firstname_session != null)
-        {
-            <div class="dropdown mx-5 mr-sm-auto dropdown12" id="smallpos">
+        {   
+            <div class="dropdown d-flex mx-5 mr-sm-auto dropdown12" id="smallpos">
+            <div class="me-3" data-bs-toggle="dropdown" aria-expanded="false"><img class="mt-3" src="~/Assets/bell.png" /><i class="bi bi-circle-fill position-relative text-warning countcircle" style="right:11px"><span class="circletext text-white position-relative" style="right: 12px;"></span></i></div>
+                    <div class="dropdown-menu" id="notification-div">
+                <div>
+                    <div class="noti">
+                        <div class="d-flex justify-content-between">
+                        <div onclick="messagenable(event)"><img src="~/Assets/settings.png" class="mx-2"/></div>
+                    <p>Notification</p>
+                    <p class="me-2" onclick="clearseen()">clear all</p>
+                        </div>
+                        <div class="usernoti">
+
+                        </div>
+                    </div>
+                    <div class="d-none check">
+                         <p class="text-center">Notification setting</p>
+                        <p class="bg-light w-100 py-2 px-2">Get a notfication for</p>
+                        <div class="titleswithcheck"></div>
+                        <div class="text-center p-2">
+                            <button class="btn btn-warning text-white mx-2" onclick="selecttitles()">Save</button>
+                            <button class="btn btn-danger text-white mx-2" onclick="cancel(event)">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
                 <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="@avtar" alt="" class=" rounded-circle w-30" id="profile-photo">
                     <p class="name" id="hide"> @firstname_session</p>
@@ -115,7 +138,7 @@
             <div class="col-10 col-md-4 d-flex" role="search">
                 <img src="~/Assets/search.png" alt="search icon" class="position-absolute pt-1 pt-md-3 search-icon">
 
-                <input class="form-control me-2 ps-5" type="search" name="SearchInputdata" placeholder="Search" aria-label="Search" id="search-input">
+                <input class="form-control me-2 ps-5" type="text" name="SearchInputdata" placeholder="Search" aria-label="Search" id="search-input">
 
                 @*  <input class="form-control me-2 ps-5" type="search" placeholder="Search" aria-label="Search">*@
             </div>
@@ -195,7 +218,7 @@
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <script src="~/js/header.js"></script>
     @*  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>*@

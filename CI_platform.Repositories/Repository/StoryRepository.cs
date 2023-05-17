@@ -248,7 +248,7 @@ namespace CI_platform.Repositories.Repository
             var user = _ciplatformcontext.Users.SingleOrDefault(m => m.UserId == id);
             var resetLink = url;
 
-            var from = new MailAddress("dummyblack92@gmail.com", "Abhishek");
+            var from = new MailAddress("orangetreeplant123@gmail.com", "Abhishek");
 
             var to = new MailAddress(user.Email);
             var subject = "Volunteer mission recommend";
@@ -262,7 +262,7 @@ namespace CI_platform.Repositories.Repository
             var smtpClient = new SmtpClient("smtp.gmail.com", 587)
             {
                 UseDefaultCredentials = false,
-                Credentials = new NetworkCredential("dummyblack92@gmail.com", "bhilykvfemjbcceg"),
+                Credentials = new NetworkCredential("orangetreeplant123@gmail.com", "jbadfitwuhphgwbw"),
                 EnableSsl = true
             };
             smtpClient.Send(message);

@@ -23,31 +23,33 @@ namespace CI_platform.Repositories.Interface
         public List<City> getcities(string countryid);
         public List<MissionTheme> getthemes();
         public void deletemission(string missionid);
-        public void Addmission(MissionAddViewModel model, List<int> selectedSkills);
+        public void Addmission(MissionAddViewModel model, List<int> selectedSkills, string userid);
         public SkillAddViewModel getskill(string skillid);
         public CmsAddViewModel getcmsdata(string cmspageid);
         public void Addcms(CmsAddViewModel model);
         public void deletestory(string storyid);
         public void editcmspage(CmsAddViewModel model);
+        public ThemeAddViewModel gettheme(string themeid);
+        public void editthemedatabase(ThemeAddViewModel model);
 
         public bool Addskill(SkillAddViewModel model);
         public UserAdminViewModel getthemedata(int pageindex, int pageSize, string SearchInputdata);
-        public void Addtheme(ThemeAddViewModel model);
+        public bool Addtheme(ThemeAddViewModel model);
         public bool deletetheme(string themeid);
         public UserAdminViewModel getskilldata(int pageindex, int pageSize, string SearchInputdata);
         public UserAdminViewModel getmissionapplicationdata(int pageindex, int pageSize, string SearchInputdata);
-        public void approveapplication(string applicationid);
-        public void declineapplication(string applicationid);
+        public void approveapplication(string applicationid, string userid);
+        public void declineapplication(string applicationid, string userid);
         public UserAdminViewModel getstorydata(int pageindex, int pageSize, string SearchInputdata);
-        public void approvestory(string storyid);
-        public void declinestory(string storyid);
+        public void approvestory(string storyid, string userid);
+        public void declinestory(string storyid, string userid);
         public MissionAddViewModel getmissionmodeldata();
         public void Adduser(UserAddViewModel model);
         public void updateuser(UserAddViewModel model);
         public void deleteuser(string userid);
         public void deletecmspage(string cmspageid);
         public UserAddViewModel edituserdata(string userid);
-        public void editskilldatabase(SkillAddViewModel model);
+        public bool editskilldatabase(SkillAddViewModel model);
         public bool deleteskill(string skillid);
     }
 }

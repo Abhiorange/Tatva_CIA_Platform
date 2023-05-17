@@ -106,7 +106,7 @@ namespace CI_platform.Repositories.Repository
         public (List<SheetViewModel>, List<SheetViewModel>) getdatasheet(long userid)
         {
             var timesheets = _ciplatformcontext.Timesheets.Where(t=>t.UserId==userid).ToList();
-            var goaltimesheets = _ciplatformcontext.Timesheets.Where(t => t.Action != 0 && t.UserId == userid).ToList();
+            var goaltimesheets = _ciplatformcontext.Timesheets.Where(t => t.Action != 0 && t.Action!=null && t.UserId == userid).ToList();
             var goalmissions = _ciplatformcontext.GoalMissions.ToList();
             var missions = _ciplatformcontext.Missions.ToList();
             var viewModelListtime = new List<SheetViewModel>();

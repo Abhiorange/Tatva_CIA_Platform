@@ -15,11 +15,11 @@
             <input class="form-control me-2 ps-5" id="skillsearch" type="text" placeholder="Search" aria-label="Search">
         </div>
         <div class="col-4  d-flex justify-content-end">
-            <button class="px-3 btn btn-warning rounded-pill"> <a asp-action="skilladd" asp-controller="Admin">+ Add</a></button>
+            <button class="px-3 btn btn-warning rounded-pill"> <a asp-action="skilladd" class="text-decoration-none text-white" asp-controller="Admin">+ Add</a></button>
         </div>
     </div>
 
-    <div class="table-responsive" class="overflow-tableEntry">
+    <div class="table-responsive">
 
         @if (Model.Skills.Count() == 0)
         {
@@ -32,15 +32,10 @@
 
         else
         {
-            <div class="table">
-                <table class="table">
-                    @if (Model.Skills.Count() == 0)
-                    {
-                        <div class="d-flex mt-5 flex-column" id="nouser">
-                            <div class="mx-auto"><h3>No skill found</h3></div>
-                        </div>
-                    }
-                    <thead>
+            <div class="table table-responsive">
+                <table class="table my-2 table-bordered">
+                    
+                    <thead class="table-dark">
                         <tr>
                             <th scope="col">SkillName</th>
                             <th scope="col">Status</th>
@@ -67,22 +62,12 @@
                                 }
                                 <td class="d-flex">
                                     <button class="btn border-0">
-                                       <a asp-action="editskilldata" asp-controller="Admin" asp-route-skillid="@skill.SkillId">
+                                       <a asp-action="editskilldata" class="text-warning" asp-controller="Admin" asp-route-skillid="@skill.SkillId">
                                         <i class="bi bi-pencil-square icon"></i>
                                         </a> </button>
+                                        <button class="btn border-0">
                                       <a class="nav-link text-black deleteMission p-2" onclick="showModal(@skill.SkillId)" type="button"><i class="bi bi-trash3"></i></a>
-
-                                    @*@{
-                                        var appliedskill = Model.MissionSkills.FirstOrDefault(ms => ms.SkillId == skill.SkillId);
-                                        if (appliedskill == null)
-                                        {
-                                            <a class="nav-link text-black deleteMission p-2" onclick="showModal(@skill.SkillId)" type="button"><i class="bi bi-trash3"></i></a>
-                                        }
-                                        else
-                                        {
-                                        <a class="nav-link text-black deleteMission p-2" onclick="errormodal()" type="button"><i class="bi bi-trash3"></i></a>
-                                        }
-                                    }*@
+                                        </button>                   
                                 </td>
 
                             </tr>

@@ -16,6 +16,11 @@ namespace CI_platform.Repositories.Interface
         public string forget(ForgetViewModel model,string url);
         public ContactUsViewModel addcontact(string userid);
         public List<Banner> GetBanners();
+        public void clearall(string userid);
+        public Tuple<List<NotificationTitle>, List<long>> gettitles(string userId);
+        public void setstatus(string userid, List<string> titles);
+        public List<Tuple<string, long, string, string, int, int, string>> getnotification(string userId);
+        public void changestatus(int messageid, string userid);
 
         public string reset(ResetViewModel model, string token);
         public List<Country> GetCountries();

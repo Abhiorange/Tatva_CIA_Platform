@@ -11,6 +11,9 @@
     color: orange;
     background-color: white;
 }
+.swal2-html-container {
+    overflow: hidden !important;
+}
 .main {
     font-family:Arial;
     width:100%;
@@ -66,3 +69,12 @@
     display: none;
   }
   }
+.size_modal
+{
+    overflow-y:auto;
+    height:500px;
+}
+.story_image_class {
+    width: 155px !important;
+    height: 100px !important;
+}
